@@ -12,4 +12,5 @@ The scheduled time for the group discussion is [Sunday 8 pm UTC](https://www.wol
 
 
 ## Past discussions:
-* 2017.04.16  [(2006) Hinton -- Reducing the Dimensionality of Data with Neural Networks](https://www.cs.toronto.edu/~hinton/science.pdf)
+* [2017.04.16 (2006) Hinton -- Reducing the Dimensionality of Data with Neural Networks](logs/2017.04.16)
+  Paper [here](https://www.cs.toronto.edu/~hinton/science.pdf)
