@@ -1,0 +1,47 @@
+2017-04-16 21:05:24                 pi-: * * * * * * *
+2017-04-16 21:05:24                 pi-: ##machinelearning READING GROUP 16 Apr '17, discussing Hinton's landmark 2006 paper "Reducing the Dimensionality of Data with Neural Networks" https://www.cs.toronto.edu/~hinton/science.pdf
+2017-04-16 21:05:48                 pi-: So, would anyone care to have a go at summarising the paper?
+2017-04-16 21:09:36              brand0: it presents a way to get the weights of a series of RBMs to small values somewhere near an optimal location
+2017-04-16 21:09:50              brand0: that's my takeaway
+2017-04-16 21:09:52                 pi-: deego diphtherial GlenK Henry_Jia Hunts Jaggz jasonheh jo_ johnflux_ joshua_ multifractal Omega037 pasky ^ Reading Group (if interested)
+2017-04-16 21:10:36               deego: pi-: going for a run. but, will read
+2017-04-16 21:10:42                 pi-: Right, I think around that time there was an issue of convergence of deep-nets
+2017-04-16 21:10:56                 pi-: Vanishing gradient
+2017-04-16 21:11:28                 pi-: (I think ReLU only came later, everyone was using Sigmoid activations in '06)
+2017-04-16 21:11:46               deego: do you all use relu now?  or leakyrelu?
+2017-04-16 21:12:29          unixpickle: that depends on the architecture. Most RNNs still use sigmoid/tanh in some way.
+2017-04-16 21:12:51          unixpickle: but convnets all tend to use ReLU now days, even though BatchNorm made it so that tanh and sigmoid *could* work okay
+2017-04-16 21:13:37               deego: unixpickle: i see, thanks
+2017-04-16 21:14:03                 pi-: ReLU has a lot of variants, there is analog SoftPlus
+2017-04-16 21:14:09              brand0: what i'm al little fuzzy on in the paper is what exactly are the "confabulations" used to calculate the weight change/loss
+2017-04-16 21:14:27                 pi-: So this paper introduced greedy layerwise unsupervised pretraining
+2017-04-16 21:14:56                 pi-: I wonder if it was the first paper to motivate this
+2017-04-16 21:16:04                 pi-: brand0: confabulations seems to be referring to the one-step approximation of the network settling into dream-state by MCMC
+2017-04-16 21:16:42                 pi-: Confabulation = 'that which is the network tends/likes to dream'
+2017-04-16 21:19:09                 pi-: So the process of training an RBM is to clamp a data vector, Record the activations, remove the data vector and enter a dream state (via n-step MCMC .. Bouncing between sampling from the hidden and visible layer), Record activations again, and nudge weights to prefer the clamped State over the dream state
+2017-04-16 21:19:59                 pi-: I'm not sure if RBMs are forced to use sigmoid activations, does anyone know?
+2017-04-16 21:20:48                 pi-: btw I got the https://github.com/Cospel/rbm-ae-tf code working without too much trouble
+2017-04-16 21:20:48          Nootronaut: [ GitHub - Cospel/rbm-ae-tf: Tensorflow implementation of Restricted Boltzman Machine(RBM) and Autoencoder with layerwise pretraining. ] - github.com
+2017-04-16 21:21:50           mr_yogurt: pi-: http://machinelearning.wustl.edu/mlpapers/paper_files/icml2010_NairH10.pdf
+2017-04-16 21:22:28        multifractal: pi- I dug this up https://arxiv.org/pdf/1703.01425.pdf - see Fig. 3 on their "shared monte carlo method" for computing IOU.
+2017-04-16 21:22:38        multifractal: pi-:
+2017-04-16 21:23:16                 pi-: So this approach is quasi--biologically-plausible -- the idea of unsupervised learning to extract higher-level features.
+2017-04-16 21:24:04                 pi-: It still makes me scratch my head that greedy layerwise pretraining seems to have fallen out of favour recently... It seems so sensible.
+2017-04-16 21:25:43              brand0: what are the drawbacks to this approach?
+2017-04-16 21:26:34        multifractal: I'd still like to find a differentiable approach to computing IOU though, similar to the IOU loss layer of UnitBox https://arxiv.org/pdf/1608.01471.pdf but for arbitrary quadrilaterals.
+2017-04-16 21:26:36                 pi-: ah interesting, I thought RBM units needed to output a probability i.e. [0,1] i.e. no ReLU. I'll have to look through the paper.
+2017-04-16 21:27:43          unixpickle: RBM units don't really output a value or a probability
+2017-04-16 21:28:05          unixpickle: it's just that every configuration of input+output values has a certain probability
+2017-04-16 21:28:14          unixpickle: then you can compute the conditional probability of the outputs given the inputs
+2017-04-16 21:28:16                 pi-: brand0: I suppose it is an extra learning stage; why have pretraining + backprop fine tuning if dropout+backprop gets the job done just as well..?
+2017-04-16 21:29:38           mr_yogurt: hasn't dropout fallen out of favor these days with really deep nets?
+2017-04-16 21:30:00          unixpickle: mr_yogurt: it seems to have, although it's still useful for recurrent neural nets
+2017-04-16 21:30:07          unixpickle: everyone always forgets RNNs... ;)
+2017-04-16 21:31:36                 pi-: https://github.com/p-i-/DBM/blob/master/src/pretrainL1.m <-- I've commented this file heavily to give an intuitive understanding of RBM training
+2017-04-16 21:31:37          Nootronaut: [ DBM/pretrainL1.m at master Â· p-i-/DBM Â· GitHub ] - github.com
+2017-04-16 21:32:25                 pi-: I need to look into RNNs and LSTM, I've pretty much avoided them in the past
+2017-04-16 21:32:44              brand0: lstm + dropout works great IMO
+2017-04-16 21:34:39                 pi-: â€œThe six units in the code layer were linear and all the other units were logistic.â€ <â€” I never figured out why Hinton changes the activation function for the code-layer.
+2017-04-16 21:35:21                 pi-: Is anyone here using pretraining?
+2017-04-16 21:37:46              brand0: i've never used it
+2017-04-16 21:39:01                 pi-: http://cs229.stanford.edu/proj2013/TakeuchiLee-ApplyingDeepLearningToEnhanceMomentumTradingStrategiesInStocks.pdf <-- 7 years after that 2006 paper, this group use exactly the same architecture to predict stock prices
