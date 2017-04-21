@@ -8,7 +8,7 @@ The scheduled time for the group discussion is [Sunday 8 pm UTC](https://www.wol
 
 
 ## This week's discussion:
-* Goodfellow's 2014 paper [Generative Adversarial Networks](https://arxiv.org/abs/1406.2661) 
+* Goodfellow's 2014 paper [Generative Adversarial Networks](https://arxiv.org/abs/1406.2661)  
   Resources:
      - [NIPS 2016 Tutorial: Generative Adversarial Networks](https://arxiv.org/abs/1701.00160)
      - http://blog.evjang.com/2016/06/generative-adversarial-nets-in.html
