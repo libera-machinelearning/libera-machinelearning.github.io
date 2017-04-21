@@ -3,12 +3,13 @@ Community repo for the `##machinelearning` and `##ml-ot` IRC channels on Freenod
 
 [Reading Group](ReadingGroup/README.md)
 
+- - - - - - - 
+
+## Ideas for this resource:
 
 The IRC ML community is growing -- let's make this a really good ML resource. Together we can nudge it into shape from different angles.
 
 I recommend organic growth -- not being overly hasty to overstructure too soon. That being said, each of these ideas probably wants its own folder + README.md.  GitHub allows relative links so it should be possible to keep everything tidy & build reusable structure.
-
-## Ideas for this resource:
 
 * **Expand the channel topic here**
 
