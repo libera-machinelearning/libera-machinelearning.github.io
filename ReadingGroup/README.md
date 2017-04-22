@@ -13,10 +13,10 @@ The scheduled time for the group discussion is [Sunday 8 pm UTC](https://www.wol
      - [NIPS 2016 Tutorial: Generative Adversarial Networks](https://arxiv.org/abs/1701.00160)
      - http://blog.evjang.com/2016/06/generative-adversarial-nets-in.html
      
-     Stacked GANs:
-        - [Stacked Generative Adversarial Networks](https://arxiv.org/abs/1612.04357)
-        - [StackGAN: Text to Photo-realistic Image Synthesis with Stacked Generative Adversarial Networks](https://arxiv.org/abs/1612.03242)
-        ^ note both papers were submitted within three days one another (10/13 Dec '16)
+     Stacked GANs:  
+        - [Stacked Generative Adversarial Networks](https://arxiv.org/abs/1612.04357)  
+        - [StackGAN: Text to Photo-realistic Image Synthesis with Stacked Generative Adversarial Networks](https://arxiv.org/abs/1612.03242)  
+        ^ note both papers were submitted within three days one another (10/13 Dec '16)  
 
 ## Candidates for future discussions:
 * [DNC](https://github.com/deepmind/dnc) (Differentiable Neural Computer)
