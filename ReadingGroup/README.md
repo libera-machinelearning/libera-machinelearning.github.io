@@ -15,7 +15,7 @@ The scheduled time for the group discussion is [Sunday 8 pm UTC](https://www.wol
      - [Goodfellow @ NIPS '16 (+6 other vids on GAN)](https://www.youtube.com/watch?v=RvgYvHyT15E&list=PLJscN9YDD1buxCitmej1pjJkR5PMhenTF)
      
      Stacked GANs:  
-        - [Stacked Generative Adversarial Networks](https://arxiv.org/abs/1612.04357)  
+        - [Stacked Generative Adversarial Networks](https://arxiv.org/abs/1612.04357) <-- Can anyone grok fig.1??  
         - [StackGAN: Text to Photo-realistic Image Synthesis with Stacked Generative Adversarial Networks](https://arxiv.org/abs/1612.03242)  
         ^ note both papers were submitted within three days one another (10/13 Dec '16)  
 
