@@ -12,6 +12,7 @@ The scheduled time for the group discussion is [Sunday 8 pm UTC](https://www.wol
   Resources:
      - [NIPS 2016 Tutorial: Generative Adversarial Networks](https://arxiv.org/abs/1701.00160)
      - http://blog.evjang.com/2016/06/generative-adversarial-nets-in.html
+     - [Goodfellow @ NIPS '16 (+6 other vids on GAN)](https://www.youtube.com/watch?v=RvgYvHyT15E&list=PLJscN9YDD1buxCitmej1pjJkR5PMhenTF)
      
      Stacked GANs:  
         - [Stacked Generative Adversarial Networks](https://arxiv.org/abs/1612.04357)  
