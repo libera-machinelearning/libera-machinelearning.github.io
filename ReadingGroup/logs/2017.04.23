@@ -1,0 +1,246 @@
+2017-04-23 21:00:50               jaggz: Good day ladies and gentlemen!
+2017-04-23 21:01:31                 pi-: - - - - -  START of READING GROUP 23.04.2017 Discussing Goodfellow's 2014 GAN paper  - - - - -
+2017-04-23 21:01:37                 pi-: hey
+2017-04-23 21:01:40                 pi-: who's here?
+2017-04-23 21:01:44               jaggz: pi-
+2017-04-23 21:02:26                 pi-: just us?
+2017-04-23 21:02:27                 pi-: :]
+2017-04-23 21:02:45              brand0: here
+2017-04-23 21:03:07                 pi-: Does anyone fancy giving a quick summary/rundown?
+2017-04-23 21:03:57               jaggz: I msg'ed a few others (as a favor)
+2017-04-23 21:04:07              brand0: thanks for that
+2017-04-23 21:05:05                 pi-: yeah if anyone would like to be notified for these things, tell me and I will ping you
+2017-04-23 21:05:28               jaggz: I haven't done a pure GAN before -- never generated something from the seed.
+2017-04-23 21:05:39                 pi-: Has anyone here implemented a GAN?
+2017-04-23 21:05:40              brand0: my understanding of the GAN paper is basically that GANs propose a new loss function to shape the output of a generative model
+2017-04-23 21:06:59               jaggz: I did implement an image enhancer + discriminator, which is a GAN.
+2017-04-23 21:07:16               jaggz: Okay, so, for the record:
+2017-04-23 21:07:35                 pi-: Also it appears GANs guarantee convergence to the underlying probability distribution in sample-space
+2017-04-23 21:07:39               jaggz: A GAN is a "Generative Adversarial Networks", with an abundance of information online, ranging in level of detail and difficulty.
+2017-04-23 21:07:45               jaggz: -s
+2017-04-23 21:08:37              brand0: pi-, did you end up decoding the math that proves that?
+2017-04-23 21:08:41               jaggz: The paper for focus today is one by Goodfellow, et. al from Jun 10, 2014. https://arxiv.org/abs/1406.2661
+2017-04-23 21:08:42      ML-helper[bot]: [ [1406.2661] Generative Adversarial Networks ]
+2017-04-23 21:09:11                 pi-: brand0: that math (eq.2&3) really made me scratch my head -- he seems to be doing an illegal variable substitution
+2017-04-23 21:09:34              brand0: yeah, it was over my head
+2017-04-23 21:09:40                 pi-: I think it is illegal because the space of z is different from the space of x
+2017-04-23 21:11:17              brand0: but z and x should eventually represent the same distribution, no?>
+2017-04-23 21:11:19                 pi-: He's basically saying: given a sample, if you know it's probability of occurring in the data distribution and model distribution, you can calculate the value an ideal discriminator would assign.
+2017-04-23 21:11:35              brand0: well output og G(z) (z is random right?)
+2017-04-23 21:11:38                 pi-: No, z is latent/code space
+2017-04-23 21:12:08             _10chik: brand0: z may not contain sufficiently many degrees of freedom to allow the representaiton of P[X]
+2017-04-23 21:12:13                 pi-: G(z) should represent the same space as x, not z
+2017-04-23 21:12:35               jaggz: can we put some of these terms in ordinary language?
+2017-04-23 21:13:23             _10chik: G(z) is at best an embedding of the space of Z (say [0, 1]^k) into the space of X (say [0, 1]^(28 x 28) for MNIST)
+2017-04-23 21:14:50                 pi-: I'm not too worried about following all of the equations, I arrived at a satisfactory understanding of RBMs by following a different path of reasoning.
+2017-04-23 21:14:54             _10chik: the bit on P.24 of the tutorial (ML vs Reverse KL) is illustrative of what happens when Z is of insufficient dimensionality; in this case the GAN (with rev KL) will capture only a few modes of the distribution
+2017-04-23 21:15:07              brand0: one thing that confused me, are they always inputting random noise into the generator?
+2017-04-23 21:15:35                 pi-: brand0: yup
+2017-04-23 21:16:01               jaggz: But aren't they discussing the distribution of that noise as well, and it being important in the ability to accomplish anything?
+2017-04-23 21:16:13                 pi-: And Then they nudge it's theta_G parameters to persuade it to produce the same sort of data distribution as our Real data distribution
+2017-04-23 21:16:30               jaggz: "This step was crucial for me to get this example working: when dealing with random noise as input, failing to align the transformation map properly will give rise to a host of other problems, like massive gradients that kill ReLU units early on, plateaus ..."
+2017-04-23 21:16:43             _10chik: jaggz: that noise distribution only has to be "nice" (probably finite moments)
+2017-04-23 21:17:45               jaggz: what exactly is this transformation map?
+2017-04-23 21:18:36             _10chik: G, I presume
+2017-04-23 21:18:37               jaggz: For example, how would you create z and the output for G(z) with mnist?
+2017-04-23 21:18:44          snowalpaca: what is the reading group?
+2017-04-23 21:18:46             _10chik: the question is what does it mean to 'align'
+2017-04-23 21:19:03                 pi-: snowalpaca: https://github.com/p-i-/machinelearning-IRC-freenode/tree/master/ReadingGroup
+2017-04-23 21:19:03      ML-helper[bot]: [ machinelearning-IRC-freenode/ReadingGroup at master · p-i-/machinelearning-IRC-freenode · GitHub ]
+2017-04-23 21:19:12          snowalpaca: ah ok, thanks
+2017-04-23 21:19:22             _10chik: jaggz: gen_in = lasagne.layers.InputLayer(shape=(BATCH_SIZE, INPUT_DIMENSION), input_var=generator_input)
+2017-04-23 21:19:42             _10chik: jaggz: (followed by 3 dense layers and 5 deconv layers)
+2017-04-23 21:19:55             _10chik: jaggz: then: gen_layer = lasagne.layers.TransposedConv2DLayer(dconv5, num_filters=1, filter_size=3, stride=1, nonlinearity=lasagne.nonlinearities.rectify)
+2017-04-23 21:20:46              brand0: so another point to clarify: D is being shown real samples intermixed with output from the generator correct? so it's supervised?
+2017-04-23 21:20:50             _10chik: i have no idea what it means to "align" the map
+2017-04-23 21:21:15               jaggz: brand0, correct
+2017-04-23 21:21:19             _10chik: brand0: yup. D sees a mix of X and G(Z)
+2017-04-23 21:21:26             _10chik: with corresponding labels
+2017-04-23 21:21:46                 pi-: oh I think I know what 'align' means... It might be the process of imposing a penalty for failing to map contiguous sections to contiguous sections
+2017-04-23 21:22:01                 pi-: It's explained nicely in the blog post (supplementary material)
+2017-04-23 21:22:38         MarcelineVQ: http://blog.evjang.com/2016/06/generative-adversarial-nets-in.html ?
+2017-04-23 21:22:39      ML-helper[bot]: [ Eric Jang: Generative Adversarial Nets in TensorFlow (Part I) ]
+2017-04-23 21:22:50               jaggz: That's why they need this iterative approach, alternating in training.  They must train D() to rate real data as real (let's say 1), and G() output as fake (0).
+2017-04-23 21:23:16                 pi-: jaggz: Basically you just make a multilayer Generative NN, say [7, 100, 28*28]. Now you have to train so that if you feed in say noise from a 7-dimensional gaussian, it is going to produce things that look like MNIST digits.
+2017-04-23 21:23:27               jaggz: Then when training G() they take G()'s output and feed it into the D(), with a goal of it coming out as 1
+2017-04-23 21:23:48                 pi-: MarcelineVQ: yup
+2017-04-23 21:23:57               jaggz: (but without the D() being trainable at the time, I'm pretty sure).  So D() is untrainable, frozen, whatever.
+2017-04-23 21:24:19             _10chik: pi-: is that a standard penalty?
+2017-04-23 21:25:02              brand0: what's the recommended way to decide on the dimension of z?
+2017-04-23 21:25:36                 pi-: "Manifold Alignment" <-- that's the section in the blog post (linked by MarcelineVQ)
+2017-04-23 21:25:38              brand0: the nips tutorial seems to have various dimensions for z based on the problem at hand
+2017-04-23 21:26:30               jaggz: so the discussions about aligning the manifolds is not something one does themselves, but the end goal of G()?
+2017-04-23 21:26:41                 pi-: brand0: good question, maybe just experimenting??
+2017-04-23 21:27:10                 pi-: jaggz: you want to encourage G to be as smooth a transformation as possible
+2017-04-23 21:27:40               jaggz: okay, so let's talk about mnist and z's dimensions
+2017-04-23 21:27:46                 pi-: So you would penalise bumpiness somehow
+2017-04-23 21:28:29               jaggz: that's what _10chik's lasagne code, where they rectified nonlinearities, was about, right?
+2017-04-23 21:29:11               jaggz: and that's the output layer?
+2017-04-23 21:30:57                 pi-: My guess is that to reduce bumpiness you could choose a PAIR of nearby points z1 z2 in z-space, and add the distance from G(z1) to G(z2) to your cost function.
+2017-04-23 21:31:29                 pi-: Doing that over a batch of pairs should smooth it out
+2017-04-23 21:31:36                 pi-: I would imagine
+2017-04-23 21:31:43             _10chik: pi-: oh i see. This 'manifold alignment' problem is basically a problem with the embedding. It would go away simply by increasing the dimension of Z
+2017-04-23 21:32:00              brand0: the lasagne generator uses a z with a vector size of 100
+2017-04-23 21:32:57               jaggz: determining loss for an individual G(z) is one thing -- determining distance between arbitrary G(z_n)'s .. I've not sure if I've seen them do that anywhere...
+2017-04-23 21:33:08             _10chik: or OR by pre-training with an autoencoder
+2017-04-23 21:33:11             _10chik: ooohhh
+2017-04-23 21:33:16                 pi-: _10chik: I don't think so, I think there is a danger you could get a G that successfully replicates the data distribution but is really messy, mapping nearby points in Z-space to data points that are far from one another in X-space
+2017-04-23 21:34:00                 pi-: _10chik: I think that is moving into SGAN Territory
+2017-04-23 21:34:02              brand0: isn't one of the main points in GAN is to not use distance measures directly between the mappings?
+2017-04-23 21:34:08             _10chik: pi-: When Z is low-dimension this is an issue. In high dimension there are only a handful of points with dense neighborhoods.
+2017-04-23 21:35:06                 pi-: brand0: I haven't seen that idea... I don't see why that would be a selling point
+2017-04-23 21:36:03              brand0: don't they talk about in the tutorial how distance based loss cause excessive averaging?
+2017-04-23 21:36:53                 pi-: jaggz: "I've not sure if I've seen them do that anywhere..." <-- me neither! There is a tips and tricks talk from NIPS that might go into it
+2017-04-23 21:38:52                 pi-: Did anyone have a look at fig.1 of the SGAN paper?  https://arxiv.org/abs/1612.04357
+2017-04-23 21:38:53               jaggz: I didn't get to the tutorial unfortunately.
+2017-04-23 21:38:53      ML-helper[bot]: [ [1612.04357] Stacked Generative Adversarial Networks ]
+2017-04-23 21:39:34                 pi-: I've gone through much of the tutorial, I didn't quite get the 'mode' stuff
+2017-04-23 21:40:39               jaggz: Did anyone else get to the SGAN's?
+2017-04-23 21:40:50              brand0: not me
+2017-04-23 21:41:34             _10chik: jaggz: i took a peek and got the general concept
+2017-04-23 21:41:57                 pi-: _10chik: care to summarise?
+2017-04-23 21:42:21             _10chik: pi- is right about the relationship between the autoencoder, SGAN, and GAN
+2017-04-23 21:43:12             _10chik: pi-: basically, with a GAN the goal is to produce a faithful sample from the data-generating distribution by attemtping to fool a discriminator
+2017-04-23 21:43:59               jaggz: (btw, regarding the mapping of data -- I don't know if it's the proximity that's as much of an issue as if the mapping "crosses")
+2017-04-23 21:44:40             _10chik: imagine someone handed you a "true" autoencoder (i'm deviating a little bit from the paper, but bare with me) which computed a pair of mappings H(X) -> Z and G(Z) -> X; effectively embeddings and their inverses; and the entire architecture of the encoder were available
+2017-04-23 21:45:30             _10chik: so H(X) is really H5(H4(H3(H2(H1(H0(X)))))) for 5 layers. And G(Z) is G5(G4(G3(G2(G1(G0(Z))))))
+2017-04-23 21:45:56             _10chik: you might imagine that discrimination could take place at *any* of the layers in G
+2017-04-23 21:45:59               jaggz: (that is, they show the upwards arrows representing the mapping, and you want that smooth, without crossing -- and you want to somehow do this on potentially high dimensional data too)
+2017-04-23 21:46:29                 pi-: jaggz: I think the idea is to make the manifold as smooth as possible -- then you could interpolate over feature space etc.
+2017-04-23 21:47:01             _10chik: so rather than attempting to fool a single discriminator operating on G(Z), you face the task of fooling multiple discriminators on each layer.
+2017-04-23 21:47:37              brand0: that's really interesting _10chik nice summary
+2017-04-23 21:47:40             _10chik: That is, the task of producing latent features which mimic "true" latent features (steps of an inverse-embedding)
+2017-04-23 21:47:52                 pi-: Is it basically the concept of a SAE?  i.e.  Hi-dim <--> Lo-dim <--> Recon-of-hi-dim.  where you then expand  Lo-dim  to  Lo-dim <--> Lower-dim <--> Recon of Lo-dim. ..... but using a GAN for each expansion?
+2017-04-23 21:49:21             _10chik: pi-: i would say that it's a close parallel; but don't think I know quite enough about SAE to comment at length
+2017-04-23 21:50:33             _10chik: anyway the discriptions not over yet
+2017-04-23 21:51:07                 pi-: keep going :)
+2017-04-23 21:51:23             _10chik: because they take a little bit of a shortcut, and rather than use a totally pretrained auto-encoder and putting discriminators on the Gi; they use a task-trained neural network and put discriminators on the Hi
+2017-04-23 21:52:25             _10chik: and so the discriminators work "in reverse": rather than fooling G5, and then G4, and then G3, ... all the way up to (standard GAN) fooling the output discriminator
+2017-04-23 21:53:00             _10chik: first you fool the output discriminator G(Z), and then you start fooling the *encoders* in order: H1(G(Z)), H2(H1(G(Z))), ...
+2017-04-23 21:53:52              brand0: what's the reasoning for going in reverse?
+2017-04-23 21:54:22               jaggz: perhaps because it's easy to train an encoder, alone, without any adversarial work?
+2017-04-23 21:54:55               jaggz: then your generator learns how to make each of its layers
+2017-04-23 21:55:11               jaggz: since an encoder, in reverse, is basically a perfect Generator
+2017-04-23 21:55:27               jaggz: an ideal encoder, anyway
+2017-04-23 21:55:28             _10chik: i can think of two perspectives; not so much reasoning. First is that the encoders can be trained to specific tasks (digit classification for instance); so that the generator's produced samples not only resemble the true samples, but more closely resembles a task-specific set of samples
+2017-04-23 21:56:04             _10chik: i dont' know if that makes sense. But in essence introducing a bias so that the (in this case images) are not 'broadly similar', but also specifically similar in terms of the digit-classification features used
+2017-04-23 21:56:34                 pi-: I wonder if there is possible parallel with biological brains, the way retinal data -> V1 -> V2 -> ... -> V5.
+2017-04-23 21:57:07             _10chik: so one interesting thing to do would be to take away the descriminator on G(Z), and only use those on H(G(Z)) so that you can produce images whose extracted features strongly represent digits, but have no constraint to "look like" images of digits
+2017-04-23 21:57:55               jaggz: I believe I did encounter the issues the SGAN's address with image upscaling/enhancing.  There's a lot of freedom within a full G().  I believe polyp was using the multiple feature layers instead of the final output, and had good results.
+2017-04-23 21:58:19             _10chik: the other perspective is that training with a descriminator on G1 and G2 may be redundant if there's a discriminator on the final output
+2017-04-23 22:00:12             _10chik: whereas, since the H(X) is surjective, but G(Z) is injective, training with a discriminator on the H side may provide additional information as to which aspects of the embedding are insufficiently recapitulated
+2017-04-23 22:00:49               jaggz: so the stacked gan's allow for what?  a very refined mapping of the intermediate feature layers, which facilitates in learning details of a larger class of outputs?
+2017-04-23 22:01:32               jaggz: For it seems their goal was to address that, "due to the vast variations in image content, it is still challenging for GANs to generate diverse images with sufficient details."
+2017-04-23 22:02:05                 pi-: I think the other (StackGAN https://arxiv.org/abs/1612.03242) paper might be easier to build intuition. It just stacks 2 GANs.
+2017-04-23 22:02:06      ML-helper[bot]: [ [1612.03242] StackGAN: Text to Photo-realistic Image Synthesis with Stacked Generative Adversarial Networks ]
+2017-04-23 22:04:05             _10chik: jaggz: i think the idea is that GANs still offer some room for improvement; and that classification tasks (H(X) -> {0, ..., n}) will extract features which are relevant to distinguishing real images from fake images
+2017-04-23 22:04:31               jaggz: It's been about an hour now. I'm going to keep this up, but I have lots of reading and research to do.  Anyone hanging around, let's keep our focus going, if you don't mind.
+2017-04-23 22:04:34             _10chik: in effect focusing the attention of the GAN to certain higher-order aspects not necessarily learned by the discriminator
+2017-04-23 22:06:03               jaggz: ahhhh.. the mention of classification completely went past me
+2017-04-23 22:06:34               jaggz: is the classifier not just real/fake, but a classification of the inputs?
+2017-04-23 22:06:53             _10chik: jaggz: the classifier is the source of H1, H2, ...
+2017-04-23 22:07:31             _10chik: trained on the training set, and with basically any objective (digit classificaiton, autoencoding, ...)
+2017-04-23 22:08:19                 pi-: I think there is some suggestion in the GAN-tut paper that the discriminator outputs k+1 values not 1 value. i.e. It classifies {class_1, ... class_k, fake}.
+2017-04-23 22:08:23             _10chik: and then you just apply those pre-trained layers as feature extractors, and your ensemble of discriminators is D on G(Z); D1 on H1(G(Z)); D2 on H2(H1(G(Z)) (and so on)
+2017-04-23 22:08:42                 pi-: Was I reading that correctly?
+2017-04-23 22:09:21             _10chik: there's something kind of like this in autoencoding. You can do this yourself with MNIST. Set up an autoencoder architecture with (say) 15 hidden units, with a secondary classifier operating just from the hidden layer
+2017-04-23 22:09:35             _10chik: pi-: that's clever. I must have missed it if it did...
+2017-04-23 22:10:33               jaggz: the restriction in an encoder inherently will classify, of course -- but it's mapping is completely up to the net
+2017-04-23 22:10:34                 pi-: 4.1 Train with labels
+2017-04-23 22:10:36             _10chik: (cont) if you use a composite loss [a * rmse + (1-a) * cross-entropy] and set a=1, your cross-entropy never really decreases even though you're "learning" a representation of the inputs.
+2017-04-23 22:10:40                 pi-: ^
+2017-04-23 22:11:03             _10chik: (oh and the auxiliary classifier is a single layer, i forgot to mention)
+2017-04-23 22:11:39             _10chik: but if you set a=0.9 or something like that, the representation will result in one where digit classifications can be made -- with effectively no change in reconstruction error
+2017-04-23 22:11:43                 pi-: (however I was skim reading by this point, I don't understand this section clearly)
+2017-04-23 22:12:26             _10chik: so i feel like this is something like a GAN-equivalent of that. The output image should look real directly, and also under all transformations, *especially* those learned on some classification task
+2017-04-23 22:12:27               jaggz: so we have two things, include training with labels, so you have constraints on the classifications, and then we have a "linking" of the feature layers, thereby considering each layer (or module consisting of multiple layers) as a Generator for those particular features
+2017-04-23 22:13:27               jaggz: I've not read through the SGAN papers enough to understand how the Gen_N->Disc_N relationship works, and how it helps, yet.
+2017-04-23 22:14:42               jaggz: (missed some of _10chik's comments.. reading back)
+2017-04-23 22:15:22               jaggz: what's (1-a)?
+2017-04-23 22:15:43                 pi-: Did you guys grok the wiggly blue line in fig.1 of the GAN paper?
+2017-04-23 22:15:52               jaggz: sort of :)
+2017-04-23 22:16:07               jaggz: I did want to have that discussed here though
+2017-04-23 22:16:36                 pi-: IIUC it represents a value between 0 and 1 (which I think should have been labelled)
+2017-04-23 22:17:31                 pi-: Basically the x-axis represents the data space (here 1D), and for each Datapoint x we have p_data(x) and p_model(x)
+2017-04-23 22:17:39               jaggz: _10chik, so the main point here is that the classifier/discriminator normally examines just the output.  But because an encoder is able to create nice suitable feature layers, we evaluate loss for each of our Generator layers to ensure it features are also tested.
+2017-04-23 22:17:54                 pi-: And that is giving the relative strength of the one to the other
+2017-04-23 22:18:06                 pi-: ^ And that blue line
+2017-04-23 22:18:09             _10chik: jaggz: that's my takeaway
+2017-04-23 22:18:17               jaggz: makes perfect sense
+2017-04-23 22:18:40               jaggz: greatly addresses the problem of learning being so difficult with Gen-Disc's
+2017-04-23 22:18:53               jaggz: removes a lot of the difficulty with guesswork of proper parameters
+2017-04-23 22:19:35               jaggz: As an example, my Gen-Disc was failing at super-resolution
+2017-04-23 22:20:01               jaggz: For instance, the outputs ended up getting higher contrast, with grid-like patterns
+2017-04-23 22:20:10               jaggz: (An artifact of CNN generators)
+2017-04-23 22:20:33               jaggz: However, as I mentioned in here, I began to understand that it was basically saying, "the best I can do to make this seem 'real' is to increase the contrast."
+2017-04-23 22:20:56               jaggz: It (the generator) was unable to learn how to really make the output more real.
+2017-04-23 22:21:17             _10chik: in some ways this is an acceleration technique i think
+2017-04-23 22:21:47             _10chik: if the feature extractor for digit classification also finds features that help discriminate between true/generated images
+2017-04-23 22:21:57               jaggz: By discriminating on any intermediate layers, you greatly facilitate its ability, by making each feature layer also more 'real'
+2017-04-23 22:22:06             _10chik: then the discriminator on G (if it were powerful enough) would pick up these features as well ... eventually
+2017-04-23 22:22:17               jaggz: acceleration AND preventing local minimums
+2017-04-23 22:22:31               jaggz: mine simply would never learn what to do.
+2017-04-23 22:22:40             _10chik: jaggz: there are *only* local minima for NNs hahaha
+2017-04-23 22:22:41               jaggz: (well, the proper thing to do)
+2017-04-23 22:22:52             _10chik: but they're good local minima, at least.
+2017-04-23 22:23:01       multifractal2: Hi level - can we think of sgan as supervision over every layer of a deep convnet?
+2017-04-23 22:23:08               jaggz: _10chik, hmm.. how do I word this
+2017-04-23 22:23:12                 pi-: In fig.16 of the tut paper, what's the deal with the 'maximum likelihood' red line? I take it those three lines are different Discriminator cost functions
+2017-04-23 22:23:43                 pi-: But how to apply maximum likelihood to get a cost function in this case?
+2017-04-23 22:23:49               jaggz: well, in a Generator there are local minimums, yeah, but not in all NN's?
+2017-04-23 22:24:06               jaggz: okay, let's move onto pi-'s topic
+2017-04-23 22:24:26             _10chik: pi-: ML is equivalent to argmin_q KL[p||q]
+2017-04-23 22:25:02                 pi-: ah this connects with the mode averaging issue, right?
+2017-04-23 22:25:10             _10chik: precisely
+2017-04-23 22:25:26             _10chik: i forget which of these is the standard one for variational approximation
+2017-04-23 22:27:14                 pi-: I remember in Hinton's coursera course there was a section about 'house jumps => either earthquake or truck but probably not both', I think this is the same issue as well
+2017-04-23 22:28:10             _10chik: right
+2017-04-23 22:28:21             _10chik: and not "small truck + small earthquake"
+2017-04-23 22:30:13                 pi-: So that figure is pointing out that if you use the red (ML) or blue (minimax) cost functions, they don't give you much gradient to work with for the majority of samples (i.e. Anything the discriminator is scoring below 0.7 say)
+2017-04-23 22:31:40                 pi-: So as the generator gets more and more accurate, fake samples will appear on the left of that fig. & cause negligible adjustment because the gradient ~ 0
+2017-04-23 22:33:18                 pi-: I think I'm going to call it a day, my voice is giving out.
+2017-04-23 22:34:57               jaggz: lol
+2017-04-23 22:35:25             _10chik: your.....voice?
+2017-04-23 22:36:27               jaggz: Okay, so for future topics, how do we go about addressing the issue that, it seems really nice to tackle multiple papers (grow our understanding of multiple (and in many respects overlapping) areas, while it being, for me, pretty difficult to make it even through one paper
+2017-04-23 22:37:17               jaggz: Just keep it as is?  Perhaps spend some time in the next session reviewing any new valuable understanding anyone has gotten about the prior topic?
+2017-04-23 22:38:11               jaggz: (is J(G) the cost?)
+2017-04-23 22:39:19             _10chik: jaggz: do our best to muddle onwards? ;)
+2017-04-23 22:39:26               jaggz: :)
+2017-04-23 22:39:54              brand0: i think two papers is a lot
+2017-04-23 22:40:05              brand0: that nips tutorial was over 50 pages :P
+2017-04-23 22:40:20              brand0: more than two would be too many i think, just IMO tho
+2017-04-23 22:41:06               jaggz: I agree.  Let's stick with 2 for now I think.
+2017-04-23 22:42:41               jaggz: I'd like to also include time (just casually in the discussion), of how one practically implements these things in the tools we use.
+2017-04-23 22:43:18               jaggz: The theory is one thing, the intuitive understanding another, and then the implementation varies
+2017-04-23 22:43:27               jaggz: like, how do you do this in keras, or directly in tensorflow, or...
+2017-04-23 22:43:51              brand0: what paper is next pi-?
+2017-04-23 22:44:22               jaggz: How do I create a cost function in keras to relate the losses of stacked gan's, for instance
+2017-04-23 22:47:23             _10chik: ACTION votes for the Ladder Network papers
+2017-04-23 22:49:53              brand0: pi- is the meeting & logging over?
+2017-04-23 22:53:08               jaggz: I'm good with the nearly 2 hour session :)
+2017-04-23 22:53:29               jaggz: brand0, you disappeared :)
+2017-04-23 22:55:15               jaggz: I'm trying to find where they discuss how exactly you make a "heuristically designed non-saturating cost [function]" ?
+2017-04-23 22:56:05             _10chik: i thought that was (13) ?
+2017-04-23 23:00:48              brand0: jaggz, i didn't read the stacked gan paper so i tuned out :P
+2017-04-23 23:01:58               jaggz: _10chik, thanks
+2017-04-23 23:04:34               jaggz: (man, I see "toy" example used a lot in papers now)
+2017-04-23 23:05:05               jaggz: it's one of those interesting things -- they're not new docs necessarily, but I haven't seen the term used in the past, and suddenly many pages I read mention it.
+2017-04-23 23:18:45                 pi-: Sorry, fell asleep!
+2017-04-23 23:49:20               jaggz: pi-,  :)
+2017-04-23 23:49:55               jaggz: we should have videos of programmers behaving like the babies, sitting up but nodding until they fall over
+2017-04-24 00:09:06                 pi-: _10chik: I use speech recognition
+2017-04-24 00:10:05                 pi-: jaggz: I think we need to play around until we find a format that works
+2017-04-24 00:11:03                 pi-: Intuition -> theory -> implementation looks sensible
+2017-04-24 00:12:26              brand0: is the room officially back to no public logging?
+2017-04-24 00:17:25               jaggz: public flogging?
+2017-04-24 00:20:23              brand0: lol
+2017-04-24 00:46:00                 pi-: brand0: yep
+2017-04-24 00:46:35                 pi-: In as much as it ever was...
+2017-04-24 00:53:04                 pi-: fwiw I think I can see Eq.3 now
+2017-04-24 00:54:38                 pi-: However it seems to be relying on  z in Z -> x in X   =>  p_Z(z) == p_data(x)
+2017-04-24 00:55:48                 pi-: Which is only going to be the case if the mapping is 1-1, i.e. Forbids z1,z2 -> the same x
+2017-04-24 01:02:13               tomzx: pi-: if I understand it right, whatever the domain of z is, it will be mapped to the domain of x anyways
+2017-04-24 01:02:18               tomzx: since you integrate over all of z
+2017-04-24 01:02:23               tomzx: and x = G(z)
+2017-04-24 01:14:44                 pi-: yup
+2017-04-24 01:14:47                 pi-: looks right
