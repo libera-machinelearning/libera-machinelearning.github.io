@@ -8,7 +8,19 @@ The scheduled time for the group discussion is [Sunday 8 pm UTC](https://www.wol
 
 
 ## This week's discussion:
-* Goodfellow's 2014 paper [Generative Adversarial Networks](https://arxiv.org/abs/1406.2661)  
+## Candidates for future discussions:
+* [DNC](https://github.com/deepmind/dnc) (Differentiable Neural Computer)
+* [VAE](http://pipad.org/wiki/index.php/Machine_Learning#Variational_Autoencoders) (Variational AutoEncoder)
+* Learning without Backpropagation http://www.breloff.com/no-backprop/
+* [Overcoming catastrophic forgetting in neural networks](https://arxiv.org/abs/1612.00796)
+* [Semi-Supervised Learning with Ladder Networks](https://arxiv.org/abs/1507.02672)
+
+## Past discussions:
+* 2017.04.16 Hinton's 2006 "Reducing the Dimensionality of Data with Neural Networks" [paper](https://www.cs.toronto.edu/~hinton/science.pdf)  
+  [log](logs/2017.04.16)  
+
+* 2017.04.23 GANs: Goodfellow's 2014 "Generative Adversarial Networks" [paper](https://arxiv.org/abs/1406.2661)  
+  [log](logs/2017.04.23)  
   Resources:
      - [NIPS 2016 Tutorial: Generative Adversarial Networks](https://arxiv.org/abs/1701.00160)
      - http://blog.evjang.com/2016/06/generative-adversarial-nets-in.html
@@ -17,14 +29,4 @@ The scheduled time for the group discussion is [Sunday 8 pm UTC](https://www.wol
         - [Stacked Generative Adversarial Networks](https://arxiv.org/abs/1612.04357) <-- Can anyone grok fig.1??  
         - [StackGAN: Text to Photo-realistic Image Synthesis with Stacked Generative Adversarial Networks](https://arxiv.org/abs/1612.03242)  
         ^ note both papers were submitted within three days one another (10/13 Dec '16)  
-
-## Candidates for future discussions:
-* [DNC](https://github.com/deepmind/dnc) (Differentiable Neural Computer)
-* [VAE](http://pipad.org/wiki/index.php/Machine_Learning#Variational_Autoencoders) (Variational AutoEncoder)
-* Learning without Backpropagation http://www.breloff.com/no-backprop/
-* [Overcoming catastrophic forgetting in neural networks](https://arxiv.org/abs/1612.00796)
-
-## Past discussions:
-* [2017.04.16 (2006) Hinton -- Reducing the Dimensionality of Data with Neural Networks](logs/2017.04.16)
-  Paper [here](https://www.cs.toronto.edu/~hinton/science.pdf)
 
