@@ -14,6 +14,7 @@ The scheduled time for the group discussion is [Sunday 8 pm UTC](https://www.wol
 * Learning without Backpropagation http://www.breloff.com/no-backprop/
 * [Overcoming catastrophic forgetting in neural networks](https://arxiv.org/abs/1612.00796)
 * [Semi-Supervised Learning with Ladder Networks](https://arxiv.org/abs/1507.02672)
+* [The Reactor: A Sample-Efficient Actor-Critic Architecture](https://arxiv.org/abs/1704.04651) (15 Apr '17)
 
 ## Past discussions:
 * 2017.04.16 Hinton's 2006 "Reducing the Dimensionality of Data with Neural Networks" [paper](https://www.cs.toronto.edu/~hinton/science.pdf)  
