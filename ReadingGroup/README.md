@@ -20,7 +20,6 @@ Resources:
 
 ## Candidates for future discussions:
 * [DNC](https://github.com/deepmind/dnc) (Differentiable Neural Computer)
-* [VAE](http://pipad.org/wiki/index.php/Machine_Learning#Variational_Autoencoders) (Variational AutoEncoder)
 * Learning without Backpropagation http://www.breloff.com/no-backprop/
 * [Overcoming catastrophic forgetting in neural networks](https://arxiv.org/abs/1612.00796)
 * [Semi-Supervised Learning with Ladder Networks](https://arxiv.org/abs/1507.02672)
