@@ -1,13 +1,23 @@
 # ML-ReadingGroup
 
-Weekly transcripts for the (IRC:Freenode) ##machinelearning Reading Group 
+Resources (including transcripts) for the (IRC:Freenode) ##machinelearning Reading Group 
+
+NOTE: Reading Group is now BI-weekly!
 
 <!-- Short URL: https://j.mp/ML-ReadingGrp -->
 
-The scheduled time for the group discussion is [Sunday 8 pm UTC](https://www.wolframalpha.com/input/?i=next+Sunday+8+pm+UTC).
+The scheduled time for the next group discussion is [Sunday 7 May 2017 @ 8pm UTC](https://www.wolframalpha.com/input/?i=next+Sunday+8+pm+UTC).
 
 
-## This week's discussion:
+## Next discussion: VAE (Variational AutoEncoders) (Sunday 7 May 2017 @ 8pm UTC)
+* Main paper: [Auto-Encoding Variational Bayes](https://arxiv.org/abs/1312.6114)  
+
+Resources:
+* [Tutorial on Variational Autoencoders](https://arxiv.org/abs/1606.05908)  
+* [PART 1: Introducing Variational Autoencoders (in Prose and Code) by Miriam](http://blog.fastforwardlabs.com/2016/08/12/introducing-variational-autoencoders-in-prose-and.html)  
+* [PART 2: Under the Hood of the Variational Autoencoder (in Prose and Code) by Miriam](http://blog.fastforwardlabs.com/2016/08/22/under-the-hood-of-the-variational-autoencoder-in.html)
+
+
 ## Candidates for future discussions:
 * [DNC](https://github.com/deepmind/dnc) (Differentiable Neural Computer)
 * [VAE](http://pipad.org/wiki/index.php/Machine_Learning#Variational_Autoencoders) (Variational AutoEncoder)
