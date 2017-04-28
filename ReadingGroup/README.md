@@ -16,7 +16,10 @@ Resources:
 * [Tutorial on Variational Autoencoders](https://arxiv.org/abs/1606.05908)  
 * [PART 1: Introducing Variational Autoencoders (in Prose and Code) by Miriam](http://blog.fastforwardlabs.com/2016/08/12/introducing-variational-autoencoders-in-prose-and.html)  
 * [PART 2: Under the Hood of the Variational Autoencoder (in Prose and Code) by Miriam](http://blog.fastforwardlabs.com/2016/08/22/under-the-hood-of-the-variational-autoencoder-in.html)
-
+* Variational Autoencoders by Vu Pham
+  * [Variational Autoencoders 1: Overview](https://phvu.net/2017/02/26/variational-autoencoders-1-overview/)
+  * [Variational Autoencoders 2: Maths](https://phvu.net/2017/04/02/variational-autoencoders-2-maths/)
+  * [Variational Autoencoders 3: Training, Inference and comparison with other models](https://phvu.net/2017/04/02/variational-autoencoders-3-training-inference-and-comparison-with-other-models/)
 
 ## Candidates for future discussions:
 * [DNC](https://github.com/deepmind/dnc) (Differentiable Neural Computer)
