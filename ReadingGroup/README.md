@@ -13,9 +13,10 @@ The scheduled time for the next group discussion is [Sunday 7 May 2017 @ 8pm UTC
 * Main paper: [Auto-Encoding Variational Bayes](https://arxiv.org/abs/1312.6114)  
 
 Resources:
-* [Tutorial on Variational Autoencoders](https://arxiv.org/abs/1606.05908)  
-* [PART 1: Introducing Variational Autoencoders (in Prose and Code) by Miriam](http://blog.fastforwardlabs.com/2016/08/12/introducing-variational-autoencoders-in-prose-and.html)  
-* [PART 2: Under the Hood of the Variational Autoencoder (in Prose and Code) by Miriam](http://blog.fastforwardlabs.com/2016/08/22/under-the-hood-of-the-variational-autoencoder-in.html)
+* [Doersch Jun '16: Tutorial on Variational Autoencoders](https://arxiv.org/abs/1606.05908)  
+* Variational Autoencoders (in Prose and Code) by Miriam
+  [PART 1: Introducing Variational Autoencoders (in Prose and Code) by Miriam](http://blog.fastforwardlabs.com/2016/08/12/introducing-variational-autoencoders-in-prose-and.html)  
+  [PART 2: Under the Hood of the Variational Autoencoder (in Prose and Code) by Miriam](http://blog.fastforwardlabs.com/2016/08/22/under-the-hood-of-the-variational-autoencoder-in.html)
 * Variational Autoencoders by Vu Pham
   * [Variational Autoencoders 1: Overview](https://phvu.net/2017/02/26/variational-autoencoders-1-overview/)
   * [Variational Autoencoders 2: Maths](https://phvu.net/2017/04/02/variational-autoencoders-2-maths/)
