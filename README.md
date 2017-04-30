@@ -14,10 +14,13 @@ Fortnightly discussion (Sunday 8pm GMT) on a paper/topic of our choosing
 * [Andrew Ng's ML Coursera course](https://www.youtube.com/view_play_list?p=A89DCFA6ADACE599)
 * http://videolectures.net/Top/Computer_Science/Machine_Learning/
 
-## Misc resources
+## Community
+* THIS!
 * https://stats.stackexchange.com/
 * https://datascience.stackexchange.com/
 * https://www.reddit.com/r/MachineLearning/
+
+## Papers (arXiv)
 * https://arxiv.org/list/stat.ML/recent
 * http://arxiv-sanity.com/
 
