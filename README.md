@@ -5,7 +5,7 @@ Community repo for the `##machinelearning` and `##ml-ot` IRC channels on Freenod
 Fortnightly discussion (Sunday 8pm GMT) on a paper/topic of our choosing
 
 ## Getting started
-* [DeepLearning.TV YouTube playlist](https://www.youtube.com/playlist?list=PLjJh1vlSEYgvZ3ze_4pxKHNh1g5PId36-) -- 17 ~5-min vids, good starter -- introduces the main ideas at anon-technical level.
+* [DeepLearning.TV YouTube playlist](https://www.youtube.com/playlist?list=PLjJh1vlSEYgvZ3ze_4pxKHNh1g5PId36-) -- 17 ~5-min vids, good starter -- introduces the main ideas at a non-technical level.
 * [Andrew Ng's ML Coursera course](https://www.youtube.com/view_play_list?p=A89DCFA6ADACE599) -- best beginner course.
 * [Nielsen -- Neural Networks and Deep Learning](http://neuralnetworksanddeeplearning.com/index.html) -- online book, recommended for beginners.
 * [Hinton's Coursera course: Neural Networks for Machine Learning](https://www.coursera.org/learn/neural-networks) (Youtube playlist [here](https://www.youtube.com/playlist?list=PLoRl3Ht4JOcdU872GhiYWf6jwrk_SNhz9)) -- gets pretty advanced, and much of the later material is fast becoming obsolete (RBM, WakeSleep, DBM, DBN). Nevertheless Hinton is the single biggest contributor to modern ML, and it's worth persevering with.
@@ -45,19 +45,19 @@ Fortnightly discussion (Sunday 8pm GMT) on a paper/topic of our choosing
 
 
 # Who are we?
-If you are contributing to the channel, please consider private-messaging me an introductory text (freestyle it) & I'll add it here. It would be nice if we have some idea of who is who, who is up to what, etc. Tell us where you are based (so we can figure out your time zone).  Are you using ML for work or play?  What do you use it for?  Do you have a github repo?  Are you at a company/uni?  Care to say?  etc.
+If you are contributing to the channel, please consider private-messaging *pi-* an introductory text (freestyle ok) & I'll add it here. It would be nice if we have some idea of who is who, who is up to what, etc. Tell us where you are based (so we can figure out your time zone).  Are you using ML for work or play?  What do you use it for?  Do you have a github repo?  Are you at a company/uni?  Care to say?  etc.
 
-* pi- (Oxford UK, freelance coder, https://github.com/p-i-)  
-  ML Interests: Primarily the theory.  The new stuff as it comes out (GANs, VAEs, etc.), biologically plausible models (spiking neuron,...), coding in Julia.  
-  Relevant skills: IPython / numpy, Matlab, Julia  
+* **pi-** (Oxford UK, freelance coder, https://github.com/p-i-)  
+  *ML Interests:* Primarily the theory. The new stuff as it comes out (GANs, VAEs, etc.), biologically plausible models (spiking neuron,...), coding in Julia.  
+  *Relevant skills:* IPython / numpy, Matlab, Julia  
   My background is coding, math, DSP. I'm trying to get myself up to speed with modern ML thinking & get a grip on the probabilistic math. I'm keeping an eye on Julia. My goal is to become a digital nomad working with ML.
 
-* pasky (Prague CZ, Github: https://github.com/pasky)  
-  ML Interests: Deep architectures, attention models, transfer learning, practice rather than theory  
+* **pasky** (Prague CZ, Github: https://github.com/pasky)  
+  *ML Interests:* Deep architectures, attention models, transfer learning, practice rather than theory  
   In the past, I worked in academia and freelance on a variety of AI / machine learning problems. My main focus was Computer Go (my masters was one of the sort-of-AlphaGo-predecessor programs) and then NLP (question answering and related text understanding problems). Lately I do a lot of vision-like stuff - I co-founded an AI startup Rossum where we are reading invoices using neural networks. I'm a hardcore Keras fan.
 
-* brand0 (Washington, USA, Github: https://github.com/brandonrobertz)
-  ML Interests: character-level modeling, text clustering, outlier detection, application to journalism
+* **brand0** (Washington, USA, Github: https://github.com/brandonrobertz)
+  *ML Interests:* character-level modeling, text clustering, outlier detection, application to journalism  
   I'm an independent researcher with professional experience in investigative journalism and publishing, machine learning, and full-stack development in the tech industry. Currently editing a zine exploring machine learning applied to journalism called [Artificial Informer](http://artificialinformer.com).
 
  - - - - - - -
@@ -69,10 +69,10 @@ The IRC ML community is growing -- let's make this a really good ML resource. To
 I recommend organic growth -- not being overly hasty to overstructure too soon. That being said, each of these ideas probably wants its own folder + README.md.  GitHub allows relative links so it should be possible to keep everything tidy & build reusable structure.
 
 * **Getting started**  
-  Rather than some big unhelpful list of links, maybe we can provide a path to actually getting the first bite on the bobapple.
+  Rather than some big unhelpful list of links, maybe we can provide a path to actually getting the first bite on the bobapple. (*underway*)
   
 * **Introduce ourselves**  
-  Many of us have a homepage somewhere, it's good to see what people are working on.  
+  Many of us have a homepage somewhere, it's good to see what people are working on.  (*underway*)
 
 * **Detailing a birds eye view of the tree/web of contemporary ML**  
   http://deeplearningbook.org/  
