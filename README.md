@@ -45,15 +45,17 @@ Fortnightly discussion (Sunday 8pm GMT) on a paper/topic of our choosing
 
 
 # Who are we?
-If you are contributing to the channel, please consider private-messaging me an introductory text (freestyle it) & I'll add it here. It would be nice if we have some idea of who is who, who is up to what, etc.
+If you are contributing to the channel, please consider private-messaging me an introductory text (freestyle it) & I'll add it here. It would be nice if we have some idea of who is who, who is up to what, etc. Tell us where you are based (so we can figure out your time zone).  Are you using ML for work or play?  What do you use it for?  Do you have a github repo?  Are you at a company/uni?  Care to say?  etc.
 
-* pi-  
-  Oxford, UK, freelancer.  
-  ML Interests: the new stuff as it comes out (GANs, VAEs, etc.), biologically plausible models (spiking neuron,...), coding in Julia.  
+* pi- (Oxford UK, freelance coder, https://github.com/p-i-)  
+  ML Interests: Primarily the theory.  The new stuff as it comes out (GANs, VAEs, etc.), biologically plausible models (spiking neuron,...), coding in Julia.  
   Relevant skills: IPython / numpy, Matlab, Julia  
-  Github: https://github.com/p-i-  
   My background is coding, math, DSP. I'm trying to get myself up to speed with modern ML thinking & get a grip on the probabilistic math. I'm keeping an eye on Julia. My goal is to become a digital nomad working with ML.
 
+* pasky (Prague CZ, Github: https://github.com/pasky)  
+  ML Interests: Deep architectures, attention models, transfer learning, practice rather than theory  
+  In the past, I worked in academia and freelance on a variety of AI / machine learning problems. My main focus was Computer Go (my masters was one of the sort-of-AlphaGo-predecessor programs) and then NLP (question answering and related text understanding problems). Lately I do a lot of vision-like stuff - I co-founded an AI startup Rossum where we are reading invoices using neural networks. I'm a hardcore Keras fan.
+  
 - - - - - - - 
 
 # Ideas for this resource:
