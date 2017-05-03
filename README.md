@@ -4,32 +4,49 @@ Community repo for the `##machinelearning` and `##ml-ot` IRC channels on Freenod
 ## [Reading Group](ReadingGroup/README.md)
 Fortnightly discussion (Sunday 8pm GMT) on a paper/topic of our choosing
 
+## Getting started
+* [Andrew Ng's ML Coursera course](https://www.youtube.com/view_play_list?p=A89DCFA6ADACE599) -- best beginner course.
+* [Nielsen -- Neural Networks and Deep Learning](http://neuralnetworksanddeeplearning.com/index.html) -- online book, recommended for beginners.
+* [Hinton's Coursera course: Neural Networks for Machine Learning](https://www.coursera.org/learn/neural-networks) (Youtube playlist [here](https://www.youtube.com/playlist?list=PLoRl3Ht4JOcdU872GhiYWf6jwrk_SNhz9)) -- gets pretty advanced, and much of the later material is fast becoming obsolete (RBM, WakeSleep, DBM, DBN). Nevertheless Hinton is the single biggest contributor to modern ML, and it's worth persevering with.
+
 ## ML Software
 * http://mloss.org/software/
 * http://jmlr.org/mloss/
 * [Joseph Misiti's ML links](https://github.com/josephmisiti/awesome-machine-learning)
 * http://deeplearning.net/software_links/
 
-## Vidz
-* [Andrew Ng's ML Coursera course](https://www.youtube.com/view_play_list?p=A89DCFA6ADACE599) -- best beginner course
-* [Hinton's Coursera course: Neural Networks for Machine Learning](https://www.coursera.org/learn/neural-networks) (Youtube playlist [here](https://www.youtube.com/playlist?list=PLoRl3Ht4JOcdU872GhiYWf6jwrk_SNhz9))
+## Video Lectures
 * http://videolectures.net/Top/Computer_Science/Machine_Learning/
 
-## Books
-* http://deeplearningbook.org/ (The keep learning Bible; Dec 2016, Goodfellow, Bengio, Courville)
+## Books & book-like
+* http://deeplearningbook.org/ -- The deep-learning Bible; Dec 2016, Goodfellow, Bengio, Courville (pdf [here](https://github.com/HFTrader/DeepLearningBook pdf))
+* [arXiv paper: On the Origin of Deep Learning](https://arxiv.org/abs/1702.07800)
+* [arXiv paper: Deep Learning in Neural Networks: An Overview](https://arxiv.org/abs/1404.7828) (link-dense)
+* [The Elements of Statistical Learning](http://statweb.stanford.edu/~tibs/ElemStatLearn/)
 
-## Community
+## Reinforcement Learning
+* [David Silver's RL course](http://www0.cs.ucl.ac.uk/staff/d.silver/web/Teaching.html)  [YouTube playlist](https://www.youtube.com/playlist?list=PLMZdRRhAoLnKFxZlmFoFp0uHVvN2PSE9T)
+* http://rll.berkeley.edu/deeprlcourse/
+* https://www.quora.com/What-are-the-best-books-about-reinforcement-learning
+
+## Communities
 * THIS!
 * https://stats.stackexchange.com/
 * https://datascience.stackexchange.com/
 * https://www.reddit.com/r/MachineLearning/
 
-## Papers (arXiv)
+## arXiv (Papers)
 * https://arxiv.org/list/stat.ML/recent
 * http://arxiv-sanity.com/
 
 ## Misc
 [π's scattered links](http://pipad.org/wiki/index.php/Machine_Learning)
+
+
+# Who are we?
+
+* pi-  
+  My background is coding and math. I'm trying to get myself up to speed with modern ML thinking & get a grip on the probabilistic math. I'm keeping an eye on Julia. My goal is to become a digital nomad working with ML.
 
 - - - - - - - 
 
@@ -38,12 +55,6 @@ Fortnightly discussion (Sunday 8pm GMT) on a paper/topic of our choosing
 The IRC ML community is growing -- let's make this a really good ML resource. Together we can nudge it into shape from different angles.
 
 I recommend organic growth -- not being overly hasty to overstructure too soon. That being said, each of these ideas probably wants its own folder + README.md.  GitHub allows relative links so it should be possible to keep everything tidy & build reusable structure.
-
-* **Expand the channel topic **. 
-  I've just done this (above) (π)
-
-* **Reading group** (already started).  
-  One idea might be for every talk to have its own folder, maybe containing source code + log transcript + {README.md linking to the arXiv paper & the above}.  
 
 * **Getting started**  
   Rather than some big unhelpful list of links, maybe we can provide a path to actually getting the first bite on the bobapple.
