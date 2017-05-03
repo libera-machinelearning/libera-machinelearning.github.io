@@ -11,8 +11,12 @@ Fortnightly discussion (Sunday 8pm GMT) on a paper/topic of our choosing
 * http://deeplearning.net/software_links/
 
 ## Vidz
-* [Andrew Ng's ML Coursera course](https://www.youtube.com/view_play_list?p=A89DCFA6ADACE599)
+* [Andrew Ng's ML Coursera course](https://www.youtube.com/view_play_list?p=A89DCFA6ADACE599) -- best beginner course
+* [Hinton's Coursera course: Neural Networks for Machine Learning](https://www.coursera.org/learn/neural-networks) (Youtube playlist [here](https://www.youtube.com/playlist?list=PLoRl3Ht4JOcdU872GhiYWf6jwrk_SNhz9))
 * http://videolectures.net/Top/Computer_Science/Machine_Learning/
+
+## Books
+* http://deeplearningbook.org/ (The keep learning Bible; Dec 2016, Goodfellow, Bengio, Courville)
 
 ## Community
 * THIS!
@@ -23,6 +27,9 @@ Fortnightly discussion (Sunday 8pm GMT) on a paper/topic of our choosing
 ## Papers (arXiv)
 * https://arxiv.org/list/stat.ML/recent
 * http://arxiv-sanity.com/
+
+## Misc
+[π's scattered links](http://pipad.org/wiki/index.php/Machine_Learning)
 
 - - - - - - - 
 
