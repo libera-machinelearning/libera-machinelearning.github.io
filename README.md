@@ -45,9 +45,14 @@ Fortnightly discussion (Sunday 8pm GMT) on a paper/topic of our choosing
 
 
 # Who are we?
+If you are contributing to the channel, please consider private-messaging me an introductory text (freestyle it) & I'll add it here. It would be nice if we have some idea of who is who, who is up to what, etc.
 
 * pi-  
-  My background is coding and math. I'm trying to get myself up to speed with modern ML thinking & get a grip on the probabilistic math. I'm keeping an eye on Julia. My goal is to become a digital nomad working with ML.
+  Oxford, UK, freelancer.  
+  ML Interests: the new stuff as it comes out (GANs, VAEs, etc.), biologically plausible models (spiking neuron,...), coding in Julia.  
+  Relevant skills: IPython / numpy, Matlab, Julia  
+  Github: https://github.com/p-i-  
+  My background is coding, math, DSP. I'm trying to get myself up to speed with modern ML thinking & get a grip on the probabilistic math. I'm keeping an eye on Julia. My goal is to become a digital nomad working with ML.
 
 - - - - - - - 
 
