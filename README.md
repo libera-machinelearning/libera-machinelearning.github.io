@@ -45,8 +45,8 @@ Fortnightly discussion (Sunday 8pm GMT) on a paper/topic of our choosing
 
 ## Misc
 * [π's scattered links](http://pipad.org/wiki/index.php/Machine_Learning)
-* [Karpathy's CS231 Stanford course](http://cs231n.stanford.edu/) [*](http://karpathy.github.io/neuralnets/) 
-
+* [Karpathy's CS231 Stanford course](http://cs231n.stanford.edu/) or his [Hacker's guide to Neural Networks](http://karpathy.github.io/neuralnets/) 
+* [Every single Machine Learning course on the internet, ranked by your reviews](https://medium.freecodecamp.com/every-single-machine-learning-course-on-the-internet-ranked-by-your-reviews-3c4a7b8026c0)
 
 # Who are we?
 If you are contributing to the channel, please consider private-messaging *pi-* an introductory text (freestyle ok) & I'll add it here (or submit a PR). It would be nice if we have some idea of who is who, who is up to what, etc. Tell us where you are based (so we can figure out your time zone).  Are you using ML for work or play?  What do you use it for?  Do you have a github repo?  Are you at a company/uni?  Care to say?  etc.
