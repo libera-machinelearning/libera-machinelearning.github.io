@@ -21,6 +21,9 @@ Resources:
   * [Variational Autoencoders 1: Overview](https://phvu.net/2017/02/26/variational-autoencoders-1-overview/)
   * [Variational Autoencoders 2: Maths](https://phvu.net/2017/04/02/variational-autoencoders-2-maths/)
   * [Variational Autoencoders 3: Training, Inference and comparison with other models](https://phvu.net/2017/04/02/variational-autoencoders-3-training-inference-and-comparison-with-other-models/)
+* [Variational Inference: A Review for Statisticians](https://arxiv.org/abs/1601.00670)
+* [Tutorial - What is a variational autoencoder by Jaan Altosaar](https://jaan.io/what-is-variational-autoencoder-vae-tutorial/)
+ * This links to a very clean [Tensorflow implementation](https://jaan.io/what-is-variational-autoencoder-vae-tutorial/)
 
 ## Candidates for future discussions:
 * [DNC](https://github.com/deepmind/dnc) (Differentiable Neural Computer)
