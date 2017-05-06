@@ -68,6 +68,10 @@ If you are contributing to the channel, please consider private-messaging *pi-* 
   *ML Interests:* Generative Models, Production-Ready (End-User Distributable) Systems, Building ML Frameworks  
   *Relevant skills:* Python, Java, Kotlin, C, JavaScript, Rust  
   Started a PhD in ML.  Finished with an MS.  Not very good.  I'm interested in procedural content creation and generative machine learning models, particularly conversational chat bots and image generation.  I enjoy game development as a hobby and do my best to bring the two areas together whenever I can.
+  
+* **rofer** (Pittsburgh, USA, Software Engineer, https://github.com/rhofour)  
+  *ML Interests:* Sample-efficient Deep RL methods, variational methods, generative models  
+  Ever since I left undergrad I've been trying to work towards a graduate level understanding of ML methods while working fulltime. Right now I'm particularly interested in improving the sample efficiency of Q-learning methods.
 
  - - - - - - -
 
