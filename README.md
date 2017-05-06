@@ -60,9 +60,14 @@ If you are contributing to the channel, please consider private-messaging *pi-* 
   *ML Interests:* Deep architectures, attention models, transfer learning, practice rather than theory  
   In the past, I worked in academia and freelance on a variety of AI / machine learning problems. My main focus was Computer Go (my masters was one of the sort-of-AlphaGo-predecessor programs) and then NLP (question answering and related text understanding problems). Lately I do a lot of vision-like stuff - I co-founded an AI startup Rossum where we are reading invoices using neural networks. I'm a hardcore Keras fan.
 
-* **brand0** (Washington, USA, Github: https://github.com/brandonrobertz)
+* **brand0** (Washington, USA, Github: https://github.com/brandonrobertz)  
   *ML Interests:* character-level modeling, text clustering, outlier detection, application to journalism  
   I'm an independent researcher with professional experience in investigative journalism and publishing, machine learning, and full-stack development in the tech industry. Currently editing a zine exploring machine learning applied to journalism called [Artificial Informer](http://artificialinformer.com).
+
+* **jo_** (California, USA, Researcher, https://github.com/josephcatrambone)  
+  *ML Interests:* Generative Models, Production-Ready (End-User Distributable) Systems, Building ML Frameworks  
+  *Relevant skills:* Python, Java, Kotlin, C, JavaScript, Rust  
+  Started a PhD in ML.  Finished with an MS.  Not very good.  I'm interested in procedural content creation and generative machine learning models, particularly conversational chat bots and image generation.  I enjoy game development as a hobby and do my best to bring the two areas together whenever I can.
 
  - - - - - - -
 
