@@ -62,7 +62,8 @@
 # By topic
 
 ## Neural networks
-* [Hacker's guide to Neural Networks](http://karpathy.github.io/neuralnets/) 
+* [Hacker's guide to Neural Networks](http://karpathy.github.io/neuralnets/)
+* [arXiv] [Neural Networks for Beginners. A fast implementation in Matlab, Torch, TensorFlow (2017)](https://arxiv.org/abs/1703.05298)
 
 ## Deep learning
 * [arXiv] [On the Origin of Deep Learning (2017)](https://arxiv.org/abs/1702.07800)
