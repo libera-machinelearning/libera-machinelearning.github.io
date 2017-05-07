@@ -12,6 +12,6 @@ Machine Learning | No small talk. No public logging. Offtopic chat only in ##ml-
 
 ## Links
 * [Resources](resources.md) - important machine learning resources
-* [Reading Group](ReadingGroup/README.md) - discussion on alternate Sundays at 8pm GMT on a topic of our choosing
+* [Reading Group](ReadingGroup/README.md) - discussion on alternate Sundays on a topic of our choosing
 * [Users](users.md) - select list of channel contributors
 * [Ideas](ideas.md) - ideas for the channel and this repo
