@@ -43,6 +43,7 @@ Proficiency in [Python 3](https://www.python.org/) and [R](https://www.r-project
 * [Eric Jang](http://blog.evjang.com/) -- great for Variational Methods & VAEs.
 * [Tom Breloff](http://www.breloff.com/blog/) -- ML in Julia
 * [Karpathy](http://karpathy.github.io/) -- e.g. Pong from Pixels
+* [inFERENCe](http://www.inference.vc)
 
 ## Papers
 * https://arxiv.org/list/stat.ML/recent
