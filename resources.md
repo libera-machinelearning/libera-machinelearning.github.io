@@ -36,6 +36,14 @@
 * https://arxiv.org/list/stat.ML/recent
 * http://arxiv-sanity.com/
 
+## Feeds
+* [arXiv stat.ML](https://export.arxiv.org/rss/stat.ML/recent)
+* [arXiv cs.LG](https://export.arxiv.org/rss/cs.LG/recent)
+* [InfoWorld AI](http://www.infoworld.com/category/artificial-intelligence/index.rss)
+* [Distill.pub](http://distill.pub/rss.xml)
+* [DeepMind](https://deepmind.com/blog/feed/basic/)
+* [OpenAI](https://blog.openai.com/rss/)
+
 ## Misc
 * [π's scattered links](http://pipad.org/wiki/index.php/Machine_Learning)
 * [Karpathy's CS231 Stanford course](http://cs231n.stanford.edu/) or his [Hacker's guide to Neural Networks](http://karpathy.github.io/neuralnets/) 
