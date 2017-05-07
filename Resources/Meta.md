@@ -1,4 +1,15 @@
-# Meta resources
+Contents:
+- [Software](#software)
+- [Videos](#videos)
+- [Courses](#courses)
+- [Books](#books)
+- [Communities](#communities)
+- [Blogs](#blogs)
+- [Papers](#papers)
+- [Feeds](#feeds)
+- [Misc](#misc)
+
+<!-- TOC can be updated manually using http://ecotrust-canada.github.io/markdown-toc/ -->
 
 ## Software
 * http://mloss.org/software/
