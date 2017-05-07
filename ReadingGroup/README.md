@@ -6,7 +6,7 @@ NOTE: Reading Group is now every other Sunday! A new paper is chosen by the foll
 
 <!-- Short URL: https://j.mp/ML-ReadingGrp -->
 
-The scheduled time for the next group discussion is [Sunday 7 May 2017 @ 8pm UTC](https://www.wolframalpha.com/input/?i=next+Sunday+8+pm+UTC).
+The scheduled time for the next group discussion is Sunday 7 May 2017 at [8pm UTC](https://www.wolframalpha.com/input/?i=Sunday+8+pm+UTC).
 
 
 ## Next discussion: VAE (Variational AutoEncoders) (Sunday 7 May 2017 @ 8pm UTC)
