@@ -32,7 +32,10 @@
 * https://www.reddit.com/r/MachineLearning/
 
 ## Blogs
-* [Colah](http://colah.github.io/)
+* [Colah](http://colah.github.io/) -- e.g. "Neural Networks, Manifolds, and Topology"
+* [Eric Jang](http://blog.evjang.com/) -- great for Variational Methods & VAEs.
+* [Tom Breloff](http://www.breloff.com/blog/) -- ML in Julia
+* [Karpathy](http://karpathy.github.io/) -- e.g. Pong from Pixels
 
 ## arXiv (Papers)
 * https://arxiv.org/list/stat.ML/recent
