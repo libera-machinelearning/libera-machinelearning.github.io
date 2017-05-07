@@ -36,4 +36,9 @@ If you contribute to the channel, please consider private-messaging the user *pi
   *ML Interests:* Sample-efficient Deep RL methods, variational methods, generative models  
   Ever since I left undergrad I've been trying to work towards a graduate level understanding of ML methods while working fulltime. Right now I'm particularly interested in improving the sample efficiency of Q-learning methods.
   
+* **[unixpickle](https://github.com/unixpickle)**  
+  *ML Interests:* meta-learning (specifically deep meta-learning); recurrent neural networks, including memory-augmented neural networks.  
+  *Relevant Skills:* [Go](https://golang.org), Numerical Analysis, MATLAB/GNU Octave  
+  *Background:* I am a long-time programmer who became interested in AI several years ago. Since then, I have been implementing my own ML software, including the [anynet](https://github.com/unixpickle/anynet) package for deep learning. Currently, I am trying to develop meta-learning techniques that can use prior experience to solve new problems as efficiently as humans.
+  
 <!-- New entries must be in sorted order. ->
