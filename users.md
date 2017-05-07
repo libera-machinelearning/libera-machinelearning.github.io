@@ -3,11 +3,16 @@
 ## Adding yourself
 If you contribute to the channel, please consider private-messaging the user *pi-* (or *p-i-*) an introductory text about you for inclusion here. (Freestyle is ok.) Better yet, submit a pull request. It would be nice if we have some idea of who is who, who is up to what, etc. Tell us where you are based. Are you using ML for work or play? What do you use it for? Do you have a GitHub repo of interest?  Are you at a company or a university? Anything else you care to say?
 
-## List
-* **[brand0](https://github.com/brandonrobertz)** (Washington, USA)  
+## Staff
+* **[brand0](https://github.com/brandonrobertz)** (Washington, USA; Independent researcher)  
   *ML Interests:* character-level modeling, text clustering, outlier detection, application to journalism  
   I'm an independent researcher with professional experience in investigative journalism and publishing, machine learning, and full-stack development in the tech industry. Currently editing a zine exploring machine learning applied to journalism called [Artificial Informer](http://artificialinformer.com).
+  
+ * **[RandIter](https://github.com/impredicative)** (New York, USA; Software engineer)  
+  I'm a backend software engineer in finance, having previously worked for many years in academia.  
+  *Relevant skills:* Python
 
+## Users
 * **[jo_](https://github.com/josephcatrambone)** (California, USA, Researcher)  
   *ML Interests:* Generative Models, Production-Ready (End-User Distributable) Systems, Building ML Frameworks  
   *Relevant skills:* Python, Java, Kotlin, C, JavaScript, Rust  
@@ -17,11 +22,11 @@ If you contribute to the channel, please consider private-messaging the user *pi
   *ML Interests:* Deep architectures, attention models, transfer learning, practice rather than theory  
   In the past, I worked in academia and freelance on a variety of AI / machine learning problems. My main focus was Computer Go (my masters was one of the sort-of-AlphaGo-predecessor programs) and then NLP (question answering and related text understanding problems). Lately I do a lot of vision-like stuff - I co-founded an AI startup Rossum where we are reading invoices using neural networks. I'm a hardcore Keras fan.
 
-* **[pi-](https://github.com/p-i-)** (Oxford, UK, Freelance coder)  
+* **[pi-](https://github.com/p-i-)** (Oxford, UK; Freelance coder)  
   *ML Interests:* Primarily the theory. The new stuff as it comes out (GANs, VAEs, etc.), biologically plausible models (spiking neuron,...), coding in Julia.  
   *Relevant skills:* IPython / numpy, Matlab, Julia  
   My background is coding, math, DSP. I'm trying to get myself up to speed with modern ML thinking & get a grip on the probabilistic math. I'm keeping an eye on Julia. My goal is to become a digital nomad working with ML.
   
-* **[rofer](https://github.com/rhofour)** (Pittsburgh, USA, Software Engineer)  
+* **[rofer](https://github.com/rhofour)** (Pittsburgh, USA; Software engineer)  
   *ML Interests:* Sample-efficient Deep RL methods, variational methods, generative models  
   Ever since I left undergrad I've been trying to work towards a graduate level understanding of ML methods while working fulltime. Right now I'm particularly interested in improving the sample efficiency of Q-learning methods.
