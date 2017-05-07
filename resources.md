@@ -24,7 +24,7 @@
 * [Karpathy's CS231 Stanford course](http://cs231n.stanford.edu/)
 
 ## Books
-* http://deeplearningbook.org/ -- The deep-learning Bible; Dec 2016, Goodfellow, Bengio, Courville (pdf [here](https://github.com/HFTrader/DeepLearningBook))
+* http://www.deeplearningbook.org/ -- The deep-learning Bible; Dec 2016, Goodfellow, Bengio, Courville (pdf [here](https://github.com/HFTrader/DeepLearningBook))
 * [The Elements of Statistical Learning](https://statweb.stanford.edu/~tibs/ElemStatLearn/)
 
 ## Communities
