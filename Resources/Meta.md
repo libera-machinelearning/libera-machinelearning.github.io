@@ -18,8 +18,8 @@
 
 ## Books
 * http://www.deeplearningbook.org/ -- The deep-learning Bible; Dec 2016, Goodfellow, Bengio, Courville (pdf [here](https://github.com/HFTrader/DeepLearningBook))
-* [The Elements of Statistical Learning](https://statweb.stanford.edu/~tibs/ElemStatLearn/)
-* [(2005) David MacKay: Information Theory, Pattern Recognition and Neural Networks](http://www.inference.phy.cam.ac.uk/itprnn/book.html)
+* [The Elements of Statistical Learning (2009)](https://statweb.stanford.edu/~tibs/ElemStatLearn/)
+* [David MacKay: Information Theory, Pattern Recognition and Neural Networks (2005)](http://www.inference.phy.cam.ac.uk/itprnn/book.html)
 
 ## Communities
 * THIS!
