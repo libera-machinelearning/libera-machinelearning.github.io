@@ -1,4 +1,5 @@
 Contents:
+<!-- TOC can be updated manually using http://ecotrust-canada.github.io/markdown-toc/ -->
 - [Neural networks](#neural-networks)
 - [Deep learning](#deep-learning)
   * [Overview](#overview)
@@ -8,8 +9,6 @@ Contents:
     + [Comparison](#comparison)
     + [TensorFlow](#tensorflow)
 - [Reinforcement learning](#reinforcement-learning)
-
-<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
 
 ## Neural networks
 * [Hacker's guide to Neural Networks](http://karpathy.github.io/neuralnets/)
