@@ -9,34 +9,7 @@ NOTE: Reading Group is now every other Sunday! A new paper is chosen by the foll
 The scheduled time for the next group discussion is Sunday 7 May 2017 at [8pm UTC](https://www.wolframalpha.com/input/?i=Sunday+8+pm+UTC).
 
 
-## Next discussion: VAE (Variational AutoEncoders) (Sunday 7 May 2017 @ 8pm UTC)
-* Main paper: [Auto-Encoding Variational Bayes](https://arxiv.org/abs/1312.6114)  
-
-Resources (roughly in order they should be approached):  
-
-* Eric Jang
-  * [A Beginner's Guide to Variational Methods: Mean-Field Approximation](http://blog.evjang.com/2016/08/variational-bayes.html)
-
-* Variational Autoencoders (in Prose and Code) by Miriam.
-  * [PART 1: Introducing Variational Autoencoders (in Prose and Code) by Miriam](http://blog.fastforwardlabs.com/2016/08/12/introducing-variational-autoencoders-in-prose-and.html)
-  * [PART 2: Under the Hood of the Variational Autoencoder (in Prose and Code) by Miriam](http://blog.fastforwardlabs.com/2016/08/22/under-the-hood-of-the-variational-autoencoder-in.html).
-  * [code on GitHub](https://github.com/fastforwardlabs/vae-tf/tree/master)
-
-* Jaan Altosaar
-  * [Tutorial - What is a variational autoencoder by Jaan Altosaar](https://jaan.io/what-is-variational-autoencoder-vae-tutorial/)
-  * [A very clean Tensorflow implementation](https://github.com/altosaar/vae/blob/master/vae.py)
-
-* [(ArXiv Doersch, June '16) Tutorial on Variational Autoencoders](https://arxiv.org/abs/1606.05908)  
-
-* Variational Autoencoders by Vu Pham (elaborates on Doersch)
-  * [Variational Autoencoders 1: Overview](https://phvu.net/2017/02/26/variational-autoencoders-1-overview/)
-  * [Variational Autoencoders 2: Maths](https://phvu.net/2017/04/02/variational-autoencoders-2-maths/)
-  * [Variational Autoencoders 3: Training, Inference and comparison with other models](https://phvu.net/2017/04/02/variational-autoencoders-3-training-inference-and-comparison-with-other-models/)
-
-* [(ArXiv Blei, Nov '16) Variational Inference: A Review for Statisticians](https://arxiv.org/abs/1601.00670)
-
-* VIDEO: [(DeFreitas)Deep Learning Lecture 14: Karol Gregor on Variational Autoencoders and Image Generation](https://www.youtube.com/watch?v=P78QYjWh5sM) <-- deriving the theory from an information theoretic perspective (ouch?)
-
+## Next discussion: ??  (Sunday 21 May 2017 @ 7pm UTC)
 
 ## Candidates for future discussions:
 * [DNC](https://github.com/deepmind/dnc) (Differentiable Neural Computer)
@@ -61,3 +34,32 @@ Resources (roughly in order they should be approached):
         - [StackGAN: Text to Photo-realistic Image Synthesis with Stacked Generative Adversarial Networks](https://arxiv.org/abs/1612.03242)  
         ^ note both papers were submitted within three days one another (10/13 Dec '16)  
 
+* 2017.05.07 VAE (Variational AutoEncoders)
+ [log](logs/2017.05.07_VAE)
+
+  * Main paper: [Auto-Encoding Variational Bayes](https://arxiv.org/abs/1312.6114)  
+
+  Resources (roughly in order they should be approached):  
+
+  * Eric Jang
+    * [A Beginner's Guide to Variational Methods: Mean-Field Approximation](http://blog.evjang.com/2016/08/variational-bayes.html)
+
+  * Variational Autoencoders (in Prose and Code) by Miriam.
+    * [PART 1: Introducing Variational Autoencoders (in Prose and Code) by Miriam](http://blog.fastforwardlabs.com/2016/08/12/introducing-variational-autoencoders-in-prose-and.html)
+    * [PART 2: Under the Hood of the Variational Autoencoder (in Prose and Code) by Miriam](http://blog.fastforwardlabs.com/2016/08/22/under-the-hood-of-the-variational-autoencoder-in.html).
+    * [code on GitHub](https://github.com/fastforwardlabs/vae-tf/tree/master)
+
+  * Jaan Altosaar
+    * [Tutorial - What is a variational autoencoder by Jaan Altosaar](https://jaan.io/what-is-variational-autoencoder-vae-tutorial/)
+    * [A very clean Tensorflow implementation](https://github.com/altosaar/vae/blob/master/vae.py)
+
+  * [(ArXiv Doersch, June '16) Tutorial on Variational Autoencoders](https://arxiv.org/abs/1606.05908)  
+
+  * Variational Autoencoders by Vu Pham (elaborates on Doersch)
+    * [Variational Autoencoders 1: Overview](https://phvu.net/2017/02/26/variational-autoencoders-1-overview/)
+    * [Variational Autoencoders 2: Maths](https://phvu.net/2017/04/02/variational-autoencoders-2-maths/)
+    * [Variational Autoencoders 3: Training, Inference and comparison with other models](https://phvu.net/2017/04/02/variational-autoencoders-3-training-inference-and-comparison-with-other-models/)
+
+  * [(ArXiv Blei, Nov '16) Variational Inference: A Review for Statisticians](https://arxiv.org/abs/1601.00670)
+
+* VIDEO: [(DeFreitas)Deep Learning Lecture 14: Karol Gregor on Variational Autoencoders and Image Generation](https://www.youtube.com/watch?v=P78QYjWh5sM) <-- deriving the theory from an information theoretic perspective (ouch?)
