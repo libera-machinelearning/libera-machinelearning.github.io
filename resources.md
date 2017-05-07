@@ -17,7 +17,7 @@
 * http://videolectures.net/Top/Computer_Science/Machine_Learning/
 
 ## Books
-* http://deeplearningbook.org/ -- The deep-learning Bible; Dec 2016, Goodfellow, Bengio, Courville (pdf [here](https://github.com/HFTrader/DeepLearningBook pdf))
+* http://deeplearningbook.org/ -- The deep-learning Bible; Dec 2016, Goodfellow, Bengio, Courville (pdf [here](https://github.com/HFTrader/DeepLearningBook))
 * [The Elements of Statistical Learning](https://statweb.stanford.edu/~tibs/ElemStatLearn/)
 
 ## Communities
