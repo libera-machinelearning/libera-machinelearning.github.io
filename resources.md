@@ -1,6 +1,6 @@
 
 # Getting started
-Proficiency in [Python 3](https://www.python.org/) and [R](https://www.r-project.org/) is strongly recommended for practicing modern machine learning. Only after you learn these, here are some basic starter resources for machine learning:
+Proficiency in [Python 3](https://www.python.org/) and [R](https://www.r-project.org/) is strongly recommended for practicing modern machine learning. Only after learning these, here are some basic starter resources for machine learning:
 
 * [DeepLearning.TV YouTube playlist](https://www.youtube.com/playlist?list=PLjJh1vlSEYgvZ3ze_4pxKHNh1g5PId36-) -- 17 ~5-min vids, good starter -- introduces the main ideas at a non-technical level.
 * [Andrew Ng's ML Coursera course](https://www.youtube.com/view_play_list?p=A89DCFA6ADACE599) -- best beginner course.
