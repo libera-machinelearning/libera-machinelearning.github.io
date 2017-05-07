@@ -17,6 +17,11 @@ If you contribute to the channel, please consider private-messaging the user *pi
   *Relevant skills:* Python
 
 ## Users
+* **[Henry_Jia](https://github.com/HenryJia)** (Axminster, UK; Student)  
+  *ML Interests:* General deep learning for computer vision and more  
+  *Relevent Skills:* C/C++, python, Theano/Keras, MatLab/GNU Octave  
+  *Background:* I'm a student in a UK high school, and will be graduating to university soon. I also work remotely as a machine learning researcher/engineer for a Silicon Valley tech firm. In addition, I'm a part time Kaggler whenever a deep learning challenge pops up.
+  
 * **[jo_](https://github.com/josephcatrambone)** (California, USA; Researcher)  
   *ML Interests:* Generative Models, Production-Ready (End-User Distributable) Systems, Building ML Frameworks  
   *Relevant skills:* Python, Java, Kotlin, C, JavaScript, Rust  
@@ -30,9 +35,5 @@ If you contribute to the channel, please consider private-messaging the user *pi
 * **[rofer](https://github.com/rhofour)** (Pittsburgh, USA; Software engineer)  
   *ML Interests:* Sample-efficient Deep RL methods, variational methods, generative models  
   Ever since I left undergrad I've been trying to work towards a graduate level understanding of ML methods while working fulltime. Right now I'm particularly interested in improving the sample efficiency of Q-learning methods.
-
-* **[Henry_Jia](https://github.com/HenryJia)** (Axminster, UK; High School Student)  
-  *ML Interests:* General deep learning for computer vision and more  
-  *Relevent Skills:* C/C++, python, Theano/Keras, MatLab/GNU Octave  
-  *Background:* I'm a student in a UK high school, and will be graduating to university soon. I also work remotely as a machine learning researcher/engineer for a Silicon Valley tech firm. In addition, I'm a part time Kaggler whenever a deep learning challenge pops up.
   
+<!-- New entries must be in sorted order. ->
