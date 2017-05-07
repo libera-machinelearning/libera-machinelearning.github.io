@@ -1,4 +1,5 @@
 Contents:
+<!-- TOC can be updated manually using http://ecotrust-canada.github.io/markdown-toc/ -->
 - [Software](#software)
 - [Videos](#videos)
 - [Courses](#courses)
@@ -9,7 +10,6 @@ Contents:
 - [Feeds](#feeds)
 - [Misc](#misc)
 
-<!-- TOC can be updated manually using http://ecotrust-canada.github.io/markdown-toc/ -->
 
 ## Software
 * http://mloss.org/software/
