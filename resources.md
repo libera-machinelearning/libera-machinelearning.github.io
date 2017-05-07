@@ -70,6 +70,10 @@
 ### Comparison
 * [arXiv] [Comparative Study of Deep Learning Software Frameworks (2016)](https://arxiv.org/abs/1511.06435)
 * [arXiv] [Benchmarking State-of-the-Art Deep Learning Software Tools (2017)](https://arxiv.org/abs/1608.07249)
+### TensorFlow
+* [arXiv] [TensorFlow: Large-Scale Machine Learning on Heterogeneous Distributed Systems (2016)](https://arxiv.org/abs/1603.04467)
+* [arXiv] [A Tour of TensorFlow (2016)](https://arxiv.org/abs/1610.01178)
+* [arXiv] [Should I use TensorFlow (2016)](https://arxiv.org/abs/1611.08903)
 
 ## Reinforcement learning
 * [arXiv] [Deep Reinforcement Learning: An Overview (2017)](https://arxiv.org/abs/1701.07274)
