@@ -30,6 +30,7 @@ Proficiency in [Python 3](https://www.python.org/) and [R](https://www.r-project
 ## Books
 * http://www.deeplearningbook.org/ -- The deep-learning Bible; Dec 2016, Goodfellow, Bengio, Courville (pdf [here](https://github.com/HFTrader/DeepLearningBook))
 * [The Elements of Statistical Learning](https://statweb.stanford.edu/~tibs/ElemStatLearn/)
+* [(2005) David MacKay: Information Theory, Pattern Recognition and Neural Networks](http://www.inference.phy.cam.ac.uk/itprnn/book.html)
 
 ## Communities
 * THIS!
