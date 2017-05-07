@@ -13,7 +13,7 @@ If you contribute to the channel, please consider private-messaging the user *pi
   *Relevant skills:* Python
 
 ## Users
-* **[jo_](https://github.com/josephcatrambone)** (California, USA, Researcher)  
+* **[jo_](https://github.com/josephcatrambone)** (California, USA; Researcher)  
   *ML Interests:* Generative Models, Production-Ready (End-User Distributable) Systems, Building ML Frameworks  
   *Relevant skills:* Python, Java, Kotlin, C, JavaScript, Rust  
   Started a PhD in ML.  Finished with an MS.  Not very good.  I'm interested in procedural content creation and generative machine learning models, particularly conversational chat bots and image generation.  I enjoy game development as a hobby and do my best to bring the two areas together whenever I can.
