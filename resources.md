@@ -21,7 +21,9 @@
 ## Courses
 * [Every single Machine Learning course on the internet, ranked by your reviews (2017)](https://medium.freecodecamp.com/every-single-machine-learning-course-on-the-internet-ranked-by-your-reviews-3c4a7b8026c0)
 * [Dive into Deep Learning with 12 free online courses (2017)](https://medium.freecodecamp.com/dive-into-deep-learning-with-these-23-online-courses-bf247d289cc0)
-* [Karpathy's CS231 Stanford course](http://cs231n.stanford.edu/)
+* [Karpathy's CS231n Stanford course on Convolutional Neural Networks for Visual Recognition](http://cs231n.stanford.edu/)
+* [David Silver's UCL course on Reinforcement Learning](http://www0.cs.ucl.ac.uk/staff/d.silver/web/Teaching.html) and [YouTube playlist](https://www.youtube.com/playlist?list=PLMZdRRhAoLnKFxZlmFoFp0uHVvN2PSE9T)
+* [Berkeley CS 294: Deep Reinforcement Learning](http://rll.berkeley.edu/deeprlcourse/) and [YouTube playlist](https://www.youtube.com/playlist?list=PLkFD6_40KJIwTmSbCv9OVJB3YaO4sFwkX)
 
 ## Books
 * http://www.deeplearningbook.org/ -- The deep-learning Bible; Dec 2016, Goodfellow, Bengio, Courville (pdf [here](https://github.com/HFTrader/DeepLearningBook))
@@ -63,10 +65,8 @@
 * [Hacker's guide to Neural Networks](http://karpathy.github.io/neuralnets/) 
 
 ## Deep learning
-* [arXiv paper: On the Origin of Deep Learning](https://arxiv.org/abs/1702.07800)
-* [arXiv paper: Deep Learning in Neural Networks: An Overview](https://arxiv.org/abs/1404.7828) (link-dense)
+* [arXiv] [On the Origin of Deep Learning (2017)](https://arxiv.org/abs/1702.07800)
+* [arXiv] [Deep Learning in Neural Networks: An Overview (2014)](https://arxiv.org/abs/1404.7828) (link-dense)
 
 ## Reinforcement learning
-* [David Silver's RL course](http://www0.cs.ucl.ac.uk/staff/d.silver/web/Teaching.html)  [YouTube playlist](https://www.youtube.com/playlist?list=PLMZdRRhAoLnKFxZlmFoFp0uHVvN2PSE9T)
-* http://rll.berkeley.edu/deeprlcourse/
-* https://www.quora.com/What-are-the-best-books-about-reinforcement-learning
+* [arXiv] [Deep Reinforcement Learning: An Overview (2017)](https://arxiv.org/abs/1701.07274)
