@@ -34,8 +34,9 @@ The scheduled time for the next group discussion is Sunday 7 May 2017 at [8pm UT
         - [StackGAN: Text to Photo-realistic Image Synthesis with Stacked Generative Adversarial Networks](https://arxiv.org/abs/1612.03242)  
         ^ note both papers were submitted within three days one another (10/13 Dec '16)  
 
-* 2017.05.07 VAE (Variational AutoEncoders)
- [log](logs/2017.05.07_VAE)
+* 2017.05.07 VAE (Variational AutoEncoders)  
+ 
+  [log](logs/2017.05.07_VAE)
 
   * Main paper: [Auto-Encoding Variational Bayes](https://arxiv.org/abs/1312.6114)  
 
