@@ -10,7 +10,7 @@ Machine Learning | No small talk. No public logging. Offtopic chat only in ##ml-
 -->
 
 ## Links
-* Resources - modern resources for machine learning
+* Resources
   * [Getting started](Resources/GettingStarted.md) - some individual resources for beginners
   * [Meta](Resources/Meta.md) - important diverse meta resources
   * [Articles](Resources/Articles.md) - select educational articles including reviews
