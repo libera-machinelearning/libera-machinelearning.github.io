@@ -1,3 +1,16 @@
+Contents:
+- [Neural networks](#neural-networks)
+- [Deep learning](#deep-learning)
+  * [Overview](#overview)
+  * [Theory](#theory)
+  * [Practice](#practice)
+  * [Software](#software)
+    + [Comparison](#comparison)
+    + [TensorFlow](#tensorflow)
+- [Reinforcement learning](#reinforcement-learning)
+
+<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
+
 ## Neural networks
 * [Hacker's guide to Neural Networks](http://karpathy.github.io/neuralnets/)
 * [arXiv] [Neural Networks for Beginners. A fast implementation in Matlab, Torch, TensorFlow (2017)](https://arxiv.org/abs/1703.05298)
