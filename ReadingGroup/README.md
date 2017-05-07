@@ -12,13 +12,18 @@ The scheduled time for the next group discussion is [Sunday 7 May 2017 @ 8pm UTC
 ## Next discussion: VAE (Variational AutoEncoders) (Sunday 7 May 2017 @ 8pm UTC)
 * Main paper: [Auto-Encoding Variational Bayes](https://arxiv.org/abs/1312.6114)  
 
-Resources:
+Resources (roughly in order they should be approached):  
+
 * Eric Jang
   * [A Beginner's Guide to Variational Methods: Mean-Field Approximation](http://blog.evjang.com/2016/08/variational-bayes.html)
 
 * Variational Autoencoders (in Prose and Code) by Miriam.
   * [PART 1: Introducing Variational Autoencoders (in Prose and Code) by Miriam](http://blog.fastforwardlabs.com/2016/08/12/introducing-variational-autoencoders-in-prose-and.html)
   * [PART 2: Under the Hood of the Variational Autoencoder (in Prose and Code) by Miriam](http://blog.fastforwardlabs.com/2016/08/22/under-the-hood-of-the-variational-autoencoder-in.html).
+
+* Jaan Altosaar
+  * [Tutorial - What is a variational autoencoder by Jaan Altosaar](https://jaan.io/what-is-variational-autoencoder-vae-tutorial/)
+  * [A very clean Tensorflow implementation](https://jaan.io/what-is-variational-autoencoder-vae-tutorial/)
 
 * [(ArXiv Doersch, June '16) Tutorial on Variational Autoencoders](https://arxiv.org/abs/1606.05908)  
 
@@ -29,9 +34,6 @@ Resources:
 
 * [(ArXiv Blei, Nov '16) Variational Inference: A Review for Statisticians](https://arxiv.org/abs/1601.00670)
 
-* Jaan Altosaar
-  * [Tutorial - What is a variational autoencoder by Jaan Altosaar](https://jaan.io/what-is-variational-autoencoder-vae-tutorial/)
-  * [A very clean Tensorflow implementation](https://jaan.io/what-is-variational-autoencoder-vae-tutorial/)
 
 ## Candidates for future discussions:
 * [DNC](https://github.com/deepmind/dnc) (Differentiable Neural Computer)
