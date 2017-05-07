@@ -9,7 +9,7 @@ Machine Learning | No small talk. Offtopic chat only in ##ml-ot | Software: http
 Machine Learning | No small talk. No public logging. Offtopic chat only in ##ml-ot | See https://j.mp/ChannelGitHub for Resources and Reading Group | Related: #ai ##AGI ##nlp #nupic #pydata #scikit-learn ##statistics #tensorflow
 -->
 
-## Links
+## Pages
 * Resources
   * [Getting started](Resources/GettingStarted.md) - some individual resources for beginners
   * [Meta](Resources/Meta.md) - important diverse meta resources
