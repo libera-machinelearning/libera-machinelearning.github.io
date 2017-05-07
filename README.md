@@ -1,5 +1,5 @@
 # machinelearning-IRC-freenode
-Community repo for the `##machinelearning` and `##ml-ot` IRC channels on Freenode 
+This is the community repo for the `##machinelearning` and `##ml-ot` IRC channels on [Freenode](https://freenode.net/).
 
 ## [Reading Group](ReadingGroup/README.md)
 Fortnightly discussion (Sunday 8pm GMT) on a paper/topic of our choosing
