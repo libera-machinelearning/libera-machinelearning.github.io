@@ -3,7 +3,7 @@
 * [DeepLearning.TV YouTube playlist](https://www.youtube.com/playlist?list=PLjJh1vlSEYgvZ3ze_4pxKHNh1g5PId36-) -- 17 ~5-min vids, good starter -- introduces the main ideas at a non-technical level.
 * [Andrew Ng's ML Coursera course](https://www.youtube.com/view_play_list?p=A89DCFA6ADACE599) -- best beginner course.
 * [Nielsen -- Neural Networks and Deep Learning](http://neuralnetworksanddeeplearning.com/index.html) -- online book, recommended for beginners.
-* [Hinton's Coursera course: Neural Networks for Machine Learning](https://www.coursera.org/learn/neural-networks) (Youtube playlist [here](https://www.youtube.com/playlist?list=PLoRl3Ht4JOcdU872GhiYWf6jwrk_SNhz9)) -- gets pretty advanced, and much of the later material is fast becoming obsolete (RBM, WakeSleep, DBM, DBN). Nevertheless Hinton is the single biggest contributor to modern ML, and it's worth persevering with.
+* [Hinton's Coursera course: Neural Networks for Machine Learning](https://www.coursera.org/learn/neural-networks) (Youtube playlist [here](https://www.youtube.com/playlist?list=PLoRl3Ht4JOcdU872GhiYWf6jwrk_SNhz9)) -- gets pretty advanced, and much of the later material is fast becoming obsolete (RBM, WakeSleep, DBM, DBN). Nevertheless, Hinton is the single biggest contributor to modern ML, and it's worth persevering with.
 
 ---
 
@@ -17,6 +17,11 @@
 
 ## Videos
 * http://videolectures.net/Top/Computer_Science/Machine_Learning/
+
+## Courses
+* [Every single Machine Learning course on the internet, ranked by your reviews (2017)](https://medium.freecodecamp.com/every-single-machine-learning-course-on-the-internet-ranked-by-your-reviews-3c4a7b8026c0)
+* [Dive into Deep Learning with 12 free online courses (2017)](https://medium.freecodecamp.com/dive-into-deep-learning-with-these-23-online-courses-bf247d289cc0)
+* [Karpathy's CS231 Stanford course](http://cs231n.stanford.edu/)
 
 ## Books
 * http://deeplearningbook.org/ -- The deep-learning Bible; Dec 2016, Goodfellow, Bengio, Courville (pdf [here](https://github.com/HFTrader/DeepLearningBook))
@@ -49,12 +54,13 @@
 
 ## Misc
 * [π's scattered links](http://pipad.org/wiki/index.php/Machine_Learning)
-* [Karpathy's CS231 Stanford course](http://cs231n.stanford.edu/) or his [Hacker's guide to Neural Networks](http://karpathy.github.io/neuralnets/) 
-* [Every single Machine Learning course on the internet, ranked by your reviews](https://medium.freecodecamp.com/every-single-machine-learning-course-on-the-internet-ranked-by-your-reviews-3c4a7b8026c0)
 
 ---
 
 # By topic
+
+## Neural networks
+* [Hacker's guide to Neural Networks](http://karpathy.github.io/neuralnets/) 
 
 ## Deep learning
 * [arXiv paper: On the Origin of Deep Learning](https://arxiv.org/abs/1702.07800)
