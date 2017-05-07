@@ -35,9 +35,9 @@
 * [inFERENCe](http://www.inference.vc)
 
 ## Papers
-* https://arxiv.org/list/stat.ML/recent
-* https://arxiv.org/list/cs.LG/recent
-* http://arxiv-sanity.com/
+* [arXiv stat.ML](https://arxiv.org/list/stat.ML/recent)
+* [arXiv cs.LG](https://arxiv.org/list/cs.LG/recent)
+* [Arxiv Sanity Preserver](http://arxiv-sanity.com/)
 
 ## Feeds
 * [arXiv stat.ML](https://export.arxiv.org/rss/stat.ML/recent)
