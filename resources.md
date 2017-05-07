@@ -39,6 +39,7 @@
 ## Feeds
 * [arXiv stat.ML](https://export.arxiv.org/rss/stat.ML/recent)
 * [arXiv cs.LG](https://export.arxiv.org/rss/cs.LG/recent)
+* [KDnuggets](https://feeds.feedburner.com/kdnuggets-data-mining-analytics)
 * [InfoWorld AI](http://www.infoworld.com/category/artificial-intelligence/index.rss)
 * [Distill.pub](http://distill.pub/rss.xml)
 * [DeepMind](https://deepmind.com/blog/feed/basic/)
