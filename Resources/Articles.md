@@ -6,9 +6,11 @@
 ### Overview
 * [arXiv] [Deep Learning in Neural Networks: An Overview (2014)](https://arxiv.org/abs/1404.7828) (link-dense)
 * [arXiv] [On the Origin of Deep Learning (2017)](https://arxiv.org/abs/1702.07800)
-* [arXiv] [Fathom: Reference Workloads for Modern Deep Learning Methods (2016)](https://arxiv.org/abs/1608.06581)
 ### Depth
 * [arXiv] [Understanding deep learning requires rethinking generalization (2017)](https://arxiv.org/abs/1611.03530)
+### Practice
+* [arXiv] [Fathom: Reference Workloads for Modern Deep Learning Methods (2016)](https://arxiv.org/abs/1608.06581)
+* [The Black Magic of Deep Learning - Tips and Tricks for the practitioner (2017)](https://nmarkou.blogspot.fr/2017/02/the-black-magic-of-deep-learning-tips.html)
 ### Software
 #### Comparison
 * [arXiv] [Comparative Study of Deep Learning Software Frameworks (2016)](https://arxiv.org/abs/1511.06435)
