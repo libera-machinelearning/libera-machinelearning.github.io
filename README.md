@@ -5,9 +5,7 @@ This is the community repo for the `##machinelearning` and `##ml-ot` IRC channel
 ## Links
 * [Resources](resources.md) - machine learning resources
 * [Reading Group](ReadingGroup/README.md) - discussion on alternate Sundays at 8pm GMT on a topic of our choosing
-
-# Who are we?
-[Here is a select list of users.](users.md) If you are contributing to the channel, please consider private-messaging *pi-* an introductory text (freestyle ok) & I'll add it here (or submit a PR). It would be nice if we have some idea of who is who, who is up to what, etc. Tell us where you are based (so we can figure out your time zone).  Are you using ML for work or play?  What do you use it for?  Do you have a github repo?  Are you at a company/uni?  Care to say?  etc.
+* [Users](users.md) - select list of channel contributors
 
  - - - - - - -
 
