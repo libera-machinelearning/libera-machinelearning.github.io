@@ -1,3 +1,8 @@
+# Who are we?
+Here is a select list of channel users.
+
+If you are contributing to the channel, please consider private-messaging *pi-* an introductory text (freestyle ok) & I'll add it here (or submit a PR). It would be nice if we have some idea of who is who, who is up to what, etc. Tell us where you are based (so we can figure out your time zone).  Are you using ML for work or play?  What do you use it for?  Do you have a github repo?  Are you at a company/uni?  Care to say?  etc.
+
 * **pi-** (Oxford UK, freelance coder, https://github.com/p-i-)  
   *ML Interests:* Primarily the theory. The new stuff as it comes out (GANs, VAEs, etc.), biologically plausible models (spiking neuron,...), coding in Julia.  
   *Relevant skills:* IPython / numpy, Matlab, Julia  
