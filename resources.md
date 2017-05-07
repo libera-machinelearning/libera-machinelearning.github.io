@@ -67,6 +67,9 @@
 ## Deep learning
 * [arXiv] [On the Origin of Deep Learning (2017)](https://arxiv.org/abs/1702.07800)
 * [arXiv] [Deep Learning in Neural Networks: An Overview (2014)](https://arxiv.org/abs/1404.7828) (link-dense)
+### Comparison
+* [arXiv] [Comparative Study of Deep Learning Software Frameworks (2016)](https://arxiv.org/abs/1511.06435)
+* [arXiv] [Benchmarking State-of-the-Art Deep Learning Software Tools (2017)](https://arxiv.org/abs/1608.07249)
 
 ## Reinforcement learning
 * [arXiv] [Deep Reinforcement Learning: An Overview (2017)](https://arxiv.org/abs/1701.07274)
