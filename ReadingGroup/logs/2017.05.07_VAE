@@ -1,779 +1,417 @@
-- - - - - - -  Reading Group 7 May 2017, VAEs. - - - - - - -
-p-i-
-(public logging starts)
-p-i-
-i.e. I'm posting up the transcript
-mson has joined (uid110608@gateway/web/irccloud.com/x-fwdjvzekmmaomsqt)
-Henry_Jia
-Yep, gotcha
-Lyote
-Howdy. o/
-p-i-
-First off, I think I would have done much better to say "RG on VAEs, including this hardass paper" rather than "RG on this hardass paper"
-p-i-
-& consider it as some kind of collaborative workshop / tutorial
-Sickbock has joined (~Mutter@2001:984:6ac7:1:837:2548:35e2:3380)
-p-i-
-I might have inadvertently projected some expectation of reading through that paper and understanding the content prior to the RG :p
-p-i-
-Did anyone get through the whole thing?
-rofer
-yeah, I've mostly read other resources on VAEs rather than that exact paper
-p-i-
-I found a KEY resource just this morning, that explains all of the irksome math
-Lyote
-I tried unsuccessfully.
-Henry_Jia
-Me too, I couldn't really understand the paper much further than the initial stuff laying otu the problem
-p-i-
-It's the first link under resources.
-oleksiyp has joined (~quassel@89-74-255-114.dynamic.chello.pl)
-p-i-
-yeah just getting through the abstract was hard enough.
-p-i-
-So how about we start with an intuitive breakdown of VAEs.
-Henry_Jia
-Yep, sounds good
-RandIter
-how about with an intuitive of AEs
-p-i-
-ok better!
-Lyote
-Basic Auto Encoders are just feedforward neural networks with a "bottleneck" layer, right?
-p-i-
-So my take on AEs is dimensionality reduction, by passing data thru a small Central bottleneck layer & forcing reconstruction
-p-i-
-So the network looks like a diabolo maybe
-neuron[w] has joined (~Force@leased-line-st-87-252-252-30.telecom.by)
-rofer
-Yeah, and I think it's important to talk about the major differences b/w VAEs and basic autoencoders
-Henry_Jia
-Yep, and the bottleneck forces the network to learn somethign useful to compress the data because it can't jsut copy it across
-rofer
-Because variational autoencoders aren't really an extension of autoencoders at all, despite the name
-Henry_Jia
-Agreed
-Henry_Jia
-They're very different
-Henry_Jia
-I think the architecture jsut looks similar
-p-i-
-Why is VAE not an AE?
-rofer
-Yeah, they have a similar looking shape, but they're trained very differently and they do different things
-Lyote
-Aren't they historically relevant because you can train them layer-wise, which allowed you to pretrain deep networks for other tasks?
-hazz has joined (~hazzzz@pool-100-15-13-142.washdc.fios.verizon.net)
-Lyote
-(Auto Encoders, that is.)
-Henry_Jia
-Lyote: I think that's Stacked Autoencoders
-p-i-
-or DEEP AEs
-rofer
-Yeah, stacked denoising autoencoders could be trained that way
-Henry_Jia
-p-i-: They're similar in the architecture but the training process and purpose is very different
-deego
-(A minor nitpick on the bottleneck part. I think it would still learn features.. that is, would a [10 1000 10]  not learn features?)
-rofer
-similar to restricted boltzman machines, but much simpler to understand
-p-i-
-So we can't do greedy layaways pretraining for VAEs
-Sickbock has left IRC (Quit: Mutter: www.mutterirc.com)
-Henry_Jia
-deego: itm ight learn features, but we don't know
-Henry_Jia
-NNs are weird often
-p-i-
-deego: there is a good chance it would just copy data across.
-Henry_Jia
-^^
-Lyote
-Yeah, there's no reason to have a non-identity activation in that case, right?
-deego
-thanks
-rofer
-While autoencoders can do dimensionality reduction, variational autoencoders are generative models which we can efficiently sample from
-Lyote
-s/activation/weights/
-p-i-
-deego: you are trying to Express hi dimension data on a lower dimensional manifold. And your code-(central)-layer is how you twiddle that manifold.
-p-i-
-rofer: can't we sample from an AE's code-layer?
-rofer
-Nope
-Henry_Jia
-p-i-: we could if we knew the distribution
-Henry_Jia
-p-i-: but we don't
-rofer
-^
-p-i-
-aah
-Henry_Jia
-With VAEs we regularise it and try and make it somethign simple like a Gaussian I think
-rofer
-We won't necessarily have any idea how those codes are distributed and so we can't do much with them
-rofer
-Yeah, in VAEs part of your loss function penalizes how far P(Z|X) is from your target (usually a diagonal gaussian)
-rofer
-You can use fancier distributions to represent your latent state, but then all the math gets even harder to follow
-Lyote
-Whenever I see conditional probabilities, my eyes glaze over. I really ought to fix that.
-Henry_Jia
-When I see probabilities I give up and close the paper :P
-beeman has left IRC (Quit: x)
-p-i-
-Lyote: can you articulate a question? We may be able to help...
-p-i-
-http://blog.evjang.com/2016/08/variational-bayes.html <-- this really helped me
-ML-helper[bot]
-[ Eric Jang: A Beginner's Guide to Variational Methods: Mean-Field Approximation ]
-XHFHX has left IRC (Ping timeout: 260 seconds)
-p-i-
-So let's get back to trying to explain VAEs at an intuitive level.
-p-i-
-rofer: over to you?
-rofer
-Sure, I can try and give a brief overview
-Lyote
-p-i-: Sorry, it wasn't a question. If I were to reformulate it as a question: What resources would be best to build an intuitive grasp on probabilities? (But this is pretty off-topic for the RG discussion.)
-rofer
-So, there are two things we want to be able to do
-rofer
-1) We want to be able to build a lower-dimensional representation of our input
-rofer
-2) We want to be able to sample from the distribution we learn
-p-i-
-Lyote: It's a good question; we should build some kind of resource into the channel GitHub repo. Let's look at it afterwards.
-Henry_Jia
-^^
-thirteen37
-so uh
-thirteen37
-how many types of activation functions are there?
-rofer
-Variational autoencoders are an unsupervised technique so, like most unsupervised learning, what we try to learn is the data distribution
-rofer
-That is, it should learn which inputs are likely from the distribution (and as a side effect learn which are not)
-Henry_Jia
-rofer: not sure about that
-rofer
-Which part? Learning the data distribution?
-Henry_Jia
-Which is likely and which is not
-Henry_Jia
-I thought they map from something like a gaussian to the real distribution?
-p-i-
-right, so we try to construct a function that will map a spherical Gaussian in z-space (think: each dimension is a Gaussian) to something that approximates our Data distribution in X-reconstruction space
-p-i-
-(?)
-netrace has joined (~netrace@151.20.248.32)
-rofer
-^
-Henry_Jia
-Yea
-p-i-
-There is a nice picture illustration example of this in one of the resources
-Henry_Jia
-And you can make it generate mroe unlikely results by using a different distribution to sample from?
-Lyote
-p-i-: Which one is that?
-rofer
-Henry_Jia: You can make it generate more unlikely results by sampling an unlikely Z
-rofer
-If your latent space is just a standard normal distribution, 0 would map to something it believes is really likely, 20 would map to something really unlikely
-p-i- digs
-empyreanx has left IRC (Ping timeout: 240 seconds)
-Henry_Jia
-^^
-rofer
-If you actually do use a single latent dimension though, in practice you'll probably just get terrible results because you're compressing things too far
-deego
-what is a latent space?
-p-i-
-damn lost it
-rofer
-deego: Can you elaborate on that?
-rofer
-Oh wait, I misread it
-deego
-rofer: latent space == space of z distribution?
-Henry_Jia
-It's just the space you map the actual distribution to/from right?
-rofer
-Yes
-deego
-ty
-rofer
-So, sampling from an arbitrary distribution turns out to be really hard to do efficiently
-thirteen37
-Henry_Jia:  so basically I need to master calculus to master NN right?
-DarkElement has left IRC (Ping timeout: 240 seconds)
-button has joined (urandom@unaffiliated/crayon)
-rofer
-So instead we use a trick where we assume there's some latent dimension Z which contains the same information as X
-rofer
-And we further assume that Z has some nice form, like a diagonal gaussian
-XHFHX has joined (~XHFHX@2a02:908:5c9:6c00:e950:ed78:b9d:6931)
-rofer
-If this is true, then we could efficiently sample from Z and map it to X
-p-i-
-I can describe it. So you've got a bunch of points clustered within the unit circle, say a 2D spherical Gaussian. And you throw them through the transformation v -> v / mag(v).  Now they are all ON the unit circle. So you have transformed your probability distribution. The new manifold is the unit circle.
-p-i-
-This idea of transforming a probability distribution is key.
-Henry_Jia
-^^
-rofer
-Yup
-rofer
-And since neural networks are universal function approximators in theory we can transform any continuous distribution into any other one
-p-i-
-yeah, there is some theory that you can approximate any distribution as a sum of gaussians to arbitrary precision I think.
-p-i- reads back to catch up with rofer's exposition
-Lyote
-p-i-: Thanks.
-Henry_Jia
-p-i-: I think you mean the universal function approximation theorem, which says a  NN with a single hidden layer with nonlinear activations can approximate any function provided the hidden layer is wide enough
-p-i-
-'latent space' is basically 'hidden variables'
-rofer
-So, that motivates the decoder network, which is the piece of the VAE that learns P(X|Z)
-rofer
-We already know P(Z) because we gave it the form of a diagonal gaussian
-p-i-
-thirteen37: you will probably have more luck getting answers after the reading group finishes
-deego
-p-i-: what is mag?
-Lyote
-Magnitude?
-rofer
-deego: magnitude
-Henry_Jia
-magnitude I assume
-hazz has left IRC (Quit: Leaving)
-thirteen37
-p-i-:  ok
-p-i-
-yeah, you divide a vector by its magnitude to project it onto the unit circle, i.e. Turn it into a unit vector
-DarkElement has joined (~DarkEleme@unaffiliated/darkelement)
-rofer
-Now, to actually get P(X) the piece we're missing is P(Z|X) which is called the encoder
-deego
-(many thanks to everyone for their patience in explaining everything)
-rofer
-With those pieces we can now go to latent space with the encode P(Z|X), come from latent space back to input space with the decoder P(X|Z), and sample directly from the input space with P(X|Z)P(Z)
-p-i-
-deego: that's what this is for
-p-i-
-For anyone stuck with this P(Z|X) style notation, look at section 1 of http://blog.evjang.com/2016/08/variational-bayes.html
-ML-helper[bot]
-[ Eric Jang: A Beginner's Guide to Variational Methods: Mean-Field Approximation ]
-rofer
-Now, to actually learn these functions we loss function which is a bit complicated and is the part I understand the least
-rofer
-There's a bunch of math and some approximations involved, but at the highest level it has two pieces
-Henry_Jia
-rofer: although how would P(X|Z)P(Z) work in high dimensions, would you essentionally have every single combination of X & Z and multiply it by the coresponding Z?
-Lyote
-p-i-: I looked through that article earlier. I'm not sure what is meant by "probability distribution" vs "density function".
-promach has joined (promach@ircbouncehouse.com)
-p-i-
-I wish we had unixpickle here, he gave a super insightful breakdown that I will try to recall later.
-rofer
-Henry_Jia: You can sample from P(X|Z)P(Z) by first sampling z from Z, then sampling from P(X|Z=z)
-rofer
-Anyways, loss function has two pieces:
-rofer
-1) the expected value of negative log-liklihood of the input example taken over the latent space, which ensures the decoder learns to decode good samples
-nikio_ has joined (~nikio_@unaffiliated/nikio/x-5064535)
-p-i-
-Lyote: I can't quite see the difference between them. I think of the probability distribution as a density function.
-Henry_Jia
-Lyote: they are the same thing
-rofer
-2) the KL divergence (a not-technically distance between two probability distributions) of our encoder P(Z|X) and P(Z) which forces our encoder to encode the data in such a way that it matches the distribution we assumed for Z
-Lyote
-Henry_Jia: Then why the different notation?
-p-i-
-rofer: so (1) is ... Given a sample x, we try to fiddle our generator G:Z->X so that it is more likely to generate x.
-Henry_Jia
-Lyote: actually I may be wrong on that one
-Henry_Jia
-Lyote: I think a density function discribes a distribution but there are other ways too
-p-i-
-Maybe a density function doesn't need to be normalised?
-rofer
-The description here (starting at the highlighted text "loss function") describes it well: https://jaan.io/what-is-variational-autoencoder-vae-tutorial/
-ML-helper[bot]
-[ Tutorial - What is a variational autoencoder? – Jaan Altosaar ]
-rofer
-Henry_Jia: Yeah
-rofer
-So, density function and distribution correspond to each other
-rofer
-But generally the density function is an attribute of the probability distribution
-p-i-
-I think you need density function divided by partition function to normalise it into a probability distribution, maybe
-rofer
-ex: Distribution X has a density function P(X=x)
-rofer
-You can also describe a probability distribution with it's cumulative density function or it's moment generating function
-rofer
-p-i-: Unless you say otherwise probability density is assumed to already be normalized
-rofer
-But you can talk about the "unnormalized probability density"
-Henry_Jia
-What exactly does it mean to normalise a probability density, don't they have to add to 1 already>
-p-i-
-yus, hm.. I'm not sure if we really need the distinction to understand this material
-rofer
-Henry_Jia: Yes, when people say "probability density" they mean "normalized probability density"
-__Yiota has joined (~textual@2607:fea8:56e0:407:9c1e:c307:3dbf:b611)
-rofer
-but you can talk about unnormalized probability densities
-p-i-
-The density gives the distribution, right?
-rofer
-We probably don't really need it here, but that's part of the reason why it's hard to sample from an arbitrary distribution
-Lyote
-Sorry to side-track. :P These sort of distinctions is what always trips me up when I try starting from the ground up.
-rofer
-because we can easily get the unnormalized probability density, but the normalizing constant (the partition function) is usually impossible to compute efficiently
-rofer
-So, probability density is the most common way to describe a probability distribution and it characterizes it perfectly, but there are others that also exist and work as well
-Henry_Jia
-makes sense
-p-i-
-yep, nicely put
-rofer
-So, I think I've covered what I can say about the intuition behind the VAE
-p-i-
-rofer: I don't think you got to the end...
-hasc_ has joined (~hasc@2a02:c7d:d016:8900:61c9:db73:487:4c06)
-rofer
-I think the loss function pretty much is the end. If you know how to set up the architecture and you know what loss to minimize you can train a VAE
-p-i-
-ok
-rofer
-There are plenty of details about how everything works and why, but I think that covers the highest-level of it
-Henry_Jia
-Actually I don't think it's quite the KL divergence they sue
-Henry_Jia
-*use
-Henry_Jia
-at around 13:35 they use the bits-back encoding https://www.youtube.com/watch?v=P78QYjWh5sM
-
-ML-helper[bot]
-[ Deep Learning Lecture 14: Karol Gregor on Variational Autoencoders and Image Generation - YouTube ]
-p-i-
-I will have a go at trying to reconstruct what I gleaned from unixpickle a while back, in case it helps:
-Henry_Jia
-which looks very similar to KL but it's slightly difference
-hasc has left IRC (Ping timeout: 264 seconds)
-rofer
-Henry_Jia: So, the loss function I mentioned is from mean-field variational inference and I'm fairly sure it uses the KL
-Lyote
-I'm not entirely sure I understand what the latent space looks like. As I understand it, the flow is: inputSpace --encoder-> Z --decoder-> inputSpace. What is Z?
-rofer
-but like every part of the VAE, there's more than one way to do it
-rofer
-mean-field variational inference is generally the simplest from what I understand though
-Hoffman has left IRC (Quit: quit)
-hasc has joined (~hasc@2a02:c7d:d016:8900:61c9:db73:487:4c06)
-rofer
-Lyote: Z is the latent space
-rofer
-You can make it 2D and it becomes possible to visualize it
-Lyote
-Z \in \mathbb{R}^N, correct?
-rofer
-https://giphy.com/gifs/26ufgj5LH3YKO1Zlu
-rofer
-Lyote: Depends what N is there. It's not the same dimension as the input and usually it's a much lower dimension
-Hoffman has joined (~Hoffman@unaffiliated/hoffman)
-rofer
-But all the numbers are reals, yes
-Lyote
-Ye, sorry. N here is the dimension of the bottleneck.
-Lyote
-Yes*
-rofer
-Yeah, then that's it
-p-i-
-I think for the Z in VAEs, each dimension has a mean and a variance. That is why we consider Z to be a 'spherical Gaussian' distribution.
-hasc_ has left IRC (Ping timeout: 245 seconds)
-p-i-
-So our encoder has to spit out a pair of numbers for each element of Z
-rofer
-Yes
-p-i-
-And the cost function will work to maximise the variances, while keeping reconstruction accurate.
-Lyote
-The mean and the variance?
-__Yiota has left IRC (Quit: My MacBook has gone to sleep. ZZZzzz…)
-Henry_Jia
-rofer: actually I think bits-back coding and KL might be the same
-Lyote
-(Are those the two numbers the encoder spits out?)
-rofer
-Lyote: Yes, because we usually also assume our encoder is a conditional gaussian (so given an input it learns a mean and variace)
-p-i-
-Lyote: So the mean is the 'value', and the variance is how sensitive that value is to change. We want values that are robust in Z-space, i.e. You can choose nearby points and they will map to similar images in X-reconstruction space.
-Lyote
-rofer: So in that 2D MNIST visualization you linked, one dimension encodes the mean of a distribution, and the other the variance?
-p-i-
-This is a problem with standard AEs IIRC, sometimes you move just a little away in Z-space and now the thing that gets generated is out of whack & doesn't look like an MNIST digit any more.
-rofer
-Lyote: Not quite, that's actually just showing the decoder
-rofer
-So in that visualization the bottleneck used is 2
-rofer
-And so what the author did was choose a Z (from -3,-3 in the bottom left to 3,3 in the top right) and run it through the decoder
-rofer
-So each 2D point corresponds to a reconstructed digit
-rofer
-So you can get a sense of what the latent space looks like. Nearby points get decoded to similar looking numbers
-Henry_Jia
-but why was it moving around?
-rofer
-That's showing it over training
-rofer
-I believe, so everything starts out as noise and then converges to things that mostly resemble numbers
-Henry_Jia
-Ah OK
-unixpickle has joined (~alex@c-69-136-93-78.hsd1.pa.comcast.net)
-rofer
-It's taken from: https://jaan.io/what-is-variational-autoencoder-vae-tutorial/
-Lyote
-rofer: Is there anything special about the decoder that's different from the decoder in a basic autoencoder?
-ML-helper[bot]
-[ Tutorial - What is a variational autoencoder? – Jaan Altosaar ]
-p-i-
-It may help to imagine in 3D. A spherical gaussian is a bunch of points clustered around some spheroid shape. And if you throw these through some sufficiently complicated NN, you could reshape that into any shape you like.
-gucci_meow has left IRC (Remote host closed the connection)
-p-i-
-unixpickle: hey, you're missing the party!
-Henry_Jia
-Also, how would differentiating with respect to the std work, sinceI assume the derivative of the noise is just the derivative of the mean?
-rofer
-Lyote: The main difference is that everything in the VAE is a probability distribution, so the decoder is actually a stochastic function
-p-i-
-unixpickle: do you have a moment? I was trying to recall your intuitive explanation of a VAE.
-rofer
-Henry_Jia: That involves something called the reparameterization trick
-rofer
-Henry_Jia: Actually wait, for the encoder you don't need that
-Lyote
-rofer: Given the same decoder and the same input (-3,-3), you'll get a different result?
-Henry_Jia
-rofer: wait why?
-rofer
-Lyote: Yes, but generally they'll be very close.
-unixpickle
-p-i-: hmm, i don't exactly remember how i explained it
-rofer
-In the thing I linked the decoder outputs the parameters of a bernouli distribution which the pixels are draw from (it gives a probability each pixel is either black or white)
-p-i-
-unixpickle: could you have a go from scratch?
-rofer
-So if you give the decoder the same input then the pixels aren't likely to be exactly the same, but they'll probably be similar
-Henry_Jia
-rofer: I was referromg tp generally hwo would you do teh reparameterization trick?
-p-i-
-unixpickle: (I'm uploading the transcript later, btw)
-unixpickle
-p-i-: one explanation I like to use is that it's a regular auto-encoder, but you are trying to pull the latent representation towards some simple distribution like N(0,1). The KL-divergence term essentially acts as regularization by forcing the latent space to be close to N(0,1).
-rofer
-Henry_Jia: Basically, rather than trying to sample from something like N(mu, sigma) you instead take a sample from N(0, 1) and multiply it by sigma, then add mu
-Henry_Jia
-rofer: Ah I see, then it adds sigma into the computational graph
-Lyote
-rofer: So, you'll get the same distribution given the same inputs, but sampling from your distribution gives a different image. Is that correct?
-rofer
-That way you get something with the same distribution, but you're never actually changing the parameters of a probability distribution, so you can take derivatives like normal
-p-i-
-unixpickle: I thought KL just tries to force reconstruction of the original distribution...
-unixpickle
-p-i-: by forcing the latent space to be structured like N(0,1), the latent parameters are decorelated and don't contain as much redundant information
-rofer
-Lyote: Yes. Given one input you'll always get the same probability distribution, but that distribution will give you slightly different samples
-unixpickle
-another explanation I sometimes use is information theoretical. The KL divergence term penalizes any extra bits of information that you encode in the latent space, so it's only "worth" encoding more information if that information pays off in the reconstruction loss.
-p-i-
-unixpickle: ooh I see, it is forcing orthogonality
-p-i-
-I'm a bit scared of information theory
-rofer
-and that's because you're forcing the dimensions of the latent space to be independent, right?
-rofer
-p-i-: MacKay's information theory book is free and not scary
-rofer
-I had a reading group that went through a few chapters of it
-unixpickle
-p-i-: information theory is actually pretty easy to get introduced to. Just try to read stuff online about information entropy. Once you grasp that one idea, a lot of info theory just falls out and makes sense
-p-i-
-I suppose part of the problem is discrete versus continuous, talking about bits!
-unixpickle
-p-i-: yeah, continuous distributions confused Shannon a lot when he was trying to generalize info theory to them
-unixpickle
-because to encode a value sampled from something like a gaussian, you need infinite bits (real numbers are infinitely many bits)
-Lyote
-rofer: Just to make sure I understand: if the images are 20x20 pixels, your decoder is a standard neural network with 400 real-valued outputs, each of which specifies the probability of the corresponding pixel being white?
-p-i-
-https://github.com/p-i-/machinelearning-IRC-freenode/blob/master/ReadingGroup/README.md#next-discussion-vae-variational-autoencoders-sunday-7-may-2017--8pm-utc <-- am I missing any resources here?
-ML-helper[bot]
-[ machinelearning-IRC-freenode/README.md at master · p-i-/machinelearning-IRC-freenode · GitHub ]
-Lyote
-Erm, a standard deconvolutional neural network*
-rofer
-Lyote: Yes
-p-i-
-unixpickle: I suppose you could stipulate that each additional decimal place constitutes half the amount of information, maybe...
-Lyote
-rofer: Thanks, that clears up a lot for me.
-rofer
-Though you can even use a boring, fully-connected network
-Lyote
-Right, but who uses FCNs for images anymore? :D
-rofer
-Here's my favorite VAE implementation: https://github.com/altosaar/vae/blob/master/vae.py
-ML-helper[bot]
-[ vae/vae.py at master · altosaar/vae · GitHub ]
-Hoffman has left IRC (Quit: quit)
-unixpickle
-p-i-: perhaps, although that's not the way people deal with it usually. Even though there's an infinite amount of information, there's a finite KL-divergence, which is basically the "average difference in the number of bits".
-rofer
-You can probably drastically improve it if you use convolutional and deconvolutional layers instead of the fully connected ones
-Hoffman has joined (~Hoffman@unaffiliated/hoffman)
-__Yiota has joined (~textual@2607:fea8:56e0:407:9c1e:c307:3dbf:b611)
-unixpickle
-p-i-: KL-divergence between P and Q is the number of bits, on average, that you'd waste if you used a compression algorithm optimized for Q to compress an element from P.
-undef has joined (5dc47ec8@gateway/web/freenode/ip.93.196.126.200)
-p-i-
-unixpickle: how do you prefer to think of VAEs? via information theory? I'm preferring to think of functionals mapping a spherical Gaussian to any desired shape in X-reconstruction space, using a cost function that encourages smoothness.
-p-i-
-I'm pretty sure I got that concept from talking with you a couple of weeks back...
-unixpickle
-hmm, i don't remember describing it that way, although it is certainly a valid way to think of it.
-XHFHX has left IRC (Ping timeout: 260 seconds)
-crazycoder has joined (~Damiano@net-31-27-209-209.cust.vodafonedsl.it)
-majid has left IRC (Ping timeout: 268 seconds)
-unixpickle
-I tend to think about VAEs in terms of info theory, since that's what I'm the most comfortable with in general
-empyreanx has joined (~empyreanx@212.92.111.212)
-Henry_Jia
-^^
-p-i-
-rofer: thanks, I fixed the link in the repo
-rofer
-unixpickle: Where do you come from where you're most comfortable with information theory?
-deego
-:)
-rofer
-p-i-: Thanks, I saw it was broken earlier, but I was too lazy to fix it
-unixpickle
-rofer: my background is mostly CS; i've been a programmer for nearly half of my life (I'm 20). So I tend to like to think of things as bits, I guess.
-p-i-
-yeah unixpickle, you don't fancy PM'ing me a bio to put up on https://github.com/p-i-/machinelearning-IRC-freenode/blob/master/users.md do you?
-ML-helper[bot]
-[ machinelearning-IRC-freenode/users.md at master · p-i-/machinelearning-IRC-freenode · GitHub ]
-rofer
-Huh, my CS curriculumn didn't really include much information theory
-p-i-
-damn, 20!
-Lyote
-^
-p-i- > unixpickle + Henry_Jia
-unixpickle
-rofer: i'm completely self-taught as far as CS is concerned. I don't think info theory is very common in CS curriculums.
-Henry_Jia
-Heheh, I can beat that unixpickle I'm 18
-unixpickle
-Henry_Jia: I was 18 once...good times ;)
-Henry_Jia
-:)
-Lyote
-unixpickle: Most CS cirriculums are glorified Software Engineering cirriculums, anyways.
-Henry_Jia
-^^
-rofer
-Damn, usually I'm one of the younger people
-Henry_Jia
-Hehehe getting old rofer ;)
-diogenese
-we all are
-rofer
-My curriculum taught just enough information theory to use it to show lower bounds on computational complexity
-p-i-
-shit I'm going to have to read up on information theory
-p-i-
-I was hoping to get through life without doing that
-XHFHX has joined (~XHFHX@2a02:908:5c9:6c00:e950:ed78:b9d:6931)
-rofer
-http://www.inference.phy.cam.ac.uk/itprnn/book.html
-ML-helper[bot]
-[ David MacKay: Information Theory, Pattern Recognition and Neural Networks: The Book ]
-nikio_
-yall better be careful with that info mation theary u been talkin, daz like voodoo
-nikio_
-ya hear me now?
-Henry_Jia
-lol
-p-i-
-nikio_: furreal my nigga
-Kol has joined (Kol@S0106bcd1656621da.vc.shawcable.net)
-unixpickle
-Info theory is a really good lens for ML in general. It lets you interpret cross-entropy loss, variational methods, and decision trees in a pretty natural way.
-Henry_Jia
-unixpickle: any good courses  which teach it? Like MIT OCW, coursera etc?
-rofer
-http://www.inference.phy.cam.ac.uk/mackay/info-theory/course.html
-ML-helper[bot]
-[ A Short Course in Information Theory ]
-unixpickle
-idk, i kind of picked it up on the streets. i started by plowing through this wikipedia page. https://en.wikipedia.org/wiki/Entropy_(information_theory)
-ML-helper[bot]
-[ Entropy (information theory) - Wikipedia ]
-esaller has left IRC (Quit: Leaving)
-p-i-
-rofer: tx, added to https://github.com/p-i-/machinelearning-IRC-freenode/blob/master/resources.md#books
-ML-helper[bot]
-[ machinelearning-IRC-freenode/resources.md at master · p-i-/machinelearning-IRC-freenode · GitHub ]
-rofer
-The lectures from the course I posted are available somewhere IIRC
-rofer
-Here, i think: http://videolectures.net/course_information_theory_pattern_recognition/
-ML-helper[bot]
-[ Course on Information Theory, Pattern Recognition, and Neural Networks - VideoLectures - VideoLectures.NET ]
-p-i-
-Does anyone want help understanding the 'reparameterisation trick'?
-p-i-
-That's a central piece of machinery to VAEs
-Elisha has left IRC (Quit: My MacBook Pro has gone to sleep. ZZZzzz…)
-deego
-there's some kind of  reparameterization? i didn't even know
-p-i-
-+ Maybe we could finally discuss Applications of VAEs: where you would want them and how to wield them.
-deego
-afk :(
-Henry_Jia
-Right, I'm gonna have to sleep now, I've got shitty highschool/6th form tomorrow
-p-i-
-deego: yeah, you are trying to maximise the variance on your Z-values. i.e. the Z-level is stochastic. You take a random sample from the distribution of each Z_k.
-Henry_Jia
-Good night folks
-tttb2 has joined (~tttb@81.149.152.4)
-Henry_Jia
-I'll catch up using p-i-'s transcript
-rofer
-Night
-p-i-
-Henry_Jia: A-levels must be some kind of joke after this level of complexity.
-p-i-
-I hope you're doing further maths at least
-Henry_Jia
-p-i-: I am doing further maths, but it's full of useless weird shit
-Lyote
-p-i-: It might not be the best application for a VAE, but I came across it in a Deep Mind paper as a form of dimensionality reduction for RL.
-p-i-
-Henry_Jia: yup! Nice to see some things never change...
-Lyote
-p-i-: The results weren't very promising, unfortunately. IIRC, random projections actually outperformed it.
-Lyote
-Henry_Jia: G'night.
-p-i-
-Henry_Jia: you could look at doing Cambridge STEP too...
-__Yiota has left IRC (Quit: My MacBook has gone to sleep. ZZZzzz…)
-Henry_Jia
-p-i-: STEP is a bit more itneresting and I've applied to impreial and they've asked for it
-Henry_Jia
-So I'm doing it
-p-i-
-Henry_Jia: yeah many of the questions are actually fun (sorry all for OT)
-tttb has left IRC (Ping timeout: 240 seconds)
-Henry_Jia
-It's alright
-Henry_Jia
-Right now for some actual sleep, see ya around
-p-i- got 1-s for STEP II/III, my only decent grades
-dal220 has left IRC (Ping timeout: 260 seconds)
-Lyote
-rofer: Thanks for the links to those David MacKay videos. Grabbing them now.
-mathcass has joined (~Thunderbi@99-172-18-161.lightspeed.tukrga.sbcglobal.net)
-rofer
-I'd gladly work through his class with this group
-p-i-
-What would be a classic application of VAEs?
-sebbit has joined (~user@2a02:8084:983b:4300:1a5e:fff:fe2e:5482)
-rofer
-Generating blurry MNIST digits :P]
-rofer
-* :P
-p-i-
-haha
-X-tonic has left IRC (Ping timeout: 240 seconds)
-unixpickle
-VAEs are good for improving sequence auto-encoders like auto-encoders for text
-rofer
-So, in theory you could use it for stuff like image completion, but currently I think GANs work better there
-p-i-
-So is it worth all of the mental stress of VAE theory, if GANs give better results?
-p-i-
-inpainting... yer I was thinking of that
-rofer
-I think the theory is much better understood with VAEs
-unixpickle
-GANs aren't great for discrete sequences afaik
-rofer
-and the problem for images is that pixel-wise loss function
-unixpickle
-this paper does some cool stuff with VAEs and text https://arxiv.org/pdf/1511.06349.pdf
-ML-helper[bot]
-[ [1511.06349] Generating Sentences from a Continuous Space ] | https://arxiv.org/abs/1511.06349
-rofer
-Yeah, GANs are only just recently being able to generate text from what I've heard
-rofer
-VAEs also give you a latent space so you can do things like interpolate from one sample to another
-unixpickle
-right, if you actually *want* an auto-encoder in the end, VAEs give you that
-rofer
-Ideally you learn a space that's actually interpretable and useful, but VAEs don't really guarantee that
-rofer
-I read a good post about it just recently, let me find it
-p-i-
-There was a paper, I think just a couple of weeks ago, that was talking about generating a bunch of manifolds (each being continuous, but you can't morph continuously from one to another)
-p-i-
-Did anyone see it?
-rofer
-I didn't
-DarkElement has left IRC (Ping timeout: 240 seconds)
-p-i-
-The idea was that you have a manifold for 'cat' and one for 'house' but they are separate concepts -- it doesn't make sense to try to construct some continuum upon which they each occupy regions
-p-i-
-iirc it was an extension to VAEs
-LKoen has left IRC (Quit: “It’s only logical. First you learn to talk, then you learn to think. Too bad it’s not the other way round.”)
-rofer
-http://www.inference.vc/maximum-likelihood-for-representation-learning-2/ <- here's the thing I was thinking of
-ML-helper[bot]
-[ Is Maximum Likelihood Useful for Representation Learning? ]
-p-i-
-aah I was looking for that guy's blog
-rofer
-Anyways, I have to get going, I've got to find something to eat
-gucci_meow has joined (~gucci_meo@CPE-124-186-97-50.lns9.woo.bigpond.net.au)
-Lyote
-rofer: Thanks for all the help!
-p-i-
-Thanks rofer!
-p-i-
-yeah, let's close this one out
-p-i-
-We've been going nigh on 2 hours
-p-i-
-Thanks all for mucking in, this was a good one
-diogenese
-yes it was
-p-i-
-- - - - - - -  End of transcript  - - - - - - -
+21:01 p-i-: - - - - - - -  Reading Group 7 May 2017, VAEs. - - - - - - -
+21:02 p-i-: (public logging starts)
+21:02 p-i-: i.e. I'm posting up the transcript
+21:02 mson has joined (uid110608@gateway/web/irccloud.com/x-fwdjvzekmmaomsqt)
+21:02 Henry_Jia: Yep, gotcha
+21:03 Lyote: Howdy. o/
+21:03 p-i-: First off, I think I would have done much better to say "RG on VAEs, including this hardass paper" rather than "RG on this hardass paper"
+21:03 p-i-: & consider it as some kind of collaborative workshop / tutorial
+21:04 Sickbock has joined (~Mutter@2001:984:6ac7:1:837:2548:35e2:3380)
+21:04 p-i-: I might have inadvertently projected some expectation of reading through that paper and understanding the content prior to the RG :p
+21:04 p-i-: Did anyone get through the whole thing?
+21:04 rofer: yeah, I've mostly read other resources on VAEs rather than that exact paper
+21:05 p-i-: I found a KEY resource just this morning, that explains all of the irksome math
+21:05 Lyote: I tried unsuccessfully.
+21:05 Henry_Jia: Me too, I couldn't really understand the paper much further than the initial stuff laying otu the problem
+21:05 p-i-: It's the first link under resources.
+21:05 oleksiyp has joined (~quassel@89-74-255-114.dynamic.chello.pl)
+21:05 p-i-: yeah just getting through the abstract was hard enough.
+21:05 p-i-: So how about we start with an intuitive breakdown of VAEs.
+21:06 Henry_Jia: Yep, sounds good
+21:06 RandIter: how about with an intuitive of AEs
+21:06 p-i-: ok better!
+21:06 Lyote: Basic Auto Encoders are just feedforward neural networks with a "bottleneck" layer, right?
+21:07 p-i-: So my take on AEs is dimensionality reduction, by passing data thru a small Central bottleneck layer & forcing reconstruction
+21:07 p-i-: So the network looks like a diabolo maybe
+21:07 neuron[w] has joined (~Force@leased-line-st-87-252-252-30.telecom.by)
+21:07 rofer: Yeah, and I think it's important to talk about the major differences b/w VAEs and basic autoencoders
+21:07 Henry_Jia: Yep, and the bottleneck forces the network to learn somethign useful to compress the data because it can't jsut copy it across
+21:07 rofer: Because variational autoencoders aren't really an extension of autoencoders at all, despite the name
+21:07 Henry_Jia: Agreed
+21:07 Henry_Jia: They're very different
+21:08 Henry_Jia: I think the architecture jsut looks similar
+21:08 p-i-: Why is VAE not an AE?
+21:08 rofer: Yeah, they have a similar looking shape, but they're trained very differently and they do different things
+21:08 Lyote: Aren't they historically relevant because you can train them layer-wise, which allowed you to pretrain deep networks for other tasks?
+21:08 hazz has joined (~hazzzz@pool-100-15-13-142.washdc.fios.verizon.net)
+21:08 Lyote: (Auto Encoders, that is.)
+21:08 Henry_Jia: Lyote: I think that's Stacked Autoencoders
+21:09 p-i-: or DEEP AEs
+21:09 rofer: Yeah, stacked denoising autoencoders could be trained that way
+21:09 Henry_Jia: p-i-: They're similar in the architecture but the training process and purpose is very different
+21:09 deego: (A minor nitpick on the bottleneck part. I think it would still learn features.. that is, would a [10 1000 10]  not learn features?)
+21:09 rofer: similar to restricted boltzman machines, but much simpler to understand
+21:09 p-i-: So we can't do greedy layaways pretraining for VAEs
+21:09 Sickbock has left IRC (Quit: Mutter: www.mutterirc.com)
+21:09 Henry_Jia: deego: itm ight learn features, but we don't know
+21:09 Henry_Jia: NNs are weird often
+21:10 p-i-: deego: there is a good chance it would just copy data across.
+21:10 Henry_Jia: ^^
+21:10 Lyote: Yeah, there's no reason to have a non-identity activation in that case, right?
+21:10 deego: thanks
+21:11 rofer: While autoencoders can do dimensionality reduction, variational autoencoders are generative models which we can efficiently sample from
+21:11 Lyote: s/activation/weights/
+21:11 p-i-: deego: you are trying to Express hi dimension data on a lower dimensional manifold. And your code-(central)-layer is how you twiddle that manifold.
+21:11 p-i-: rofer: can't we sample from an AE's code-layer?
+21:12 rofer: Nope
+21:12 Henry_Jia: p-i-: we could if we knew the distribution
+21:12 Henry_Jia: p-i-: but we don't
+21:12 rofer: ^
+21:12 p-i-: aah
+21:12 Henry_Jia: With VAEs we regularise it and try and make it somethign simple like a Gaussian I think
+21:12 rofer: We won't necessarily have any idea how those codes are distributed and so we can't do much with them
+21:13 rofer: Yeah, in VAEs part of your loss function penalizes how far P(Z|X) is from your target (usually a diagonal gaussian)
+21:13 rofer: You can use fancier distributions to represent your latent state, but then all the math gets even harder to follow
+21:13 Lyote: Whenever I see conditional probabilities, my eyes glaze over. I really ought to fix that.
+21:14 Henry_Jia: When I see probabilities I give up and close the paper :P
+21:14 beeman has left IRC (Quit: x)
+21:14 p-i-: Lyote: can you articulate a question? We may be able to help...
+21:15 p-i-: http://blog.evjang.com/2016/08/variational-bayes.html <-- this really helped me
+21:15 ML-helper[bot]: [ Eric Jang: A Beginner's Guide to Variational Methods: Mean-Field Approximation ]
+21:15 XHFHX has left IRC (Ping timeout: 260 seconds)
+21:15 p-i-: So let's get back to trying to explain VAEs at an intuitive level.
+21:16 p-i-: rofer: over to you?
+21:16 rofer: Sure, I can try and give a brief overview
+21:17 Lyote: p-i-: Sorry, it wasn't a question. If I were to reformulate it as a question: What resources would be best to build an intuitive grasp on probabilities? (But this is pretty off-topic for the RG discussion.)
+21:17 rofer: So, there are two things we want to be able to do
+21:18 rofer: 1) We want to be able to build a lower-dimensional representation of our input
+21:18 rofer: 2) We want to be able to sample from the distribution we learn
+21:18 p-i-: Lyote: It's a good question; we should build some kind of resource into the channel GitHub repo. Let's look at it afterwards.
+21:18 Henry_Jia: ^^
+21:18 thirteen37: so uh
+21:19 thirteen37: how many types of activation functions are there?
+21:19 rofer: Variational autoencoders are an unsupervised technique so, like most unsupervised learning, what we try to learn is the data distribution
+21:20 rofer: That is, it should learn which inputs are likely from the distribution (and as a side effect learn which are not)
+21:21 Henry_Jia: rofer: not sure about that
+21:21 rofer: Which part? Learning the data distribution?
+21:21 Henry_Jia: Which is likely and which is not
+21:21 Henry_Jia: I thought they map from something like a gaussian to the real distribution?
+21:22 p-i-: right, so we try to construct a function that will map a spherical Gaussian in z-space (think: each dimension is a Gaussian) to something that approximates our Data distribution in X-reconstruction space
+21:22 p-i-: (?)
+21:22 netrace has joined (~netrace@151.20.248.32)
+21:22 rofer: ^
+21:22 Henry_Jia: Yea
+21:22 p-i-: There is a nice picture illustration example of this in one of the resources
+21:22 Henry_Jia: And you can make it generate mroe unlikely results by using a different distribution to sample from?
+21:22 Lyote: p-i-: Which one is that?
+21:23 rofer: Henry_Jia: You can make it generate more unlikely results by sampling an unlikely Z
+21:23 rofer: If your latent space is just a standard normal distribution, 0 would map to something it believes is really likely, 20 would map to something really unlikely
+21:23 p-i-: digs
+21:24 empyreanx has left IRC (Ping timeout: 240 seconds)
+21:24 Henry_Jia: ^^
+21:24 rofer: If you actually do use a single latent dimension though, in practice you'll probably just get terrible results because you're compressing things too far
+21:24 deego: what is a latent space?
+21:24 p-i-: damn lost it
+21:24 rofer: deego: Can you elaborate on that?
+21:24 rofer: Oh wait, I misread it
+21:25 deego: rofer: latent space == space of z distribution?
+21:25 Henry_Jia: It's just the space you map the actual distribution to/from right?
+21:25 rofer: Yes
+21:25 deego: ty
+21:25 rofer: So, sampling from an arbitrary distribution turns out to be really hard to do efficiently
+21:25 thirteen37: Henry_Jia:  so basically I need to master calculus to master NN right?
+21:25 DarkElement has left IRC (Ping timeout: 240 seconds)
+21:26 button has joined (urandom@unaffiliated/crayon)
+21:26 rofer: So instead we use a trick where we assume there's some latent dimension Z which contains the same information as X
+21:26 rofer: And we further assume that Z has some nice form, like a diagonal gaussian
+21:26 XHFHX has joined (~XHFHX@2a02:908:5c9:6c00:e950:ed78:b9d:6931)
+21:27 rofer: If this is true, then we could efficiently sample from Z and map it to X
+21:27 p-i-: I can describe it. So you've got a bunch of points clustered within the unit circle, say a 2D spherical Gaussian. And you throw them through the transformation v -> v / mag(v).  Now they are all ON the unit circle. So you have transformed your probability distribution. The new manifold is the unit circle.
+21:27 p-i-: This idea of transforming a probability distribution is key.
+21:28 Henry_Jia: ^^
+21:28 rofer: Yup
+21:28 rofer: And since neural networks are universal function approximators in theory we can transform any continuous distribution into any other one
+21:29 p-i-: yeah, there is some theory that you can approximate any distribution as a sum of gaussians to arbitrary precision I think.
+21:30 p-i-: reads back to catch up with rofer's exposition
+21:30 Lyote: p-i-: Thanks.
+21:31 Henry_Jia: p-i-: I think you mean the universal function approximation theorem, which says a  NN with a single hidden layer with nonlinear activations can approximate any function provided the hidden layer is wide enough
+21:31 p-i-: 'latent space' is basically 'hidden variables'
+21:31 rofer: So, that motivates the decoder network, which is the piece of the VAE that learns P(X|Z)
+21:32 rofer: We already know P(Z) because we gave it the form of a diagonal gaussian
+21:32 p-i-: thirteen37: you will probably have more luck getting answers after the reading group finishes
+21:32 deego: p-i-: what is mag?
+21:32 Lyote: Magnitude?
+21:32 rofer: deego: magnitude
+21:32 Henry_Jia: magnitude I assume
+21:32 hazz has left IRC (Quit: Leaving)
+21:33 thirteen37: p-i-:  ok
+21:33 p-i-: yeah, you divide a vector by its magnitude to project it onto the unit circle, i.e. Turn it into a unit vector
+21:33 DarkElement has joined (~DarkEleme@unaffiliated/darkelement)
+21:33 rofer: Now, to actually get P(X) the piece we're missing is P(Z|X) which is called the encoder
+21:33 deego: (many thanks to everyone for their patience in explaining everything)
+21:34 rofer: With those pieces we can now go to latent space with the encode P(Z|X), come from latent space back to input space with the decoder P(X|Z), and sample directly from the input space with P(X|Z)P(Z)
+21:35 p-i-: deego: that's what this is for
+21:36 p-i-: For anyone stuck with this P(Z|X) style notation, look at section 1 of http://blog.evjang.com/2016/08/variational-bayes.html
+21:36 ML-helper[bot]: [ Eric Jang: A Beginner's Guide to Variational Methods: Mean-Field Approximation ]
+21:37 rofer: Now, to actually learn these functions we loss function which is a bit complicated and is the part I understand the least
+21:37 rofer: There's a bunch of math and some approximations involved, but at the highest level it has two pieces
+21:37 Henry_Jia: rofer: although how would P(X|Z)P(Z) work in high dimensions, would you essentionally have every single combination of X & Z and multiply it by the coresponding Z?
+21:38 Lyote: p-i-: I looked through that article earlier. I'm not sure what is meant by "probability distribution" vs "density function".
+21:38 promach has joined (promach@ircbouncehouse.com)
+21:39 p-i-: I wish we had unixpickle here, he gave a super insightful breakdown that I will try to recall later.
+21:39 rofer: Henry_Jia: You can sample from P(X|Z)P(Z) by first sampling z from Z, then sampling from P(X|Z=z)
+21:39 rofer: Anyways, loss function has two pieces:
+21:40 rofer: 1) the expected value of negative log-liklihood of the input example taken over the latent space, which ensures the decoder learns to decode good samples
+21:41 nikio_ has joined (~nikio_@unaffiliated/nikio/x-5064535)
+21:41 p-i-: Lyote: I can't quite see the difference between them. I think of the probability distribution as a density function.
+21:42 Henry_Jia: Lyote: they are the same thing
+21:42 rofer: 2) the KL divergence (a not-technically distance between two probability distributions) of our encoder P(Z|X) and P(Z) which forces our encoder to encode the data in such a way that it matches the distribution we assumed for Z
+21:43 Lyote: Henry_Jia: Then why the different notation?
+21:43 p-i-: rofer: so (1) is ... Given a sample x, we try to fiddle our generator G:Z->X so that it is more likely to generate x.
+21:43 Henry_Jia: Lyote: actually I may be wrong on that one
+21:43 Henry_Jia: Lyote: I think a density function discribes a distribution but there are other ways too
+21:44 p-i-: Maybe a density function doesn't need to be normalised?
+21:44 rofer: The description here (starting at the highlighted text "loss function") describes it well: https://jaan.io/what-is-variational-autoencoder-vae-tutorial/
+21:44 ML-helper[bot]: [ Tutorial - What is a variational autoencoder? – Jaan Altosaar ]
+21:44 rofer: Henry_Jia: Yeah
+21:44 rofer: So, density function and distribution correspond to each other
+21:45 rofer: But generally the density function is an attribute of the probability distribution
+21:45 p-i-: I think you need density function divided by partition function to normalise it into a probability distribution, maybe
+21:45 rofer: ex: Distribution X has a density function P(X=x)
+21:46 rofer: You can also describe a probability distribution with it's cumulative density function or it's moment generating function
+21:46 rofer: p-i-: Unless you say otherwise probability density is assumed to already be normalized
+21:46 rofer: But you can talk about the "unnormalized probability density"
+21:47 Henry_Jia: What exactly does it mean to normalise a probability density, don't they have to add to 1 already>
+21:47 p-i-: yus, hm.. I'm not sure if we really need the distinction to understand this material
+21:47 rofer: Henry_Jia: Yes, when people say "probability density" they mean "normalized probability density"
+21:47 __Yiota has joined (~textual@2607:fea8:56e0:407:9c1e:c307:3dbf:b611)
+21:47 rofer: but you can talk about unnormalized probability densities
+21:47 p-i-: The density gives the distribution, right?
+21:48 rofer: We probably don't really need it here, but that's part of the reason why it's hard to sample from an arbitrary distribution
+21:48 Lyote: Sorry to side-track. :P These sort of distinctions is what always trips me up when I try starting from the ground up.
+21:48 rofer: because we can easily get the unnormalized probability density, but the normalizing constant (the partition function) is usually impossible to compute efficiently
+21:49 rofer: So, probability density is the most common way to describe a probability distribution and it characterizes it perfectly, but there are others that also exist and work as well
+21:49 Henry_Jia: makes sense
+21:49 p-i-: yep, nicely put
+21:50 rofer: So, I think I've covered what I can say about the intuition behind the VAE
+21:50 p-i-: rofer: I don't think you got to the end...
+21:51 hasc_ has joined (~hasc@2a02:c7d:d016:8900:61c9:db73:487:4c06)
+21:51 rofer: I think the loss function pretty much is the end. If you know how to set up the architecture and you know what loss to minimize you can train a VAE
+21:51 p-i-: ok
+21:51 rofer: There are plenty of details about how everything works and why, but I think that covers the highest-level of it
+21:52 Henry_Jia: Actually I don't think it's quite the KL divergence they sue
+21:52 Henry_Jia: *use
+21:52 Henry_Jia: at around 13:35 they use the bits-back encoding https://www.youtube.com/watch?v=P78QYjWh5sM
+21:52 ML-helper[bot]: [ Deep Learning Lecture 14: Karol Gregor on Variational Autoencoders and Image Generation - YouTube ]
+21:53 p-i-: I will have a go at trying to reconstruct what I gleaned from unixpickle a while back, in case it helps:
+21:53 Henry_Jia: which looks very similar to KL but it's slightly difference
+21:53 hasc has left IRC (Ping timeout: 264 seconds)
+21:53 rofer: Henry_Jia: So, the loss function I mentioned is from mean-field variational inference and I'm fairly sure it uses the KL
+21:53 Lyote: I'm not entirely sure I understand what the latent space looks like. As I understand it, the flow is: inputSpace --encoder-> Z --decoder-> inputSpace. What is Z?
+21:53 rofer: but like every part of the VAE, there's more than one way to do it
+21:53 rofer: mean-field variational inference is generally the simplest from what I understand though
+21:54 Hoffman has left IRC (Quit: quit)
+21:54 hasc has joined (~hasc@2a02:c7d:d016:8900:61c9:db73:487:4c06)
+21:54 rofer: Lyote: Z is the latent space
+21:54 rofer: You can make it 2D and it becomes possible to visualize it
+21:54 Lyote: Z \in \mathbb{R}^N, correct?
+21:54 rofer: https://giphy.com/gifs/26ufgj5LH3YKO1Zlu
+21:55 rofer: Lyote: Depends what N is there. It's not the same dimension as the input and usually it's a much lower dimension
+21:55 Hoffman has joined (~Hoffman@unaffiliated/hoffman)
+21:55 rofer: But all the numbers are reals, yes
+21:55 Lyote: Ye, sorry. N here is the dimension of the bottleneck.
+21:55 Lyote: Yes*
+21:55 rofer: Yeah, then that's it
+21:56 p-i-: I think for the Z in VAEs, each dimension has a mean and a variance. That is why we consider Z to be a 'spherical Gaussian' distribution.
+21:56 hasc_ has left IRC (Ping timeout: 245 seconds)
+21:56 p-i-: So our encoder has to spit out a pair of numbers for each element of Z
+21:56 rofer: Yes
+21:56 p-i-: And the cost function will work to maximise the variances, while keeping reconstruction accurate.
+21:57 Lyote: The mean and the variance?
+21:57 __Yiota has left IRC (Quit: My MacBook has gone to sleep. ZZZzzz…)
+21:57 Henry_Jia: rofer: actually I think bits-back coding and KL might be the same
+21:57 Lyote: (Are those the two numbers the encoder spits out?)
+21:57 rofer: Lyote: Yes, because we usually also assume our encoder is a conditional gaussian (so given an input it learns a mean and variace)
+21:58 p-i-: Lyote: So the mean is the 'value', and the variance is how sensitive that value is to change. We want values that are robust in Z-space, i.e. You can choose nearby points and they will map to similar images in X-reconstruction space.
+21:58 Lyote: rofer: So in that 2D MNIST visualization you linked, one dimension encodes the mean of a distribution, and the other the variance?
+21:58 p-i-: This is a problem with standard AEs IIRC, sometimes you move just a little away in Z-space and now the thing that gets generated is out of whack & doesn't look like an MNIST digit any more.
+21:59 rofer: Lyote: Not quite, that's actually just showing the decoder
+21:59 rofer: So in that visualization the bottleneck used is 2
+22:00 rofer: And so what the author did was choose a Z (from -3,-3 in the bottom left to 3,3 in the top right) and run it through the decoder
+22:00 rofer: So each 2D point corresponds to a reconstructed digit
+22:01 rofer: So you can get a sense of what the latent space looks like. Nearby points get decoded to similar looking numbers
+22:01 Henry_Jia: but why was it moving around?
+22:01 rofer: That's showing it over training
+22:01 rofer: I believe, so everything starts out as noise and then converges to things that mostly resemble numbers
+22:01 Henry_Jia: Ah OK
+22:01 unixpickle has joined (~alex@c-69-136-93-78.hsd1.pa.comcast.net)
+22:02 rofer: It's taken from: https://jaan.io/what-is-variational-autoencoder-vae-tutorial/
+22:02 Lyote: rofer: Is there anything special about the decoder that's different from the decoder in a basic autoencoder?
+22:02 ML-helper[bot]: [ Tutorial - What is a variational autoencoder? – Jaan Altosaar ]
+22:02 p-i-: It may help to imagine in 3D. A spherical gaussian is a bunch of points clustered around some spheroid shape. And if you throw these through some sufficiently complicated NN, you could reshape that into any shape you like.
+22:02 gucci_meow has left IRC (Remote host closed the connection)
+22:02 p-i-: unixpickle: hey, you're missing the party!
+22:02 Henry_Jia: Also, how would differentiating with respect to the std work, sinceI assume the derivative of the noise is just the derivative of the mean?
+22:02 rofer: Lyote: The main difference is that everything in the VAE is a probability distribution, so the decoder is actually a stochastic function
+22:02 p-i-: unixpickle: do you have a moment? I was trying to recall your intuitive explanation of a VAE.
+22:03 rofer: Henry_Jia: That involves something called the reparameterization trick
+22:03 rofer: Henry_Jia: Actually wait, for the encoder you don't need that
+22:03 Lyote: rofer: Given the same decoder and the same input (-3,-3), you'll get a different result?
+22:03 Henry_Jia: rofer: wait why?
+22:04 rofer: Lyote: Yes, but generally they'll be very close.
+22:04 unixpickle: p-i-: hmm, i don't exactly remember how i explained it
+22:04 rofer: In the thing I linked the decoder outputs the parameters of a bernouli distribution which the pixels are draw from (it gives a probability each pixel is either black or white)
+22:04 p-i-: unixpickle: could you have a go from scratch?
+22:05 rofer: So if you give the decoder the same input then the pixels aren't likely to be exactly the same, but they'll probably be similar
+22:05 Henry_Jia: rofer: I was referromg tp generally hwo would you do teh reparameterization trick?
+22:05 p-i-: unixpickle: (I'm uploading the transcript later, btw)
+22:06 unixpickle: p-i-: one explanation I like to use is that it's a regular auto-encoder, but you are trying to pull the latent representation towards some simple distribution like N(0,1). The KL-divergence term essentially acts as regularization by forcing the latent space to be close to N(0,1).
+22:07 rofer: Henry_Jia: Basically, rather than trying to sample from something like N(mu, sigma) you instead take a sample from N(0, 1) and multiply it by sigma, then add mu
+22:07 Henry_Jia: rofer: Ah I see, then it adds sigma into the computational graph
+22:07 Lyote: rofer: So, you'll get the same distribution given the same inputs, but sampling from your distribution gives a different image. Is that correct?
+22:07 rofer: That way you get something with the same distribution, but you're never actually changing the parameters of a probability distribution, so you can take derivatives like normal
+22:07 p-i-: unixpickle: I thought KL just tries to force reconstruction of the original distribution...
+22:08 unixpickle: p-i-: by forcing the latent space to be structured like N(0,1), the latent parameters are decorelated and don't contain as much redundant information
+22:08 rofer: Lyote: Yes. Given one input you'll always get the same probability distribution, but that distribution will give you slightly different samples
+22:09 unixpickle: another explanation I sometimes use is information theoretical. The KL divergence term penalizes any extra bits of information that you encode in the latent space, so it's only "worth" encoding more information if that information pays off in the reconstruction loss.
+22:09 p-i-: unixpickle: ooh I see, it is forcing orthogonality
+22:09 p-i-: I'm a bit scared of information theory
+22:09 rofer: and that's because you're forcing the dimensions of the latent space to be independent, right?
+22:10 rofer: p-i-: MacKay's information theory book is free and not scary
+22:10 rofer: I had a reading group that went through a few chapters of it
+22:10 unixpickle: p-i-: information theory is actually pretty easy to get introduced to. Just try to read stuff online about information entropy. Once you grasp that one idea, a lot of info theory just falls out and makes sense
+22:10 p-i-: I suppose part of the problem is discrete versus continuous, talking about bits!
+22:11 unixpickle: p-i-: yeah, continuous distributions confused Shannon a lot when he was trying to generalize info theory to them
+22:11 unixpickle: because to encode a value sampled from something like a gaussian, you need infinite bits (real numbers are infinitely many bits)
+22:12 Lyote: rofer: Just to make sure I understand: if the images are 20x20 pixels, your decoder is a standard neural network with 400 real-valued outputs, each of which specifies the probability of the corresponding pixel being white?
+22:12 p-i-: https://github.com/p-i-/machinelearning-IRC-freenode/blob/master/ReadingGroup/README.md#next-discussion-vae-variational-autoencoders-sunday-7-may-2017--8pm-utc <-- am I missing any resources here?
+22:12 ML-helper[bot]: [ machinelearning-IRC-freenode/README.md at master · p-i-/machinelearning-IRC-freenode · GitHub ]
+22:12 Lyote: Erm, a standard deconvolutional neural network*
+22:13 rofer: Lyote: Yes
+22:13 p-i-: unixpickle: I suppose you could stipulate that each additional decimal place constitutes half the amount of information, maybe...
+22:13 Lyote: rofer: Thanks, that clears up a lot for me.
+22:13 rofer: Though you can even use a boring, fully-connected network
+22:13 Lyote: Right, but who uses FCNs for images anymore? :D
+22:13 rofer: Here's my favorite VAE implementation: https://github.com/altosaar/vae/blob/master/vae.py
+22:13 ML-helper[bot]: [ vae/vae.py at master · altosaar/vae · GitHub ]
+22:14 Hoffman has left IRC (Quit: quit)
+22:14 unixpickle: p-i-: perhaps, although that's not the way people deal with it usually. Even though there's an infinite amount of information, there's a finite KL-divergence, which is basically the "average difference in the number of bits".
+22:14 rofer: You can probably drastically improve it if you use convolutional and deconvolutional layers instead of the fully connected ones
+22:14 Hoffman has joined (~Hoffman@unaffiliated/hoffman)
+22:15 __Yiota has joined (~textual@2607:fea8:56e0:407:9c1e:c307:3dbf:b611)
+22:15 unixpickle: p-i-: KL-divergence between P and Q is the number of bits, on average, that you'd waste if you used a compression algorithm optimized for Q to compress an element from P.
+22:16 undef has joined (5dc47ec8@gateway/web/freenode/ip.93.196.126.200)
+22:17 p-i-: unixpickle: how do you prefer to think of VAEs? via information theory? I'm preferring to think of functionals mapping a spherical Gaussian to any desired shape in X-reconstruction space, using a cost function that encourages smoothness.
+22:17 p-i-: I'm pretty sure I got that concept from talking with you a couple of weeks back...
+22:18 unixpickle: hmm, i don't remember describing it that way, although it is certainly a valid way to think of it.
+22:18 XHFHX has left IRC (Ping timeout: 260 seconds)
+22:18 crazycoder has joined (~Damiano@net-31-27-209-209.cust.vodafonedsl.it)
+22:18 majid has left IRC (Ping timeout: 268 seconds)
+22:18 unixpickle: I tend to think about VAEs in terms of info theory, since that's what I'm the most comfortable with in general
+22:18 empyreanx has joined (~empyreanx@212.92.111.212)
+22:19 Henry_Jia: ^^
+22:19 p-i-: rofer: thanks, I fixed the link in the repo
+22:19 rofer: unixpickle: Where do you come from where you're most comfortable with information theory?
+22:19 deego: :)
+22:20 rofer: p-i-: Thanks, I saw it was broken earlier, but I was too lazy to fix it
+22:20 unixpickle: rofer: my background is mostly CS; i've been a programmer for nearly half of my life (I'm 20). So I tend to like to think of things as bits, I guess.
+22:20 p-i-: yeah unixpickle, you don't fancy PM'ing me a bio to put up on https://github.com/p-i-/machinelearning-IRC-freenode/blob/master/users.md do you?
+22:20 ML-helper[bot]: [ machinelearning-IRC-freenode/users.md at master · p-i-/machinelearning-IRC-freenode · GitHub ]
+22:20 rofer: Huh, my CS curriculumn didn't really include much information theory
+22:21 p-i-: damn, 20!
+22:21 Lyote: ^
+22:21 p-i-: > unixpickle + Henry_Jia
+22:21 unixpickle: rofer: i'm completely self-taught as far as CS is concerned. I don't think info theory is very common in CS curriculums.
+22:21 Henry_Jia: Heheh, I can beat that unixpickle I'm 18
+22:21 unixpickle: Henry_Jia: I was 18 once...good times ;)
+22:22 Henry_Jia: :)
+22:22 Lyote: unixpickle: Most CS cirriculums are glorified Software Engineering cirriculums, anyways.
+22:22 Henry_Jia: ^^
+22:22 rofer: Damn, usually I'm one of the younger people
+22:23 Henry_Jia: Hehehe getting old rofer ;)
+22:23 diogenese: we all are
+22:23 rofer: My curriculum taught just enough information theory to use it to show lower bounds on computational complexity
+22:25 p-i-: shit I'm going to have to read up on information theory
+22:25 p-i-: I was hoping to get through life without doing that
+22:25 XHFHX has joined (~XHFHX@2a02:908:5c9:6c00:e950:ed78:b9d:6931)
+22:25 rofer: http://www.inference.phy.cam.ac.uk/itprnn/book.html
+22:25 ML-helper[bot]: [ David MacKay: Information Theory, Pattern Recognition and Neural Networks: The Book ]
+22:25 nikio_: yall better be careful with that info mation theary u been talkin, daz like voodoo
+22:26 nikio_: ya hear me now?
+22:26 Henry_Jia: lol
+22:26 p-i-: nikio_: furreal my nigga 
+22:26 Kol has joined (Kol@S0106bcd1656621da.vc.shawcable.net)
+22:27 unixpickle: Info theory is a really good lens for ML in general. It lets you interpret cross-entropy loss, variational methods, and decision trees in a pretty natural way.
+22:27 Henry_Jia: unixpickle: any good courses  which teach it? Like MIT OCW, coursera etc?
+22:28 rofer: http://www.inference.phy.cam.ac.uk/mackay/info-theory/course.html
+22:28 ML-helper[bot]: [ A Short Course in Information Theory ]
+22:28 unixpickle: idk, i kind of picked it up on the streets. i started by plowing through this wikipedia page. https://en.wikipedia.org/wiki/Entropy_(information_theory)
+22:28 ML-helper[bot]: [ Entropy (information theory) - Wikipedia ]
+22:29 esaller has left IRC (Quit: Leaving)
+22:29 p-i-: rofer: tx, added to https://github.com/p-i-/machinelearning-IRC-freenode/blob/master/resources.md#books
+22:29 ML-helper[bot]: [ machinelearning-IRC-freenode/resources.md at master · p-i-/machinelearning-IRC-freenode · GitHub ]
+22:29 rofer: The lectures from the course I posted are available somewhere IIRC
+22:29 rofer: Here, i think: http://videolectures.net/course_information_theory_pattern_recognition/
+22:29 ML-helper[bot]: [ Course on Information Theory, Pattern Recognition, and Neural Networks - VideoLectures - VideoLectures.NET ]
+22:30 p-i-: Does anyone want help understanding the 'reparameterisation trick'?
+22:30 p-i-: That's a central piece of machinery to VAEs
+22:31 Elisha has left IRC (Quit: My MacBook Pro has gone to sleep. ZZZzzz…)
+22:31 deego: there's some kind of  reparameterization? i didn't even know
+22:31 p-i-: + Maybe we could finally discuss Applications of VAEs: where you would want them and how to wield them.
+22:32 deego: afk :(
+22:32 Henry_Jia: Right, I'm gonna have to sleep now, I've got shitty highschool/6th form tomorrow
+22:32 p-i-: deego: yeah, you are trying to maximise the variance on your Z-values. i.e. the Z-level is stochastic. You take a random sample from the distribution of each Z_k.
+22:32 Henry_Jia: Good night folks
+22:32 tttb2 has joined (~tttb@81.149.152.4)
+22:33 Henry_Jia: I'll catch up using p-i-'s transcript
+22:33 rofer: Night
+22:33 p-i-: Henry_Jia: A-levels must be some kind of joke after this level of complexity.
+22:33 p-i-: I hope you're doing further maths at least
+22:33 Henry_Jia: p-i-: I am doing further maths, but it's full of useless weird shit
+22:33 Lyote: p-i-: It might not be the best application for a VAE, but I came across it in a Deep Mind paper as a form of dimensionality reduction for RL.
+22:33 p-i-: Henry_Jia: yup! Nice to see some things never change...
+22:34 Lyote: p-i-: The results weren't very promising, unfortunately. IIRC, random projections actually outperformed it.
+22:34 Lyote: Henry_Jia: G'night.
+22:34 p-i-: Henry_Jia: you could look at doing Cambridge STEP too...
+22:34 __Yiota has left IRC (Quit: My MacBook has gone to sleep. ZZZzzz…)
+22:34 Henry_Jia: p-i-: STEP is a bit more itneresting and I've applied to impreial and they've asked for it
+22:34 Henry_Jia: So I'm doing it
+22:35 p-i-: Henry_Jia: yeah many of the questions are actually fun (sorry all for OT)
+22:35 tttb has left IRC (Ping timeout: 240 seconds)
+22:35 Henry_Jia: It's alright
+22:35 Henry_Jia: Right now for some actual sleep, see ya around
+22:35 p-i-: got 1-s for STEP II/III, my only decent grades
+22:36 dal220 has left IRC (Ping timeout: 260 seconds)
+22:38 Lyote: rofer: Thanks for the links to those David MacKay videos. Grabbing them now.
+22:38 mathcass has joined (~Thunderbi@99-172-18-161.lightspeed.tukrga.sbcglobal.net)
+22:39 rofer: I'd gladly work through his class with this group
+22:39 p-i-: What would be a classic application of VAEs?
+22:40 sebbit has joined (~user@2a02:8084:983b:4300:1a5e:fff:fe2e:5482)
+22:40 rofer: Generating blurry MNIST digits :P]
+22:40 rofer: * :P
+22:40 p-i-: haha
+22:40 X-tonic has left IRC (Ping timeout: 240 seconds)
+22:40 unixpickle: VAEs are good for improving sequence auto-encoders like auto-encoders for text
+22:40 rofer: So, in theory you could use it for stuff like image completion, but currently I think GANs work better there
+22:40 p-i-: So is it worth all of the mental stress of VAE theory, if GANs give better results?
+22:41 p-i-: inpainting... yer I was thinking of that
+22:41 rofer: I think the theory is much better understood with VAEs
+22:41 unixpickle: GANs aren't great for discrete sequences afaik
+22:41 rofer: and the problem for images is that pixel-wise loss function
+22:41 unixpickle: this paper does some cool stuff with VAEs and text https://arxiv.org/pdf/1511.06349.pdf
+22:41 ML-helper[bot]: [ [1511.06349] Generating Sentences from a Continuous Space ] | https://arxiv.org/abs/1511.06349
+22:41 rofer: Yeah, GANs are only just recently being able to generate text from what I've heard
+22:42 rofer: VAEs also give you a latent space so you can do things like interpolate from one sample to another
+22:42 unixpickle: right, if you actually *want* an auto-encoder in the end, VAEs give you that
+22:42 rofer: Ideally you learn a space that's actually interpretable and useful, but VAEs don't really guarantee that
+22:43 rofer: I read a good post about it just recently, let me find it
+22:43 p-i-: There was a paper, I think just a couple of weeks ago, that was talking about generating a bunch of manifolds (each being continuous, but you can't morph continuously from one to another)
+22:43 p-i-: Did anyone see it?
+22:44 rofer: I didn't
+22:44 DarkElement has left IRC (Ping timeout: 240 seconds)
+22:44 p-i-: The idea was that you have a manifold for 'cat' and one for 'house' but they are separate concepts -- it doesn't make sense to try to construct some continuum upon which they each occupy regions
+22:44 p-i-: iirc it was an extension to VAEs
+22:44 LKoen has left IRC (Quit: “It’s only logical. First you learn to talk, then you learn to think. Too bad it’s not the other way round.”)
+22:45 rofer: http://www.inference.vc/maximum-likelihood-for-representation-learning-2/ <- here's the thing I was thinking of
+22:45 ML-helper[bot]: [ Is Maximum Likelihood Useful for Representation Learning? ]
+22:45 p-i-: aah I was looking for that guy's blog
+22:45 rofer: Anyways, I have to get going, I've got to find something to eat
+22:46 gucci_meow has joined (~gucci_meo@CPE-124-186-97-50.lns9.woo.bigpond.net.au)
+22:46 Lyote: rofer: Thanks for all the help!
+22:49 p-i-: Thanks rofer!
+22:49 p-i-: yeah, let's close this one out
+22:49 p-i-: We've been going nigh on 2 hours
+22:50 p-i-: Thanks all for mucking in, this was a good one
+22:50 diogenese: yes it was
+22:50 Lyote: I enjoyed it. :)
+22:50 p-i-: - - - - - - -  End of transcript  - - - - - - - 
