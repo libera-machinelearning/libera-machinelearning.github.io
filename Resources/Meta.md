@@ -36,6 +36,7 @@
 
 ## Papers
 * https://arxiv.org/list/stat.ML/recent
+* https://arxiv.org/list/cs.LG/recent
 * http://arxiv-sanity.com/
 
 ## Feeds
