@@ -25,8 +25,6 @@ Resources (roughly in order they should be approached):
   * [Tutorial - What is a variational autoencoder by Jaan Altosaar](https://jaan.io/what-is-variational-autoencoder-vae-tutorial/)
   * [A very clean Tensorflow implementation](https://jaan.io/what-is-variational-autoencoder-vae-tutorial/)
 
-* VIDEO: [(DeFreitas)Deep Learning Lecture 14: Karol Gregor on Variational Autoencoders and Image Generation](https://www.youtube.com/watch?v=P78QYjWh5sM)
-
 * [(ArXiv Doersch, June '16) Tutorial on Variational Autoencoders](https://arxiv.org/abs/1606.05908)  
 
 * Variational Autoencoders by Vu Pham (elaborates on Doersch)
@@ -35,6 +33,8 @@ Resources (roughly in order they should be approached):
   * [Variational Autoencoders 3: Training, Inference and comparison with other models](https://phvu.net/2017/04/02/variational-autoencoders-3-training-inference-and-comparison-with-other-models/)
 
 * [(ArXiv Blei, Nov '16) Variational Inference: A Review for Statisticians](https://arxiv.org/abs/1601.00670)
+
+* VIDEO: [(DeFreitas)Deep Learning Lecture 14: Karol Gregor on Variational Autoencoders and Image Generation](https://www.youtube.com/watch?v=P78QYjWh5sM) <-- deriving the theory from an information theoretic perspective (ouch?)
 
 
 ## Candidates for future discussions:
