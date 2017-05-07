@@ -24,7 +24,7 @@ Resources (roughly in order they should be approached):
 
 * Jaan Altosaar
   * [Tutorial - What is a variational autoencoder by Jaan Altosaar](https://jaan.io/what-is-variational-autoencoder-vae-tutorial/)
-  * [A very clean Tensorflow implementation](https://jaan.io/what-is-variational-autoencoder-vae-tutorial/)
+  * [A very clean Tensorflow implementation](https://github.com/altosaar/vae/blob/master/vae.py)
 
 * [(ArXiv Doersch, June '16) Tutorial on Variational Autoencoders](https://arxiv.org/abs/1606.05908)  
 
