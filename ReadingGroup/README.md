@@ -20,6 +20,7 @@ Resources (roughly in order they should be approached):
 * Variational Autoencoders (in Prose and Code) by Miriam.
   * [PART 1: Introducing Variational Autoencoders (in Prose and Code) by Miriam](http://blog.fastforwardlabs.com/2016/08/12/introducing-variational-autoencoders-in-prose-and.html)
   * [PART 2: Under the Hood of the Variational Autoencoder (in Prose and Code) by Miriam](http://blog.fastforwardlabs.com/2016/08/22/under-the-hood-of-the-variational-autoencoder-in.html).
+  * [code on GitHub](https://github.com/fastforwardlabs/vae-tf/tree/master)
 
 * Jaan Altosaar
   * [Tutorial - What is a variational autoencoder by Jaan Altosaar](https://jaan.io/what-is-variational-autoencoder-vae-tutorial/)
