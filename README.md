@@ -15,5 +15,5 @@ Machine Learning | No small talk. No public logging. Offtopic chat only in ##ml-
   * [Meta](Resources/Meta.md) - important diverse meta resources
   * [Articles](Resources/Articles.md) - select educational articles including reviews
 * [Reading Group](ReadingGroup/README.md) - discussion on alternate Sundays on a topic of our choosing
-* [Users](users.md) - select list of channel contributors
-* [Ideas](ideas.md) - ideas for the channel and this repo
+* [Users](Users.md) - select list of channel contributors
+* [Ideas](Ideas.md) - ideas for the channel and this repo
