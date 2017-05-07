@@ -1,6 +1,5 @@
 # machinelearning-IRC-freenode
-This is the community repo for the `##machinelearning` and `##ml-ot` IRC channels on [Freenode](https://freenode.net/).
-
+This is the community repo for the `##machinelearning` and `##ml-ot` IRC channels on [Freenode](https://freenode.net/). Users are welcome to submit improvements as pull requests.
 
 ## Links
 * [Resources](resources.md) - machine learning resources
