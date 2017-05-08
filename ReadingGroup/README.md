@@ -9,7 +9,9 @@ NOTE: Reading Group is now every other Sunday! A new paper is chosen by the foll
 The scheduled time for the next group discussion is Sunday 7 May 2017 at [8pm UTC](https://www.wolframalpha.com/input/?i=Sunday+8+pm+UTC).
 
 
-## Next discussion: ??  (Sunday 21 May 2017 @ 7pm UTC)
+## Next discussion: ???  (Sunday 21 May 2017 @ 7pm UTC)
+Currently taking suggestions until Wednesday.  
+Talk to p-i- on the main channel.  
 
 ## Candidates for future discussions:
 * [DNC](https://github.com/deepmind/dnc) (Differentiable Neural Computer)
@@ -18,6 +20,9 @@ The scheduled time for the next group discussion is Sunday 7 May 2017 at [8pm UT
 * [Semi-Supervised Learning with Ladder Networks](https://arxiv.org/abs/1507.02672)
 * [The Reactor: A Sample-Efficient Actor-Critic Architecture](https://arxiv.org/abs/1704.04651) (15 Apr '17)
 * [Grid Long-Short--Term Memory](https://arxiv.org/pdf/1507.01526.pdf) (tomzx offers to host)
+* (NIPS '14) https://research.googleblog.com/2014/12/advances-in-variational-inference.html (tx tfunnell)
+* http://videolectures.net/course_information_theory_pattern_recognition/ [on YouTube](https://www.youtube.com/watch?v=BCiZc0n6COY&list=PLruBu5BI5n4aFpG32iMbdWoRVAA-Vcso6)
+  Maybe take apart 2 videos per week (tx rofer)
 
 ## Past discussions:
 * 2017.04.16 Hinton's 2006 "Reducing the Dimensionality of Data with Neural Networks" [paper](https://www.cs.toronto.edu/~hinton/science.pdf)  
