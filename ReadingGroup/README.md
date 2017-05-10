@@ -4,11 +4,15 @@ Resources (including transcripts) for the (IRC:Freenode) ##machinelearning Readi
 
 NOTE: Reading Group is now every other Sunday! A new paper is chosen by the following Wednesday, which gives everyone 10 days to get up to speed.
 
+Talk to p-i- on the main channel.  
+
 <!-- Short URL: https://j.mp/ML-ReadingGrp -->
 
-## Next discussion: ???  (Sunday 21 May 2017 @ [7pm UTC](https://www.wolframalpha.com/input/?i=Sunday+7+pm+UTC))
-Currently taking suggestions until Wednesday.  
-Talk to p-i- on the main channel.  
+## Next discussion: (Sunday 21 May 2017 @ [7pm UTC](https://www.wolframalpha.com/input/?i=Sunday+7+pm+UTC))
+
+rofer has suggested David MacKay's [Information Theory, Pattern Recognition, and Neural Networks](https://www.youtube.com/playlist?list=PLruBu5BI5n4aFpG32iMbdWoRVAA-Vcso6) course (16 1h videos on YouTube).
+
+
 
 ## Candidates for future discussions:
 * [DNC](https://github.com/deepmind/dnc) (Differentiable Neural Computer)
