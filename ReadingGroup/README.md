@@ -12,10 +12,14 @@ Talk to p-i- on the main channel.
 
 rofer has suggested David MacKay's [Information Theory, Pattern Recognition, and Neural Networks](https://www.youtube.com/playlist?list=PLruBu5BI5n4aFpG32iMbdWoRVAA-Vcso6) course (16 1h videos on YouTube).
 
+After discussion we've decided to run a separate IRC group (##it-group) to attempt this course independently of the RG.
+
+So we still don't have a topic, or a volunteer to chair.
 
 
 ## Candidates for future discussions:
 * [DNC](https://github.com/deepmind/dnc) (Differentiable Neural Computer)
+* [NTM](https://arxiv.org/abs/1410.5401) (Neural Turing Machines) [slides](http://klab.smpp.northwestern.edu/wiki/images/4/43/NTM2.pdf)
 * Learning without Backpropagation http://www.breloff.com/no-backprop/
 * [Overcoming catastrophic forgetting in neural networks](https://arxiv.org/abs/1612.00796)
 * [Semi-Supervised Learning with Ladder Networks](https://arxiv.org/abs/1507.02672)
