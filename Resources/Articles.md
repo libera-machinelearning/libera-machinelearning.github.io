@@ -48,7 +48,7 @@ Contents:
 * [arXiv] [Exponential expressivity in deep neural networks through transient chaos (2016)](https://arxiv.org/abs/1606.05340)
 #### Limitations
 * [arXiv] [Failures of Gradient-Based Deep Learning (2017)](https://arxiv.org/abs/1703.07950)
-* [arXiv] [The Limitations of Deep Learning in Adversarial Settings (2015)](https://arxiv.org/abs/1511.07528)
+* [arXiv] [The Limitations of Deep Learning in Adversarial Settings (2015)](https://arxiv.org/abs/1511.07528) (also see descendent cites)
 ### Practice
 * [arXiv] [Fathom: Reference Workloads for Modern Deep Learning Methods (2016)](https://arxiv.org/abs/1608.06581)
 * [The Black Magic of Deep Learning - Tips and Tricks for the practitioner (2017)](https://nmarkou.blogspot.fr/2017/02/the-black-magic-of-deep-learning-tips.html)
