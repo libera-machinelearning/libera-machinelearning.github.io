@@ -38,6 +38,7 @@ Contents:
 * [arXiv] [Why does deep and cheap learning work so well? (2017)](https://arxiv.org/abs/1608.08225v2)
 * [arXiv] [Why and When Can Deep -- but Not Shallow -- Networks Avoid the Curse of Dimensionality: a Review (2017)](https://arxiv.org/abs/1611.00740)
 * [arXiv] [Geometry of Optimization and Implicit Regularization in Deep Learning (2017)](https://arxiv.org/abs/1705.03071)
+* [arXiv] [Deep Learning and the Information Bottleneck Principle (2015)](https://arxiv.org/abs/1503.02406)
 #### Analysis
 * [arXiv] [Opening the Black Box of Deep Neural Networks via Information (2017)](https://arxiv.org/abs/1703.00810)
 * [arXiv] [Why does Deep Learning work? - A perspective from Group Theory (2015)](https://arxiv.org/abs/1412.6621)
