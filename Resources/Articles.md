@@ -4,8 +4,9 @@ Contents:
 - [Deep learning](#deep-learning)
   * [Overview](#overview)
   * [Theory](#theory)
-  * [Analysis](#analysis)
-  * [Limitations](#limitations)
+    + [Analysis](#analysis)
+    + [Expressivity](#expressivity)
+    + [Limitations](#limitations)
   * [Practice](#practice)
   * [Software](#software)
     + [Comparison](#comparison)
@@ -36,9 +37,11 @@ Contents:
 * [arXiv] [Geometry of Optimization and Implicit Regularization in Deep Learning (2017)](https://arxiv.org/abs/1705.03071)
 #### Analysis
 * [arXiv] [Opening the Black Box of Deep Neural Networks via Information (2017)](https://arxiv.org/abs/1703.00810)
+* [arXiv] [Why does Deep Learning work? - A perspective from Group Theory (2015)](https://arxiv.org/abs/1412.6621)
+#### Expressivity
 * [arXiv] [On the Expressive Power of Deep Learning: A Tensor Analysis (2016)](https://arxiv.org/abs/1509.05009)
 * [arXiv] [On the Expressive Power of Deep Neural Networks (2017)](https://arxiv.org/abs/1606.05336)
-* [arXiv] [Why does Deep Learning work? - A perspective from Group Theory (2015)](https://arxiv.org/abs/1412.6621)
+* [arXiv] [Exponential expressivity in deep neural networks through transient chaos (2016)](https://arxiv.org/abs/1606.05340)
 #### Limitations
 * [arXiv] [Failures of Gradient-Based Deep Learning (2017)](https://arxiv.org/abs/1703.07950)
 ### Practice
