@@ -1,11 +1,12 @@
 Contents:
-<!-- TOC can be updated manually using http://ecotrust-canada.github.io/markdown-toc/ -->
+<!-- TOC can be generated manually using https://ecotrust-canada.github.io/markdown-toc/ -->
 - [Software](#software)
 - [Videos](#videos)
 - [Courses](#courses)
 - [Books](#books)
 - [Communities](#communities)
 - [Blogs](#blogs)
+- [Competitions](#competitions)
 - [Papers](#papers)
 - [Feeds](#feeds)
 - [Misc](#misc)
@@ -45,6 +46,9 @@ Contents:
 * [Tom Breloff](http://www.breloff.com/blog/) -- ML in Julia
 * [Karpathy](http://karpathy.github.io/) -- e.g. Pong from Pixels
 * [inFERENCe](http://www.inference.vc)
+
+## Competitions
+* [KDnuggets: Competitions](http://www.kdnuggets.com/competitions/)
 
 ## Papers
 * [arXiv stat.ML](https://arxiv.org/list/stat.ML/recent)
