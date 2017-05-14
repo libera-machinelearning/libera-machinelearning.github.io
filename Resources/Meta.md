@@ -51,9 +51,9 @@ Contents:
 * [KDnuggets: Competitions](http://www.kdnuggets.com/competitions/)
 
 ## Papers
-* [arXiv stat.ML](https://arxiv.org/list/stat.ML/recent)
-* [arXiv cs.LG](https://arxiv.org/list/cs.LG/recent)
+* arXiv: [stat.ML](https://arxiv.org/list/stat.ML/recent), [cs.LG](https://arxiv.org/list/cs.LG/recent)
 * [Arxiv Sanity Preserver](http://arxiv-sanity.com/)
+* [Semantic Scholar](https://www.semanticscholar.org/)
 
 ## Feeds
 * [arXiv stat.ML](https://export.arxiv.org/rss/stat.ML/recent)
