@@ -73,3 +73,5 @@ Contents:
 * [arXiv] [Deep Reinforcement Learning: An Overview (2017)](https://arxiv.org/abs/1701.07274)
 ### Analysis
 * [arXiv] [Graying the black box: Understanding DQNs (2017)](https://arxiv.org/abs/1602.02658)
+### Alternatives
+* [arXiv] [Evolution Strategies as a Scalable Alternative to Reinforcement Learning (2017)](https://arxiv.org/abs/1703.03864)
