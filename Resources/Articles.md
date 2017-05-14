@@ -1,5 +1,5 @@
 Contents:
-<!-- TOC can be generated manually using http://ecotrust-canada.github.io/markdown-toc/ -->
+<!-- TOC can be generated manually using https://ecotrust-canada.github.io/markdown-toc/ -->
 - [Neural networks](#neural-networks)
 - [Deep learning](#deep-learning)
   * [Overview](#overview)
@@ -11,6 +11,7 @@ Contents:
     + [Comparison](#comparison)
     + [TensorFlow](#tensorflow)
 - [Deep reinforcement learning](#deep-reinforcement-learning)
+  * [Overview](#overview-1)
   * [Interpretability](#interpretability)
 
 ## Neural networks
@@ -45,6 +46,7 @@ Contents:
 * [arXiv] [Should I use TensorFlow (2016)](https://arxiv.org/abs/1611.08903)
 
 ## Deep reinforcement learning
+### Overview
 * [arXiv] [Deep Reinforcement Learning: An Overview (2017)](https://arxiv.org/abs/1701.07274)
 ### Interpretability
 * [arXiv] [Graying the black box: Understanding DQNs (2017)](https://arxiv.org/abs/1602.02658)
