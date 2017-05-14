@@ -29,6 +29,8 @@ Contents:
 * [Deep learning (2015)](http://www.nature.com/nature/journal/v521/n7553/abs/nature14539.html) ([pdf](http://pages.cs.wisc.edu/~dyer/cs540/handouts/deep-learning-nature2015.pdf))
 * [arXiv] [Deep Learning in Neural Networks: An Overview (2014)](https://arxiv.org/abs/1404.7828) (link-dense)
 * [arXiv] [On the Origin of Deep Learning (2017)](https://arxiv.org/abs/1702.07800)
+#### Terminology
+* [arXiv] [Semantics, Representations and Grammars for Deep Learning (2015)](https://arxiv.org/abs/1509.08627)
 ### Tutorials
 * [arXiv] [A Tutorial on Deep Neural Networks for Intelligent Systems (2016)](https://arxiv.org/abs/1603.07249)
 * [arXiv] [Tutorial on Answering Questions about Images with Deep Learning (2016)](https://arxiv.org/abs/1610.01076)
