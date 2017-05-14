@@ -1,9 +1,10 @@
 Contents:
-<!-- TOC can be updated manually using http://ecotrust-canada.github.io/markdown-toc/ -->
+<!-- TOC can be generated manually using http://ecotrust-canada.github.io/markdown-toc/ -->
 - [Neural networks](#neural-networks)
 - [Deep learning](#deep-learning)
   * [Overview](#overview)
   * [Theory](#theory)
+    + [Limitations](#limitations)
   * [Practice](#practice)
   * [Software](#software)
     + [Comparison](#comparison)
@@ -24,6 +25,8 @@ Contents:
 * [arXiv] [On Generalization and Regularization in Deep Learning (2017)](https://arxiv.org/abs/1704.01312)
 * [arXiv] [Why does deep and cheap learning work so well? (2017)](https://arxiv.org/abs/1608.08225v2)
 * [arXiv] [Why and When Can Deep -- but Not Shallow -- Networks Avoid the Curse of Dimensionality: a Review (2017)](https://arxiv.org/abs/1611.00740)
+#### Limitations
+* [arXiv] [Failures of Gradient-Based Deep Learning (2017)](https://arxiv.org/abs/1703.07950)
 ### Practice
 * [arXiv] [Fathom: Reference Workloads for Modern Deep Learning Methods (2016)](https://arxiv.org/abs/1608.06581)
 * [The Black Magic of Deep Learning - Tips and Tricks for the practitioner (2017)](https://nmarkou.blogspot.fr/2017/02/the-black-magic-of-deep-learning-tips.html)
