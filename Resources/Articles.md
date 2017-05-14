@@ -4,6 +4,7 @@ Contents:
 - [Deep learning](#deep-learning)
   * [Overview](#overview)
   * [Theory](#theory)
+    + [Geometry](#geometry)
     + [Limitations](#limitations)
   * [Practice](#practice)
   * [Software](#software)
@@ -25,6 +26,8 @@ Contents:
 * [arXiv] [On Generalization and Regularization in Deep Learning (2017)](https://arxiv.org/abs/1704.01312)
 * [arXiv] [Why does deep and cheap learning work so well? (2017)](https://arxiv.org/abs/1608.08225v2)
 * [arXiv] [Why and When Can Deep -- but Not Shallow -- Networks Avoid the Curse of Dimensionality: a Review (2017)](https://arxiv.org/abs/1611.00740)
+#### Geometry
+* [arXiv] [Analysis and Design of Convolutional Networks via Hierarchical Tensor Decompositions (2017)](https://arxiv.org/abs/1705.02302)
 #### Limitations
 * [arXiv] [Failures of Gradient-Based Deep Learning (2017)](https://arxiv.org/abs/1703.07950)
 ### Practice
