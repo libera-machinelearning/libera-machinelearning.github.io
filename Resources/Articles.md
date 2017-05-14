@@ -50,6 +50,7 @@ Contents:
 * [arXiv] [Failures of Gradient-Based Deep Learning (2017)](https://arxiv.org/abs/1703.07950)
 * [arXiv] [The Limitations of Deep Learning in Adversarial Settings (2015)](https://arxiv.org/abs/1511.07528) (also see descendent cites)
 ### Practice
+* [arXiv] [Best Practices for Applying Deep Learning to Novel Applications (2017)](https://arxiv.org/abs/1704.01568)
 * [arXiv] [Fathom: Reference Workloads for Modern Deep Learning Methods (2016)](https://arxiv.org/abs/1608.06581)
 * [The Black Magic of Deep Learning - Tips and Tricks for the practitioner (2017)](https://nmarkou.blogspot.fr/2017/02/the-black-magic-of-deep-learning-tips.html)
 ### Software
