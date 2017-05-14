@@ -11,6 +11,7 @@ Talk to p-i- on the main channel.
 ## Next discussion: [NTM](https://arxiv.org/abs/1410.5401) (Neural Turing Machines) -- Sunday 21 May 2017 @ [7pm UTC](https://www.wolframalpha.com/input/?i=Sunday+7+pm+UTC)
 
 ([slides](http://klab.smpp.northwestern.edu/wiki/images/4/43/NTM2.pdf))
+([Old keras code for layer](https://github.com/EderSantana/seya/blob/master/seya/layers/ntm.py))
 
 HenryJia has kindly volunteered to chair. Yay!
 
