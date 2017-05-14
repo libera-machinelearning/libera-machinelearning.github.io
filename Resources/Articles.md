@@ -10,7 +10,8 @@ Contents:
   * [Software](#software)
     + [Comparison](#comparison)
     + [TensorFlow](#tensorflow)
-- [Reinforcement learning](#reinforcement-learning)
+- [Deep reinforcement learning](#deep-reinforcement-learning)
+  * [Interpretability](#interpretability)
 
 ## Neural networks
 * [Hacker's guide to Neural Networks](http://karpathy.github.io/neuralnets/)
@@ -43,5 +44,7 @@ Contents:
 * [arXiv] [A Tour of TensorFlow (2016)](https://arxiv.org/abs/1610.01178)
 * [arXiv] [Should I use TensorFlow (2016)](https://arxiv.org/abs/1611.08903)
 
-## Reinforcement learning
+## Deep reinforcement learning
 * [arXiv] [Deep Reinforcement Learning: An Overview (2017)](https://arxiv.org/abs/1701.07274)
+### Interpretability
+* [arXiv] [Graying the black box: Understanding DQNs (2017)](https://arxiv.org/abs/1602.02658)
