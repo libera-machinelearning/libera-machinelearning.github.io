@@ -37,6 +37,7 @@ Contents:
 #### Analysis
 * [arXiv] [Opening the Black Box of Deep Neural Networks via Information (2017)](https://arxiv.org/abs/1703.00810)
 * [arXiv] [On the Expressive Power of Deep Learning: A Tensor Analysis (2016)](https://arxiv.org/abs/1509.05009)
+* [arXiv] [On the Expressive Power of Deep Neural Networks (2017)](https://arxiv.org/abs/1606.05336)
 * [arXiv] [Why does Deep Learning work? - A perspective from Group Theory (2015)](https://arxiv.org/abs/1412.6621)
 #### Limitations
 * [arXiv] [Failures of Gradient-Based Deep Learning (2017)](https://arxiv.org/abs/1703.07950)
