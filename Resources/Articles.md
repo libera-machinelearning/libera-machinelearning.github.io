@@ -34,9 +34,10 @@ Contents:
 * [arXiv] [Why does deep and cheap learning work so well? (2017)](https://arxiv.org/abs/1608.08225v2)
 * [arXiv] [Why and When Can Deep -- but Not Shallow -- Networks Avoid the Curse of Dimensionality: a Review (2017)](https://arxiv.org/abs/1611.00740)
 * [arXiv] [Geometry of Optimization and Implicit Regularization in Deep Learning (2017)](https://arxiv.org/abs/1705.03071)
-### Analysis
+* [arXiv] [Why does Deep Learning work? - A perspective from Group Theory (2015)](https://arxiv.org/abs/1412.6621)
+#### Analysis
 * [arXiv] [Opening the Black Box of Deep Neural Networks via Information (2017)](https://arxiv.org/abs/1703.00810)
-### Limitations
+#### Limitations
 * [arXiv] [Failures of Gradient-Based Deep Learning (2017)](https://arxiv.org/abs/1703.07950)
 ### Practice
 * [arXiv] [Fathom: Reference Workloads for Modern Deep Learning Methods (2016)](https://arxiv.org/abs/1608.06581)
