@@ -55,6 +55,8 @@ Contents:
 * [arXiv] [TensorFlow: Large-Scale Machine Learning on Heterogeneous Distributed Systems (2016)](https://arxiv.org/abs/1603.04467)
 * [arXiv] [A Tour of TensorFlow (2016)](https://arxiv.org/abs/1610.01178)
 * [arXiv] [Should I use TensorFlow (2016)](https://arxiv.org/abs/1611.08903)
+### Alternatives
+* [arXiv] [Deep Forest: Towards An Alternative to Deep Neural Networks (2017)](https://arxiv.org/abs/1702.08835)
 
 ## Deep convolutional networks
 ### Overview
@@ -62,7 +64,7 @@ Contents:
 ### Theory
 * [arXiv] [Do Deep Convolutional Nets Really Need to be Deep and Convolutional? (2017)](https://arxiv.org/abs/1603.05691)
 * [arXiv] [Theory II: Landscape of the Empirical Risk in Deep Learning (2017)](https://arxiv.org/abs/1703.09833)
-### Analysis
+#### Analysis
 * [arXiv] [Analysis and Design of Convolutional Networks via Hierarchical Tensor Decompositions (2017)](https://arxiv.org/abs/1705.02302)
 * [arXiv] [Towards Better Analysis of Deep Convolutional Neural Networks (2016)](https://arxiv.org/abs/1604.07043)
 
