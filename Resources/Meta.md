@@ -26,6 +26,7 @@ Contents:
 * [Karpathy's CS231n Stanford course on Convolutional Neural Networks for Visual Recognition](http://cs231n.stanford.edu/)
 * [David Silver's UCL course on Reinforcement Learning](http://www0.cs.ucl.ac.uk/staff/d.silver/web/Teaching.html) and [YouTube playlist](https://www.youtube.com/playlist?list=PLMZdRRhAoLnKFxZlmFoFp0uHVvN2PSE9T)
 * [Berkeley CS 294: Deep Reinforcement Learning](http://rll.berkeley.edu/deeprlcourse/) and [YouTube playlist](https://www.youtube.com/playlist?list=PLkFD6_40KJIwTmSbCv9OVJB3YaO4sFwkX)
+* [Fast.AI: Practical Deep Learning For Coders](http://course.fast.ai/)
 
 ## Books
 * http://www.deeplearningbook.org/ -- The deep-learning Bible; Dec 2016, Goodfellow, Bengio, Courville (pdf [here](https://github.com/HFTrader/DeepLearningBook))
