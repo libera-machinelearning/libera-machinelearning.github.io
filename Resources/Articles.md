@@ -20,6 +20,7 @@ Contents:
 
 ## Deep learning
 ### Overview
+* [Deep learning (2015)](http://www.nature.com/nature/journal/v521/n7553/abs/nature14539.html) ([pdf](http://pages.cs.wisc.edu/~dyer/cs540/handouts/deep-learning-nature2015.pdf))
 * [arXiv] [Deep Learning in Neural Networks: An Overview (2014)](https://arxiv.org/abs/1404.7828) (link-dense)
 * [arXiv] [On the Origin of Deep Learning (2017)](https://arxiv.org/abs/1702.07800)
 ### Theory
