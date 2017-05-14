@@ -29,8 +29,6 @@ Contents:
 * [arXiv] [On Generalization and Regularization in Deep Learning (2017)](https://arxiv.org/abs/1704.01312)
 * [arXiv] [Why does deep and cheap learning work so well? (2017)](https://arxiv.org/abs/1608.08225v2)
 * [arXiv] [Why and When Can Deep -- but Not Shallow -- Networks Avoid the Curse of Dimensionality: a Review (2017)](https://arxiv.org/abs/1611.00740)
-#### Geometry
-* [arXiv] [Analysis and Design of Convolutional Networks via Hierarchical Tensor Decompositions (2017)](https://arxiv.org/abs/1705.02302)
 * [arXiv] [Geometry of Optimization and Implicit Regularization in Deep Learning (2017)](https://arxiv.org/abs/1705.03071)
 #### Limitations
 * [arXiv] [Failures of Gradient-Based Deep Learning (2017)](https://arxiv.org/abs/1703.07950)
@@ -45,6 +43,13 @@ Contents:
 * [arXiv] [TensorFlow: Large-Scale Machine Learning on Heterogeneous Distributed Systems (2016)](https://arxiv.org/abs/1603.04467)
 * [arXiv] [A Tour of TensorFlow (2016)](https://arxiv.org/abs/1610.01178)
 * [arXiv] [Should I use TensorFlow (2016)](https://arxiv.org/abs/1611.08903)
+
+## Deep convolutional networks
+### Overview
+* [arXiv] [Understanding Convolutional Neural Networks (2016)](https://arxiv.org/abs/1605.09081)
+* [arXiv] [Understanding Deep Convolutional Networks (2016)](https://arxiv.org/abs/1601.04920)
+### Theory
+* [arXiv] [Analysis and Design of Convolutional Networks via Hierarchical Tensor Decompositions (2017)](https://arxiv.org/abs/1705.02302)
 
 ## Deep reinforcement learning
 ### Overview
