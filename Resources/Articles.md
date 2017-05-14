@@ -52,6 +52,7 @@ Contents:
 ### Practice
 * [arXiv] [Best Practices for Applying Deep Learning to Novel Applications (2017)](https://arxiv.org/abs/1704.01568)
 * [arXiv] [Fathom: Reference Workloads for Modern Deep Learning Methods (2016)](https://arxiv.org/abs/1608.06581)
+* [arXiv] [Tricks from Deep Learning (2016)](https://arxiv.org/abs/1611.03777)
 * [arXiv] [Practical recommendations for gradient-based training of deep architectures (2012)](https://arxiv.org/abs/1206.5533)
 * [The Black Magic of Deep Learning - Tips and Tricks for the practitioner (2017)](https://nmarkou.blogspot.fr/2017/02/the-black-magic-of-deep-learning-tips.html)
 ### Software
