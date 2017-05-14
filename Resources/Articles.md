@@ -4,15 +4,17 @@ Contents:
 - [Deep learning](#deep-learning)
   * [Overview](#overview)
   * [Theory](#theory)
-    + [Geometry](#geometry)
     + [Limitations](#limitations)
   * [Practice](#practice)
   * [Software](#software)
     + [Comparison](#comparison)
     + [TensorFlow](#tensorflow)
-- [Deep reinforcement learning](#deep-reinforcement-learning)
+- [Deep convolutional networks](#deep-convolutional-networks)
   * [Overview](#overview-1)
-  * [Interpretability](#interpretability)
+  * [Theory](#theory-1)
+- [Deep reinforcement learning](#deep-reinforcement-learning)
+  * [Overview](#overview-2)
+  * [Theory](#interpretability)
 
 ## Neural networks
 * [Hacker's guide to Neural Networks](http://karpathy.github.io/neuralnets/)
@@ -49,6 +51,7 @@ Contents:
 * [arXiv] [Understanding Convolutional Neural Networks (2016)](https://arxiv.org/abs/1605.09081)
 * [arXiv] [Understanding Deep Convolutional Networks (2016)](https://arxiv.org/abs/1601.04920)
 ### Theory
+* [arXiv] [Do Deep Convolutional Nets Really Need to be Deep and Convolutional? (2017)](https://arxiv.org/abs/1603.05691)
 * [arXiv] [Analysis and Design of Convolutional Networks via Hierarchical Tensor Decompositions (2017)](https://arxiv.org/abs/1705.02302)
 
 ## Deep reinforcement learning
