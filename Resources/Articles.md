@@ -4,7 +4,8 @@ Contents:
 - [Deep learning](#deep-learning)
   * [Overview](#overview)
   * [Theory](#theory)
-    + [Limitations](#limitations)
+  * [Analysis](#analysis)
+  * [Limitations](#limitations)
   * [Practice](#practice)
   * [Software](#software)
     + [Comparison](#comparison)
@@ -12,13 +13,15 @@ Contents:
 - [Deep convolutional networks](#deep-convolutional-networks)
   * [Overview](#overview-1)
   * [Theory](#theory-1)
+  * [Analysis](#analysis-1)
 - [Deep reinforcement learning](#deep-reinforcement-learning)
   * [Overview](#overview-2)
-  * [Theory](#interpretability)
+  * [Analysis](#analysis-2)
 
 ## Neural networks
 * [Hacker's guide to Neural Networks](http://karpathy.github.io/neuralnets/)
 * [arXiv] [Neural Networks for Beginners. A fast implementation in Matlab, Torch, TensorFlow (2017)](https://arxiv.org/abs/1703.05298)
+* [arXiv] [Understanding Convolutional Neural Networks (2016)](https://arxiv.org/abs/1605.09081)
 
 ## Deep learning
 ### Overview
@@ -27,12 +30,13 @@ Contents:
 * [arXiv] [On the Origin of Deep Learning (2017)](https://arxiv.org/abs/1702.07800)
 ### Theory
 * [arXiv] [Understanding deep learning requires rethinking generalization (2017)](https://arxiv.org/abs/1611.03530)
-* [arXiv] [Opening the Black Box of Deep Neural Networks via Information (2017)](https://arxiv.org/abs/1703.00810)
 * [arXiv] [On Generalization and Regularization in Deep Learning (2017)](https://arxiv.org/abs/1704.01312)
 * [arXiv] [Why does deep and cheap learning work so well? (2017)](https://arxiv.org/abs/1608.08225v2)
 * [arXiv] [Why and When Can Deep -- but Not Shallow -- Networks Avoid the Curse of Dimensionality: a Review (2017)](https://arxiv.org/abs/1611.00740)
 * [arXiv] [Geometry of Optimization and Implicit Regularization in Deep Learning (2017)](https://arxiv.org/abs/1705.03071)
-#### Limitations
+### Analysis
+* [arXiv] [Opening the Black Box of Deep Neural Networks via Information (2017)](https://arxiv.org/abs/1703.00810)
+### Limitations
 * [arXiv] [Failures of Gradient-Based Deep Learning (2017)](https://arxiv.org/abs/1703.07950)
 ### Practice
 * [arXiv] [Fathom: Reference Workloads for Modern Deep Learning Methods (2016)](https://arxiv.org/abs/1608.06581)
@@ -48,14 +52,15 @@ Contents:
 
 ## Deep convolutional networks
 ### Overview
-* [arXiv] [Understanding Convolutional Neural Networks (2016)](https://arxiv.org/abs/1605.09081)
 * [arXiv] [Understanding Deep Convolutional Networks (2016)](https://arxiv.org/abs/1601.04920)
 ### Theory
 * [arXiv] [Do Deep Convolutional Nets Really Need to be Deep and Convolutional? (2017)](https://arxiv.org/abs/1603.05691)
 * [arXiv] [Analysis and Design of Convolutional Networks via Hierarchical Tensor Decompositions (2017)](https://arxiv.org/abs/1705.02302)
+### Analysis
+* [arXiv] [Towards Better Analysis of Deep Convolutional Neural Networks (2016)](https://arxiv.org/abs/1604.07043)
 
 ## Deep reinforcement learning
 ### Overview
 * [arXiv] [Deep Reinforcement Learning: An Overview (2017)](https://arxiv.org/abs/1701.07274)
-### Interpretability
+### Analysis
 * [arXiv] [Graying the black box: Understanding DQNs (2017)](https://arxiv.org/abs/1602.02658)
