@@ -8,14 +8,11 @@ Talk to p-i- on the main channel.
 
 <!-- Short URL: https://j.mp/ML-ReadingGrp -->
 
-## Next discussion: (Sunday 21 May 2017 @ [7pm UTC](https://www.wolframalpha.com/input/?i=Sunday+7+pm+UTC))
+## Next discussion: [NTM](https://arxiv.org/abs/1410.5401) (Neural Turing Machines) -- Sunday 21 May 2017 @ [7pm UTC](https://www.wolframalpha.com/input/?i=Sunday+7+pm+UTC)
 
-rofer has suggested David MacKay's [Information Theory, Pattern Recognition, and Neural Networks](https://www.youtube.com/playlist?list=PLruBu5BI5n4aFpG32iMbdWoRVAA-Vcso6) course (16 1h videos on YouTube).
+([slides](http://klab.smpp.northwestern.edu/wiki/images/4/43/NTM2.pdf))
 
-After discussion we've decided to run a separate IRC group (##it-group) to attempt this course independently of the RG.
-
-So we still don't have a topic, or a volunteer to chair.
-
+HenryJia has kindly volunteered to chair. Yay!
 
 ## Candidates for future discussions:
 * [DNC](https://github.com/deepmind/dnc) (Differentiable Neural Computer)
