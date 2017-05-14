@@ -34,9 +34,9 @@ Contents:
 * [arXiv] [Why does deep and cheap learning work so well? (2017)](https://arxiv.org/abs/1608.08225v2)
 * [arXiv] [Why and When Can Deep -- but Not Shallow -- Networks Avoid the Curse of Dimensionality: a Review (2017)](https://arxiv.org/abs/1611.00740)
 * [arXiv] [Geometry of Optimization and Implicit Regularization in Deep Learning (2017)](https://arxiv.org/abs/1705.03071)
-* [arXiv] [Why does Deep Learning work? - A perspective from Group Theory (2015)](https://arxiv.org/abs/1412.6621)
 #### Analysis
 * [arXiv] [Opening the Black Box of Deep Neural Networks via Information (2017)](https://arxiv.org/abs/1703.00810)
+* [arXiv] [Why does Deep Learning work? - A perspective from Group Theory (2015)](https://arxiv.org/abs/1412.6621)
 #### Limitations
 * [arXiv] [Failures of Gradient-Based Deep Learning (2017)](https://arxiv.org/abs/1703.07950)
 ### Practice
@@ -56,8 +56,9 @@ Contents:
 * [arXiv] [Understanding Deep Convolutional Networks (2016)](https://arxiv.org/abs/1601.04920)
 ### Theory
 * [arXiv] [Do Deep Convolutional Nets Really Need to be Deep and Convolutional? (2017)](https://arxiv.org/abs/1603.05691)
-* [arXiv] [Analysis and Design of Convolutional Networks via Hierarchical Tensor Decompositions (2017)](https://arxiv.org/abs/1705.02302)
+* [arXiv] [Theory II: Landscape of the Empirical Risk in Deep Learning (2017)](https://arxiv.org/abs/1703.09833)
 ### Analysis
+* [arXiv] [Analysis and Design of Convolutional Networks via Hierarchical Tensor Decompositions (2017)](https://arxiv.org/abs/1705.02302)
 * [arXiv] [Towards Better Analysis of Deep Convolutional Neural Networks (2016)](https://arxiv.org/abs/1604.07043)
 
 ## Deep reinforcement learning
