@@ -57,6 +57,7 @@ Contents:
 * [arXiv] [Failures of Gradient-Based Deep Learning (2017)](https://arxiv.org/abs/1703.07950)
 * [arXiv] [The Limitations of Deep Learning in Adversarial Settings (2015)](https://arxiv.org/abs/1511.07528) (also see descendent cites)
 ### Architecture
+#### Automation
 * [arXiv] [Evolving Deep Neural Networks (2017)](https://arxiv.org/abs/1703.00548)
 ### Practice
 * [arXiv] [An Analysis of Deep Neural Network Models for Practical Applications (2017)](https://arxiv.org/abs/1605.07678)
@@ -79,6 +80,7 @@ Contents:
 ## Deep convolutional networks
 ### Overview
 * [arXiv] [Understanding Deep Convolutional Networks (2016)](https://arxiv.org/abs/1601.04920)
+* [arXiv] [A guide to convolution arithmetic for deep learning (2016)](https://arxiv.org/abs/1603.07285)
 ### Theory
 * [arXiv] [Do Deep Convolutional Nets Really Need to be Deep and Convolutional? (2017)](https://arxiv.org/abs/1603.05691)
 * [arXiv] [Theory II: Landscape of the Empirical Risk in Deep Learning (2017)](https://arxiv.org/abs/1703.09833)
