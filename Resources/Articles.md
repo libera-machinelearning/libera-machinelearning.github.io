@@ -28,6 +28,8 @@ Contents:
 * [Hacker's guide to Neural Networks](http://karpathy.github.io/neuralnets/)
 * [arXiv] [Neural Networks for Beginners. A fast implementation in Matlab, Torch, TensorFlow (2017)](https://arxiv.org/abs/1703.05298)
 * [arXiv] [Understanding Convolutional Neural Networks (2016)](https://arxiv.org/abs/1605.09081)
+### Limitations
+* [arXiv] [On the difficulty of training Recurrent Neural Networks (2013)](https://arxiv.org/abs/1211.5063)
 
 ## Deep learning
 ### Overview
