@@ -107,6 +107,8 @@ Contents:
 * [arXiv] [Deep Convolutional Neural Network Design Patterns (2016)](https://arxiv.org/abs/1611.00847)
 #### Automation
 * [arXiv] [A Genetic Programming Approach to Designing Convolutional Neural Network Architectures (2017)](https://arxiv.org/abs/1704.00764)
+#### Extensions
+* [arXiv] [Multigrid Neural Architectures (2017)](https://arxiv.org/abs/1611.07661)
 
 ## Deep reinforcement learning
 ### Overview
