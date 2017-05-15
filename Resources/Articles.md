@@ -61,6 +61,7 @@ Contents:
 * [arXiv] [On architectural choices in deep learning: From network structure to gradient convergence and parameter estimation (2017)](https://arxiv.org/abs/1702.08670)
 #### Automation
 * [arXiv] [Designing Neural Network Architectures using Reinforcement Learning (2017)](https://arxiv.org/abs/1611.02167)
+* [arXiv] [Neural Architecture Search with Reinforcement Learning (2017)](https://arxiv.org/abs/1611.01578)
 * [arXiv] [DeepArchitect: Automatically Designing and Training Deep Architectures (2017)](https://arxiv.org/abs/1704.08792)
 * [arXiv] [Evolving Deep Neural Networks (2017)](https://arxiv.org/abs/1703.00548)
 ### Practice
