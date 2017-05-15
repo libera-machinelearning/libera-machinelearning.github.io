@@ -92,8 +92,10 @@ Contents:
 #### Analysis
 * [arXiv] [Analysis and Design of Convolutional Networks via Hierarchical Tensor Decompositions (2017)](https://arxiv.org/abs/1705.02302)
 * [arXiv] [Towards Better Analysis of Deep Convolutional Neural Networks (2016)](https://arxiv.org/abs/1604.07043)
-### Design
+### Architecture
 * [arXiv] [Deep Convolutional Neural Network Design Patterns (2016)](https://arxiv.org/abs/1611.00847)
+#### Automation
+* [arXiv] [A Genetic Programming Approach to Designing Convolutional Neural Network Architectures (2017)](https://arxiv.org/abs/1704.00764)
 
 ## Deep reinforcement learning
 ### Overview
