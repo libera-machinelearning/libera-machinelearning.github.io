@@ -1,6 +1,9 @@
 Contents:
 <!-- TOC can be generated manually using https://ecotrust-canada.github.io/markdown-toc/ -->
+- [Machine learning](#machine-learning)
+  * [Automation](#automation)
 - [Neural networks](#neural-networks)
+  * [Limitations](#limitations)
 - [Deep learning](#deep-learning)
   * [Overview](#overview)
     + [Terminology](#terminology)
@@ -8,8 +11,9 @@ Contents:
   * [Theory](#theory)
     + [Analysis](#analysis)
     + [Expressivity](#expressivity)
-    + [Limitations](#limitations)
+    + [Limitations](#limitations-1)
   * [Architecture](#architecture)
+    + [Automation](#automation-1)
   * [Practice](#practice)
   * [Software](#software)
     + [Comparison](#comparison)
@@ -19,10 +23,16 @@ Contents:
   * [Overview](#overview-1)
   * [Theory](#theory-1)
     + [Analysis](#analysis-1)
+  * [Architecture](#architecture-1)
+    + [Automation](#automation-2)
 - [Deep reinforcement learning](#deep-reinforcement-learning)
   * [Overview](#overview-2)
   * [Analysis](#analysis-2)
   * [Alternatives](#alternatives-1)
+
+## Machine learning
+### Automation
+* [Automated Machine Learning — A Paradigm Shift That Accelerates Data Scientist Productivity (2017)](https://medium.com/airbnb-engineering/automated-machine-learning-a-paradigm-shift-that-accelerates-data-scientist-productivity-airbnb-f1f8a10d61f8)
 
 ## Neural networks
 * [Hacker's guide to Neural Networks](http://karpathy.github.io/neuralnets/)
