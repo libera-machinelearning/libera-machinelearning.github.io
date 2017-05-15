@@ -57,6 +57,7 @@ Contents:
 * [arXiv] [Failures of Gradient-Based Deep Learning (2017)](https://arxiv.org/abs/1703.07950)
 * [arXiv] [The Limitations of Deep Learning in Adversarial Settings (2015)](https://arxiv.org/abs/1511.07528) (also see descendent cites)
 ### Architecture
+* [arXiv] [On architectural choices in deep learning: From network structure to gradient convergence and parameter estimation (2017)](https://arxiv.org/abs/1702.08670)
 #### Automation
 * [arXiv] [Designing Neural Network Architectures using Reinforcement Learning (2017)](https://arxiv.org/abs/1611.02167)
 * [arXiv] [DeepArchitect: Automatically Designing and Training Deep Architectures (2017)](https://arxiv.org/abs/1704.08792)
