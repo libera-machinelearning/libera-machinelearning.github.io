@@ -8,7 +8,9 @@ Talk to p-i- on the main channel.
 
 <!-- Short URL: https://j.mp/ML-ReadingGrp -->
 
-## Next discussion: [NTM](https://arxiv.org/abs/1410.5401) (Neural Turing Machines) -- Sunday 21 May 2017 @ [7pm UTC](https://www.wolframalpha.com/input/?i=Sunday+7+pm+UTC)
+## Next discussion: [NTM](https://arxiv.org/abs/1410.5401) (Neural Turing Machines) -- Sunday ~~21~~ 28 May 2017 @ [7pm UTC](https://www.wolframalpha.com/input/?i=Sunday+7+pm+UTC)
+
+NOTE: This discussion has been shunted back a week (pi- didn't advertise it enough so I don't think enough people know, also HenryJia could use another week to get the code together, so I think it's the best plan).
 
 ([slides](http://klab.smpp.northwestern.edu/wiki/images/4/43/NTM2.pdf))  
 ([Old keras code for layer by EderSanta](https://github.com/EderSantana/seya/blob/master/seya/layers/ntm.py))  
