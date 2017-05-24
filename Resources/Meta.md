@@ -47,6 +47,7 @@ Contents:
 * [Tom Breloff](http://www.breloff.com/blog/) -- ML in Julia
 * [Karpathy](http://karpathy.github.io/) -- e.g. Pong from Pixels
 * [inFERENCe](http://www.inference.vc)
+* [The Morning Paper](https://blog.acolyer.org/) -- a new CS/ML paper every morning
 
 ## Competitions
 * [KDnuggets: Competitions](http://www.kdnuggets.com/competitions/)
