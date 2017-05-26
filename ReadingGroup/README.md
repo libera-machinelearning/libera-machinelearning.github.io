@@ -16,6 +16,8 @@ NOTE: This discussion has been shunted back a week (pi- didn't advertise it enou
 ([Old keras code for layer by EderSanta](https://github.com/EderSantana/seya/blob/master/seya/layers/ntm.py))  
 ([Old keras example by EderSanta](https://github.com/EderSantana/seya/blob/master/examples/NTM.ipynb))
 
+A [nice little talk](https://www.youtube.com/watch?v=_H0i0IhEO2g) by the first author of the NTM paper that gives a high-level description of the architecture. 
+
 HenryJia has kindly volunteered to chair. Yay!
 
 ## Candidates for future discussions:
