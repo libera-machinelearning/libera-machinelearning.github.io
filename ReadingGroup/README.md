@@ -8,21 +8,10 @@ Talk to p-i- on the main channel.
 
 <!-- Short URL: https://j.mp/ML-ReadingGrp -->
 
-## Next discussion: [NTM](https://arxiv.org/abs/1410.5401) (Neural Turing Machines) -- Sunday ~~21~~ 28 May 2017 @ [7pm UTC](https://www.wolframalpha.com/input/?i=Sunday+7+pm+UTC)
-
-NOTE: This discussion has been shunted back a week (pi- didn't advertise it enough so I don't think enough people know, also HenryJia could use another week to get the code together, so I think it's the best plan).
-
-([slides](http://klab.smpp.northwestern.edu/wiki/images/4/43/NTM2.pdf))  
-([Old keras code for layer by EderSanta](https://github.com/EderSantana/seya/blob/master/seya/layers/ntm.py))  
-([Old keras example by EderSanta](https://github.com/EderSantana/seya/blob/master/examples/NTM.ipynb))
-
-A [nice little talk](https://www.youtube.com/watch?v=_H0i0IhEO2g) by the first author of the NTM paper that gives a high-level description of the architecture. 
-
-HenryJia has kindly volunteered to chair. Yay!
+## Next discussion: ??? -- Sunday 11 June(???) 2017 @ [7pm UTC](https://www.wolframalpha.com/input/?i=Sunday+7+pm+UTC)
 
 ## Candidates for future discussions:
 * [DNC](https://github.com/deepmind/dnc) (Differentiable Neural Computer)
-* [NTM](https://arxiv.org/abs/1410.5401) (Neural Turing Machines) [slides](http://klab.smpp.northwestern.edu/wiki/images/4/43/NTM2.pdf)
 * Learning without Backpropagation http://www.breloff.com/no-backprop/
 * [Overcoming catastrophic forgetting in neural networks](https://arxiv.org/abs/1612.00796)
 * [Semi-Supervised Learning with Ladder Networks](https://arxiv.org/abs/1507.02672)
@@ -32,20 +21,18 @@ HenryJia has kindly volunteered to chair. Yay!
 * http://videolectures.net/course_information_theory_pattern_recognition/ [on YouTube](https://www.youtube.com/watch?v=BCiZc0n6COY&list=PLruBu5BI5n4aFpG32iMbdWoRVAA-Vcso6)
   Maybe take apart 2 videos per week (tx rofer)
 
-## Past discussions:
-* 2017.04.16 Hinton's 2006 "Reducing the Dimensionality of Data with Neural Networks" [paper](https://www.cs.toronto.edu/~hinton/science.pdf)  
-  [log](logs/2017.04.16)  
 
-* 2017.04.23 GANs: Goodfellow's 2014 "Generative Adversarial Networks" [paper](https://arxiv.org/abs/1406.2661)  
-  [log](logs/2017.04.23)  
-  Resources:
-     - [NIPS 2016 Tutorial: Generative Adversarial Networks](https://arxiv.org/abs/1701.00160)
-     - http://blog.evjang.com/2016/06/generative-adversarial-nets-in.html
-     - [Goodfellow @ NIPS '16 (+6 other vids on GAN)](https://www.youtube.com/watch?v=RvgYvHyT15E&list=PLJscN9YDD1buxCitmej1pjJkR5PMhenTF)     
-     - Stacked GANs:  
-        - [Stacked Generative Adversarial Networks](https://arxiv.org/abs/1612.04357) <-- Can anyone grok fig.1??  
-        - [StackGAN: Text to Photo-realistic Image Synthesis with Stacked Generative Adversarial Networks](https://arxiv.org/abs/1612.03242)  
-        ^ note both papers were submitted within three days one another (10/13 Dec '16)  
+## Past discussions (newest at top):
+
+* 2017.05.28 [NTM](https://arxiv.org/abs/1410.5401) (Neural Turing Machines)
+  ([slides](http://klab.smpp.northwestern.edu/wiki/images/4/43/NTM2.pdf))  
+  ([Old keras code for layer by EderSanta](https://github.com/EderSantana/seya/blob/master/seya/layers/ntm.py))  
+  ([Old keras example by EderSanta](https://github.com/EderSantana/seya/blob/master/examples/NTM.ipynb))
+
+A [nice little talk](https://www.youtube.com/watch?v=_H0i0IhEO2g) by the first author of the NTM paper that gives a high-level description of the architecture. 
+
+  [log](2017.05.28_NTMs)
+
 
 * 2017.05.07 VAE (Variational AutoEncoders)  
   [log](logs/2017.05.07_VAE)
@@ -75,4 +62,21 @@ HenryJia has kindly volunteered to chair. Yay!
 
   * [(ArXiv Blei, Nov '16) Variational Inference: A Review for Statisticians](https://arxiv.org/abs/1601.00670)
 
-* VIDEO: [(DeFreitas)Deep Learning Lecture 14: Karol Gregor on Variational Autoencoders and Image Generation](https://www.youtube.com/watch?v=P78QYjWh5sM) <-- deriving the theory from an information theoretic perspective (ouch?)
+  * VIDEO: [(DeFreitas)Deep Learning Lecture 14: Karol Gregor on Variational Autoencoders and Image Generation](https://www.youtube.com/watch?v=P78QYjWh5sM) <-- deriving the theory from an information theoretic perspective (ouch?)
+
+
+* 2017.04.23 GANs: Goodfellow's 2014 "Generative Adversarial Networks" [paper](https://arxiv.org/abs/1406.2661)  
+  [log](logs/2017.04.23)  
+  Resources:
+     - [NIPS 2016 Tutorial: Generative Adversarial Networks](https://arxiv.org/abs/1701.00160)
+     - http://blog.evjang.com/2016/06/generative-adversarial-nets-in.html
+     - [Goodfellow @ NIPS '16 (+6 other vids on GAN)](https://www.youtube.com/watch?v=RvgYvHyT15E&list=PLJscN9YDD1buxCitmej1pjJkR5PMhenTF)     
+     - Stacked GANs:  
+        - [Stacked Generative Adversarial Networks](https://arxiv.org/abs/1612.04357) <-- Can anyone grok fig.1??  
+        - [StackGAN: Text to Photo-realistic Image Synthesis with Stacked Generative Adversarial Networks](https://arxiv.org/abs/1612.03242)  
+        ^ note both papers were submitted within three days one another (10/13 Dec '16)  
+
+
+* 2017.04.16 Hinton's 2006 "Reducing the Dimensionality of Data with Neural Networks" [paper](https://www.cs.toronto.edu/~hinton/science.pdf)  
+  [log](logs/2017.04.16)  
+
