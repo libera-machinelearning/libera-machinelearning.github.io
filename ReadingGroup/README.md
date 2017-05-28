@@ -25,13 +25,13 @@ Talk to p-i- on the main channel.
 ## Past discussions (newest at top):
 
 * 2017.05.28 [NTM](https://arxiv.org/abs/1410.5401) (Neural Turing Machines)  
+  [log](2017.05.28_NTMs)  
+  
   ([slides](http://klab.smpp.northwestern.edu/wiki/images/4/43/NTM2.pdf))  
   ([Old keras code for layer by EderSanta](https://github.com/EderSantana/seya/blob/master/seya/layers/ntm.py))  
   ([Old keras example by EderSanta](https://github.com/EderSantana/seya/blob/master/examples/NTM.ipynb))
 
   A [nice little talk](https://www.youtube.com/watch?v=_H0i0IhEO2g) by the first author of the NTM paper that gives a high-level description of the architecture. 
-
-  [log](2017.05.28_NTMs)
 
 
 * 2017.05.07 VAE (Variational AutoEncoders)  
