@@ -1,0 +1,412 @@
+20:06 pi-: = = = = = = =   [trumpet fanfare]  Reading Group, 28 May 2017, discussing NTMs  = = = = = = = 
+20:06 pi-: (public logging starts)
+20:06 pi-: Who's here?
+20:06 deego: present
+20:06 Lyote: Howdy.
+20:06 pi-: ok we have at least 4
+20:06 pi-: cool
+20:07 pi-: Henry_Jia: did you manage to get any code working in the end?
+20:07 Lyote: I found this paper much more readable than the previous one. :D
+20:07 Henry_Jia: pi-: I'm debugging furiously as we speak, so no :P hopefully will be workign soon
+20:07 pi-: haha
+20:07 Henry_Jia: I'll commit as I go so you guys can see it
+20:07 brand0: present
+20:08 pi-: well don't feel the need to get it working right now, I don't think we will be able to discuss and load code at the same time.
+20:08 pi-: ok confession, I haven't read the paper this week :|
+20:08 pi-: It's been a bumpy ride..
+20:08 Henry_Jia: Alright, I'll do my best to get it done and available to everyone as soon as I can
+20:08 Henry_Jia: Yea same here pi-
+20:08 Lyote: No worries pi-.
+20:08 Henry_Jia: Well I've read it
+20:09 Henry_Jia: But yea, we can explain it
+20:09 pi-: Would anyone care to present & give a brief overview of the subject matter?
+20:09 Henry_Jia: Should I do the honous?
+20:09 pi-: What problem do NTMs solve?
+20:09 Henry_Jia: *honours
+20:09 pi-: plz
+20:10 Lyote: They used it only for very toy problems in the paper. Simple algorithmic things like sorting a list or copying the input.
+20:10 Henry_Jia: OK, according to the paper, NTMs are a sort of neural simulation of a computer in a way, and the paper suggests that they can be used to learn basic algorithms, (copy, sort etc.)
+20:10 Henry_Jia: Dammit got sniped
+20:10 pi-: lol
+20:10 Lyote: To be fair, our messages were complimentary. :P
+20:11 Henry_Jia: The paper also suggests that NTMs are far more capable than traditional LSTM in learning basic algorithms
+20:11 Lyote: Also, I really don't like their use of the word "neural". DeepMind really likes to think that's a synonym for "differentiable".
+20:11 RandIter: wait, are you saying they can effectively serve as a superior replacement for LSTMs
+20:11 Henry_Jia: Lyote: Seconded
+20:11 Henry_Jia: RandIter: I think so
+20:12 _sfiguser has left IRC (Ping timeout: 245 seconds)
+20:12 pi-: RandIter: as I understand, both NTMs and DNCs seek to improve on LSTM
+20:12 RandIter: Lyote: isn't DNC a step-up from NTMs, or is it the same thing
+20:12 brand0: was the paper suggesting they outperform LSTM in exclusively the algorithmic tasks?
+20:12 Lyote: RandIter: DNC is an iterative improvement on NTM, from what I understand.
+20:12 Henry_Jia: RandIter: It's a small step up I believe
+20:12 Henry_Jia: brand0: the paper only describes algorithmic tasks
+20:12 Henry_Jia: It may well do better at NLP and other stuff
+20:12 Henry_Jia: but that needs playing around
+20:12 Lyote: I'd be interested to see how they perform in other domains where LSTM is used.
+20:13 Lyote: Also worth noting: the paper uses two types of NTM's, one with a feedforward controller and one with a LSTM controller.
+20:13 Henry_Jia: ^^
+20:13 Henry_Jia: The controller is the smaller network inside it which generates the read and write heads
+20:13 Henry_Jia: Which can be a LSTM
+20:15 Henry_Jia: If the controller is an LSTM then the internal states of the LSTM can be thought of as the cache of a computer with the main memory of the NTM as the RAM
+20:15 Lyote: From what I understand, the core idea behind the NTM is to externally model "memory". Their approach uses memory which is differentiable, which allows you to learn end-to-end.
+20:15 Henry_Jia: Yep, and it's what I think makes it powerful. Suddenly, memory is not limited by the size of the hidden layer
+20:16 RandIter: What precisely am I missing when I don't have end-to-end learning?
+20:16 Agro has joined (~Agro@cpe-72-182-58-96.austin.res.rr.com)
+20:16 Henry_Jia: What do you mean RandIter
+20:17 RandIter: What does end-to-end mean here, as opposed to more traditional deep neural nets
+20:17 Lyote: IIRC, in the paper they make an analogy. The LSTM acts like RAM, whereas the weights of the LSTM act as registers.
+20:17 pi-: RandIter: I think end-to-end learning just means that the whole thing is differentiable, so you can apply backprop optimisation.
+20:17 Lyote: Make of that what you will.
+20:17 RandIter: ok
+20:17 Lyote: pi-: That's how I meant it, yes.
+20:18 Lyote: I think I used it a bit loosely though: https://stats.stackexchange.com/questions/224118/what-does-end-to-end-mean-in-deep-learning-methods
+20:18 ML-helper[bot]: [ terminology - What does "end to end" mean in deep learning methods? - Cross Validated ]
+20:18 Agro has left IRC (Client Quit)
+20:18 synja has joined (~root@unaffiliated/synja)
+20:18 Henry_Jia: Lyote: well the NTM's main memories are like RAM, the LSTM's internal state are the registers
+20:19 twomix has left IRC ()
+20:19 revolve: differentiable memory helps QA networks generalise past their training horizon, according to the recurrent entity networks paper (first to achieve 100% on bAbI tasks) and Key-Value Memory Networks for Directly Reading Documents
+20:19 Lyote: Henry_Jia: Oops, I refactored that sentence, but forgot to update the variables. :)
+20:20 Henry_Jia: :P
+20:20 revolve: KV MemNNs could do with a Keras or Pytorch implementation if anyone's got gratuitous free time :P
+20:20 Henry_Jia: revolve: yep, and this is shown in the algorithmic tasks in the NTM paper
+20:20 Henry_Jia: revolve: maybe after my high school finals are over...
+20:21 RandIter: revolve: is there any implementation of KV net
+20:21 deego: revolve: what's babi? still googling
+20:21 revolve: Henry_Jia: awesome and good luck
+20:21 Henry_Jia: deego: I believe it's a dataset of questions and answers
+20:21 deego: thx
+20:21 Lyote: Henry_Jia: You could just say "after my exams are over". No need to make me feel inadequate. :(
+20:21 Henry_Jia: revolve: so gonna need that luck :P
+20:21 revolve: RandIter: yeah there's a tensorflow implementation that I've not seen actually generalise yet
+20:21 RandIter: deego: https://research.fb.com/projects/babi/ ?
+20:21 ML-helper[bot]: [ bAbI – Facebook Research ]
+20:21 Henry_Jia: Lyote: hahaha it's the one thing I'm good at if anything
+20:21 Lyote: :D
+20:22 Lyote: revolve: Does the approach in that paper differ from that in NTM?
+20:22 revolve: deego: bAbI's a synthetic story/question/answer dataset from facebook
+20:22 deego: ah, thanks, everyone
+20:23 Henry_Jia: Lyote: probably, I don't think the original NTM arch is used all that much due to how complex it is
+20:23 revolve: Lyote: I've not looked into NTM too deeply as it's not as interesting to me personally as networks for QA/IR
+20:23 Lyote: Is there a standard name for neural nets which use differentiable memory? I've been really interested in DeepMind's Neural Episodic Control paper, which does something similar.
+20:23 pi-: It's rather interesting that neuroscience still doesn't seem to have figured out the mechanism of memory.
+20:24 pi-: It seems like a sensible direction to go looking for a breakthrough in.
+20:24 RandIter: you know the brain is a kludge. everything does everything
+20:24 Henry_Jia: The advantage we have over neuroscience is we can take neural networks apart and analyse them, most humans won't let you do that to them
+20:24 revolve: the disadvantage is the human brain typicall has a billion hidden units
+20:24 _sfiguser has joined (~sfigguser@93-35-253-193.ip57.fastwebnet.it)
+20:24 revolve: typically*
+20:24 Henry_Jia: RandIter: Well not quite, I thought it was mroe of any part can become any part?
+20:24 revolve: 100 billion*
+20:25 Henry_Jia: but anyway
+20:25 silver has left IRC (Read error: Connection reset by peer)
+20:25 deego: Anyone have a an idea of just how DNC differs from NTM?
+20:25 RandIter: revolve: do you see future software development going the NTM/DNC route?
+20:25 brand0: so the controller (CPU) is the LSTM, the RAM is the memory matrix, is the training showing examples of the output and input of a specific algorithm?
+20:25 Henry_Jia: I think it uses more complex addressing mechanism deego
+20:25 Lyote: revolve: What was the first paper you mentioned, where they got 100% on bAbI?
+20:25 deego: Henry_Jia: thanks
+20:26 Henry_Jia: Lyote: 100% on bAbI? that doesn't seem possible right?
+20:26 revolve: RandIter: differentiable memory, yeah. NTM/DNC is as wasteful as you probably perceive it to be
+20:26 Lyote: deego: https://www.youtube.com/watch?v=steioHoiEms Alex Graves talking about DNC.
+20:26 ML-helper[bot]: [ RNN Symposium 2016: Alex Graves - Differentiable Neural Computer - YouTube ]
+20:26 Henry_Jia: revolve: I don't know the NTM addressing mechanism makes sense
+20:26 Lyote: He talks a little bit at the beginning about the difference between DNC and NTM.
+20:26 revolve: more interesting: program induction through easier modalities (pix2code, program induction from natural language)
+20:27 revolve: personal project for ~500 years in future: seq2seq as a compiler backend, english to machine code
+20:27 revolve: projection*
+20:27 deego: Lyote: excellent! saved
+20:28 Lyote: deego: He also gave an earlier talk on NTMs that's linked to on the github page.
+20:28 revolve: Henry_Jia: well there's four variants including NTM
+20:28 RandIter: you say they're wasteful. Why?
+20:28 Henry_Jia: revolve: what's the other 2?
+20:28 revolve: RandIter: similar to virtual machines emulating hardware
+20:29 brand0: in the video graves talks about the need to use curriculum learning for all but the most simple algorithms
+20:29 revolve: using a computer to compute computing
+20:29 deego: Henry_Jia: why doesn't the addressing mechanism make sense?
+20:29 Henry_Jia: revolve: I wouldn't say NTM's addresing mechanism is wasteful, it seems to match very closely something designed to solve bAbI
+20:29 revolve: Henry_Jia: NTM, DNC, KVMemNN, REN
+20:29 Henry_Jia: deego: Because you have content based addressing, and shift based
+20:29 RandIter: so what are the last two of these
+20:29 Henry_Jia: Content based addressing allows you to match the thing in the memory most similar to what you want
+20:30 Henry_Jia: i.e. recalling information
+20:30 Henry_Jia: -> bAbI
+20:30 brand0: you have to have content based because there's no random access, only relative, right?
+20:30 Henry_Jia: shift based allows you to then shift taht by an index which allows you to access nearby elements
+20:30 Henry_Jia: brand0: Correct, there's no random access
+20:31 deego: <Henry_Jia> brand0: Correct, there's no random access  <<=== don't they also allow location-based?
+20:31 brand0: otherwise the number of params would expand with the size of the memory
+20:31 revolve: NTM/DNC would definitely influence how a strong AI reasons about programming, I'd imagine
+20:31 Henry_Jia: deego: they allow a small shift, but not "pure" location
+20:31 brand0: relative location yeah
+20:31 deego: ah
+20:32 Henry_Jia: In the paper, I believe they fixed that shift to 3 possible shifts, and therefore only adjacent elements
+20:32 Lyote: They use a softmax for one-hot encoding for shifts of -1, 0, and 1.
+20:32 Henry_Jia: Yep, and combine that with a circular conv, and bob's your uncle
+20:33 Henry_Jia: you've got a circular shift
+20:33 Lyote: They also mention "experimenting" with using a scalar which specifies the shift amount, but they don't present results for that.
+20:34 brand0: present/
+20:34 Henry_Jia: Oh, I din't think I noticed taht
+20:34 Henry_Jia: But how would that work? that's not differentiable?
+20:34 RandIter: Are they going to soon make fancy structures like trees and graphs
+20:34 gucci_meow has joined (~gucci_meo@CPE-124-186-97-50.lns9.woo.bigpond.net.au)
+20:34 RandIter: because any serious program needs more than just linear memory addressing
+20:35 revolve: RandIter: TreeLSTMs
+20:35 Henry_Jia: As in a neural representation of a tree?
+20:35 Lyote: brand0: They didn't give those results.
+20:35 brand0: RandIter, at the end of the graves talk he says they're expending it to graphs
+20:35 brand0: also q&a graphs, whatever that means
+20:35 RandIter: ok what are KVMemNN and REN and how are they different
+20:35 Henry_Jia: OK, can someone send me a link to explain data structures?
+20:35 Henry_Jia: Cos I never learnt those
+20:36 RandIter: a graph has connections between nodes and each connection has a scalar weight
+20:36 Henry_Jia: RandIter: I know that but how does that work as a data structure?
+20:37 Henry_Jia: Is a tree structure just a nested dictionary basically?
+20:37 revolve: RandIter: kvmemnn stuffs an entire document in differentiable memory and then uses similarity and attention to match questions to relevant parts of supporting documents
+20:37 revolve: REN appears to be very similar but I couldn't tell you what's different off the top of my head
+20:37 Henry_Jia: revolve: that seems similar to NTM
+20:38 pi-: Henry_Jia: yep, like files on your hard drive (only without symlinks)
+20:38 Lyote: Henry_Jia: Do you know about the difference between a linked list and an array? I think that's the simplest type of data structure.
+20:38 mson has left IRC (Quit: Connection closed for inactivity)
+20:38 Henry_Jia: Lyote: nope, I know nothing about data structures, I can code but
+20:38 RandIter: tree is acyclic
+20:39 Henry_Jia: I know that, I know graph theory
+20:39 Henry_Jia: But how would a tree structure work in terms of code?
+20:39 Lyote: Typically you see it structured as a class.
+20:40 Lyote: I think we're straying a bit from the main topic, maybe it's best to revisit this after the RG?
+20:40 Henry_Jia: Sure
+20:40 tomzx: Henry_Jia: yes, you could implement it as a list of links + identifier, where your identifier are stored in a dictionary
+20:40 Henry_Jia: Let's get back to NTMs
+20:40 revolve: RandIter: if you run a kvmemnn and get interesting results let a mammal know
+20:41 idnc_sk has left IRC (Remote host closed the connection)
+20:41 Lyote: So, one thing I wasn't sure of: How does the memory portion of the network actually get used by the controller?
+20:41 idnc_sk has joined (~idnc_sk@62.197.243.246)
+20:41 Lyote: Do they describe how they compute the add/erase vectors?
+20:42 Henry_Jia: In the code from EderSanta's seya repo, they compute the add/eras vectors from the LSTM output
+20:43 Lyote: Henry_Jia: Could you link?
+20:43 Henry_Jia: https://github.com/HenryJia/seya/blob/master/seya/layers/ntm.py
+20:43 ML-helper[bot]: [ seya/ntm.py at master · HenryJia/seya · GitHub ]
+20:43 Henry_Jia: https://github.com/HenryJia/seya/blob/master/examples/NTM.ipynb
+20:43 ML-helper[bot]: [ seya/NTM.ipynb at master · HenryJia/seya · GitHub ]
+20:44 Henry_Jia: This is just my fork of the old EderSanta repo
+20:44 Lyote: Awesome, thanks!
+20:45 Henry_Jia: They als feed the vector that the controller chose into the controlelr as input
+20:46 two2theheadPC0 has left IRC (Quit: Leaving)
+20:47 neoncontrails has left IRC (Remote host closed the connection)
+20:48 neoncontrails has joined (~neoncontr@2602:306:31a7:a1a0:ade5:c3ec:3bc2:ce6d)
+20:48 Henry_Jia: I should have a pytorch version working in time if I can stay alive for the coming month
+20:48 brand0: In the architecture graph the controller has multiple arrows between the read head but not the write, what is that implying?
+20:50 revolve: what do NTMs take as input?
+20:50 revolve: how do you describe a program to an NTM?
+20:50 Henry_Jia: You don't
+20:50 deego: brand0: which figure? in the paper?
+20:50 Henry_Jia: You jsut give it the target and the input you would normally
+20:50 revolve: can you give an example?
+20:50 brand0: deego, figure 1 in the paper
+20:50 RebelCoderRU has left IRC (Ping timeout: 240 seconds)
+20:51 Lyote: revolve: Figure 6 of the paper.
+20:51 brand0: revolve, unsorted list input sorted list target
+20:51 deego: brand0: ah, figure 1. The arrow running to the controller for the READ represents the contents of READ being fed back to the controller.
+20:51 Henry_Jia: i.e. with their copy example they just feed in the stuff they want copied, and then set the targets to that again at a latter timestep
+20:51 revolve: brand0: thanks
+20:51 brand0: deego, gotcha thanks
+20:52 deego: brand0: READ controller emits a read location (via content/location) which goes to memory, and then reads from memory, and then that data is fed to the controller. Write, otoh, is a one-way operation, of course.
+20:52 revolve: Henry_Jia: if you put a pytorch implementation on github I'd probably use it as a basis for a pytorch implementation of Key-Value Memory Networks
+20:52 Lyote: revolve: http://imgur.com/a/i3n2m (x axis is time)
+20:52 ML-helper[bot]: [ Imgur: The most awesome images on the Internet ]
+20:52 neoncontrails has left IRC (Ping timeout: 272 seconds)
+20:52 mr_yogurt has joined (~mr_yogurt@c-174-52-155-18.hsd1.ut.comcast.net)
+20:52 revolve: Lyote: thanks
+20:52 mr_yogurt: Anyone have any luck with neural nets on the sberbank competition on kaggle?
+20:53 Henry_Jia: revolve: interesting, might try that some time in a couple months
+20:54 efm has left IRC (Read error: Connection reset by peer)
+20:55 revolve: alright well keep me posted with either project
+20:55 Henry_Jia: yea cos I'm busy af atm
+20:56 pi-: Did anyone find any other resources that presented NTMs better than the original paper?
+20:56 revolve: KV memnn is written down on my list of things to implement so I wouldn't worry about that in any real way
+20:56 pi-: I've managed a quick skim, but I definitely wouldn't be able to implement one off that.
+20:57 Henry_Jia: pi-: not yet, NTMs are kindo f exotic and most people don't use them because they're complicated
+20:57 Henry_Jia: I think
+20:57 Henry_Jia: pi-: I dunno, the paper is quitr
+20:57 Henry_Jia: quite detailed
+20:58 deego: Henry_Jia: aren't they also very computationally "wasteful" atm?  In that the entire memory matrix needs to be operated on?
+20:58 RandIter: Is there no "NTM/DNC layer" that can be easily added via Keras, etc.?
+20:58 deego: and differentiable info needs to be kept
+20:58 Henry_Jia: It's much more efficient than an LSTM
+20:58 Henry_Jia: Suppose you use a 128 by 128 matrix with 512 neurons, that has the memory capacity of 128 x 128 + 512 * 2
+20:59 Henry_Jia: to get that with an LSTM you'd need a LSTM as wide as 64 * 128 + 512 units
+20:59 pi-: What is the basic gist of an NTM?  At an implementation level... Can anyone explain it to me?
+20:59 Henry_Jia: RandIter: EderSanta had one, but it's not been updated i nyears and the Keras API keeps changing
+21:00 Henry_Jia: pi-: OK, you have a controller network which is the LSTM, which reads and writes the memory matrix through read heads and write heads and write vectors
+21:00 RandIter: Henry_Jia: Does Keras have an open feature/issue/request for one?
+21:00 Orpheon has left IRC (Remote host closed the connection)
+21:00 pi-: (I haven't really looked at RNNs or LSTMs, .. I suspect that might be pre-requisite)
+21:00 kelt has joined (~kelt@172.243.86.188)
+21:00 Kol has joined (Kol@S0106bcd1656621da.vc.shawcable.net)
+21:01 MarcelineVQ: there's a paper on my backlog that's related to the memory problem https://arxiv.org/abs/1705.08049
+21:01 ML-helper[bot]: [ [1705.08049] Neural Network Memory Architectures for Autonomous Robot Navigation ]
+21:01 Henry_Jia: https://github.com/fchollet/keras/issues?utf8=%E2%9C%93&q=is%3Aissue%20neural%20turing%20machine
+21:01 ML-helper[bot]: [ Issues · fchollet/keras · GitHub ]
+21:01 RandIter: I take it as meaning that LSTM is better suited for storing compressed abstractions, whereas NTM/DNC is better suited for dumping data without abstracting it much.
+21:02 pi-: Henry_Jia: ok, how does this thing actually work in terms of training? How would you get into learn a sorting algorithm? I can't see how backprop applies..
+21:02 Henry_Jia: pi-: all the read and write heads are differentiable, allowing you to go end 2 end
+21:02 Henry_Jia: You just feed it the input, then set the targets to the sorted input and train
+21:02 bluish_ has joined (~bluish@89-78-67-124.dynamic.chello.pl)
+21:03 pi-: I just have no internal mental picture of how the network is learning to sort
+21:03 unixpickle has joined (~alex@c-69-136-93-78.hsd1.pa.comcast.net)
+21:04 Lyote: It might be an interesting exercise to write a NTM controller "by hand" to demonstrate how it works.
+21:05 Hans-Martin has joined (~ignore@i577BDC82.versanet.de)
+21:05 bluish__ has left IRC (Ping timeout: 245 seconds)
+21:06 Henry_Jia: Lyote: I blieve they do a bit of the reverse of that in the paper
+21:06 deego: pi-:  the ntm paper actually deconstructs how the ntm discovers sorting
+21:06 Lyote: "By hand" meaning programmatically (sans any neural networks), just to get a feel for how the memory works.
+21:06 deego: pi-: and presents it pictorially
+21:06 Lyote: Yeah I think so.
+21:07 deego: iirc, it ends up using memory in a "novel" different way than you'd expect.
+21:07 Henry_Jia: pi-: I dunno, I just settle for magic backprop is happening and pray to an idol of Hinton
+21:08 pi-: It would be interesting to look at the memory evolve over time visually as it is learning to sort
+21:08 Henry_Jia: Might be possible to do that with pytorch
+21:08 gucci_meow has left IRC (Remote host closed the connection)
+21:08 brand0: graves said he was going to release some code 6months or so after the publication of the paper. does anyone know if that happened?
+21:09 Henry_Jia: brand0: I was never able to find any code
+21:09 pi-: He might respond to an email...
+21:09 Lyote: Me neither.
+21:10 Lyote: brand0: Where in the talk does he mention that?
+21:10 Henry_Jia: brand0: there's a fair few implementations around but no original code
+21:10 Lyote: I'd be willing to email him if no one else wants to.
+21:11 polydo_s has left IRC (Read error: Connection reset by peer)
+21:11 brand0: Lyote, https://youtu.be/steioHoiEms?t=1258
+21:11 ML-helper[bot]: [ (R: www.youtube.com) RNN Symposium 2016: Alex Graves - Differentiable Neural Computer - YouTube ]
+21:12 brand0: at 20:58
+21:12 Henry_Jia: http://www.gitxiv.com/posts/89PD2urojFsxwPytX/neural-turing-machine
+21:12 ML-helper[bot]: [ Loading... ]
+21:12 c0rw1n has joined (~c0rw1n@32.106-241-81.adsl-dyn.isp.belgacom.be)
+21:12 brand0: he said six months after the nature publication they'd publish code, that was part of the deal
+21:12 Lyote: Perfect, thanks.
+21:13 Henry_Jia: brand0: as in the nature publication of the DNC?
+21:13 Lyote: Published online 12 October 2016
+21:13 Lyote: ^ That's the publication date for the Nature article.
+21:13 brand0: yes i assume so
+21:14 Henry_Jia: Oh here it is https://github.com/deepmind/dnc
+21:14 ML-helper[bot]: [ GitHub - deepmind/dnc: A TensorFlow implementation of the Differentiable Neural Computer. ]
+21:14 brand0: Henry_Jia, i found it at the same time as you :P
+21:14 pi-: skimming https://www.youtube.com/watch?v=r5XKzjTFCZQ
+21:14 ML-helper[bot]: [ Differentiable Neural Computer (LIVE) - YouTube ]
+21:14 polydo_s_ has joined (~polydo_s@2402:f000:ffff:64:4878:3428:a241:60c2)
+21:14 efm has joined (~efm@vpn.tummy.com)
+21:14 Henry_Jia: Getting good at IRC sniping people :P
+21:15 brand0: does anyone have anything else to add to this discussion?
+21:15 polydo___ has joined (~polydo_s@2402:f000:ffff:64:9cd0:142c:c10b:2cd5)
+21:15 Lyote: One thing that annoys me about the paper: It seems like they're presenting results from only a single training run?
+21:16 Henry_Jia: Lyote: how'd you mean?
+21:16 Lyote: At very least, I'd expect to see error bars if they did it over multiple runs.
+21:16 Henry_Jia: True but I think it's repeatable from quite a few repos
+21:16 Lyote: Henry_Jia: Figures 3, 7, 10, etc.
+21:17 Lyote: It's just a pet peeve of mine when I see a result that's not obviously internally replicated.
+21:17 pi-: I think what I will do is extend public logging as long as the conversation continues, but snip out everything not related to the subject.
+21:17 polydo_s has joined (~polydo_s@2402:f000:ffff:64:ed0b:c8cb:9e4d:9fd1)
+21:17 Henry_Jia: pi-: gotcha
+21:18 Lyote: pi-: Thanks.
+21:18 unixpickle: Lyote: there was a similar paper with memory augmented neural networks that had results which were not always reproducible on consecutive runs. They only mentioned it in their appendix once they figured out a fix for it; really annoying. (this paper https://arxiv.org/abs/1506.02516)
+21:18 ML-helper[bot]: [ [1506.02516] Learning to Transduce with Unbounded Memory ]
+21:18 Henry_Jia: Lyote: I think it shows the results well enough
+21:18 pi-: Did anyone watch that Siraj vid?
+21:18 fp7 has left IRC (Quit: .)
+21:18 polydo_s_ has left IRC (Ping timeout: 245 seconds)
+21:19 pi-: It seems to have been generally well-received (+495/-11)
+21:19 Henry_Jia: unixpickle: oh as in the neural stack/queue?
+21:19 unixpickle: Henry_Jia yeah
+21:19 Lyote: Henry_Jia: It's not a matter of how it's displayed so much as I have no idea if that's a consistent trend or just a fluke.
+21:19 Henry_Jia: unixpickle: always meant to read that, never got round to it
+21:19 unixpickle: their model didn't work every time until they did a hacky initialization
+21:20 Henry_Jia: Lyote: don't think it's a fluke, EderSanta's reproduced it as with many other repos
+21:20 unixpickle: i implemented it last summer without reading that appendix, was toying with it for a while and figured out my own set of hacks to make it work, then noticed the appendix later
+21:20 Lyote: pi-: Worth noting that's for the DNC, which I think is more complicated.
+21:20 pi-: oh so it is
+21:20 Lyote: Henry_Jia: I'm not saying that it can't be reproduced. :P I'm saying that it should have been reproduced by the original authors.
+21:20 Henry_Jia: Gotcha makes sense
+21:20 Lyote: unixpickle: Ouch, sounds painful.
+21:21 Henry_Jia: unixpickle: As in for the NTM, the DNC or the neural stacks and queues?
+21:21 polydo___ has left IRC (Ping timeout: 260 seconds)
+21:21 unixpickle: Henry_Jia: stacks and queues
+21:21 Henry_Jia: gotcha
+21:21 unixpickle: out of all the memory augmented neural nets i've implemented, stacks&queues were the least useful and the most unsatisfying
+21:22 polydo_s has left IRC (Ping timeout: 245 seconds)
+21:22 Henry_Jia: oh ok, interesting, have yo uever tried NTMs then?
+21:22 RandIter: unixpickle: why "least useful"?
+21:22 unixpickle: @RandIter: mostly because they were just too hard to train on real tasks
+21:22 RandIter: Stacks and queues are fundamental data structures
+21:22 RandIter: ok
+21:22 unixpickle: i implemented them because it seemed really nice; like, with a stack, your network could learn any context free grammar
+21:23 unixpickle: but in practice, it did not learn well
+21:24 RandIter: what did the DNC people learn then if not stacks
+21:24 Hans-Martin has left IRC (Remote host closed the connection)
+21:24 unixpickle: perhaps the DNC provides a better way of parameterizing memory (better as in easier to train vai backprop)
+21:24 Lyote: I think unixpickle is talking about a specific architecture, not the idea of using stacks/queues in general.
+21:24 RandIter: unixpickle: so you tried to learn a stack without using DNC?
+21:24 Henry_Jia: Probably same as NTMs then
+21:24 unixpickle: yeah, i'm referring to the specific stack/queue architecture in the paper i linked
+21:25 RandIter: looks pre-DNC
+21:25 Lyote: RandIter: You could view the "Copy" task as a sort of queue.
+21:25 SiegeLord has left IRC (Quit: It's a joke, it's all a joke.)
+21:25 unixpickle: RandIter: that paper was pre-DNC and post-NTM iirc
+21:26 twomix has joined (uid165924@gateway/web/irccloud.com/x-hzdlhsbmtptkezwe)
+21:27 Henry_Jia: hmm
+21:28 SiegeLord has joined (~sl@c-73-158-190-212.hsd1.ca.comcast.net)
+21:28 Lyote: unixpickle: What different memory augmented NNs have you tried?
+21:28 RandIter: Here is another one of possible interest: https://arxiv.org/abs/1602.03218
+21:29 ML-helper[bot]: [ [1602.03218] Learning Efficient Algorithms with Hierarchical Attentive Memory ]
+21:29 pi-:  /me afk (food) brb
+21:29 Henry_Jia: ok pi-
+21:29 RandIter: what do you think of above paper, unixpickle
+21:30 cads has joined (~cads@2600:8801:1382:6700:16b3:1fff:fe02:726)
+21:31 unixpickle: RandIter: haven't read it, probably should. I am admittedly not an expert on memory augmented neural nets :)
+21:31 unixpickle: Lyote: stacks & queues; NTMs; and more recently I created a memory augmented architecture based on training a smaller "memory network" in real time and using it as a kind of key-value store
+21:32 Henry_Jia: unixpickle: do you have code for an NTM?
+21:32 unixpickle: nah, that was a buggy piece of Go code that I never open sourced
+21:32 unixpickle: my stacks & queues are open, but they are in Go and use my old ML framework (which I have replaced completely at this point)
+21:32 Lyote: unixpickle: What problem domain were you attacking?
+21:32 Henry_Jia: unixpickle: oh yea you use Go for everything
+21:32 Henry_Jia: eugh
+21:33 Lyote: s/were/are/
+21:33 unixpickle: Lyote: meta-learning
+21:33 idnc_sk has left IRC (Quit: leaving)
+21:33 unixpickle: memory augmented nets are good for meta-learning since, ideally, you have an RNN that can pick up a lot of new info in real time and apply it
+21:34 Henry_Jia: what exactly constitutes to meta learning?
+21:34 unixpickle: in this case it was an Omniglot task, where you show an RNN handwritten characters from a bunch of different alphabets, tell them the "label" for those samples, and then have it try to get better and better throughout the sequence at classifying samples
+21:34 RandIter: learning learning
+21:35 unixpickle: the idea being, in this use case, that the network will learn how to learn new characters quickly
+21:36 unixpickle: but yeah in general, meta-learning is "learning to learn"
+21:36 Henry_Jia: OK
+21:37 RandIter: I want to know if DNC is strictly superior to HAM (Hierarchical Attentive Memory) or not.
+21:39 revolve: unixpickle: have you open sourced any differentiable memory implementations in golang?
+21:39 RandIter: About HAM:
+21:40 RandIter: > it learns to sort n numbers in time O(n log n) and generalizes well to input sequences much longer than the ones seen during the training. We also show that HAM can be trained to act like classic data structures: a stack, a FIFO queue and a priority queue.
+21:40 unixpickle: revolve: https://github.com/unixpickle/sgdstore https://github.com/unixpickle/neuralstruct. First one is more recent. Second one is old and uses a framework i don't maintain anymore.
+21:40 ML-helper[bot]: [ GitHub - unixpickle/sgdstore: Augmented RNN memory via live SGD ]
+21:40 ML-helper[bot]: [ GitHub - unixpickle/neuralstruct: Differentiable data structures for neural nets ]
+21:43 revolve: the omniglot results are interesting
+21:43 RandIter: sorry, what is that?
+21:44 unixpickle: omniglot is kind of the transpose of MNIST. A lot of alphabets and characters and a few examples for each
+21:45 akurniawan has joined (~akurniawa@139.192.58.195)
+21:45 gucci_meow has joined (~gucci_meo@CPE-124-186-97-50.lns9.woo.bigpond.net.au)
+21:45 stealth[] has left IRC (Quit: Leaving)
+21:45 Lyote: I'm heading to bed. Thanks for the insightful discussion, everyone! o/
+21:47 bluish_ has left IRC (Remote host closed the connection)
+21:49 revolve: neuralstruct is supercool. makes me wonder if the golang team'll add support for the new instructrions in knights landing and broadwell
+21:49 revolve: instructions*
+21:50 unixpickle: revolve: not sure; they don't even have built-in support for SIMD instructions yet. That should come first.
+21:51 jeirosz has left IRC (Remote host closed the connection)
+21:55 Henry_Jia: Well, I guess that concludes today's reading group, nice work everyone :)
+21:55 Henry_Jia: pi-: You wanna do the official ending?
+21:55 Henry_Jia: (unless anyone has any more to say that is)
+21:56 synja has left IRC (Read error: Connection reset by peer)
+21:57 RandIter: I have not heard of any good reason for using Golang for training.
+21:58 RandIter: revolve: is there a data structure that would not be differentiable?
+21:58 RandIter: Hash table, maybe?
+21:59 RandIter: or maybe it can be given the hash function and then it would be differentiable
+22:00 unixpickle: RandIter hashtable might be too implementation-specific; there's some differentiable "associative maps"
+22:01 pi-: Henry_Jia: ok, thanks for making it happen this week!  It was a good one!
+22:01 Henry_Jia: pi-: it's my pleasure :) besides, couldn't happen without everyone else either ;)
+22:01 pi-: = = = = = = =   end of reading group log   = = = = = = = 
