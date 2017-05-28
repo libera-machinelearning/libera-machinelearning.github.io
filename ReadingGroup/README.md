@@ -25,7 +25,7 @@ Talk to p-i- on the main channel.
 ## Past discussions (newest at top):
 
 * 2017.05.28 [NTM](https://arxiv.org/abs/1410.5401) (Neural Turing Machines)  
-  [log](2017.05.28_NTMs)  
+  [log](logs/2017.05.28_NTMs)  
   
   ([slides](http://klab.smpp.northwestern.edu/wiki/images/4/43/NTM2.pdf))  
   ([Old keras code for layer by EderSanta](https://github.com/EderSantana/seya/blob/master/seya/layers/ntm.py))  
