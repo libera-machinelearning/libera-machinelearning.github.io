@@ -53,14 +53,13 @@ Contents:
 * [KDnuggets: Competitions](http://www.kdnuggets.com/competitions/)
 
 ## Papers
-* arXiv: [stat.ML](https://arxiv.org/list/stat.ML/recent), [cs.LG](https://arxiv.org/list/cs.LG/recent)
+* arXiv: [stat.ML](https://arxiv.org/list/stat.ML/recent), [cs.LG](https://arxiv.org/list/cs.LG/recent), [cs.NE](https://arxiv.org/list/cs.NE/recent)
 * [Arxiv Sanity Preserver](http://arxiv-sanity.com/)
 * [Semantic Scholar](https://www.semanticscholar.org/)
 
 ## Feeds
-* [arXiv stat.ML](https://export.arxiv.org/rss/stat.ML/recent)
-* [arXiv cs.LG](https://export.arxiv.org/rss/cs.LG/recent)
-* [KDnuggets](http://www.kdnuggets.com/feed) (alternatively via [FeedBurner](https://feeds.feedburner.com/kdnuggets-data-mining-analytics))
+* arXiv: [stat.ML](https://export.arxiv.org/rss/stat.ML/recent), [cs.LG](https://export.arxiv.org/rss/cs.LG/recent), [cs.NE](https://export.arxiv.org/rss/cs.NE/recent)
+* [KDnuggets](http://www.kdnuggets.com/feed) (or via [FeedBurner](https://feeds.feedburner.com/kdnuggets-data-mining-analytics))
 * [InfoWorld AI](http://www.infoworld.com/category/artificial-intelligence/index.rss)
 * [Distill.pub](http://distill.pub/rss.xml)
 * [DeepMind](https://deepmind.com/blog/feed/basic/)
