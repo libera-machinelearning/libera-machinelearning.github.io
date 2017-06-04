@@ -41,6 +41,8 @@ If we can choose one of these three papers and someone to host by Monday we shou
   ([Old keras example by EderSanta](https://github.com/EderSantana/seya/blob/master/examples/NTM.ipynb))
 
   A [nice little talk](https://www.youtube.com/watch?v=_H0i0IhEO2g) by the first author of the NTM paper that gives a high-level description of the architecture. 
+  
+  [PyTorch implementation](https://github.com/HenryJia/seya_pytorch/blob/master/NTM.ipynb) by Henry Jia.
 
 
 * 2017.05.07 VAE (Variational AutoEncoders)  
