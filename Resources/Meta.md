@@ -60,7 +60,7 @@ Contents:
 
 ## Feeds
 * arXiv: [stat.ML](https://export.arxiv.org/rss/stat.ML/recent), [cs.LG](https://export.arxiv.org/rss/cs.LG/recent), [cs.NE](https://export.arxiv.org/rss/cs.NE/recent)
-* [KDnuggets](http://www.kdnuggets.com/feed) (or via [FeedBurner](https://feeds.feedburner.com/kdnuggets-data-mining-analytics))
+* [KDnuggets](http://www.kdnuggets.com/feed) (unofficial [filtered](https://zapier.com/engine/rss/517634/kdnuggets/) version)
 * [InfoWorld AI](http://www.infoworld.com/category/artificial-intelligence/index.rss)
 * [Distill.pub](http://distill.pub/rss.xml)
 * [DeepMind](https://deepmind.com/blog/feed/basic/)
