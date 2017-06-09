@@ -8,18 +8,14 @@ Talk to p-i- on the main channel.
 
 <!-- Short URL: https://j.mp/ML-ReadingGrp -->
 
-## Next discussion: Sunday 18 June(???) 2017 @ [7pm UTC](https://www.wolframalpha.com/input/?i=Sunday+7+pm+UTC)
+## Next discussion: Sunday 18 June 2017 @ [7pm UTC](https://www.wolframalpha.com/input/?i=Sunday+7+pm+UTC)
 
-One of:
-
-* [Learning to act by predicting the future](https://openreview.net/pdf?id=rJLS7qKel)  
 * [Human-level control through deep reinforcement learning](https://www.nature.com/nature/journal/v518/n7540/full/nature14236.html) ([PDF](https://pdfs.semanticscholar.org/340f/48901f72278f6bf78a04ee5b01df208cc508.pdf))  
+
+
+## Candidates for future discussions (most recent/best first):
+* [Learning to act by predicting the future](https://openreview.net/pdf?id=rJLS7qKel)  
 * [Asynchronous Methods for Deep Reinforcement Learning](https://arxiv.org/abs/1602.01783)  
-
-If we can choose one of these three papers and someone to host by Monday we should be good to go.
-
-
-## Candidates for future discussions:
 * [DNC](https://github.com/deepmind/dnc) (Differentiable Neural Computer)
 * Learning without Backpropagation http://www.breloff.com/no-backprop/
 * [Overcoming catastrophic forgetting in neural networks](https://arxiv.org/abs/1612.00796)
