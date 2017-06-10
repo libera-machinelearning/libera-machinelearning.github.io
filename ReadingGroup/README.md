@@ -12,6 +12,7 @@ Talk to p-i- on the main channel.
 
 * [Human-level control through deep reinforcement learning](https://www.nature.com/nature/journal/v518/n7540/full/nature14236.html) ([PDF](https://pdfs.semanticscholar.org/340f/48901f72278f6bf78a04ee5b01df208cc508.pdf))  
 
+RL Primer: https://www.nervanasys.com/demystifying-deep-reinforcement-learning/
 
 ## Candidates for future discussions (most recent/best first):
 * [Learning to act by predicting the future](https://openreview.net/pdf?id=rJLS7qKel)  
