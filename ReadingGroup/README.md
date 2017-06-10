@@ -14,7 +14,7 @@ Talk to p-i- on the main channel.
 
 Resources:  
   * Matiisen: [RL Primer](https://www.nervanasys.com/demystifying-deep-reinforcement-learning/)
-  * Karpathy: [Pong from Pixel](shttp://karpathy.github.io/2016/05/31/rl/)
+  * Karpathy: [Pong from Pixels](http://karpathy.github.io/2016/05/31/rl/)
 
 ## Candidates for future discussions (most recent/best first):
 * [Learning to act by predicting the future](https://openreview.net/pdf?id=rJLS7qKel)  
