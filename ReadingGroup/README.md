@@ -1,5 +1,7 @@
 # ML-ReadingGroup
 
+(Short URL to here: https://j.mp/MLReadingGroup)
+
 Resources (including transcripts) for the (IRC:Freenode) ##machinelearning Reading Group 
 
 NOTE: Reading Group is now every other Sunday! A new paper is chosen by the following Wednesday, which gives everyone 10 days to get up to speed.
