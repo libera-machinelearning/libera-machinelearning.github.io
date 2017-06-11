@@ -29,7 +29,7 @@ If you contribute to the channel, please consider private-messaging the user *pi
 
 * **[pi-](https://github.com/p-i-)** (Oxford, UK; Freelance coder)  
   *ML Interests:* Primarily the theory. The new stuff as it comes out (GANs, VAEs, etc.), biologically plausible models (spiking neuron,...), coding in Julia.  
-  *Relevant skills:* IPython / numpy, Matlab, Julia  
+  *Relevant skills:* IPython / numpy, MATLAB, Julia  
   My background is coding, math, DSP. I'm trying to get myself up to speed with modern ML thinking & get a grip on the probabilistic math. I'm keeping an eye on Julia. My goal is to become a digital nomad working with ML.
 
 * **[rofer](https://github.com/rhofour)** (Pittsburgh, USA; Software engineer)  
@@ -38,6 +38,7 @@ If you contribute to the channel, please consider private-messaging the user *pi
   
 * **[unixpickle](https://github.com/unixpickle)**  
   *ML Interests:* meta-learning (specifically deep meta-learning); recurrent neural networks, including memory-augmented neural networks.  
+  [Youtube channel](https://www.youtube.com/playlist?list=PL3XtGMELeTxytyFKrUu87EudAJiO4XK0u)  
   *Relevant Skills:* [Go](https://golang.org), Numerical Analysis, MATLAB/GNU Octave  
   *Background:* I am a long-time programmer who became interested in AI several years ago. Since then, I have been implementing my own ML software, including the [anynet](https://github.com/unixpickle/anynet) package for deep learning. Currently, I am trying to develop meta-learning techniques that can use prior experience to solve new problems as efficiently as humans.
   
