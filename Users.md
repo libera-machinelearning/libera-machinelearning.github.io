@@ -12,6 +12,11 @@ If you contribute to the channel, please consider private-messaging the user *pi
   *ML Interests:* Deep architectures, attention models, transfer learning, practice rather than theory  
   In the past, I worked in academia and freelance on a variety of AI / machine learning problems. My main focus was Computer Go (my masters was one of the sort-of-AlphaGo-predecessor programs) and then NLP (question answering and related text understanding problems). Lately I do a lot of vision-like stuff - I co-founded an AI startup Rossum where we are reading invoices using neural networks. I'm a hardcore Keras fan.
 
+* **[pi-](https://github.com/p-i-)** (Oxford, UK; Freelance coder)  
+  *ML Interests:* Primarily the theory. The new stuff as it comes out (GANs, VAEs, etc.), biologically plausible models (spiking neuron,...), coding in Julia.  
+  *Relevant skills:* IPython / numpy, MATLAB, Julia  
+  My background is coding, math, DSP. I'm trying to get myself up to speed with modern ML thinking & get a grip on the probabilistic math. I'm keeping an eye on Julia. My goal is to become a digital nomad working with ML.
+
  * **[RandIter](https://github.com/impredicative)** (New York, USA; Software engineer)  
   I'm a backend software engineer in finance, having previously worked for many years in academia.  
   *Relevant skills:* Python
@@ -26,11 +31,6 @@ If you contribute to the channel, please consider private-messaging the user *pi
   *ML Interests:* Generative Models, Production-Ready (End-User Distributable) Systems, Building ML Frameworks  
   *Relevant skills:* Python, Java, Kotlin, C, JavaScript, Rust  
   Started a PhD in ML.  Finished with an MS.  Not very good.  I'm interested in procedural content creation and generative machine learning models, particularly conversational chat bots and image generation.  I enjoy game development as a hobby and do my best to bring the two areas together whenever I can.
-
-* **[pi-](https://github.com/p-i-)** (Oxford, UK; Freelance coder)  
-  *ML Interests:* Primarily the theory. The new stuff as it comes out (GANs, VAEs, etc.), biologically plausible models (spiking neuron,...), coding in Julia.  
-  *Relevant skills:* IPython / numpy, MATLAB, Julia  
-  My background is coding, math, DSP. I'm trying to get myself up to speed with modern ML thinking & get a grip on the probabilistic math. I'm keeping an eye on Julia. My goal is to become a digital nomad working with ML.
 
 * **[rofer](https://github.com/rhofour)** (Pittsburgh, USA; Software engineer)  
   *ML Interests:* Sample-efficient Deep RL methods, variational methods, generative models  
