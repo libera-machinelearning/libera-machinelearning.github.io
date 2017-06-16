@@ -41,5 +41,9 @@ If you contribute to the channel, please consider private-messaging the user *pi
   [Youtube channel](https://www.youtube.com/playlist?list=PL3XtGMELeTxytyFKrUu87EudAJiO4XK0u)  
   *Relevant Skills:* [Go](https://golang.org), Numerical Analysis, MATLAB/GNU Octave  
   *Background:* I am a long-time programmer who became interested in AI several years ago. Since then, I have been implementing my own ML software, including the [anynet](https://github.com/unixpickle/anynet) package for deep learning. Currently, I am trying to develop meta-learning techniques that can use prior experience to solve new problems as efficiently as humans.
-  
+
+* **Warsh** (New York, USA; Student)  
+  *ML Interests:* FPGA acceleration of NN
+  *Relavant skills:* Python, C, Verilog, Go (currently learning)
+  My interests lie more within the realm of theory, thus I'm focusing on improving the efficieny of neural networks by use of FPGAs.
 <!-- New entries must be in sorted order. ->
