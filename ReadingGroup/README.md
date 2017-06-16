@@ -19,7 +19,7 @@ Led by Lyote (tx Lyote)!
 Resources:  
   * Matiisen: [RL Primer](https://www.nervanasys.com/demystifying-deep-reinforcement-learning/)
   * Karpathy: [Pong from Pixels](http://karpathy.github.io/2016/05/31/rl/)
-  * Simple implementation (by Lyote) of a tabular RL agent which learns to play Tic Tac Toe [here](https://gist.github.com/anonymous/1166725312bd207dbafee23b61ff2d8f)
+  * Simple implementation (by Lyote with minor refactoring & doc by p-i-) of a tabular RL agent which learns to play Tic Tac Toe [here](https://github.com/Lyote/TicTacToe-RL)
 
 ## Candidates for future discussions (most recent/best first):
 * [Learning to act by predicting the future](https://openreview.net/pdf?id=rJLS7qKel)  
