@@ -26,14 +26,16 @@ Contents:
 * [Dive into Deep Learning with 12 free online courses (2017)](https://medium.freecodecamp.com/dive-into-deep-learning-with-these-23-online-courses-bf247d289cc0)
 * [Fast.AI: Practical Deep Learning For Coders](http://course.fast.ai/)
 * [Karpathy's CS231n Stanford course on Convolutional Neural Networks for Visual Recognition](http://cs231n.stanford.edu/)
-* [David Silver's UCL course on Reinforcement Learning](http://www0.cs.ucl.ac.uk/staff/d.silver/web/Teaching.html) and [YouTube playlist](https://www.youtube.com/playlist?list=PLMZdRRhAoLnKFxZlmFoFp0uHVvN2PSE9T)
-* [Berkeley CS 294: Deep Reinforcement Learning](http://rll.berkeley.edu/deeprlcourse/) and [YouTube playlist](https://www.youtube.com/playlist?list=PLkFD6_40KJIwTmSbCv9OVJB3YaO4sFwkX)
-* [Illinois CS 598 LAZ: Cutting-Edge Trends in Deep Learning and Recognition (2017)](http://slazebni.cs.illinois.edu/spring17/) with [videos](https://recordings.engineering.illinois.edu:8443/ess/portal/section/20bbecdb-2f7c-4725-84d1-03d28f5a08f5)
+* [David Silver's UCL course on Reinforcement Learning](http://www0.cs.ucl.ac.uk/staff/d.silver/web/Teaching.html) ([YouTube playlist](https://www.youtube.com/playlist?list=PLMZdRRhAoLnKFxZlmFoFp0uHVvN2PSE9T))
+* [Berkeley CS 294: Deep Reinforcement Learning](http://rll.berkeley.edu/deeprlcourse/) ([YouTube playlist](https://www.youtube.com/playlist?list=PLkFD6_40KJIwTmSbCv9OVJB3YaO4sFwkX))
+* [Illinois CS 598 LAZ: Cutting-Edge Trends in Deep Learning and Recognition (2017)](http://slazebni.cs.illinois.edu/spring17/) ([videos](https://recordings.engineering.illinois.edu:8443/ess/portal/section/20bbecdb-2f7c-4725-84d1-03d28f5a08f5))
 
 ## Books
 * http://www.deeplearningbook.org/ -- The deep-learning Bible; Dec 2016, Goodfellow, Bengio, Courville (pdf [here](https://github.com/HFTrader/DeepLearningBook))
 * [The Elements of Statistical Learning (2009)](https://statweb.stanford.edu/~tibs/ElemStatLearn/)
 * [David MacKay: Information Theory, Pattern Recognition and Neural Networks (2005)](http://www.inference.phy.cam.ac.uk/itprnn/book.html)
+* [Algorithms for Reinforcement Learning](https://sites.ualberta.ca/~szepesva/papers/RLAlgsInMDPs.pdf) by [Csaba Szepesvári](https://sites.ualberta.ca/~szepesva/RLBook.html)
+* [Sutton: Reinforcement Learning](http://incompleteideas.net/sutton/book/the-book.html)
 
 ## Communities
 * THIS!
