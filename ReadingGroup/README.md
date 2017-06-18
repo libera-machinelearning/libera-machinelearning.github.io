@@ -17,6 +17,7 @@ Talk to p-i- on the main channel.
 Led by Lyote (tx Lyote)!  
 
 Resources:  
+  * Source code: https://sites.google.com/a/deepmind.com/dqn/
   * Matiisen: [RL Primer](https://www.nervanasys.com/demystifying-deep-reinforcement-learning/)
   * Karpathy: [Pong from Pixels](http://karpathy.github.io/2016/05/31/rl/)
   * Simple implementation (by Lyote with minor refactoring & doc by p-i-) of a tabular RL agent which learns to play Tic Tac Toe [here](https://github.com/Lyote/TicTacToe-RL)
