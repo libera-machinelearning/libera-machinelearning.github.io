@@ -1,26 +1,15 @@
 # ML-ReadingGroup
+*(Short URL to here: https://j.mp/MLReadingGroup)*
 
-(Short URL to here: https://j.mp/MLReadingGroup)
+Resources (including transcripts) for the Reading Group on (IRC -> Freenode -> ##machinelearning)  
+Reading Group is currently every 2-3 Sundays! Keep an eye on the channel topic!  
+Talk to p-i- on the main channel for more info.  
 
-Resources (including transcripts) for the (IRC:Freenode) ##machinelearning Reading Group 
 
-NOTE: Reading Group is now every other Sunday! A new paper is chosen by the following Wednesday, which gives everyone 10 days to get up to speed.
+## Next discussion: Sunday ? June? 2017 @ [7pm UTC](https://www.wolframalpha.com/input/?i=Sunday+7+pm+UTC)
 
-Talk to p-i- on the main channel.  
+Open to ideas. Maybe we should cover the main directions/areas in ML before drilling into anything too specific??
 
-<!-- Short URL: https://j.mp/ML-ReadingGrp -->
-
-## Next discussion: Sunday 18 June 2017 @ [7pm UTC](https://www.wolframalpha.com/input/?i=Sunday+7+pm+UTC)
-
-* [Human-level control through deep reinforcement learning](https://www.nature.com/nature/journal/v518/n7540/full/nature14236.html) ([PDF](https://pdfs.semanticscholar.org/340f/48901f72278f6bf78a04ee5b01df208cc508.pdf))  
-
-Led by Lyote (tx Lyote)!  
-
-Resources:  
-  * Source code: https://github.com/deepmind/dqn
-  * Matiisen: [RL Primer](https://www.nervanasys.com/demystifying-deep-reinforcement-learning/)
-  * Karpathy: [Pong from Pixels](http://karpathy.github.io/2016/05/31/rl/)
-  * Simple implementation (by Lyote with minor refactoring & doc by p-i-) of a tabular RL agent which learns to play Tic Tac Toe [here](https://github.com/Lyote/TicTacToe-RL)
 
 ## Candidates for future discussions (most recent/best first):
 * [Learning to act by predicting the future](https://openreview.net/pdf?id=rJLS7qKel)  
@@ -37,6 +26,20 @@ Resources:
 
 
 ## Past discussions (newest at top):
+
+* [Human-level control through deep reinforcement learning](https://www.nature.com/nature/journal/v518/n7540/full/nature14236.html) ([PDF](https://pdfs.semanticscholar.org/340f/48901f72278f6bf78a04ee5b01df208cc508.pdf))  
+[log](2017.06.18_DeepRL)
+
+Led by Lyote (tx Lyote)!  
+
+Resources:  
+  * Source code: https://github.com/deepmind/dqn (Source code is LUA)
+  * https://keon.io/deep-q-learning/ -- leads to Python source code!
+  * Matiisen: [RL Primer](https://www.nervanasys.com/demystifying-deep-reinforcement-learning/)
+  * Karpathy: [Pong from Pixels](http://karpathy.github.io/2016/05/31/rl/)
+  * Simple implementation (by Lyote with minor refactoring & doc by p-i-) of a tabular RL agent which learns to play Tic Tac Toe [here](https://github.com/Lyote/TicTacToe-RL)
+  * [David Silver's RL course (10 vids)](http://www0.cs.ucl.ac.uk/staff/d.silver/web/Teaching.html)
+
 
 * 2017.05.28 [NTM](https://arxiv.org/abs/1410.5401) (Neural Turing Machines)  
   [log](logs/2017.05.28_NTMs)  
