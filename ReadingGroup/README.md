@@ -30,15 +30,15 @@ Open to ideas. Maybe we should cover the main directions/areas in ML before dril
 * [Human-level control through deep reinforcement learning](https://www.nature.com/nature/journal/v518/n7540/full/nature14236.html) ([PDF](https://pdfs.semanticscholar.org/340f/48901f72278f6bf78a04ee5b01df208cc508.pdf))  
 [log](2017.06.18_DeepRL)
 
-Led by Lyote (tx Lyote)!  
+  Led by Lyote (tx Lyote)!  
 
-Resources:  
-  * Source code: https://github.com/deepmind/dqn (Source code is LUA)
-  * https://keon.io/deep-q-learning/ -- leads to Python source code!
-  * Matiisen: [RL Primer](https://www.nervanasys.com/demystifying-deep-reinforcement-learning/)
-  * Karpathy: [Pong from Pixels](http://karpathy.github.io/2016/05/31/rl/)
-  * Simple implementation (by Lyote with minor refactoring & doc by p-i-) of a tabular RL agent which learns to play Tic Tac Toe [here](https://github.com/Lyote/TicTacToe-RL)
-  * [David Silver's RL course (10 vids)](http://www0.cs.ucl.ac.uk/staff/d.silver/web/Teaching.html)
+  Resources:  
+    * Source code: https://github.com/deepmind/dqn (Source code is LUA)
+    * https://keon.io/deep-q-learning/ -- leads to Python source code!
+    * Matiisen: [RL Primer](https://www.nervanasys.com/demystifying-deep-reinforcement-learning/)
+    * Karpathy: [Pong from Pixels](http://karpathy.github.io/2016/05/31/rl/)
+    * Simple implementation (by Lyote with minor refactoring & doc by p-i-) of a tabular RL agent which learns to play Tic Tac  Toe [here](https://github.com/Lyote/TicTacToe-RL)
+    * [David Silver's RL course (10 vids)](http://www0.cs.ucl.ac.uk/staff/d.silver/web/Teaching.html)
 
 
 * 2017.05.28 [NTM](https://arxiv.org/abs/1410.5401) (Neural Turing Machines)  
