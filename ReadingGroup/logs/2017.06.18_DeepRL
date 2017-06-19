@@ -1,0 +1,309 @@
+2017-06-18 20:00:21                p-i-: - - - - - - - READING GROUP 18 June 2017: Discussing the "Human-level control through deep reinforcement learning" deep-mind paper - - - - - - -
+2017-06-18 20:00:25                p-i-: yo
+2017-06-18 20:00:28                p-i-: who's here?
+2017-06-18 20:01:31                p-i-: (don't all answer at once plz)
+2017-06-18 20:01:40            lurchman: I'm here
+2017-06-18 20:01:44            lurchman: Hello
+2017-06-18 20:01:45               Lyote: Howdy.
+2017-06-18 20:02:37               Lyote: Did we have anyone confirm they'd be here for the reading group?
+2017-06-18 20:02:45                p-i-: A pity not to get more people, could it be the holiday season?
+2017-06-18 20:03:03                p-i-: It's a heatwave here in South England
+2017-06-18 20:03:34                p-i-: I don't think so... Not that I heard of anyway
+2017-06-18 20:04:14                p-i-: Maybe we should operate like that, get people to put their names down & do the group when we have half a dozen
+2017-06-18 20:05:05               Lyote: That's strange. Seems like we had quite a few people look at the TicTacToe implementation.
+2017-06-18 20:05:22                p-i-: I wonder if we should push it back
+2017-06-18 20:05:24               Lyote: I thought we'd have at least a couple for the RG.
+2017-06-18 20:05:43               tomzx: give it some time :p
+2017-06-18 20:05:46              MickyW: Uh.
+2017-06-18 20:06:01            RandIter: I'm here but just observing
+2017-06-18 20:06:03               tomzx: but yeah, maybe some form of event where you can track who's planning to attend
+2017-06-18 20:06:19           diogenese: I'm listening
+2017-06-18 20:06:30               tomzx: start this up Lyote  :)
+2017-06-18 20:06:36                p-i-: I think there's a few free list/attendance services where you put your name down.
+2017-06-18 20:06:50                p-i-: ok it looks as though we have critical mass
+2017-06-18 20:07:13                p-i-: This would be a good opportunity for anyone to get into RL.
+2017-06-18 20:07:14              MickyW: Intended to read, but not competent to discuss. Just read about the matchbox implementatoin of Tic-Tac-Toe, whic I knew from an article several years ago.
+2017-06-18 20:07:53               Lyote: I guess a place to start is: Does anyone have any questions about classical Q-learning, sans the "Deep" part?
+2017-06-18 20:08:01                p-i-: yep, we could start with a summary of Q learning, looking through Lyote's project
+2017-06-18 20:08:09               Lyote: Or, any questions regarding how the TicTacToe implementation works.
+2017-06-18 20:08:29                p-i-: https://github.com/Lyote/TicTacToe-RL
+2017-06-18 20:08:29      ML-helper[bot]: [ GitHub - Lyote/TicTacToe-RL: Tabular Reinforcement Learning for Tic Tac Toe ]
+2017-06-18 20:09:29                p-i-: Does that README make sense?
+2017-06-18 20:09:32               tomzx: might not be Q-learn directly
+2017-06-18 20:09:47               tomzx: but how do you differentiate the different ways to compute a policy
+2017-06-18 20:09:48              MickyW: Whats that 'Q' mean?
+2017-06-18 20:10:05                p-i-: Q stands for Quality
+2017-06-18 20:10:17               Lyote: MickyW: Q is a function that estimates the "quality" of taking a certain action from a specific state.
+2017-06-18 20:10:33               Lyote: Typically you see it written as Q(s, a).
+2017-06-18 20:10:41              MickyW: Ah. Kind of evaluation, I assume.
+2017-06-18 20:11:02                p-i-: And that is equal to the sum of future (discounted) rewards
+2017-06-18 20:11:15                p-i-: or Gross reward (often written as G)
+2017-06-18 20:11:16              MickyW: like min-max and likewise
+2017-06-18 20:11:19              MickyW: ?
+2017-06-18 20:11:47                p-i-: yeah it's the same sort of deal as minmax.
+2017-06-18 20:12:40                p-i-: Q(s,a) = {the reward you get from taking action a} plus gamma * Q(s' -- the new state you end up in when you take action a, best-of-all-actions)
+2017-06-18 20:13:17               Lyote: In reinforcement learning, you have an environment which an agent can interact in. The agent can receive "rewards" after each action, and the goal of the agent is to maximize the expected reward.
+2017-06-18 20:13:18                p-i-: Q(s,a) = MAX-possible-reward you can get from here
+2017-06-18 20:13:37               Lyote: In the case of Atari games, you're trying to maximize the score you receive by the end of the game.
+2017-06-18 20:14:13                p-i-: So you can think of it like a tree, branching out at each new state with all possible actions. And you imagine choosing the optimal (highest reward) path into the distant future.
+2017-06-18 20:14:33               Lyote: In TicTacToe, you only receive rewrads at the end of the game, but in general it doesn't have to be that way. For example, in Pac Man, you get a reward for eating a ghost.
+2017-06-18 20:14:44                p-i-: With the proviso that a reward gained t steps in the future gets discounted (multiplied by gamma^t)
+2017-06-18 20:15:04                p-i-: So as to make immediate rewards more tasty than future rewards
+2017-06-18 20:16:08               Lyote: From how I've always understood it, the discounting of future rewards mostly stems from environments which are not episodic.
+2017-06-18 20:16:18               Lyote: Or, in other words, environments which can have infinite loops.
+2017-06-18 20:16:42                p-i-: Discounting does solve infinite loops, sure. But I think it's more than that.
+2017-06-18 20:17:12               Lyote: In any case, for an environment like TicTacToe, I don't think discounting is very important, at any rate.
+2017-06-18 20:17:17                p-i-: It is natural that an immediate reward should be valued above a distant future award
+2017-06-18 20:17:34            lurchman: So if I have a neural net that's several convolutional/relu layers, for image upscaling, is the biggest feature it will consider when calculating upscale the size of the last conv2d layer?  Or will it kind of filter down larger features from earlier layers?
+2017-06-18 20:17:35              MickyW: But that could be misleading too
+2017-06-18 20:17:36               tomzx: Lyote: discounted rewards is to give more value to actions that are closer in time
+2017-06-18 20:18:02               tomzx: Lyote: iirc, the discount was due to how the process Bellman was trying to optimize
+2017-06-18 20:18:45                p-i-: lurchman: I think upscaling is a different subject from RL
+2017-06-18 20:18:54          unixpickle: tomzx Lyote: in practice, the discount factor is very important for most RL methods. If you account for too much in the future, the variance of your updates will be too high and you'll need *huge* batch sizes
+2017-06-18 20:19:29                p-i-: The paper uses the discount of .99
+2017-06-18 20:19:29            lurchman: p-i-:  Sorry, didn't mean to interrupt the reading group.  Just meant to ask a general question in the channel
+2017-06-18 20:20:15               Lyote: lurchman: If it's not urgent, you'll probably get better responses after the reading group, in an hour or so.
+2017-06-18 20:20:23               tomzx: unixpickle: right, I believe that was the general reasoning being the Bellman equation, namely that taking the far future into account as much as the current near future is likely to introduce a high degree of variance
+2017-06-18 20:20:29                p-i-: lurchman: sure, but bear in mind it will probably get a better response outside of the RG
+2017-06-18 20:20:30            lurchman: Thanks, will definitely hold off
+2017-06-18 20:20:48                p-i-: meh broken client scrolling
+2017-06-18 20:21:31          unixpickle: in practice, I've tried training RL models without discount factors and usually it's pretty bad
+2017-06-18 20:21:31          unixpickle: at least when training deep models
+2017-06-18 20:22:10                p-i-: So the Bellman equation is just an observation from looking at the tree, that you can write the gross reward Q(s,a) in terms of the immediate reward and Q(s', max-over-all-a)
+2017-06-18 20:22:11               Lyote: Interesting.
+2017-06-18 20:23:40               Lyote: It's worth noting that Q-learning is an off-policy method, as opposed to something like Sarsa which is on-policy.
+2017-06-18 20:23:45                p-i-: i.e. Q(s,a) = r + gamma * MAX_a' Q(s', a')
+2017-06-18 20:24:21               Lyote: The difference between the two has to do with what future action you use to update Q.
+2017-06-18 20:24:37               Lyote: Sarsa is an acronym: State-Action-Reward-State-Action.
+2017-06-18 20:24:55                p-i-: And the central idea is that if you have some approximation for Q, say Q*(.,.) you can use Q* hone itself.
+2017-06-18 20:26:05               Lyote: Isn't Q* generally used to denote the "optimal" policy?
+2017-06-18 20:26:10                p-i-: i.e. if Q* was perfect you would have Q*(s,a) = r + gamma * MAX_a' Q*(s', a'), but in reality it isn't perfect. But you can bank on the likelihood that r + gamma * MAX_a' Q*(s', a') is going to be closer to the true value Q(s,a) than the original approximation Q*(s,a)
+2017-06-18 20:26:11          unixpickle: A cool implication of Q-learning being offline is that you can have a network observe a human taking actions, and just from *that* data it can learn the optimal policy.
+2017-06-18 20:26:15                p-i-: oh shit
+2017-06-18 20:26:19                p-i-: my bad
+2017-06-18 20:26:30                p-i-: Bad notation, that is
+2017-06-18 20:26:35                p-i-: The idea is sound tho.
+2017-06-18 20:26:44              MickyW: Please. Who is actually reading?
+2017-06-18 20:26:54               Lyote: MickyW: What do you mean?
+2017-06-18 20:27:41              MickyW: Hm. Reading like in "reading group"?
+2017-06-18 20:27:48                p-i-: "It's worth noting that Q-learning is an off-policy method, as opposed to something like Sarsa which is on-policy." <-- what's going on here?
+2017-06-18 20:28:51               Lyote: MickyW: We're discussing the idea behind Q-learning before going off the Deep end.
+2017-06-18 20:28:52                p-i-: That's something I need to comment in the code, which seems to allow SARS or SARSA
+2017-06-18 20:29:04          unixpickle: p-i-: well, for example, with Q-learning you typically take random actions occasionally to explore. Even though you do that, Q learning can learn the optimal policy, even though you're not taking actions in the optimal policy.
+2017-06-18 20:29:31          unixpickle: p-i-: meanwhile Sarsa, if you use epsilon greedy, will learn a policy that's good when you use epsilon greedy, but not necessarily optimal
+2017-06-18 20:29:51                p-i-: so SARS > SARSA ?
+2017-06-18 20:30:38               Lyote: p-i-: The functional difference is in the code. Say you have an experience tuple <s1, a1, r, s2, a2>. Q-learning has the update rule: r + gamma * MAX_a' Q(s2, a'). SARSA has the update rule: r + gamma * Q(s2, a2).
+2017-06-18 20:31:03                p-i-: class QLearningAgent(TemporalDifferenceAgent):
+2017-06-18 20:31:03                p-i-: def new_val(self, history, ndx):
+2017-06-18 20:31:04                p-i-: (_, _, state), (action, reward, next_state)                      = history[ndx:ndx+2]
+2017-06-18 20:31:06                p-i-: next_action = self.max_action(next_state)
+2017-06-18 20:31:08                p-i-: return reward + self.gamma * self.Q_read(next_action, next_state)
+2017-06-18 20:31:10                p-i-: class SarsaAgent(TemporalDifferenceAgent):
+2017-06-18 20:31:12                p-i-: def new_val(self, history, ndx):
+2017-06-18 20:31:14                p-i-: (_, _, state), (action, reward, next_state), (next_action, _, _) = history[ndx:ndx+3]
+2017-06-18 20:31:16                p-i-: return reward + self.gamma * self.Q_read(next_action, next_state)
+2017-06-18 20:31:30                p-i-: ok gottit
+2017-06-18 20:31:59                p-i-: but a2 might not be the optimal action
+2017-06-18 20:32:13               Lyote: Exactly.
+2017-06-18 20:32:23                p-i-: so SARSA can learn just by following along games that were actually played
+2017-06-18 20:32:57                p-i-: It lacks the exploration to find the optimal Q*(s2, all-actions)
+2017-06-18 20:33:58                p-i-: I think that's what you wewre saying unixpickle ..?
+2017-06-18 20:34:47                p-i-: btw if anyone hasn't fired that code up in a notebook, I recommend it!
+2017-06-18 20:35:18                p-i-: So, are we ready to move onto deep-Q?
+2017-06-18 20:35:36          unixpickle: p-i-: not exactly sure what you mean. I was just saying that SARSA updates the current value function based on the value of following the policy(with e-greedy) at the next step, rather than following the policy(without e-greedy) at the next step.
+2017-06-18 20:35:38               Lyote: unixpickle: Do you have any references comparing Q-learning and SARSA?
+2017-06-18 20:36:00          AliceGreen: hi can someone help me please?
+2017-06-18 20:36:00          unixpickle: Lyote: https://studywolf.wordpress.com/2013/07/01/reinforcement-learning-sarsa-vs-q-learning/
+2017-06-18 20:36:01      ML-helper[bot]: [ Reinforcement Learning part 2: SARSA vs Q-learning | studywolf ]
+2017-06-18 20:36:28          AliceGreen: hi can someone help me please?
+2017-06-18 20:36:46                p-i-: AliceGreen: sure, State the emergency. But bear in mind we are in the middle of a reading group discussion.
+2017-06-18 20:36:56                p-i-: So you might get a better answer after an hour...
+2017-06-18 20:37:17          AliceGreen: p-i-: have you use nltk tagger?
+2017-06-18 20:38:08               Lyote: unixpickle: So the intuition is that SARSA gives you better performance for an eps-greedy agent?
+2017-06-18 20:39:00                p-i-: AliceGreen: meh don't latch onto me just because I picked up! Ask the whole room...
+2017-06-18 20:39:31          unixpickle: Lyote: well, SARSA gives you a policy that will work well with e-greedy enabled. But Q-learning gives you a policy where, once you disable e-greedy, will be optimal. It's cool because during training the policy might seem bad, but then when you disable exploration it will suddenly be better.
+2017-06-18 20:40:40          AliceGreen: :(
+2017-06-18 20:41:52                p-i-: Did anyone actually play around with DeepMind's code behind this paper?
+2017-06-18 20:41:57                p-i-: Lua?!
+2017-06-18 20:42:40               Lyote: unixpickle: Do they disable exporation for the results in the paper?
+2017-06-18 20:42:54               Lyote: p-i-: "Lua?!" was pretty much my reaction as well. :P
+2017-06-18 20:44:07          unixpickle: Lyote: "For the learned methods, we follow the evaluation strategy used in Bellemare et al. [3, 5] and report the average score obtained by running an ε-greedy policy with ε = 0.05 for a fixed number of steps."
+2017-06-18 20:44:22          unixpickle: They used e=0.1 for training and e=0.05 for evaluation
+2017-06-18 20:45:40               Lyote: unixpickle: Thanks.
+2017-06-18 20:46:08               Lyote: If they're doing Q-learning, wouldn't you expect to see better results if eps=0?
+2017-06-18 20:46:31                p-i-: So, if any RL noobs are still following along, Lyote's tic-tac-toe solver uses a TABLE for storing Q-values of various (s,a) pairs.
+2017-06-18 20:46:38                p-i-: Because there are not so many.
+2017-06-18 20:46:48                p-i-: But in general GLWT
+2017-06-18 20:47:18                p-i-: So the obvious idea is: can we replace this table with a NN Q-FUNCTION ?
+2017-06-18 20:48:11                p-i-: (fwiw I am an RL noob & just about following along I think)
+2017-06-18 20:48:32               Lyote: It looks like there's 4520 states for TicTacToe, for what it's worth.
+2017-06-18 20:48:40          unixpickle: Lyote: yeah, i think they used e=0.05 for exploration to stay consistent with other work.
+2017-06-18 20:48:54               Lyote: That's the size of my agent's table, anyways.
+2017-06-18 20:49:19               tomzx: Lyote: that is, removing all the symmetry?
+2017-06-18 20:49:23               Lyote: p-i-: We essentially already abstracted out the table from the rest of the agent.
+2017-06-18 20:49:36               Lyote: tomzx: No, no symmetry was removed.
+2017-06-18 20:49:56                p-i-: You are talking about the paper right? Pretty sure I remember they specify gradually reducing eps over the first million iterations...
+2017-06-18 20:49:57               Lyote: An X in the top left is an entirely different state than an X in the bottom right.
+2017-06-18 20:50:18               tomzx: shouldn,t that be 3^9?
+2017-06-18 20:50:48               Lyote: Incidentally, it was my experience that the agent is better at responding to opening moves in the top left than in the bottom right.
+2017-06-18 20:50:48          unixpickle: p-i-: oh yeah, i missed that. They start with e=1 and reduce to 0.1 at the beginning.
+2017-06-18 20:51:15                p-i-: The behaviour policy during training was e-greedy with e annealed linearly from 1.0 to 0.1 over the first million frames, and fixed at 0.1 thereafter.
+2017-06-18 20:51:22               Lyote: Because the agents were biased towards lower action values initially.
+2017-06-18 20:51:38               Lyote: tomzx: That implies a board with all X's is possible.
+2017-06-18 20:52:28               Lyote: Also, a state such as all X's in the top row and all O's on the bottom row is imposible.
+2017-06-18 20:52:29                p-i-: tomzx: most states are unreachable
+2017-06-18 20:52:47                p-i-: or 6 Xs and 3 Os
+2017-06-18 20:54:12                p-i-: So, I suppose the next logical question is: how to train a Q NN?
+2017-06-18 20:54:13               Lyote: p-i-: So, with how the code is structured now, you could replace the tables with a network, and stick with the same abstraction through Q_writeOrUpdate and Q_read.
+2017-06-18 20:54:31                p-i-: Lyote: that's really nice.
+2017-06-18 20:54:50               Lyote: Theoretically, yes. But not in practice, unfortunately.
+2017-06-18 20:55:52                p-i-: Does anyone have any questions regarding the paper?
+2017-06-18 20:56:36                p-i-: I didn't quite understand what they were saying about using an auxiliary network...
+2017-06-18 20:56:38               Lyote: I'm sure unixpickle could correct me here, but the way I understand it this paper has three innovations which made using a NN as the Q approximator work: 1) Convolutional layers. 2) Experience replay. 3) Seperate target and action networks.
+2017-06-18 20:56:56                p-i-: right, I'm wobbly on (3)
+2017-06-18 20:57:39          unixpickle: idk about 3 either
+2017-06-18 20:57:48                p-i-: I get (2)... That's the same principle that you don't train a NN on a bunch of MNIST '2' digits consecutively, because it pulls it out of shape.
+2017-06-18 20:57:56          unixpickle: in David Silver's lecture on DQN, he emphasized experience replay as the main big innovation
+2017-06-18 20:58:01                p-i-: Instead you want a batch of mixed experiences
+2017-06-18 20:58:33               Lyote: p-i-: Yeah, that's the intuition behind experience replay.
+2017-06-18 20:58:56                p-i-: I didn't get why the paper made a big point about removing pooling layers, like that is meant to be a good thing.
+2017-06-18 20:58:57          unixpickle: I think people used deep nets for RL before the atari paper, but maybe not conv nets? idk
+2017-06-18 20:59:27                p-i-: They were saying that for the motion of the ball you actually DONT want location invariance
+2017-06-18 20:59:39                p-i-: But for everything else in the scene, you clearly DO!
+2017-06-18 20:59:53                p-i-: Like the blocks in breakout, each block is a block. No matter where it is.
+2017-06-18 20:59:58               Lyote: p-i-: Are you wobbly on how (3) works, or why it's beneficial?
+2017-06-18 21:00:05                p-i-: There is useful information in there.
+2017-06-18 21:00:07          unixpickle: p-i-: but you'd like to know where the block is so you know where to send the ball :-P
+2017-06-18 21:00:19                p-i-: Lyote: either/both
+2017-06-18 21:00:38               Lyote: unixpickle: Did you see Extended Data Tables 3 and 4?
+2017-06-18 21:00:48                p-i-: unixpickle: couldn't you do some kind of hybrid, like ladder-networks?
+2017-06-18 21:01:19                p-i-: So you would feed both fixed position and floating position features to the next layer...
+2017-06-18 21:02:23          unixpickle: p-i-: all worth experimenting with. I bet the authors chose this architecture because it's simple and uncontroversial.
+2017-06-18 21:02:45          unixpickle: Lyote: no; admittedly I have not even read the full paper, only its successors lol
+2017-06-18 21:02:52                p-i-: right. And it leaves space for another ArXiv paper in the future :p
+2017-06-18 21:03:23                p-i-: It's bad science to present 2 independent breakthroughs together too.
+2017-06-18 21:03:25               Lyote: Did ladder networks even exist in 2013? :P
+2017-06-18 21:03:28               Lyote: unixpickle: Fair enough.
+2017-06-18 21:04:02                p-i-: I wonder if anyone has dug into applying ladder to convnets...
+2017-06-18 21:04:03               Lyote: Bad science, but good engineering? :P
+2017-06-18 21:04:35                p-i-: I've only skimmed convnets Reading through Hinton's course..
+2017-06-18 21:04:58               Lyote: p-i-: So, the idea behind the target network is that you only periodically update your Qhat network every n steps, rather than after each gradient step.
+2017-06-18 21:05:21               Lyote: Apparently this makes the training more stable, so the map isn't moving too quickly underneath you as you're exploring.
+2017-06-18 21:05:45                p-i-: Maybe it's preventing some kind of feedback loop...
+2017-06-18 21:06:05                p-i-: And then what, you swap Q^ in for Q?
+2017-06-18 21:06:19               Lyote: The other way around, but yeah.
+2017-06-18 21:06:33               Lyote: Or rather, you copy the weights from Q into Qhat.
+2017-06-18 21:07:21               Lyote: I think they talk about the target network idea more in this paper: https://arxiv.org/pdf/1509.02971.pdf
+2017-06-18 21:07:22      ML-helper[bot]: [ [1509.02971] Continuous control with deep reinforcement learning ] | https://arxiv.org/abs/1509.02971
+2017-06-18 21:07:43               tomzx: how are the updates to the network done? do they start from scratch or they just add the new samples to the training set?
+2017-06-18 21:08:33                p-i-: I suppose it's some kind of lowpass filtering
+2017-06-18 21:08:40               Lyote: tomzx: They have a history of <state_t,action_t,reward_t,state_t+1> tuples.
+2017-06-18 21:08:58               Lyote: They sample that history randomly to generate their gradients.
+2017-06-18 21:09:50                p-i-: Seems odd they don't bias towards recent history
+2017-06-18 21:10:11                p-i-: That's what I would intuitively be tempted to do
+2017-06-18 21:10:14               tomzx: so the network is this tuple -> reward regression?
+2017-06-18 21:10:25                p-i-: Maybe again they're just keeping it simple
+2017-06-18 21:10:33               Lyote: The loss function was ((reward_t + gamma * MAX_a' Q(state_t+1, a')) - Q(state_t, a))^2
+2017-06-18 21:11:00               Lyote: p-i-: https://arxiv.org/abs/1511.05952
+2017-06-18 21:11:01          unixpickle: that was the loss function, *but* you have to keep track of what they differentiate with respect to
+2017-06-18 21:11:01      ML-helper[bot]: [ [1511.05952] Prioritized Experience Replay ]
+2017-06-18 21:11:02               Lyote: :D
+2017-06-18 21:11:11                p-i-: haha
+2017-06-18 21:11:15          unixpickle: they treat Q(state_t+1, a1) as a constant even though it's the output of the network, right?
+2017-06-18 21:11:31          unixpickle: a'*
+2017-06-18 21:11:39          unixpickle: hence bootstrapping
+2017-06-18 21:11:44               Lyote: unixpickle: Correct.
+2017-06-18 21:12:03                p-i-: ^ which in plain English is the square of the difference between the Q value the network predicts, and the approximation using 1-step-Bellman
+2017-06-18 21:12:06               Lyote: Or at least, they label `reward_t + gamma * MAX_a' Q(state_t+1, a')` as their target.
+2017-06-18 21:12:14                p-i-: (which we would expect to be more accurate)
+2017-06-18 21:14:11               shoky: Lyote: in your tictactoe, you write on choose_action: "Choose a random action (0-8) with probability epsilon, or the optimal action with probability 1-epsilon".  is that supposed to the the other way around? just making sure i'm not missing something
+2017-06-18 21:14:14               Lyote: unixpickle: I'd recommend taking a quick look at Extended Data Tables 3 and 4 real quick. https://pdfs.semanticscholar.org/340f/48901f72278f6bf78a04ee5b01df208cc508.pdf
+2017-06-18 21:14:15      ML-helper[bot]: [ Human-level control through deep reinforcement learning (application/pdf, 13 pages) 4.4MB ]
+2017-06-18 21:14:28                p-i-: Which lecture does Silver get to DeepQ in? (I've gone through the first three this week)
+2017-06-18 21:14:57          unixpickle: Lyote: interesting. Shows how the replay buffer and the target network help
+2017-06-18 21:15:02                p-i-: shoky: nope, that's correct. You want a tiny probability of trying out something new.
+2017-06-18 21:15:10               tomzx: p-i-: does he ever, I don't think
+2017-06-18 21:15:30                p-i-: I thought unixpickle said he does
+2017-06-18 21:15:31          unixpickle: it's weird, because A3C solves the same issue as the replay buffer in a different way. Not sure how A3C addresses the target network idea; I guess it just wasn't necessary anymore
+2017-06-18 21:15:43                p-i-: A3C?
+2017-06-18 21:15:53               Lyote: shoky: The TicTacToe code uses the opposite convention from the DeepMind paper, unfortunately. :\
+2017-06-18 21:15:55          unixpickle: tomzx p-i-: it's a lecture on value function methods. Lemme try to find it
+2017-06-18 21:16:01               shoky: p-i-: well, that doesn't seem to be what the code is doing:  if random.random() > self.epsilon:  return random.choice(..)
+2017-06-18 21:16:08               tomzx: unixpickle: ah, lecture 6
+2017-06-18 21:16:26               Lyote: shoky: In my code, epsilon = probability of taking maximum action. In the DeepMind paper, it's the probability of taking a random action.
+2017-06-18 21:16:46          unixpickle: tomzx link to timestamp: https://youtu.be/UoPei5o4fps?t=4826
+2017-06-18 21:16:47      ML-helper[bot]: [ (R: www.youtube.com) RL Course by David Silver - Lecture 6: Value Function Approximation - YouTube ]
+2017-06-18 21:16:51               tomzx: https://fkcd.ca/E2G.png
+2017-06-18 21:16:52      ML-helper[bot]: [ (image/png) 41.8KB ]
+2017-06-18 21:17:08               shoky: Lyote: oks, should fix the comment then i guess
+2017-06-18 21:17:15          unixpickle: p-i-: A3C is basically deepmind's successor to DQN
+2017-06-18 21:17:21                p-i-: Lyote: meh epsilon should be a small number
+2017-06-18 21:17:30                p-i-: Otherwise mathematicians start crying
+2017-06-18 21:17:52                 cjm: they shed a single arbitrarily small tear
+2017-06-18 21:18:00          unixpickle: cjm lol
+2017-06-18 21:18:11               Lyote: p-i-: A3C is actually the method in the "Asynchronous Methods for Deep Reinforcement Learning" paper.
+2017-06-18 21:18:14               Lyote: Which is currently on the potential papers list.
+2017-06-18 21:19:54                p-i-: I hope we get to cover some more RL papers, I'm finding RL so far significantly easier to get my head around than the other stuff out there.
+2017-06-18 21:20:18          unixpickle: p-i-: RL is somewhat simple, but then applying it is always harder than supervised learning :|
+2017-06-18 21:20:36               Lyote: At least you get nice screensavers. :D
+2017-06-18 21:20:37                p-i-: Is it possible to throw GANs into the mix?
+2017-06-18 21:21:04               Lyote: p-i-: I'm going to adjust the code to adopt DeepMind's epsilon convention.
+2017-06-18 21:21:14                p-i-: Lyote: +1
+2017-06-18 21:21:39                p-i-: well, actually it is the scientific community's convention :p
+2017-06-18 21:22:52               Lyote: Touche. :P
+2017-06-18 21:22:58                p-i-: So, can everyone remember the 3 landmark contributions of the paper, without scrolling up to where Lyote listed them?
+2017-06-18 21:24:13          unixpickle: *scrolls up*. now i can ;)
+2017-06-18 21:24:34                p-i-: lol me too, I forgot 'conv-nets'
+2017-06-18 21:24:57               Lyote: The convnets part was mostly of historical relevance. :P
+2017-06-18 21:25:30               Lyote: 2013 was a very different time, before everyone worshiped at the church of LeCun.
+2017-06-18 21:25:56                p-i-: So actually it's just one central contribution: using a conv-net NN for Q. And random episodes + Q^ are 2 hacks to improve convergence.
+2017-06-18 21:26:25               Lyote: Apparently they were important hacks. :P
+2017-06-18 21:26:36                p-i-: So have we reached the point where we can discuss what comes next, after this paper?
+2017-06-18 21:26:43               Lyote: Those hacks basically make it feasible to treat it as a supervised learning problem.
+2017-06-18 21:26:47                p-i-: How far behind cutting-edge is this paper now?
+2017-06-18 21:27:08               Lyote: Well, every RL paper uses this as a benchmark now.
+2017-06-18 21:27:35                p-i-: Pity we didn't have Henry_Jia
+2017-06-18 21:27:55                p-i-: I actually forgot to ping all the regulars
+2017-06-18 21:27:57                p-i-: dammit
+2017-06-18 21:28:59                p-i-: Has anyone come across decent code implementations?  (maybe not involving Lua??)
+2017-06-18 21:29:22                p-i-: I'm tempted to look through the code
+2017-06-18 21:29:42               Lyote: I'm sure there's lots of implementations on GitHub.
+2017-06-18 21:29:59                p-i-: Me too, therein lies the problem :]
+2017-06-18 21:30:13               Lyote: I was playing around with this for a little bit: https://github.com/keon/deep-q-learning/blob/master/dqn.py (from this blog post https://keon.io/deep-q-learning/ )
+2017-06-18 21:30:14      ML-helper[bot]: [ deep-q-learning/dqn.py at master · keon/deep-q-learning · GitHub ]
+2017-06-18 21:30:15      ML-helper[bot]: [ Deep Q-Learning with Keras and Gym · Keon's Blog ]
+2017-06-18 21:30:29               Lyote: It seemed to work for CartPole. :P
+2017-06-18 21:30:51               Lyote: I should really invest in a GPU. It's holding me back from doing anything deep...
+2017-06-18 21:31:14          unixpickle: Lyote: def get a GPU. I spent months waiting for a convnet to train before I got a GPU, and basically couldn't work on anything else during that time.
+2017-06-18 21:31:31               Lyote: Anyways, I think we should call an end to the Reading Group log.
+2017-06-18 21:31:40                p-i-: yep
+2017-06-18 21:31:44                p-i-: Any last orders?
+2017-06-18 21:32:23                p-i-: Do you think it's worth putting that blog post in the RG resources?
+2017-06-18 21:32:28               Lyote: If there's any questions from anyone in the audience (or reading this from the backlog), feel free to ping.
+2017-06-18 21:32:36               Lyote: p-i-: I don't think it could hurt.
+2017-06-18 21:32:45               Lyote: Although I do notice they don't do the Qhat thing.
+2017-06-18 21:33:16                p-i-: Yes they do! I can see it in the giant equation!
+2017-06-18 21:33:31                p-i-: https://keon.io/images/deep-q-learning/deep-q-learning.png
+2017-06-18 21:33:31      ML-helper[bot]: [ (image/png) 76.3KB ]
+2017-06-18 21:34:05                p-i-: oh before we close out, I have one interesting observation
+2017-06-18 21:34:15                p-i-: Did anyone notice at the start of the paper they were drawing parallels with neuroscience
+2017-06-18 21:34:16               Lyote: Huh, I don't see it in their code.
+2017-06-18 21:34:29               Lyote: p-i-: That's something DeepMind seems to love to do, yeah. :P
+2017-06-18 21:34:33                p-i-: oh didn't check the code yet.
+2017-06-18 21:34:49                p-i-: So, I've bumped into the same result they are talking about
+2017-06-18 21:34:52               Lyote: I'm pretty sure they just took a screenshot from the paper.
+2017-06-18 21:35:04                p-i-: http://www.lostfalco.com/how-to-make-long-term-memories-in-minutes-the-2010-method/
+2017-06-18 21:35:10      ML-helper[bot]: [ How to Make Long Term Memories in Minutes! The 20/10 Method – Lostfalco.com ]
+2017-06-18 21:35:12               Lyote: p-i-: I'd be really interested to learn more about the neuroscience side of RL if you have resources.
+2017-06-18 21:35:37                p-i-: I want to have a dig at some point
+2017-06-18 21:35:44                p-i-: I've done a fair bit of neuroscience research
+2017-06-18 21:36:11                p-i-: It's the basic idea that a 'distractor' activity consolidates learning
+2017-06-18 21:36:36               Lyote: The RL method I'm basing my Masters thesis on claims to be inspired by the hippocampus.
+2017-06-18 21:37:06                p-i-: And I was chatting with some schoolteachers at my tennis club, who were grieving over "fidget toys" -- which are apparently backed by academia
+2017-06-18 21:37:17                p-i-: Which I'm guessing is the same situation
+2017-06-18 21:38:07               Lyote: You're saying we should have our RL agents take breaks by doing flashcards during training? :P
+2017-06-18 21:38:23                p-i-: There's got to be something in there ;)
+2017-06-18 21:38:57                p-i-: I think it's making a case for daydreaming
+2017-06-18 21:39:40                p-i-: Lyote: can you say any more about your masters thesis?
+2017-06-18 21:40:29                p-i-: ok lemme closeout the group officially
+2017-06-18 21:40:40                p-i-: - - - - - - - END OF RG, THANKS ALL! - - - - - - -
