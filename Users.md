@@ -5,26 +5,26 @@ If you contribute to the channel, please consider private-messaging the user *pi
 
 ## Staff
 * **[brand0](https://github.com/brandonrobertz)** (Washington, USA; Independent researcher)  
-  *ML Interests:* character-level modeling, text clustering, outlier detection, application to journalism  
+  *ML interests:* character-level modeling, text clustering, outlier detection, application to journalism  
   I'm an independent researcher with professional experience in investigative journalism and publishing, machine learning, and full-stack development in the tech industry. Currently editing a zine exploring machine learning applied to journalism called [Artificial Informer](http://artificialinformer.com).
 
  * **[pasky](https://github.com/pasky)** (Prague, CZ)  
-  *ML Interests:* Deep architectures, attention models, transfer learning, practice rather than theory  
+  *ML interests:* Deep architectures, attention models, transfer learning, practice rather than theory  
   In the past, I worked in academia and freelance on a variety of AI / machine learning problems. My main focus was Computer Go (my masters was one of the sort-of-AlphaGo-predecessor programs) and then NLP (question answering and related text understanding problems). Lately I do a lot of vision-like stuff - I co-founded an AI startup Rossum where we are reading invoices using neural networks. I'm a hardcore Keras fan.
 
 * **[pi-](https://github.com/p-i-)** (Oxford, UK; Freelance coder)  
-  *ML Interests:* Primarily the theory. The new stuff as it comes out (GANs, VAEs, etc.), biologically plausible models (spiking neuron,...), coding in Julia.  
+  *ML interests:* Primarily the theory. The new stuff as it comes out (GANs, VAEs, etc.), biologically plausible models (spiking neuron,...), coding in Julia.  
   *Relevant skills:* IPython / numpy, MATLAB, Julia  
   My background is coding, math, DSP. I'm trying to get myself up to speed with modern ML thinking & get a grip on the probabilistic math. I'm keeping an eye on Julia. My goal is to become a digital nomad working with ML.
 
  * **RandIter** (New York, USA; Software engineer)  
+   *Relevant skills:* Python  
   I'm a backend software engineer in finance, having previously worked for many years in academia.  
-  *Relevant skills:* Python
   
   * **warsh** (New York, USA; Student)  
-  *ML Interests:* FPGA acceleration of NN
-  *Relavant skills:* Python, C, Verilog, Go (currently learning)
-  My interests lie more within the realm of theory, thus I'm focusing on improving the efficieny of neural networks by use of FPGAs.
+  *ML interests:* FPGA acceleration of NN  
+  *Relevant skills:* Python, C, Verilog  
+  My interests lie more within the realm of theory. I'm focusing on improving the efficieny of neural networks by use of FPGAs.
 
 ## Users
 * **[Henry_Jia](https://github.com/HenryJia)** (Axminster, UK; Student)  
