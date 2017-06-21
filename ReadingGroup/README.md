@@ -28,7 +28,7 @@ Open to ideas. Maybe we should cover the main directions/areas in ML before dril
 ## Past discussions (newest at top):
 
 * [Human-level control through deep reinforcement learning](https://www.nature.com/nature/journal/v518/n7540/full/nature14236.html) ([PDF](https://pdfs.semanticscholar.org/340f/48901f72278f6bf78a04ee5b01df208cc508.pdf))  
-[log](2017.06.18_DeepRL)
+[log](logs/2017.06.18_DeepRL)
 
   Led by Lyote (tx Lyote)!  
 
