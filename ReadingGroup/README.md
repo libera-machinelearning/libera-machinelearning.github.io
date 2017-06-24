@@ -12,6 +12,8 @@ Open to ideas. Maybe we should cover the main directions/areas in ML before dril
 
 
 ## Candidates for future discussions (most recent/best first):
+* https://www.vicarious.com/general-game-playing-with-schema-networks.html
+* [One Model To Learn Them All](https://arxiv.org/pdf/1706.05137.pdf)
 * [Learning to act by predicting the future](https://openreview.net/pdf?id=rJLS7qKel)  
 * [Asynchronous Methods for Deep Reinforcement Learning](https://arxiv.org/abs/1602.01783)  
 * [DNC](https://github.com/deepmind/dnc) (Differentiable Neural Computer)
