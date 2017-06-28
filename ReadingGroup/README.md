@@ -12,6 +12,7 @@ Open to ideas. Maybe we should cover the main directions/areas in ML before dril
 
 
 ## Candidates for future discussions (most recent/best first):
+* [Evolving Virtual Creatures (Simms 1994)](http://www.karlsims.com/papers/siggraph94.pdf) ([vid](https://www.youtube.com/watch?v=JBgG_VSP7f8))
 * https://www.vicarious.com/general-game-playing-with-schema-networks.html
 * [One Model To Learn Them All](https://arxiv.org/pdf/1706.05137.pdf)
 * [Learning to act by predicting the future](https://openreview.net/pdf?id=rJLS7qKel)  
