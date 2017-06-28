@@ -70,3 +70,5 @@ Contents:
 
 ## Misc
 * [π's scattered links](http://pipad.org/wiki/index.php/Machine_Learning)
+* S/W Tuts:
+  - http://www.kdnuggets.com/2017/06/using-tensorflow-api-tutorial-series.html
