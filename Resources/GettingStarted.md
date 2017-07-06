@@ -10,3 +10,11 @@ Proficiency in [Python 3](https://www.python.org/) is strongly recommended for p
 ## Books
 <!--Free PDF books only-->
 * [An Introduction to Statistical Learning](http://www-bcf.usc.edu/~gareth/ISL/)
+
+## Misc
+I haven't reviewed these yet (pi) but they look decent.
+
+[fast.ai](http://course.fast.ai/lessons/lessons.html) -- Practical Deep Learning For Coders  
+http://selfdrivingcars.mit.edu/ -- MIT 6.S094: Deep Learning for Self-Driving Cars  
+
+At some point someone (probably me -- pi) needs to look through these links & figure out if they really belong here. We can't be handling list of links to a beginner. It has to be a clear learning path.
