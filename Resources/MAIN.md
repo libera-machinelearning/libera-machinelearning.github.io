@@ -20,6 +20,7 @@ Contents:
 
 ## Videos
 * http://videolectures.net/Top/Computer_Science/Machine_Learning/
+* [HTM School](https://www.youtube.com/channel/UC8-ttzWLgXZOGuhUyrPlUuA) Hierarchial Temporal Memory.  Numenta is attempting to model based on the biology of the brain. This set of 12 videos takes us through their work. Super videos!
 
 ## Courses
 * [Every single Machine Learning course on the internet, ranked by your reviews (2017)](https://medium.freecodecamp.com/every-single-machine-learning-course-on-the-internet-ranked-by-your-reviews-3c4a7b8026c0)
