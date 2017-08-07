@@ -2,14 +2,9 @@
 *(Short URL to here: https://j.mp/MLReadingGroup)*
 
 Resources (including transcripts) for the Reading Group on (IRC -> Freenode -> ##machinelearning)  
-Reading Group is currently every 2-3 Sundays! Keep an eye on the channel topic!  
-Talk to p-i- on the main channel for more info.  
-
-
-## Next discussion: Sunday ? June? 2017 @ [7pm UTC](https://www.wolframalpha.com/input/?i=Sunday+7+pm+UTC)
-
-Open to ideas. Maybe we should cover the main directions/areas in ML before drilling into anything too specific??
-
+Reading group is sporadic, it hinges on finding someone willing/capable to lead.
+Keep an eye on the channel topic -- upcoming RGs Will be announced there!
+Talk to pi- (or p-i-) on the main channel for more info.
 
 ## Candidates for future discussions (most recent/best first):
 * [Evolving Virtual Creatures (Simms 1994)](http://www.karlsims.com/papers/siggraph94.pdf) ([vid](https://www.youtube.com/watch?v=JBgG_VSP7f8))
@@ -29,6 +24,9 @@ Open to ideas. Maybe we should cover the main directions/areas in ML before dril
 
 
 ## Past discussions (newest at top):
+
+* [Feynman Machines](https://arxiv.org/abs/1609.03971)  
+[log](logs/2017.06.18_FeynmanMachines)
 
 * [Human-level control through deep reinforcement learning](https://www.nature.com/nature/journal/v518/n7540/full/nature14236.html) ([PDF](https://pdfs.semanticscholar.org/340f/48901f72278f6bf78a04ee5b01df208cc508.pdf))  
 [log](logs/2017.06.18_DeepRL)
