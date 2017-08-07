@@ -1,0 +1,539 @@
+18:12 fragelroque: Hi guys, Fergal here, one of the Feynman Machine paper authors. Thanks for choosing this topic for this evening. I'll be here from now until the RG is over, and Richard and Eric will likely drop in too.
+18:15 MarcelineVQ: fragelroque: thanks for coming
+:
+19:05 mpihlstrom: Hello fragelroque and thanks for the early session yesterday. Since I'm personally caved-in on SDRs, reading Kanerva's book and so on, I'm wondering if you have any thoughts about Rod Rinkus's Sparsey architecture. Have you had a chance to get familiar with it?
+:
+19:09 deego: i look forward to the rg today, an see just what the heck FM is. I saw some decent pat-on-the-back in the papers, but they didn't see too many details.
+:
+19:13 MarcelineVQ: wespiser, noone: SDR is sparse distributed representation   they're a relevant topic of the reading group here in an hour about https://arxiv.org/pdf/1609.03971.pdf
+19:13 ML-helper[bot]: [ [1609.03971] Feynman Machine: The Universal Dynamical Systems Computer ] | https://arxiv.org/abs/1609.03971
+:
+19:16 fragelroque: mpihlstrom: Yes, Rod is a friend of ours, we had great chats at NICE in Alameda in March. Sparsey is another example of coupled NDSs (Nonlinear Dynamical Systems) so it's another type of Feynman Machine. It's not designed the same way, and so it doesn't work quite like our hierarchies.
+19:18 mpihlstrom: fragelroque: That's all encouraging to hear. Does that mean your FM have the potential of all the constant time benefits that Rod claims about Sparsey?
+19:18 fragelroque: jaggz: Thanks. noone: SDRs are basically large binary vectors with about 98-99% zeros, but where each bit position (hopefully) has a specific meaning.
+19:18 mpihlstrom: And sorry for the early start of this session. Daylight saving must have had me confused.
+19:19 wespiser: woah, SDRs are amazing. Are there any implementations/ experimental results ?
+19:19 wespiser: i'm def a n00b here, but you folks give #haskell a run for its money in terms of heady ideas!
+19:21 fragelroque: wespiser: yes, SDRs are the basis for HTM, Sparsey, and most of our work. There's some theoretical work which basically says that SDRs are just the best thing to use. The one drawback is that you can't (easily) backprop through them, so most DL people just shun them.
+19:21 fragelroque: mphilstrom: no worries, I'm early too.
+19:22 jaggz: offers everyone worms
+19:22 diogenese: how kind
+19:22 jaggz: (early birds)
+19:23 fragelroque: mphilstrom: Yes, if you use SDRs you can make strong guarantees about computation times, because you have a fixed, finite number of nonzero units in each stage.
+19:23 wespiser: yea, well I'm just a humble data science consultant, so a lot of DL is a lot of hype with a nugget of core functionality
+19:24 finkata has left IRC (Client Quit)
+19:24 wespiser: fragelroque: thanks, I'll take a look into HTM and Sparsy
+19:24 noone: Are HTMs only a subject of interest in academia as of now?
+19:24 noone: I remember reading about work at Numenta in HTM long ago
+19:25 jaggz: I really want a plant classifier.  Mine failed :)
+19:25 mpihlstrom: Hardly academia even, mostly just among nut-jobs I'd say.
+19:26 finkata has joined (~finkata@gateway/tor-sasl/finkata)
+19:26 fragelroque: mpihlstrom: That's unfair. HTM is a theory in Neuroscience, which is the best theory right now for what it's addressing.
+19:27 mpihlstrom: It was meant to be tongue in cheek. Maybe it's just me growing frustrated seeing all the potential and all the shrugging shoulders.
+19:28 SiegeLord has left IRC (Quit: It's a joke, it's all a joke.)
+19:29 wespiser: yea, generally new methods get a ton of push back until they offer a better alternative
+19:29 fragelroque: And IBM Research have had a team working on hardware for HTM for the last several years. The Heidelberg group in the Human Brain Project have also been working on implementing HTM on their hardware, and the next generation of the HBP BrainScales hardware is the first to model multi-compartment neurons, based completely on HTM's model.
+19:30 pi--: Hello all!
+19:30 sschoi_ has joined (~sschoi@114-136-182-18.emome-ip.hinet.net)
+19:30 wespiser: in your opinion, what's the so called 'killer app' going to be?
+19:30 mpihlstrom: I didn't know about HBP BrainScales. Will have to look into that!
+19:31 MarcelineVQ: pi--: heyhey
+19:31 SiegeLord has joined (~sl@c-73-158-190-212.hsd1.ca.comcast.net)
+19:32 fragelroque: pi—: evening
+19:32 pi--: I'm going to suggest we start public logging early, seeing as the conversation has already gravitated towards the RG topic.
+19:32 noone has left IRC (Quit: http://www.kiwiirc.com/ - A hand crafted IRC client)
+19:32 fragelroque: Thanks for organising this, much appreciated. And to everyone else for your positive and open-minded welcome.
+19:33 RandIter: fragelroque: hi. some questions were at https://j.mp/FM-questions
+19:33 ML-helper[bot]: [ (R: docs.google.com) Unanswered FM questions ]
+19:33 caveman has left IRC (Quit: caveman)
+19:33 sschoi has left IRC (Ping timeout: 240 seconds)
+19:33 quant4243 has joined (~Thunderbi@p20030063281647B495905C021E290DA6.dip0.t-ipconnect.de)
+19:33 test123456 has joined (~test12345@p54A8C080.dip0.t-ipconnect.de)
+19:33 Deacydal has joined (~Deacyde@unaffiliated/deacyde)
+
+
+19:34 pi--: - - - - - - - Reading group 6 Aug 2017  FEYNMAN MACHINES  https://arxiv.org/abs/1609.03971  (Author Fergal present as fragelroque) - - - - - - - 
+19:34 ML-helper[bot]: [ [1609.03971] Feynman Machine: The Universal Dynamical Systems Computer ]
+19:34 fragelroque: Sure. I need to go AFK for 15 or so if that's OK. Any Q's before then please just ask.
+19:35 pi--: cool
+19:35 govg has left IRC (Ping timeout: 248 seconds)
+19:36 deego: wait, is fragelroque the author himself?  That's just awesome!
+19:37 deego: thanks for joining us!
+19:37 jaggz: I'd like to add a question to the queue: I'm interested in knowing if the Feynman Machines have demonstrated the ability to handle cyclic data (melodies, walking, or other processing like cyclic operations of machinery, weather patterns, etc.).
+19:37 TotalOblivion has left IRC (Remote host closed the connection)
+19:37 Saurabh_ has joined (~Saurabh@59.95.177.185)
+19:38 Deacyde has left IRC (Ping timeout: 276 seconds)
+19:39 pi-: deego: yup, isn't it awesome!
+19:40 GK1wmSU-deepbook has joined (~pyatibrat@169.53.164.113)
+19:40 GK1wmSU-deepbook has left IRC (K-Lined)
+19:40 QF-MichaelK has joined (~mystic-ho@unaffiliated/qf-michaelk)
+19:40 TotalOblivion has joined (~Henry@ppp-94-66-221-152.home.otenet.gr)
+19:42 noone has joined (9030f877@gateway/web/cgi-irc/kiwiirc.com/ip.144.48.248.119)
+19:47 fragelroque: jaggz: yes, we tried that with prediction of a video of a hypercube, which is cyclical. The system learned to replicate the entire video with about 6 presentations.
+19:47 pi-: fragelroque: a while back I came across http://www.breloff.com/no-backprop/ which is about https://arxiv.org/abs/1411.0247?
+19:47 ML-helper[bot]: [ Learning without Backpropagation: Intuition and Ideas (Part 1) – Tom Breloff ]
+19:47 ML-helper[bot]: [ [1411.0247] Random feedback weights support learning in deep neural networks ]
+19:48 pi-: "The brain processes information through many layers of neurons. This deep architecture is representationally powerful, but it complicates learning by making it hard to identify the responsible neurons when a mistake is made. In machine learning, the backpropagation algorithm assigns blame to a neuron by computing exactly how it contributed to an error. To do this, it multiplies error signals by matrices
+19:48 pi-: consisting of all the synaptic weights on the neuron's axon and farther downstream. This operation requires a precisely choreographed transport of synaptic weight information, which is thought to be impossible in the brain. Here we present a surprisingly simple algorithm for deep learning, which assigns blame by multiplying error signals by random synaptic weights. We show that a network can learn to extr
+19:48 pi-: act useful information from signals sent through these random feedback connections. In essence, the network learns to learn. We demonstrate that this new mechanism performs as quickly and accurately as backpropagation on a variety of problems and describe the principles which underlie its function. Our demonstration provides a plausible basis for how a neuron can be adapted using error signals generated a
+19:48 pi-: t distal locations in the brain, and thus dispels long-held assumptions about the algorithmic constraints on learning in neural circuits."
+19:48 pi-: (just in case it is of some use/interest)
+19:49 fragelroque: Is that Goodlfellow's paper?
+19:49 fragelroque: Or Lillicrap?
+19:49 pi-: Lillicrap
+19:50 fragelroque: OK, thanks. Unfortunately, this has been used to keep insisting that "some kind of backprop" exists in the brain.
+19:50 kazuya84 has joined (~nina.sigq@109.255.15.214)
+19:51 fragelroque: IMHO, either use backprop which is really a good idea for ANNs, or don't, which is how brains work.
+19:51 Scip has left IRC (Ping timeout: 240 seconds)
+19:52 pi-: I feel the latter is underexplored. I wonder if contemporary ML is a little bit stuck in a local optimum. (i.e. breaking benchmarks it seems to be the main way to get attention, which is going to favour incremental change).
+19:53 jarray52 has joined (~bigbear@unaffiliated/jarray52)
+19:53 fragelroque: Our two main problems with backprop are 1) it's inefficient if you can do something better, and 2) it stops you using non-differentiable activation functions.
+19:53 mpihlstrom: What is the requirement for something to be called backprop anyway? Couldn't modulating feedback signals be considered backprop?
+19:54 mpihlstrom: Is differentiable a requirement really?
+19:54 pi-: I suppose it is specifically "the back propagation of the error derivative"
+19:54 fragelroque: No, backprop is a specific computation involving passing gradient-based updates in the opposite direction of activations
+19:54 MarcelineVQ: another issue with training via error is needing to know what answer you want I would guess
+19:55 fragelroque: MarcelineVQ: yes, backprop also typically requires having a global target to compare with.
+19:56 mpihlstrom: Mm, of course. I should use Google more.
+19:57 pi-: I like the Takens' Theory demo with the Lorenz curve... It seems intuitive: the information bleeds across the dimensions, so it seems reasonable you should get a decent topological representation from watching a particular dimension over time.
+19:57 fragelroque: Anyway, we all know DL with backprop can do amazing things. What we're doing is opening up another kind of ML which is online, unsupervised, and has completely different characteristics.
+19:58 MarcelineVQ: online ML is by far the more interesting subject, I'm glad there's more and more options opening for it with computing getting faster/cheaper
+19:58 MarcelineVQ: and of course the techniques being created
+19:58 sschoi_ has left IRC (Remote host closed the connection)
+19:59 pi-: fragelroque: I'm stumbling with Eqns 4-6 in the paper.  Could you possibly give a brief rundown of the architecture of a Feynman Machine?
+20:00 kuuranne_ has joined (kuuranne@kapsi.fi)
+20:00 b0nn_ has joined (~shane@81.4.127.22)
+20:00 Guybrush` has joined (~kjetil@cm-84.209.7.7.getinternet.no)
+20:01 Trinli_ has joined (~trinli@static.141.78.40.188.clients.your-server.de)
+20:01 johndoe__ has joined (~john@198.211.126.72)
+20:01 Bleyddyn has joined (4408d813@gateway/web/freenode/ip.68.8.216.19)
+20:02 JACKSONMEISTER has left IRC (Quit: Konversation terminated!)
+20:03 pi-: So each encoder (or decoder) has 2 layers: Hidden and Visible. Should we think of these as a 2D substrate, like a neo-cortex region?
+20:03 fragelroque: pi-: Poincare first identified chaos in the 1890's, but it took until 1963 for Lorenz to use computers to model it. His discovery was that a Nonlinear Dynamical System (NDS) in a chaotic regime had infinite information about its past and future at every instant in time. In 1979-80, Packard discovered and Takens proved that a (nice) NDS transmitted perfect information about its entire timeline, and that you could reconstruct a m
+20:03 fragelroque: odel of it using a finite, mechanical procedure.
+20:04 mi100hael has left IRC (Read error: Connection reset by peer)
+20:05 jarray52: pi-: I found figure 1 and figure 2 along with the description in Supporting Information (within the Conclusion) to be helpful.
+20:05 fragelroque: pi-: The paper describes one design for the encoder (the decoder is usually a very simple affine transform with a nonlinearity).
+20:05 mi100hael has joined (~mi100hael@unaffiliated/mi100hael)
+20:06 duke- has joined (~duke@void.pw)
+20:07 GvP_ has left IRC (*.net *.split)
+[netsplit]
+20:08 jaggz: what's "a nonlinearity"?
+20:08 wespiser has left IRC (Remote host closed the connection)
+20:08 jaggz: a layer with nonlinear activation function(s)?
+20:09 royal_screwup21 has left IRC (Quit: http://www.kiwiirc.com/ - A hand crafted IRC client)
+20:09 fragelroque: We called this design the delay encoder. The encoder gets a new input each timestep, and combines it with some memory of previous inputs, so you get a delta. You feed that through a normal weight matrix and get an activation input to the hidden layer. In the paper, this input vector is blended with the previous one, giving you a hidden layer activation vector for this timestep. We then do a k-Winner-Takes-All (kWTA) on that lay
+20:09 fragelroque: er and generate a binary Sparse Distributed Representation (SDR) which is the output of the encoder.
+20:09 mi100hael has joined (~mi100hael@unaffiliated/mi100hael)
+20:10 ImQ009 has left IRC (Ping timeout: 240 seconds)
+20:10 lordPoseidon has left IRC (Ping timeout: 240 seconds)
+20:10 pi-: I'm having trouble forming a clear mental picture of the operation
+20:10 fragelroque: No worries
+20:10 royal_screwup21 has joined (5c62ce33@gateway/web/cgi-irc/kiwiirc.com/ip.92.98.206.51)
+20:10 VaultTec has left IRC (Quit: Leaving)
+20:10 gmodena has left IRC (Ping timeout: 240 seconds)
+20:10 fragelroque: All of these bits are optional (except where I'll state).
+20:11 caveman has joined (~caveman@unaffiliated/mahmoud)
+20:12 pi-: yeah I get the delta-thingy. That makes sense to me. The math in the paper confuses me tho...  e.g. Eq.5
+20:12 pi-: I feel like the paper could really do with some kind of verbal / diagrammatic description  /  sequence of operation, before diving into the math.
+20:12 fragelroque: In any ANN, you have an input to a layer of weights. We do that, sometimes by combining the current input with some version of the last inputs (eg a sliding window average). We put the input vector through the weight matrix and get what we call the stimulus.
+20:13 uks has joined (~uksio@p2003008DAC0C26E6696860708626F453.dip0.t-ipconnect.de)
+20:13 Douhet has joined (~Douhet@unaffiliated/douhet)
+20:15 fragelroque: Just like any ANN. Now, we combine the stimulus with the previous activation vector, giving us a new activation vector. We find the top-K activations and set those positions to 1 in the output vector, the others to 0.
+20:15 ackpacket has joined (~ackpacket@unaffiliated/ackpacket)
+20:15 gmodena has joined (~gmodena@45.63.42.110)
+20:15 jarray52: fragelrogue: Can you briefly describe the main difference between the Feynman Machine construction and a recurrent neural network? Is the difference only computation efficiency, or does this schema also impact the quality of the results?
+20:15 MrAxilus[m] has left IRC (Ping timeout: 240 seconds)
+20:16 cathalgarvey[m] has left IRC (Ping timeout: 240 seconds)
+20:16 johndoe__ is now known as johndoe
+20:16 johndoe has left IRC (Changing host)
+20:16 johndoe has joined (~john@unaffiliated/johndoe)
+20:16 iwi[m] has left IRC (Ping timeout: 276 seconds)
+20:16 sudoreboot[m] has left IRC (Ping timeout: 240 seconds)
+20:16 ttk2[m] has left IRC (Ping timeout: 240 seconds)
+20:16 M-rryan has left IRC (Ping timeout: 240 seconds)
+20:16 pi-: "In practice, we do not use fully-connected weights, but instead sum weighted inputs to the encoder over a window of radius r around the projected position (k_0, l_0) in d as follows:" <-- some kind of diagram would really help here.  I can't see what's going on.  Do we imagine a 2D input surface, and each neuron on this surface is sending out connections to the 2D output surface, but centred around some
+20:16 pi-: specific location?
+20:16 freeman42x: fragelroque, would it be possible to link to the bits of code on github where the gist of the algorithm logic takes place (high level overview)? that might be helpful
+20:16 pi-: i.e. 'topology' in HTM-speak
+20:16 bgrayburn[m] has left IRC (Ping timeout: 240 seconds)
+20:16 xyzzy[m] has left IRC (Ping timeout: 240 seconds)
+20:16 rahuldecoded[m] has left IRC (Ping timeout: 240 seconds)
+20:16 dhruvrana has left IRC (Ping timeout: 246 seconds)
+20:16 fragelroque: The motivation is that each unit in the hidden activation layer is trying to represent its favoured inputs (dictated by the incoming weights) and that each unit accumulates evidence over time to become active.
+20:19 pi-: fragelroque: are you familiar with Hinton's Wake-Sleep or Up-Down algorithms? This kind of reminds me of them...
+20:20 jaggz: fragelroque, Is this binary threshold activation process used only during prediction?  How does it relate to the propagateErrors() function?
+20:20 GMpow2_2 has left IRC (Ping timeout: 255 seconds)
+20:21 amerlyq has joined (~amerlyq@unaffiliated/amerlyq)
+20:22 causative has joined (~halberd@unaffiliated/halberd)
+20:22 zeus__ has left IRC (Ping timeout: 255 seconds)
+20:22 fragelroque: pi-: the optimisations in the paper are only the tip of the iceberg, and our current code is 2 orders of magnitude more efficient. I'm trying to explain the broader principle first.
+20:22 pi-: plz yes! This is what I'm struggling with!
+20:22 fragelroque: jaggz: It's not a threshold, it's a competition rule.
+20:23 Bleyddyn has left IRC (Ping timeout: 260 seconds)
+20:24 __Yiota has joined (~textual@2607:fea8:56df:fa6d:c98e:6d9:f97c:b564)
+20:24 jarray52: fragelroque: It seems you're emphasizing the Theorem of Floris Takens as a central theme in this paper. I'm trying to understand how that translates into the design of the networks within the paper.
+20:25 fragelroque: OK. Let's slow this down then. We start with an input vector, we may combine that with past inputs, and we get a new input vector. We put that through a weight matrix and get a stimulus vector.
+20:26 fragelroque: The stimulus vector is effectively added to the previous activation vector, giving a new one.
+20:27 fragelroque: And we find the top-K activations and generate an SDR where they are 1 and the remainder are 0.
+20:27 pi-: jarray52: yup, Nice question. I love the idea of the brain as dynamical system that attempts to form a consistent internal represention of the topology of the dynamic system that is the Environment. I feel like I will really have learned something if I can clearly see this mechanism in action here.
+20:28 jarray52: pi-: Agreed :)
+20:29 pi-: So the stimulus vector is the visible/lower layer activations ... Can I see it this way?
+20:29 jaggz: The previous activation vector is the last timestep's activation vector, output at the same level as the current stimulus vector?
+20:29 fragelroque: This is one example encoder which has state (includes information from previous timesteps) and produces a nonlinear encoding of its inputs (a binary SDR). We have multiple encoder designs in our code which have the same kinds of property.
+20:30 pi-: "The stimulus vector is effectively added to the previous activation vector, giving a new one." <-- this is effectively modelling DISTAL dendrites, yes?
+20:31 jarray52: SDR = ?
+20:32 pi-: jarray52: sparse distributed representation
+20:32 fragelroque: The hidden "layer" is a couple of vectors. The stimulus is just the output of the weight X input. The activation is a persistent vector, effectively summing up all stimuli to date. The output or "state" is the SDR produced by running k-WTA on the activations
+20:32 jarray52: pi-: Thanks
+20:32 pi-: jarray52: Google 'HTM School' -- excellent series of videos
+20:32 vamatya_ has joined (~vamatya@unaffiliated/vamatya)
+20:33 pi-: I think a background in Numenta's work is probably a prerequisite for understanding where fragelroque's mind is at ;)
+20:33 fragelroque: pi-: It's worth doing, but this abstracts all that away.
+20:34 aw1 has joined (~aw1@unaffiliated/aw1)
+20:34 __Yiota has left IRC (Quit: My MacBook has gone to sleep. ZZZzzz…)
+20:35 pi-: Can I think of Feynman Machines as the HTM-neuron meets Ladder Networks?  (is it a start?)
+20:37 fragelroque: No. It's informed by the Neuroscience (as embodied by HTM) but not burdened by trying to emulate it in any way.
+20:37 pi-: That's a relief!
+20:37 fragelroque: Ladder Networks (now with Harri's recurrent version, just published) absolutely.
+20:38 MarcelineVQ: https://arxiv.org/abs/1707.09219
+20:38 ML-helper[bot]: [ [1707.09219] Recurrent Ladder Networks ]
+20:38 pi-: What is the relation between the encoder and decoder?  Does the decoder seek to mimic the encoder?
+20:38 andykay has joined (~AndyKay@unaffiliated/andykay)
+20:39 omnipot has left IRC (Ping timeout: 260 seconds)
+20:39 fragelroque: The encoder just does a nonlinear transform which involves some past state. The decoder combines the encoder output and the next-level decoder output and produces a prediction of its paired encoder's next input
+20:42 fragelroque: One way of viewing this is as Bengio/Poggio put it: your data is found on a low-dimensional manifold (crinkly surface) in a high-dimensional space. Our argument is that this is true because your data moves along that manifold.
+20:43 fragelroque: So the FM is designed to learn to identify the flow field which moves your data on the manifold.
+20:43 test123456 has left IRC (Quit: Leaving)
+20:44 pi-: yes, I like thinking of ML systems as 'manifold approximators'
+20:44 fragelroque: And Takens Theorem gives you the mathematical tools to do that.
+20:44 jaggz: what are the various levels of encoder-decoders' weight matrix sizes like with respect to each other?
+20:45 noone has left IRC (Quit: http://www.kiwiirc.com/ - A hand crafted IRC client)
+20:45 pi-: What exactly are you taking from Takens? Do you actually need anything beyond the basic idea that you can use a single dimension of input to model the topology of a dynamical system?
+20:46 vordeman has joined (56870075@gateway/web/freenode/ip.86.135.0.117)
+20:46 vordeman has left IRC (Client Quit)
+20:46 Scip has joined (~scip@76.121.6.102)
+20:47 fragelroque: That's the minimal case. Later theorems and lots of empirical evidence show that higher-dimensional signals also work.
+20:48 jaggz: like, your sliding radial filter, with a competive pooling -- is it therefore reducing on some dimensions (ie. the projected 2d dimensions, which I'd think were spatial, but for the visible-hidden thing which I don't yet understand) ...
+20:48 pi-: sure, it's adding more information to the system!
+20:48 jaggz: fragelroque, yeah, I'm thinking some simplified diagrams of connectivity, akin to CNN diagrams, is helpful for people who think visually
+20:49 pi-: Why is Temporal Pooling so called?
+20:49 jaggz: (myself included in that category)
+20:50 fragelroque: pi-: that's a HTM question.
+20:51 causative_ has joined (~halberd@unaffiliated/halberd)
+20:51 causative has left IRC (Ping timeout: 255 seconds)
+20:51 jarray52: Some problems such as playing soccer (or driving) can naturally be thought of as the evolution of a dynamical system in a higher dimensional space. Other problems such as NLP are more difficult to conceptualize in this way. ANNs are useful for both. What makes these networks better at the dynamical system problem but perhaps not as good at NLP type problems?
+20:51 vamatya_ has left IRC (Ping timeout: 240 seconds)
+20:52 Hoffman has left IRC (Quit: quit)
+20:52 fragelroque: jaggz|: we're working on visualisations. My recent talk at euroClojure has the first few (it'll be out any day now). We'll have more in our upcoming Distill paper. It's quite simple, just very hard to explain on IRC.
+20:52 Hoffman has joined (~Hoffman@unaffiliated/hoffman)
+20:53 mi100hael has left IRC (Ping timeout: 260 seconds)
+20:55 fragelroque: jarray52: the idea is that NLP for example is also a dynamical system problem. My thoughts are a NDS generating this sequence of symbols, which you input into your NDS network. Hopefully you can reconstruct a version of the content of my thoughts in your head having received the symbol stream.
+20:56 pi-: fragelroque: I am keen to put in the effort to get my head around all of this. It looks super-interesting, although I still have a lot of missing connections.  Might you be willing to help if I get stuck?
+20:57 fragelroque: Sure.
+20:57 pi-: Maybe I can put together a guide. That would give me a target to workaround.
+20:57 Zerith has left IRC (Read error: Connection reset by peer)
+20:58 pi-: Feynman was known as 'The Great Explainer' so it would be a fitting tribute to offer a guide in the same spirit.
+20:58 jarray52: pi-: I'd find it helpful to have someone else to study with/discuss with.
+20:59 fragelroque: That'd be great.
+20:59 pi-: jarray52: let's do it!
+20:59 jaggz: distill as in, distilling the knowledge in a more complex network for a simpler, less resource-intensive model?
+20:59 dendisuhubdy has joined (~dendisuhu@mtrlpq0721w-76-68-199-4.dsl.bell.ca)
+21:00 indistylo has left IRC (Read error: Connection reset by peer)
+21:00 fragelroque: The algos we're using are not bizarre, it's the framework which might be diffuclt to grok.
+21:00 fragelroque: Distill as in https://distill.pub/
+21:00 ML-helper[bot]: [ Distill — Latest articles about machine learning ]
+21:00 jason_ has joined (6b4dd2ae@gateway/web/freenode/ip.107.77.210.174)
+21:01 causative_ is now known as causative
+21:01 jason_ is now known as Guest40750
+21:02 jarray52: fragelrogue: Thanks for the discussion and your insight.
+21:02 jarray52: I learned quite a bit.
+21:02 Kylemis has joined (188df4a3@gateway/web/freenode/ip.24.141.244.163)
+21:03 doubtful has left IRC (Quit: Going going gone....)
+21:03 pi-: fragelroque: thanks so much for coming here btw!
+21:04 jaggz: I've been working with microcontrollers and raspberry pi's, and orange pi's, for a couple years now.. being able to implement machine learning systems on them would be quite nice.
+21:04 fragelroque: Thanks, we really appreciate this chance to communicate the ideas.
+21:05 Guest40750 has left IRC (Ping timeout: 260 seconds)
+21:05 Elisha has joined (~elisha@tm.84.52.190.180.dc.cable.static.telemach.net)
+21:05 pasky: MarcelineVQ: I wonder how others are thinking about this, but for me in papers like https://arxiv.org/abs/1707.09219 the instant red flag is that they don't report [interesting] results on any well known datasets but introduce their own, with only their own baselines (where the issue is how well they are debugged and tuned)
+21:05 ML-helper[bot]: [ [1707.09219] Recurrent Ladder Networks ]
+21:05 Kylemis_ has joined (188df4a3@gateway/web/freenode/ip.24.141.244.163)
+21:06 Kol has joined (Kol@S0106bcd1656621da.vc.shawcable.net)
+21:06 dendisuhubdy: Hi guys
+21:07 Kylemis has left IRC (Ping timeout: 260 seconds)
+21:07 pi-: fragelroque: what do you think of the future of custom ML hardware?  My guess is that the manufacturers are waiting for something stable to emerge from the chaos of ML research before they invest zillions... But it seems that we need some way of mimicking the brain's capacity to massively parallelize computation.
+21:07 ImQ009 has joined (~ImQ009@unaffiliated/imq009)
+21:08 two2theheadPC0 has left IRC (Quit: Leaving)
+21:08 jarray52: pi-: FPGAs allow custom hardware to be created at (relatively) low costs.
+21:08 fragelroque: pi-: yes that's what the guys I've talked to, spending 100M's seem to be saying to me.
+21:09 pi-: fragelroque: have you looked at NeuroEvolution? I recently been reading https://www.amazon.co.uk/Handbook-Neuroevolution-Through-Erlang-Gene/dp/1461444624
+21:09 ML-helper[bot]: [ Handbook of Neuroevolution Through Erlang: Amazon.co.uk: Gene I. Sher: 9781461444626: Books ]
+21:10 wigums has joined (~wigums@unaffiliated/wigums)
+21:10 dendisuhubdy: A hardware specialized for training would be beneficial to consumer goods, unlike what we have now which is only for inference.
+21:10 pi-: It offers a way of automating the process of engineering network characteristics / topology / tuning etc.
+21:10 jarray52: What do you see as the deficiencies of GPUs for doing ML computations or neural network computations?
+21:10 fragelroque: Yes, Eric is a big fan of it, as am I. Turns out selective breeding (as in animals) outperforms it most of the time..
+21:11 Elisha has left IRC (Quit: My MacBook Pro has gone to sleep. ZZZzzz…)
+21:13 dendisuhubdy: fragelroque: you mean neuroevolution as a method optimizer a neural network? Compared to stochastic gradient descent?
+21:13 fragelroque: jarray52: GPUs are great if you can make your algo work on a GPU. The real future is something like Parallella, or maybe Spinnaker, where you have orders of magnitude more real processors with some high-performance network fabric.
+21:13 pi-: fragelroque: Are you happy using C++?  Have you looked at Julia?
+21:14 Kylemis_ has left IRC (Ping timeout: 260 seconds)
+21:16 Elisha has joined (~elisha@tm.84.52.190.180.dc.cable.static.telemach.net)
+21:16 fragelroque: C++ is Eric and Richard's native tongue. We've done this in all kinds of languages and contexts, C++ and OpenCL are simply the most productive platform for our particular team. You can do this in anything and you might suffer some small constant slowdown.
+21:17 lgmoneda` has joined (~user@201-68-219-132.dsl.telesp.net.br)
+21:17 lgmoneda has left IRC (Read error: Connection reset by peer)
+21:17 jarray52: If there's a bug in one of these newer platforms, it might be more than a small constant slowdown.
+21:17 jarray52: But, a language with formal proof capability may be worth the investment.
+21:17 zeus__ has joined (~zeus@2601:647:5300:2c40:f010:7b7:f3aa:ce49)
+21:18 pi-: fragelroque: if you guys haven't investigated Julia yet, I think it is well worth looking into. It supports a super-high-level syntax ala Matlab while JIT-ing to C/Fortran performance.
+21:18 synja has left IRC (Ping timeout: 260 seconds)
+21:18 fragelroque: Yes that's true but this kind of computation is by definition approximate, so we don't care about guarantees in that sense.
+21:19 synja_ has joined (~synja@184.75.221.163)
+21:19 pi-: I'm attracted to the idea of fast rapid prototyping / development velocity.
+21:19 jarray52: That's really important
+21:19 jarray52: especially for small teams
+21:20 fragelroque: My euroClojure talk is about using Clojure in that place (you could also use Haskell, Scala, or Julia)
+21:20 pi-: Do you feel any particular leaning to one over the others from that list of 4?
+21:20 fragelroque: I'm looking to do the very high level stuff in a better place than the C++ or Python where it currently is.
+21:21 gamma_: fragelroque: more abstractly, has research been going into causality (as more valuable than mere correlation) in recent endeaveours, is the latter informed by taken s theorem and related methods? I noticed you were a proponent of these ideas elsewhere and attempted to bridge the fields.
+21:22 zeus__ has left IRC (Ping timeout: 246 seconds)
+21:22 vuoto has left IRC (Remote host closed the connection)
+21:22 fragelroque: No. I think any of them have plenty of merit, and please add your fave to my list.
+21:22 pi-: fragelroque: is your team distributed / collaborates remotely? Where are you based?
+21:23 Waynes is now known as dorpel
+21:25 fragelroque: Currently Eric is in FLA, USA, I'm in Dublin, Ireland and Richard is in South Wales, UK. We meet every weekday on Discord for a 30-90minute talk. We're looking at relocating to one physical location, most likely in Europe in the next few months.
+21:25 bluebear has left IRC (Quit: Leaving.)
+21:28 pi-: What is the order of execution?  Does it go up the encoders then down the decoders?
+21:28 mi100hael has joined (~mi100hael@unaffiliated/mi100hael)
+21:29 fragelroque: gamma: sorry, only saw your Q now. Yes, we're very interested in the causality analysis issue. At present we're focussed on the prediction issue as current models need help, but causality is the real root of modelling and we're on the case.
+21:29 pi-: Or does each encoder-decoder pair calculate before the next higher up one?
+21:29 fragelroque: It goes up all the encoders and back down the decoders.
+21:29 usr has joined (~usr@unaffiliated/usr)
+21:30 jarray52: fragelroque: What application domains are you and your collaborators most interested in?
+21:30 fragelroque: With exponential memory (not yet discussed), it may only go up some of the way.
+21:30 jarray52: Have you found these techniques more suitable to certain applications and less suitable to others?
+21:31 gamma_: fragelroque: ty
+21:31 pi-: How does Reinforcement Learning fit/gel with this work?
+21:32 fragelroque: jarray52: our tech is a waste of electricity on ImageNet. It works on any temporal or interactive data stream.
+21:32 ImQ009 has left IRC (Read error: Connection reset by peer)
+21:32 pi-: Are the inner layers symmetrical?  i.e. Could you cut them out, rotate 180° and stick them back into the network?
+21:34 araml has left IRC (Ping timeout: 240 seconds)
+21:35 freeman42x: fragelroque, would the FM be applicable to the same kind of problems HTM would apply to?
+21:35 fragelroque: pi-: RL is very interesting in this context. We have good things and then we have RL tasks where we are not sure what's happening.
+21:35 dendisuhubdy has left IRC ()
+21:36 M-rryan has joined (rryanmat1@gateway/shell/matrix.org/x-sjldhdkvikhrzbkp)
+21:36 neer has joined (neermatrix@gateway/shell/matrix.org/x-ddzklyqhlfymhpst)
+21:37 Nilesh_ has left IRC (Quit: Connection closed for inactivity)
+21:37 jarray52: fragelroque: Has your tech been applied to Natural Language Processing?
+21:37 fragelroque: It seems (I'm not directly involved right now) that we blow every other technique away on some tasks and then we get nowhere on others. My intuition is that we're not doing the right selective breeding on the exoskeleton in those cases.
+21:38 pepsipeacecorp[m has joined (pepsipeace@gateway/shell/matrix.org/x-ldjhpvgtjmmqauhj)
+21:38 pi-: Are you automating / metalearning the architecture construction at all?
+21:39 pi-: 'selective breeding' ^
+21:39 fragelroque: jarray52: not yet in our group. But we'll very likely be addressing NLP, possibly by using cortical.io SDRs.
+21:41 fragelroque: pi-: not at this moment. We have a cunning plan to do something like that, but we'll let you know in a few months.
+21:41 pi-: fragelroque: do you think it might be easier to explain your technology in 2 steps?  i.e. Start with something like "Ladder Networks with SDRs" & generalise... I just wonder how many people have read through this paper and failed to get traction...
+21:42 pi-: I wish we had a more advanced system than ArXiv where the community could insert questions and comments in the margin
+21:42 Scip has left IRC (Ping timeout: 255 seconds)
+21:42 fragelroque: pi-: it's hard, you're right. This is one of my main jobs. I have new material which will help in the coming weeks.
+21:43 pi-: like Colah does .. http://colah.github.io/posts/2014-03-NN-Manifolds-Topology/
+21:43 ML-helper[bot]: [ Neural Networks, Manifolds, and Topology -- colah's blog ]
+21:44 pi-: fragelroque: any chance I could visit you in Dublin at some point?
+21:44 fragelroque: Your feedback on this stuff is priceless, thanks.
+21:44 pi-: I feel like a pen and paper would really help..
+21:44 fragelroque: Of course.
+21:44 pi-: (I tutor math, and I have given up trying to do it online for exactly this reason)
+21:45 pi-: groovy. ok, I will get as far as I can here first.
+21:46 fragelroque: Well, the greatest of them all regarded his lectures on Physics as a failure. So we're just trotting after Feynman.
+21:46 liefer has joined (~liefer@3e6b4ca3.rev.stofanet.dk)
+21:47 fragelroque: PM me your email and let's do that.
+21:47 Keermit has left IRC (Quit: Leaving)
+21:48 bgrayburn[m] has joined (bgrayburnm@gateway/shell/matrix.org/x-mhguhdtdcxsyghww)
+21:48 pi-: fragelroque: done!
+21:48 araml has joined (~araml@unaffiliated/araml)
+21:50 fragelroque: And anyone here, I'd be delighted to do a Google Hangout Q&A, or equivalent.
+21:51 freeman42x: fragelroque, if you could do a google hangout with screensharing and some collaborative editing maybe, that would be awesome
+21:51 MarcelineVQ: that could be fun, like your vid here  https://www.youtube.com/watch?v=rrBhHDzmgUA
+21:51 ML-helper[bot]: [ Symphonies from Synapses - Brain as Universal Dynamical Systems Computer - YouTube ]
+21:52 fragelroque: This is really great. We think these ideas are going to turn out to be important in our shared search for how to do this stuff, and you people are simply amazing in your openness.
+21:54 freeman42x: fragelroque, If the tasks apply, doing a FM implementation for Numenta Anomaly Benchmark ( https://github.com/numenta/NAB ) might be a good way to demonstrate the strengths of the FM
+21:54 ML-helper[bot]: [ GitHub - numenta/NAB: The Numenta Anomaly Benchmark ]
+21:54 fragelroque: It's particularly pleasant for an old-timer like me that IRC turns out to be then place where our ideas get a fair and kindly hearing.
+21:55 pi-: IRC is gr8
+21:55 mi100hael has left IRC (Ping timeout: 255 seconds)
+21:55 fragelroque: freeman42x: yes, we're looking at that.
+21:59 CireNeikual has joined (456fb530@gateway/web/freenode/ip.69.111.181.48)
+22:01 pi-: So you apply backprop to the decoder, to help it more accurately mimic the input to the associated ENcoder.
+22:02 pi-: What if you don't use backprop?
+22:02 pi-: I think it should still learn, no?
+22:02 pi-: i.e. It has distal connections to the encoder's output
+22:02 pi-: hm what if it also had distal connections to the encoder's INPUT?
+22:02 pi-: Wouldn't that do the job?
+22:03 pi-: oh but then it could cheat :p
+22:03 _sfiguser has left IRC (Ping timeout: 260 seconds)
+22:03 fragelroque: We don't use backprop anywhere. We just use local prediction error in encoder and decoder once they get their ground truth
+22:04 synja_ is now known as synja
+22:04 synja has left IRC (Changing host)
+22:04 synja has joined (~synja@unaffiliated/synja)
+22:04 pi-: What does "ground truth" mean for say a middle layer?
+22:04 pi-: Do you mean that the ground truth for the decoder is the associated ENcoder's INPUT?
+22:04 fragelroque: Each decoder at time t produces a prediction for its encoder's input at t+1.
+22:05 fragelroque: Yes
+22:05 kazuya84 has left IRC (Ping timeout: 240 seconds)
+22:05 pi-: ah, so the NEXT encoder input will drive that learning.
+22:05 TotalOblivion has left IRC (Read error: Connection reset by peer)
+22:05 fragelroque: yep
+22:06 pi-: So we are training the decoder's PREDICTIVE capacity rather than simply it's recognition capacity.
+22:06 pi-: So maybe it is a PREDICTOR not a decoder ??
+22:06 CireNeikual: Hey guys, I am part of the Ogma team. I am currently uploading an (unlisted) video of something we have been working on. Will share in a few minutes!
+22:06 ackpacket has left IRC (Ping timeout: 240 seconds)
+22:06 pi-: ooh!
+22:06 pi-: :-)
+22:06 MarcelineVQ: :>
+22:06 fragelroque: exactly (prediction forces both recognition and future prediction)
+22:06 gamma_: CireNeikual: great
+22:07 qpcg has joined (~qpcg@c-73-209-63-189.hsd1.in.comcast.net)
+22:07 pi-: fragelroque: do you get much difference in learning by using ENC_(t+1) over ENC_(t) ?
+22:08 fragelroque: Yes. Predicting the future is hard.
+22:09 fragelroque: Reconstructing something you know is not so hard.
+22:10 kazuya84 has joined (~nina.sigq@109.255.15.214)
+22:10 pi-: I'm a bit lost on the "predictive hierarchies" section.
+22:10 pi-: Can't quite get traction / bite into it.
+22:12 Scip has joined (~scip@76.121.6.102)
+22:13 Elisha has left IRC (Quit: My MacBook Pro has gone to sleep. ZZZzzz…)
+22:13 CireNeikual: https://www.youtube.com/watch?v=Sjd6UokQJZU&feature=youtu.be
+22:13 ML-helper[bot]: [ World's Smallest Self-Driving Car - YouTube ]
+22:14 amadeusxnet has left IRC (Remote host closed the connection)
+22:14 fragelroque: This is exclusively for you guys to see first, as a thank you for this session.
+22:14 gamma_: ty
+22:15 _sfiguser has joined (~sfigguser@93-35-253-193.ip57.fastwebnet.it)
+22:15 rahuldecoded[m] has joined (rahuldecod@gateway/shell/matrix.org/x-glyrakfawuxtjark)
+22:15 xyzzy[m] has joined (xyzzychatz@gateway/shell/matrix.org/x-fcmdzdxrwicvvnef)
+22:16 cathalgarvey[m] has joined (cathalgarv@gateway/shell/matrix.org/x-xqdsfyatitvbzpmr)
+22:16 pi-: so cute
+22:16 pi-: I want one
+22:16 diogenese: it's cute
+22:16 CireNeikual: haha, we are actually making instructions on how to build it!
+22:16 RandIter: CireNeikual: pretty cool. Is the video sped up, or is that the real speed?
+22:16 MarcelineVQ: you're gonna end up with a meme if you use green backgrounds like that
+22:16 CireNeikual: second part is sped up (4x in the corner)
+22:17 diogenese: yeah, like burning lava
+22:17 pi-: I really wanted a Tesla, but it's a close second
+22:17 gamma_: not just cute... the most impressive is the reduced need for a number of environement samples before it becomes effective
+22:17 iwi[m] has joined (iwimatrixo@gateway/shell/matrix.org/x-wpojpswkvvfgbxbf)
+22:17 ttk2[m] has joined (ttk2matrix@gateway/shell/matrix.org/x-blbqlklneurphysh)
+22:17 prose[m] has joined (prosematri@gateway/shell/matrix.org/x-xpttnuwbcconzfxe)
+22:18 MarcelineVQ: you guys should watch the other car vid they have if youve not
+22:18 gamma_: the remote controled?
+22:18 MarcelineVQ: was this one also shown 'proper driving' or is it all online?
+22:18 sudoreboot[m] has joined (sudoreboot@gateway/shell/matrix.org/x-avginyfcufagqzed)
+22:18 zeus__ has joined (~zeus@2601:647:5300:2c40:f010:7b7:f3aa:ce49)
+22:18 gamma_: good question
+22:18 pi-: fragelroque, CireNeikual, would you like me to remove that link when I upload the transcript/log?
+22:18 GMpow2_2 has joined (~5@2a02:810a:8c00:5640:75a0:b82c:f08c:3f99)
+22:19 MrAxilus[m] has joined (mraxilusma@gateway/shell/matrix.org/x-blkgjiscskaebole)
+22:19 CireNeikual: We will probably just upload it tomorrow after some cleanup, so no worries.
+22:19 fragelroque: No, we'll make it public in the week. We just wanted to let you guys see vit first.
+22:20 MarcelineVQ: I guess it would need to be shown some things come ot think of it, otherwise walls wouldn't be avoided
+22:20 RandIter: if you can add some graphs on the side showing performance metrics, it may help too
+22:20 RandIter: or learning metrics over time
+22:20 gamma_: my guess would be this one was shown the "right way" via reward only
+22:20 pi-: Might want to do a <30 sec version.
+22:20 dhruvrana has joined (dhruvranam@gateway/shell/matrix.org/x-eyoimdyoeofhafbe)
+22:20 gamma_: opposite guesses... lol
+22:21 vkku[m] has joined (vkkumatrix@gateway/shell/matrix.org/x-yqewwjenowrtgjzv)
+22:21 CireNeikual: sure, the first part especially is a bit long as the car is quite slow
+22:22 pi-: You could speed it up 4x after a few seconds..
+22:22 GMpow2_3 has left IRC (Ping timeout: 255 seconds)
+22:22 fragelroque: We have a version running in a Unity track, you can see all those things. The Raspberry Pi Zero is so tiny we can't show all the internal processing and get it to work at that speed
+22:22 doubtful has joined (~abhigenie@nms4.law.columbia.edu)
+22:23 TotalOblivion has joined (~Henry@ppp-94-66-221-152.home.otenet.gr)
+22:23 zeus__ has left IRC (Ping timeout: 255 seconds)
+22:23 CireNeikual: It's using around 1,000,000 synapses btw
+22:24 CireNeikual: slightly less
+22:24 pi-: well it sure beats the DIY light-sensing robot I bought out of Maplin for my STEM class.
+22:24 CireNeikual: haha
+22:25 gamma_: how many wall hits before it avoids them altogehter?
+22:25 fragelroque: I think you can build this for about $90
+22:26 fragelroque: It's not hitting walls, it's just getting a tiny bit confused about how to steer.
+22:26 pi-: I vaguely remember a strategy for maximally exploring a space, where you encourage/reward maximum deviation from the manifold at the highest level of the network (i.e. Abstract concept space).
+22:26 beanbagula has left IRC (Ping timeout: 246 seconds)
+22:27 MarcelineVQ: novelty search?
+22:27 pi-: i.e. The agent seeks out of the most interesting / new representations
+22:27 quant4243 has left IRC (Quit: quant4243)
+22:27 pi-: Is that actually a thing?
+22:27 dorpel is now known as doppeI
+22:27 MarcelineVQ: yes
+22:28 fragelroque: We're looking at those things (Eric in particular), this is just driven by prediction
+22:28 MarcelineVQ: pi-: https://arxiv.org/pdf/1504.04909.pdf is a good one
+22:28 ML-helper[bot]: [ [1504.04909] Illuminating search spaces by mapping elites ] | https://arxiv.org/abs/1504.04909
+22:28 ackpacket has joined (~ackpacket@unaffiliated/ackpacket)
+22:28 LKoen has left IRC (Remote host closed the connection)
+22:29 darkmoon has left IRC (Ping timeout: 260 seconds)
+22:29 zeus__ has joined (~zeus@2601:647:5300:2c40:f010:7b7:f3aa:ce49)
+22:30 MarcelineVQ: another term to look at on the subject is quality diversity
+22:30 gamma_: fragel: ok, is there a measure of what would constitute an event, ie. this is old, this is new let's favour the latter?
+22:30 pi-: CireNeikual: Are you Richard from the paper?
+22:30 CireNeikual: nope, I am Eric :)
+22:31 fragelroque: His moniker is palindromic
+22:32 kazuya84 has left IRC (Remote host closed the connection)
+22:32 pi-: palindromicimordnilap palindromordnilap
+22:32 pi-: hehe
+22:32 MarcelineVQ: 'Well actually, it's racecar, I just meant... well'
+22:33 gamma_: what i'm looking for is some way to compare against RL models that attempt (near) one-shot learning
+22:34 pi-: I wonder how practical it is to model this kind of architecture on a GPU, where each ENC or DEC effectively takes in 2 textures and produces a third.
+22:35 pi-: Probably a really bad plan to try marrying Extreme optimisation with cutting-edge research ;)
+22:35 fragelroque: pi-: it turns out to be good if you have Eric
+22:36 pi-: oh you have a GPU wizard?
+22:36 pi-: That helps
+22:36 pi-: oh do you know about free TPU time for Open source projects?
+22:37 pi-: Google will give you free timeslots on their TPU cloud.
+22:37 gamma_: a related question: is transfer learning in effect, ie the models trains in a unity and latter proceeds in the physical world
+22:37 pi-: Probably a bit of a distraction, but maybe worth shelving
+22:37 aw1 has left IRC (Ping timeout: 240 seconds)
+22:38 pi-: Does this Feynman Machine architecture have any analogue of 'dreaming'?
+22:38 fragelroque: Our company is built on a GPU wizard, a ML/DL wizard (in one person) and two 47 year olds who can combine enginerring with theory and write papers and patents.
+22:39 doubtful has left IRC (Remote host closed the connection)
+22:39 pi-: shucks I have to go and get something to eat in a bit.
+22:42 pi-: Shall we officially close out the RG?
+22:42 MarcelineVQ: seems like a good time
+22:42 fragelroque: Unless anyone has more questions.
+22:42 pi-: (obv. discussion continues as normal, I'll just snip the log here)
+22:43 pi-: Last call peeps
+22:43 RandIter: Looking forward to the euroclojure video soon.
+22:43 fragelroque: Thanks so much for this, we really appreciate this kind of venue.
+22:44 freeman42x: my question would be if we could do something like was done today but with video/screen sharing and other collaboration tools, maybe diagraming to get ideas etc.
+22:44 RandIter: Thank you fragelroque and CireNeikual
+22:44 pi-: +1
+22:44 fragelroque: Yes freeman42x, we'll do that ASAP
+22:45 pi-: freeman42x: you mean more like a workshop & less like a Q&A?
+22:45 caveman has left IRC (Ping timeout: 255 seconds)
+22:45 fragelroque: Thanks everyone, especially those who asked such great questions.
+22:45 caveman has joined (~caveman@unaffiliated/mahmoud)
+22:46 freeman42x: QA or workshop + QA would both be nice I assume, having some diagrams to get the concepts etc. would help understanding
+22:47 armyriad has joined (~armyriad@gateway/vpn/privateinternetaccess/armyriad)
+22:47 pi-: It is a challenge communicating concepts in ML
+22:48 pi-: I really like what Matt Taylor has done with HTM School -- what a huge amount of work he must have put in to do those.
+22:48 fragelroque: I'm at fergal@ogmacorp.com or just look for "Fergal Byrne" on anything and you'll get me. Been online since the early 90's so spam filters have my 6.
+22:49 gamma_: very true pi-
+22:50 pi-: But I certainly hope you guys put your focus into developing the cutting-edge rather than fancy 3D graphics
+22:50 aw1 has joined (~aw1@unaffiliated/aw1)
+22:51 QF-MichaelK has left ()
+22:51 pi-: fragelroque: One last thing: could you recommend any learning path (resources maybe)
+22:51 pi-: Every RG I upload to https://github.com/p-i-/machinelearning-IRC-freenode/blob/master/ReadingGroup/README.md I try to add relevant resources
+22:51 ML-helper[bot]: [ machinelearning-IRC-freenode/README.md at master · p-i-/machinelearning-IRC-freenode · GitHub ]
+22:52 Scip has left IRC (Ping timeout: 255 seconds)
+22:53 pi-: I think someone should have a good grasp of HTM to understand your current work
+22:53 zeus__ has left IRC (Read error: Connection reset by peer)
+22:54 zeus__ has joined (~zeus@2601:647:5300:2c40:f010:7b7:f3aa:ce49)
+22:54 doubtful has joined (~abhigenie@nms4.law.columbia.edu)
+22:57 gamma_ has left IRC ()
+23:00 idnc_sk_ has left IRC (Ping timeout: 260 seconds)
+23:00 Scip has joined (~scip@76.121.6.102)
+23:01 monkey has joined (62d29308@gateway/web/freenode/ip.98.210.147.8)
+23:02 GMpow2_3 has joined (~5@2a02:810a:8c00:5640:75a0:b82c:f08c:3f99)
+23:02 fragelroque has left IRC (Quit: Leaving.)
+23:02 fragelroque has joined (~Adium@79.97.226.238)
+23:05 GMpow2_2 has left IRC (Ping timeout: 255 seconds)
+23:07 b0nn_ is now known as b0nn
+23:10 doubtful has left IRC (Remote host closed the connection)
+23:10 fragelroque: Thank you all for the chance to chat. I've greatly enjoyed meeting you all, and I hope we can continue in some venue in the future. You've no idea how important it is for us to have as receptive and inclusive a venue as you people have given us this evening.
