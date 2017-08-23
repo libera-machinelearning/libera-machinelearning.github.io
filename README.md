@@ -17,7 +17,7 @@ As of 2017, the channel has a noticeable bias in favor of deep learning, but for
 ## Pages
 * Resources
   * [Getting started](Resources/GettingStarted.md) - some individual resources for beginners
-  * [Meta](Resources/Meta.md) - important diverse meta resources
+  * [Main](Resources/MAIN.md) - important diverse meta resources
   <!-- * [Articles](Resources/Articles.md) - select educational articles including reviews -->
 <!-- * [Reading Group](ReadingGroup/README.md) - discussion on alternate Sundays on a topic of our choosing -->
 * [Users](Users.md) - select list of channel contributors
