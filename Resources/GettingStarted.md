@@ -7,6 +7,13 @@ Proficiency in [Python 3](https://www.python.org/) is strongly recommended for p
 * [Nielsen -- Neural Networks and Deep Learning](http://neuralnetworksanddeeplearning.com/index.html) -- online book, recommended for beginners.
 * [Hinton's Coursera course: Neural Networks for Machine Learning](https://www.coursera.org/learn/neural-networks) (Youtube playlist [here](https://www.youtube.com/playlist?list=PLoRl3Ht4JOcdU872GhiYWf6jwrk_SNhz9)) -- gets pretty advanced, and much of the later material is fast becoming obsolete (RBM, WakeSleep, DBM, DBN). Nevertheless, Hinton is the single biggest contributor to modern ML, and it's worth persevering with.
 
+## Education
+It is beneficial to gain demonstrable education in machine learning and to develop a corresponding portfolio of projects. To this end, the following should be of strong interest:
+* [Cousera Machine Learning Specialization](https://www.coursera.org/specializations/machine-learning)
+* [Coursera Deep Learning Specialization](https://www.coursera.org/specializations/deep-learning)
+
+Refer to the [full list](https://www.coursera.org/browse/data-science/machine-learning?languages=en) of Coursera machine learning specializations.
+
 ## Books
 <!--Free PDF books only-->
 * [An Introduction to Statistical Learning](http://www-bcf.usc.edu/~gareth/ISL/)
