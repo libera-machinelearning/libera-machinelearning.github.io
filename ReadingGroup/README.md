@@ -7,6 +7,7 @@ Keep an eye on the channel topic -- upcoming RGs Will be announced there!
 Talk to pi- (or p-i-) on the main channel for more info.
 
 ## Candidates for future discussions (most recent/best first):
+* [Curiosity-driven Exploration by Self-supervised Prediction](https://arxiv.org/abs/1705.05363)
 * [Evolving Virtual Creatures (Simms 1994)](http://www.karlsims.com/papers/siggraph94.pdf) ([vid](https://www.youtube.com/watch?v=JBgG_VSP7f8))
 * https://www.vicarious.com/general-game-playing-with-schema-networks.html
 * [One Model To Learn Them All](https://arxiv.org/pdf/1706.05137.pdf)
