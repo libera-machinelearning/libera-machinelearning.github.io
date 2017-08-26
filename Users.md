@@ -21,6 +21,8 @@ If you contribute to the channel, please consider private-messaging the user *pi
    *Relevant skills:* Python  
   I'm a backend software engineer in finance, having previously worked for many years in academia.  
   
+  * **synja** (USA; Ontologist and automation programmer)
+  
   * **warsh** (New York, USA; Student)  
   *ML interests:* FPGA acceleration of NN  
   *Relevant skills:* Python, C, Verilog  
