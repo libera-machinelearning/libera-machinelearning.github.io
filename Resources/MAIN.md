@@ -1,4 +1,4 @@
-Contents:
+**Contents**:
 <!-- TOC can be generated manually using https://ecotrust-canada.github.io/markdown-toc/ -->
 - [Software](#software)
 - [Videos](#videos)
