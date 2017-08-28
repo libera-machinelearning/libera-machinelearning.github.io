@@ -12,7 +12,7 @@ Machine Learning | No small talk. Offtopic chat only in ##ml-ot | Software: http
 Machine Learning | No small talk. No public logging. Offtopic chat only in ##ml-ot | See https://j.mp/ChannelGitHub for Resources and Reading Group | Related: #ai ##AGI ##nlp #nupic #pydata #scikit-learn ##statistics #tensorflow
 -->
 
-As of 2017, the channel has a noticeable bias in favor of deep learning, but for good reason.
+You can connect via [Riot](https://riot.im/app/#/room/#freenode_##machinelearning:matrix.org), [IRCCloud](https://www.irccloud.com/irc/freenode/channel/%23%23machinelearning), [WebChat](https://webchat.freenode.net/?channels=%23%23machinelearning), or your favorite IRC or Matrix client. As of 2017, the channel has a noticeable bias in favor of deep learning, but for good reason.
 
 ## Pages
 * Resources
