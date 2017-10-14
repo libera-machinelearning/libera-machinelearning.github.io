@@ -42,6 +42,7 @@
 * THIS!
 * https://stats.stackexchange.com/
 * https://datascience.stackexchange.com/
+* https://ai.stackexchange.com
 * https://www.reddit.com/r/MachineLearning/
 
 ## Blogs
