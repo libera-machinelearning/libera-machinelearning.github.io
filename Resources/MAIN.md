@@ -4,6 +4,7 @@
 - [Videos](#videos)
 - [Courses](#courses)
 - [Books](#books)
+- [Q&A](#q&a)
 - [Communities](#communities)
 - [Blogs](#blogs)
 - [Competitions](#competitions)
@@ -38,11 +39,13 @@
 * [Algorithms for Reinforcement Learning](https://sites.ualberta.ca/~szepesva/papers/RLAlgsInMDPs.pdf) by [Csaba Szepesvári](https://sites.ualberta.ca/~szepesva/RLBook.html)
 * [Sutton: Reinforcement Learning](http://incompleteideas.net/sutton/book/the-book.html)
 
-## Communities
-* THIS!
+## Q&A
 * https://stats.stackexchange.com/
 * https://datascience.stackexchange.com/
 * https://ai.stackexchange.com
+
+## Communities
+* This!
 * https://www.reddit.com/r/MachineLearning/
 
 ## Blogs
