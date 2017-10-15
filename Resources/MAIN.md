@@ -4,7 +4,7 @@
 - [Videos](#videos)
 - [Courses](#courses)
 - [Books](#books)
-- [Q&A](#q&a)
+- [Q&A](#qa)
 - [Communities](#communities)
 - [Blogs](#blogs)
 - [Competitions](#competitions)
