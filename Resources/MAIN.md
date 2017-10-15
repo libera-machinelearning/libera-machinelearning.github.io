@@ -49,6 +49,7 @@
 * https://www.reddit.com/r/MachineLearning/
 
 ## Blogs
+* [Keras](https://blog.keras.io/)
 * [GitXiv](http://www.gitxiv.com/)
 * [Colah](http://colah.github.io/) -- e.g. "Neural Networks, Manifolds, and Topology"
 * [Eric Jang](http://blog.evjang.com/) -- great for Variational Methods & VAEs.
