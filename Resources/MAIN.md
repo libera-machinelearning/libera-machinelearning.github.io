@@ -57,6 +57,7 @@
 * [Karpathy](http://karpathy.github.io/) -- e.g. Pong from Pixels
 * [inFERENCe](http://www.inference.vc)
 * [The Morning Paper](https://blog.acolyer.org/) -- a new CS/ML paper every morning
+* [Deep Ideas](http://www.deepideas.net)
 
 ## Competitions
 * [KDnuggets: Competitions](http://www.kdnuggets.com/competitions/)
