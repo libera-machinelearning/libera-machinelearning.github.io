@@ -11,8 +11,8 @@ You can connect via [Riot](https://riot.im/app/#/room/#freenode_##machinelearnin
   * [Main](Resources/MAIN.md) - important diverse meta resources
   <!-- * [Articles](Resources/Articles.md) - select educational articles including reviews -->
 <!-- * [Reading Group](ReadingGroup/README.md) - discussion on alternate Sundays on a topic of our choosing -->
-* [Users](Users.md) - select list of channel contributors
-* [Ideas](Ideas.md) - ideas for the channel and this repo
+<!--* [Users](Users.md) - select list of channel contributors -->
+<!--* [Ideas](Ideas.md) - ideas for the channel and this repo -->
 
 <!-- Backups of ##machinelearning channel Topic:
 2017-10-07:
