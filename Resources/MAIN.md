@@ -69,11 +69,15 @@
 
 ## Feeds
 * arXiv: [stat.ML](https://export.arxiv.org/rss/stat.ML/recent), [cs.LG](https://export.arxiv.org/rss/cs.LG/recent), [cs.NE](https://export.arxiv.org/rss/cs.NE/recent)
-* [KDnuggets](http://www.kdnuggets.com/feed) (unofficial [filtered](https://zapier.com/engine/rss/517634/kdnuggets/) version)
+* [KDnuggets](http://www.kdnuggets.com/feed) and an unofficial [filtered](https://zapier.com/engine/rss/517634/kdnuggets/) version
 * [InfoWorld AI](http://www.infoworld.com/category/artificial-intelligence/index.rss)
 * [Distill.pub](http://distill.pub/rss.xml)
+### Labs
 * [DeepMind](https://deepmind.com/blog/feed/basic/)
+* [Facebook Blog](https://research.fb.com/feed/) and an unofficial [filtered](https://zapier.com/engine/rss/2758609/fb-research-blog-ml/) version
+* [Nvidia (unofficial)](https://zapier.com/engine/rss/2758480/nvidia-ml/)
 * [OpenAI](https://blog.openai.com/rss/)
+
 
 ## Misc
 * [π's scattered links](http://pipad.org/wiki/index.php/Machine_Learning)
