@@ -3,7 +3,9 @@ This is the community repo for the `##machinelearning` and `##ml-ot` IRC channel
 
 Short URL to this page: https://j.mp/ChannelGitHub
 
-You can connect via [Riot](https://riot.im/app/#/room/#freenode_##machinelearning:matrix.org), [IRCCloud](https://www.irccloud.com/irc/freenode/channel/%23%23machinelearning), [WebChat](https://webchat.freenode.net/?channels=%23%23machinelearning), or your favorite IRC or Matrix client. As of 2017, the channel has a noticeable bias in favor of deep learning, but for good reason.
+You can connect via <!--[Riot](https://riot.im/app/#/room/#freenode_##machinelearning:matrix.org)--> [IRCCloud](https://www.irccloud.com/irc/freenode/channel/%23%23machinelearning), [WebChat](https://webchat.freenode.net/?channels=%23%23machinelearning), or your favorite IRC client. Using a Matrix client is not encouraged as of late 2017 due to numeorus problems with the Matrix-Freenode bridge. As of 2017, the channel has a noticeable bias in favor of deep learning, but for good reason.
+
+
 
 ## Pages
 * __Resources__
