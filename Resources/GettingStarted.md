@@ -9,6 +9,7 @@ It is beneficial to gain demonstrable education in machine learning and to devel
 Refer to the [full list](https://www.coursera.org/browse/data-science/machine-learning?languages=en) of Coursera machine learning specializations.
 
 ## Videos
+* [fast.ai](http://course.fast.ai/)
 * [DeepLearning.TV YouTube playlist](https://www.youtube.com/playlist?list=PLjJh1vlSEYgvZ3ze_4pxKHNh1g5PId36-) -- 17 ~5-min vids, good starter -- introduces the main ideas at a non-technical level.
 * [Andrew Ng's ML Coursera course](https://www.youtube.com/view_play_list?p=A89DCFA6ADACE599) -- best beginner course.
 * [Nielsen -- Neural Networks and Deep Learning](http://neuralnetworksanddeeplearning.com/index.html) -- online book, recommended for beginners.
@@ -18,10 +19,6 @@ Refer to the [full list](https://www.coursera.org/browse/data-science/machine-le
 <!--Free PDF books only-->
 * [An Introduction to Statistical Learning](http://www-bcf.usc.edu/~gareth/ISL/)
 
-## Misc
-I haven't reviewed these yet (pi) but they look decent.
-
-[fast.ai](http://course.fast.ai/lessons/lessons.html) -- Practical Deep Learning For Coders  
-http://selfdrivingcars.mit.edu/ -- MIT 6.S094: Deep Learning for Self-Driving Cars  
-
-At some point someone (probably me -- pi) needs to look through these links & figure out if they really belong here. We can't be handling list of links to a beginner. It has to be a clear learning path.
+## Papers
+<!--Free papers only-->
+* [A Brief Introduction to Machine Learning for Engineers (2017)](https://arxiv.org/abs/1709.02840)
