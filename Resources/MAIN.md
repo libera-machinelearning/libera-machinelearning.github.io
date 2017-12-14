@@ -74,7 +74,7 @@
 * [Distill.pub](http://distill.pub/rss.xml)
 ### Labs
 * [DeepMind](https://deepmind.com/blog/feed/basic/)
-* [Facebook Blog](https://research.fb.com/feed/) and an unofficial [filtered](https://zapier.com/engine/rss/2758609/fb-research-blog-ml/) version
+* [Facebook Blog](https://research.fb.com/feed/)
 * [Nvidia (unofficial)](https://zapier.com/engine/rss/2758480/nvidia-ml/)
 * [OpenAI](https://blog.openai.com/rss/)
 
