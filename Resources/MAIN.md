@@ -22,6 +22,7 @@
 ## Videos
 * http://videolectures.net/Top/Computer_Science/Machine_Learning/
 * [HTM School](https://www.youtube.com/channel/UC8-ttzWLgXZOGuhUyrPlUuA) Hierarchial Temporal Memory.  Numenta is attempting to model based on the biology of the brain. This set of 12 videos takes us through their work. Super videos!
+* [3B1B](https://www.youtube.com/watch?v=aircAruvnKk&list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi) 100% recommended for beginners!
 
 ## Courses
 * [Every single Machine Learning course on the internet, ranked by your reviews (2017)](https://medium.freecodecamp.com/every-single-machine-learning-course-on-the-internet-ranked-by-your-reviews-3c4a7b8026c0)
@@ -33,6 +34,7 @@
 * [Illinois CS 598 LAZ: Cutting-Edge Trends in Deep Learning and Recognition (2017)](http://slazebni.cs.illinois.edu/spring17/) ([videos](https://recordings.engineering.illinois.edu:8443/ess/portal/section/20bbecdb-2f7c-4725-84d1-03d28f5a08f5))
 
 ## Books
+* [Neural Networks and Deep Learning] by Nielsen (http://neuralnetworksanddeeplearning.com/) -- excellent resource for beginners.
 * http://www.deeplearningbook.org/ -- The deep-learning Bible; Dec 2016, Goodfellow, Bengio, Courville (pdf [here](https://github.com/HFTrader/DeepLearningBook))
 * [The Elements of Statistical Learning (2009)](https://statweb.stanford.edu/~tibs/ElemStatLearn/)
 * [David MacKay: Information Theory, Pattern Recognition and Neural Networks (2005)](http://www.inference.phy.cam.ac.uk/itprnn/book.html)
@@ -58,6 +60,7 @@
 * [inFERENCe](http://www.inference.vc)
 * [The Morning Paper](https://blog.acolyer.org/) -- a new CS/ML paper every morning
 * [Deep Ideas](http://www.deepideas.net)
+* [Distill.pub](https://distill.pub/)
 
 ## Competitions
 * [KDnuggets: Competitions](http://www.kdnuggets.com/competitions/)
