@@ -22,3 +22,4 @@ Refer to the [full list](https://www.coursera.org/browse/data-science/machine-le
 ## Papers
 <!--Free papers only-->
 * [A Brief Introduction to Machine Learning for Engineers (2017)](https://arxiv.org/abs/1709.02840)
+* [Contemporary machine learning: a guide for practitioners in the physical sciences (2017)](https://arxiv.org/abs/1712.08523)
