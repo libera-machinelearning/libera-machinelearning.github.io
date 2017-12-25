@@ -17,7 +17,7 @@ Refer to the [full list](https://www.coursera.org/browse/data-science/machine-le
 
 ## Books
 <!--Free PDF books only-->
-* [An Introduction to Statistical Learning](http://www-bcf.usc.edu/~gareth/ISL/)
+* [An Introduction to Statistical Learning](http://www-bcf.usc.edu/~gareth/ISL/) (unofficial python notebooks: [1](https://github.com/JWarmenhoven/ISLR-python), [2](https://github.com/emredjan/ISL-python))
 
 ## Papers
 <!--Free papers only-->
