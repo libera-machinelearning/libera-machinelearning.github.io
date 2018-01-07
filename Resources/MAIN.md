@@ -82,6 +82,9 @@
 * [Nvidia (unofficial)](https://zapier.com/engine/rss/2758480/nvidia-ml/)
 * [OpenAI](https://blog.openai.com/rss/)
 
+## Paths
+* [Learning path for software engineers](https://github.com/ZuzooVn/machine-learning-for-software-engineers/blob/master/README.md)
+
 <!--
 Resource for creating feed from FAIR pubs:
 http://motyar.info/webscrapemaster/api/?url=https://research.fb.com/publications/?cat=13&xpath=//*[@id=%22page%22]/div[5]/section/div/div[1]/a[1]
