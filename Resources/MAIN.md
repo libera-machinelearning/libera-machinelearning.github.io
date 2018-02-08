@@ -94,3 +94,4 @@ http://motyar.info/webscrapemaster/api/?url=https://research.fb.com/publications
 * [π's scattered links](http://pipad.org/wiki/index.php/Machine_Learning)
 * S/W Tuts:
   - http://www.kdnuggets.com/2017/06/using-tensorflow-api-tutorial-series.html
+* [Google CoLaboratory](https://colab.research.google.com/notebooks/welcome.ipynb#recent=true) -- Online IPython Notebook (with GPU access)
