@@ -19,7 +19,7 @@ If you contribute to the channel, please consider private-messaging the user *pi
 
  * **RandIter** (New York, USA; Software engineer)  
    *Relevant skills:* Python  
-  I'm a backend software engineer in finance, having previously worked for many years in academia.  
+  I'm a backend software engineer and data engineer with exposure to academia, finance, and biotech.  
   
   * **warsh** (New York, USA; Student)  
   *ML interests:* FPGA acceleration of NN  
