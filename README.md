@@ -3,7 +3,7 @@ This is the community repo for the `##machinelearning`, `##ml-deploy`, and `##ml
 
 Short URL to this page: https://j.mp/ChannelGitHub
 
-You can connect via <!--[Riot](https://riot.im/app/#/room/#freenode_##machinelearning:matrix.org)--> [IRCCloud](https://www.irccloud.com/irc/freenode/channel/%23%23machinelearning), [WebChat](https://webchat.freenode.net/?channels=%23%23machinelearning), or your favorite IRC client. Using a Matrix client is not encouraged as of late 2017 due to numerous problems with the Matrix-Freenode bridge.
+You can connect via <!--[Riot](https://riot.im/app/#/room/#freenode_##machinelearning:matrix.org)--> [IRCCloud](https://www.irccloud.com/irc/freenode/channel/%23%23machinelearning), [WebChat](https://webchat.freenode.net/?channels=%23%23machinelearning), or your favorite IRC client. Using a Matrix client is not encouraged due to numerous technical problems with the Matrix-Freenode bridge.
 
 ## Pages
 * __Resources__
