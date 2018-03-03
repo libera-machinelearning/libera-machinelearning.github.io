@@ -1,5 +1,5 @@
 # machinelearning-IRC-freenode
-This is the community repo for the `##machinelearning` and `##ml-ot` IRC channels on [Freenode](https://freenode.net/). Users are welcome to submit improvements to this repo as pull requests.
+This is the community repo for the `##machinelearning`, `##ml-deploy`, and `##ml-ot` IRC channels on [Freenode](https://freenode.net/). Users are welcome to submit improvements to this repo as pull requests.
 
 Short URL to this page: https://j.mp/ChannelGitHub
 
