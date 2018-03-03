@@ -1,8 +1,7 @@
 # Getting started
-Proficiency in [Python 3](https://www.python.org/) is strongly recommended for practicing modern machine learning. While Python is used heavily for machine learning including deep learning, [R](https://www.r-project.org/) is popular among data scientists and statisticians. A best practice is to use a separate virtual environment using [`virtualenv`](https://pypi.python.org/pypi/virtualenv/) for each Python project. After mastering Python, here are some basic starter resources for applied machine learning:
+Proficiency in [Python 3](https://www.python.org/) is strongly recommended for practicing modern machine learning. While Python is used heavily for machine learning including deep learning, [R](https://www.r-project.org/) is popular among data scientists and statisticians. A best practice is to use a separate virtual environment using [`virtualenv`](https://pypi.python.org/pypi/virtualenv/) for each Python project except if using a container. After mastering Python, here are some basic starter resources for applied machine learning:
 
 ## Education
-
 
 * [Google Machine Learning Crash Course](https://developers.google.com/machine-learning/crash-course/)
 
