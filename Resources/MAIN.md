@@ -35,7 +35,7 @@
 * [Illinois CS 598 LAZ: Cutting-Edge Trends in Deep Learning and Recognition (2017)](http://slazebni.cs.illinois.edu/spring17/) ([videos](https://recordings.engineering.illinois.edu:8443/ess/portal/section/20bbecdb-2f7c-4725-84d1-03d28f5a08f5))
 
 ## Books
-* [Neural Networks and Deep Learning] by Nielsen (http://neuralnetworksanddeeplearning.com/) -- excellent resource for beginners.
+* [Neural Networks and Deep Learning](http://neuralnetworksanddeeplearning.com/) by Nielsen -- excellent resource for beginners.
 * http://www.deeplearningbook.org/ -- The deep-learning Bible; Dec 2016, Goodfellow, Bengio, Courville (pdf [here](https://github.com/HFTrader/DeepLearningBook))
 * [The Elements of Statistical Learning (2009)](https://statweb.stanford.edu/~tibs/ElemStatLearn/)
 * [David MacKay: Information Theory, Pattern Recognition and Neural Networks (2005)](http://www.inference.phy.cam.ac.uk/itprnn/book.html)
@@ -79,6 +79,7 @@
 ### Labs
 * [DeepMind](https://deepmind.com/blog/feed/basic/)
 * [Facebook Blog](https://research.fb.com/feed/)
+* [Google Research Blog](https://feeds.feedburner.com/blogspot/gJZg)
 * [Nvidia (unofficial)](https://zapier.com/engine/rss/2758480/nvidia-ml/)
 * [OpenAI](https://blog.openai.com/rss/)
 
