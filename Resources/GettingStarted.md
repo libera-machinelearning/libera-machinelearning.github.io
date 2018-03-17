@@ -1,10 +1,15 @@
 # Getting started
 Proficiency in [Python 3](https://www.python.org/) is strongly recommended for practicing modern machine learning. While Python is used heavily for machine learning including deep learning, [R](https://www.r-project.org/) is popular among data scientists and statisticians. A best practice is to use a separate virtual environment using [`virtualenv`](https://pypi.python.org/pypi/virtualenv/) for each Python project except if using a container. After mastering Python, here are some basic starter resources for applied machine learning:
 
-## Education
+## Preparation
+Before getting started with a curriculum, it helps to learn how to learn:
+* [Learning How to Learn: Powerful mental tools to help you master tough subjects](https://www.coursera.org/learn/learning-how-to-learn)
+* [Mindshift: Break Through Obstacles to Learning and Discover Your Hidden Potential](https://www.coursera.org/learn/mindshift)
 
+## Orientation
 * [Google Machine Learning Crash Course](https://developers.google.com/machine-learning/crash-course/)
 
+## Education
 It is beneficial to gain demonstrable education in machine learning and to develop a corresponding portfolio of projects. To this end, the following should be of strong interest:
 * [Cousera Machine Learning Specialization](https://www.coursera.org/specializations/machine-learning)
 * [Coursera Deep Learning Specialization](https://www.coursera.org/specializations/deep-learning)
