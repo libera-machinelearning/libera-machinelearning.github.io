@@ -29,6 +29,8 @@ Refer to the [full list](https://www.coursera.org/browse/data-science/machine-le
 
 ## Papers
 <!--Free papers only-->
+
 * [A Brief Introduction to Machine Learning for Engineers (2017)](https://arxiv.org/abs/1709.02840) (206p)
+* [A high-bias, low-variance introduction to Machine Learning for physicists (2018)](https://arxiv.org/abs/1803.08823) (119p)
 * [Contemporary machine learning: a guide for practitioners in the physical sciences (2017)](https://arxiv.org/abs/1712.08523) (29p)
 * [A Tutorial on Deep Neural Networks for Intelligent Systems (2016)](https://arxiv.org/abs/1603.07249) (30p)
