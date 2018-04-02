@@ -28,10 +28,16 @@ Refer to the [full list](https://www.coursera.org/browse/data-science/machine-le
 * [Nielsen -- Neural Networks and Deep Learning](http://neuralnetworksanddeeplearning.com/index.html) -- online book, recommended for beginners.
 
 ## Papers
-Some of these are introductory papers are written for a specific technical audience, e.g. physicists, engineers, etc. but they are nevetheless generally applicable. 
+These are introductory papers, some of which are written for a specific technical audience, e.g. physicists, engineers, etc.; they are nevetheless generally applicable.
 <!--Free papers only-->
+### Mathematics backround
+* [The Matrix Calculus You Need For Deep Learning (2018)](https://arxiv.org/abs/1802.01528) (33p)
+
+### Machine learning
 * [A high-bias, low-variance introduction to Machine Learning for physicists (2018)](https://arxiv.org/abs/1803.08823) (119p)
 * [A Brief Introduction to Machine Learning for Engineers (2017)](https://arxiv.org/abs/1709.02840) (206p)
 * [Machine Learning for Wireless Networks with Artificial Intelligence: A Tutorial on Neural Networks (2017)](https://arxiv.org/abs/1710.02913) (98p)
 * [Contemporary machine learning: a guide for practitioners in the physical sciences (2017)](https://arxiv.org/abs/1712.08523) (29p)
+
+### Deep learning
 * [A Tutorial on Deep Neural Networks for Intelligent Systems (2016)](https://arxiv.org/abs/1603.07249) (30p)
