@@ -32,6 +32,7 @@ These are introductory papers, some of which are written for a specific technica
 <!--Free papers only-->
 ### Mathematics backround
 * [The Matrix Calculus You Need For Deep Learning (2018)](https://arxiv.org/abs/1802.01528) (33p)
+* [A guide to convolution arithmetic for deep learning (2018)](https://arxiv.org/abs/1603.07285) (31p)
 * [Introduction to Tensor Decompositions and their Applications in Machine Learning (2017)](https://arxiv.org/abs/1711.10781) (13p)
 * [Mathematics of Deep Learning (2017)](https://arxiv.org/abs/1712.04741) (10p)
 
