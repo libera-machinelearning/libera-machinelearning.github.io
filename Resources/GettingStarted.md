@@ -44,3 +44,4 @@ These are introductory papers, some of which are written for a specific technica
 
 ### Deep learning
 * [A Tutorial on Deep Neural Networks for Intelligent Systems (2016)](https://arxiv.org/abs/1603.07249) (30p)
+* [Deep Learning in Neural Networks: An Overview (2014)](https://arxiv.org/abs/1404.7828) (88p)
