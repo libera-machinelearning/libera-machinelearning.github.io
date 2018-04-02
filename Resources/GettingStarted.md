@@ -33,6 +33,7 @@ These are introductory papers, some of which are written for a specific technica
 ### Mathematics backround
 * [The Matrix Calculus You Need For Deep Learning (2018)](https://arxiv.org/abs/1802.01528) (33p)
 * [Introduction to Tensor Decompositions and their Applications in Machine Learning (2017)](https://arxiv.org/abs/1711.10781) (13p)
+* [Mathematics of Deep Learning (2017)](https://arxiv.org/abs/1712.04741) (10p)
 
 ### Machine learning
 * [A high-bias, low-variance introduction to Machine Learning for physicists (2018)](https://arxiv.org/abs/1803.08823) (119p)
