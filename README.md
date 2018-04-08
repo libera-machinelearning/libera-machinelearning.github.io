@@ -8,6 +8,7 @@ You can connect via <!--[Riot](https://riot.im/app/#/room/#freenode_##machinelea
 ## Pages
 * __Resources__
   * [Getting started](Resources/GettingStarted.md) - some individual resources for beginners
+    * [Introductory articles](Resources/ArticlesIntroductory.md) - introductory scholarly articles
   * [Main](Resources/Main.md) - important diverse meta resources
   <!-- * [Articles](Resources/Articles.md) - select educational articles including reviews -->
 <!-- * [Reading Group](ReadingGroup/README.md) - discussion on alternate Sundays on a topic of our choosing -->
