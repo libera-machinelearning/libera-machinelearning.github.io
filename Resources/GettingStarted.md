@@ -11,8 +11,9 @@ Before getting started with a curriculum, it helps to learn how to learn:
 
 ## Education
 It is beneficial to gain demonstrable education in machine learning and to develop a corresponding portfolio of projects. To this end, the following should be of strong interest:
-* [Cousera Machine Learning Specialization](https://www.coursera.org/specializations/machine-learning)
-* [Coursera Deep Learning Specialization](https://www.coursera.org/specializations/deep-learning)
+* [Cousera: Mathematics for Machine Learning Specialization](https://www.coursera.org/specializations/mathematics-machine-learning)
+* [Cousera: Machine Learning Specialization](https://www.coursera.org/specializations/machine-learning)
+* [Coursera: Deep Learning Specialization](https://www.coursera.org/specializations/deep-learning)
 
 Refer to the [full list](https://www.coursera.org/browse/data-science/machine-learning?languages=en) of Coursera machine learning specializations.
 
