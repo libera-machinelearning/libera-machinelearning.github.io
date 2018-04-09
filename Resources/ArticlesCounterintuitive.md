@@ -10,8 +10,6 @@ The following is a list of some papers showing counterintuitive results in machi
 
 * [Simple random search provides a competitive approach to reinforcement learning (2018)](https://arxiv.org/abs/1803.07055)
 
-* [Deep Learning using Rectified Linear Units (ReLU) (2018)](https://arxiv.org/abs/1803.08375)
-
 * [Lets keep it simple, Using simple architectures to outperform deeper and more complex architectures (2018)](https://arxiv.org/abs/1608.06037)
 
 * [One pixel attack for fooling deep neural networks (2018)](https://arxiv.org/abs/1710.08864)
