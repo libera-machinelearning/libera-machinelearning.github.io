@@ -6,7 +6,7 @@ The following is a list of some papers showing counterintuitive results in machi
 * [A New Backpropagation Algorithm without Gradient Descent (2018)](https://arxiv.org/abs/1802.00027)
 
 * [Deep Neuroevolution: Genetic Algorithms Are a Competitive Alternative for Training Deep Neural Networks for Reinforcement Learning (2018)](https://arxiv.org/abs/1712.06567)
-  * This is also a stand-in for numerous related approaches, e.g. [evolutionary strategies](https://arxiv.org/abs/1703.03864), [world models](https://arxiv.org/abs/1803.10122).
+  * This is also a stand-in for numerous related approaches, e.g. [evolutionary strategies](https://arxiv.org/abs/1703.03864), [PBT](https://arxiv.org/abs/1711.09846), [random search](https://arxiv.org/abs/1803.07055), [world models](https://arxiv.org/abs/1803.10122).
 
 * [Simple random search provides a competitive approach to reinforcement learning (2018)](https://arxiv.org/abs/1803.07055)
 
