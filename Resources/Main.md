@@ -42,6 +42,8 @@
 * [Algorithms for Reinforcement Learning](https://sites.ualberta.ca/~szepesva/papers/RLAlgsInMDPs.pdf) by [Csaba Szepesvári](https://sites.ualberta.ca/~szepesva/RLBook.html)
 * [Sutton: Reinforcement Learning](http://incompleteideas.net/sutton/book/the-book.html)
 
+Free books on deep learning are listed [here](https://www.kdnuggets.com/2018/04/top-free-books-deep-learning.html), although none of them are too recent.
+
 ## Q&A
 * https://stats.stackexchange.com/
 * https://datascience.stackexchange.com/
