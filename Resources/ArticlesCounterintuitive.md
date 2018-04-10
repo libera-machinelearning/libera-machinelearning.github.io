@@ -3,6 +3,8 @@
 The following is a list of some papers showing counterintuitive results in machine learning, reverse sorted by year.
 <!-- Free papers only-->
 
+* [Generating Neural Networks with Neural Networks (2018)](https://arxiv.org/abs/1801.01952)
+
 * [A New Backpropagation Algorithm without Gradient Descent (2018)](https://arxiv.org/abs/1802.00027)
 
 * [Deep Neuroevolution: Genetic Algorithms Are a Competitive Alternative for Training Deep Neural Networks for Reinforcement Learning (2018)](https://arxiv.org/abs/1712.06567)
