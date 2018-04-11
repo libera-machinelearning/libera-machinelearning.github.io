@@ -69,12 +69,12 @@ Free books on deep learning are listed [here](https://www.kdnuggets.com/2018/04/
 * [KDnuggets: Competitions](http://www.kdnuggets.com/competitions/)
 
 ## Papers
-* arXiv: [stat.ML](https://arxiv.org/list/stat.ML/recent), [cs.LG](https://arxiv.org/list/cs.LG/recent), [cs.NE](https://arxiv.org/list/cs.NE/recent)
+* arXiv: [stat.ML](https://arxiv.org/list/stat.ML/recent), [cs.LG](https://arxiv.org/list/cs.LG/recent), [cs.NE](https://arxiv.org/list/cs.NE/recent), [cs.AI](https://arxiv.org/list/cs.AI/recent)
 * [Arxiv Sanity Preserver](http://arxiv-sanity.com/)
 * [Semantic Scholar](https://www.semanticscholar.org/)
 
 ## Feeds
-* arXiv: [stat.ML](https://export.arxiv.org/rss/stat.ML/recent), [cs.LG](https://export.arxiv.org/rss/cs.LG/recent), [cs.NE](https://export.arxiv.org/rss/cs.NE/recent)
+* arXiv: [stat.ML](https://export.arxiv.org/rss/stat.ML/recent), [cs.LG](https://export.arxiv.org/rss/cs.LG/recent), [cs.NE](https://export.arxiv.org/rss/cs.NE/recent), [cs.AI](https://export.arxiv.org/rss/cs.AI/recent)
 * [KDnuggets](http://www.kdnuggets.com/feed) and an unofficial [filtered](https://zapier.com/engine/rss/517634/kdnuggets/) version
 * [InfoWorld AI](http://www.infoworld.com/category/artificial-intelligence/index.rss)
 * [Distill.pub](http://distill.pub/rss.xml)
