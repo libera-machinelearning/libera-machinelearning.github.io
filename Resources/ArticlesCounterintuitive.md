@@ -24,3 +24,5 @@ The following is a list of some papers showing counterintuitive results in machi
   * http://www.breloff.com/no-backprop/
 
 * [Intriguing properties of neural networks (2014)](https://arxiv.org/abs/1312.6199)
+
+* [The dipping phenomenon (2012)](https://www.semanticscholar.org/paper/The-Dipping-Phenomenon-Loog-Duin/f9ce91b1b046af38b63f2e079a0442c6c6364cf6)
