@@ -10,12 +10,15 @@ Before getting started with a curriculum, it helps to learn how to learn:
 * [Google Machine Learning Crash Course](https://developers.google.com/machine-learning/crash-course/)
 
 ## Education
-It is beneficial to gain demonstrable education in machine learning and to develop a corresponding portfolio of projects. To this end, the following should be of strong interest:
-* [Cousera: Mathematics for Machine Learning Specialization](https://www.coursera.org/specializations/mathematics-machine-learning)
-* [Cousera: Machine Learning Specialization](https://www.coursera.org/specializations/machine-learning)
-* [Coursera: Deep Learning Specialization](https://www.coursera.org/specializations/deep-learning)
+It is beneficial to gain demonstrable education in machine learning and to develop a corresponding portfolio of projects. To this end, the following Coursera specializations should be of strong interest:
+* [Mathematics for Machine Learning](https://www.coursera.org/specializations/mathematics-machine-learning)
+* [Machine Learning](https://www.coursera.org/specializations/machine-learning)
+* [Data Mining](https://www.coursera.org/specializations/data-mining)
+* [Deep Learning](https://www.coursera.org/specializations/deep-learning)
+* [Advanced Machine Learning](https://www.coursera.org/specializations/aml)
+* [Probabilistic Graphical Models](https://www.coursera.org/specializations/probabilistic-graphical-models)
 
-Refer to the [full list](https://www.coursera.org/browse/data-science/machine-learning?languages=en) of Coursera machine learning specializations.
+Refer to the [full list](https://www.coursera.org/browse/data-science/machine-learning?languages=en) of Coursera machine learning specializations and courses.
 
 ## Videos
 * [fast.ai](http://course.fast.ai/)
