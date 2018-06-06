@@ -3,8 +3,8 @@
 The following is a list of some papers showing counterintuitive results in machine learning, reverse sorted by year.
 <!-- Free papers only-->
 
-* [Intriguing Properties of Randomly Weighted Networks: Generalizing While Learning Next to Nothing (2018)]
-(https://arxiv.org/abs/1802.00844)
+* [Intriguing Properties of Randomly Weighted Networks: Generalizing While Learning Next to Nothing (2018)](https://arxiv.org/abs/1802.00844)
+  * The interpretation of the result is questionable.
 
 * [Generating Neural Networks with Neural Networks (2018)](https://arxiv.org/abs/1801.01952)
 
