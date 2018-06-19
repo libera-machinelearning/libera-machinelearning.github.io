@@ -2,7 +2,7 @@
 Proficiency in [Python 3](https://www.python.org/) is strongly recommended for practicing modern machine learning. While Python is used heavily for machine learning including deep learning, [R](https://www.r-project.org/) is popular among data scientists and statisticians. [Julia](https://julialang.org/) is also of interest. For Python, a best practice is to use a separate virtual environment using [`virtualenv`](https://pypi.python.org/pypi/virtualenv/) or [`pipenv`](https://pypi.python.org/pypi/pipenv/) for each project except when deploying to a container. After mastering Python, here are some basic starter resources for applied machine learning:
 
 ## Preparation
-Before getting started with a curriculum, it helps to learn how to learn:
+Although not a technical topic, daily exercise and excellent nutrition are a must; they greatly assist with learning. Before getting started with a curriculum, it helps to learn how to learn:
 * [Learning How to Learn: Powerful mental tools to help you master tough subjects](https://www.coursera.org/learn/learning-how-to-learn)
 * [Mindshift: Break Through Obstacles to Learning and Discover Your Hidden Potential](https://www.coursera.org/learn/mindshift)
 
