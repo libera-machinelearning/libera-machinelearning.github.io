@@ -80,6 +80,7 @@ Free books on deep learning are listed [here](https://www.kdnuggets.com/2018/04/
 * arXiv: [stat.ML](https://export.arxiv.org/rss/stat.ML/recent), [cs.LG](https://export.arxiv.org/rss/cs.LG/recent), [cs.NE](https://export.arxiv.org/rss/cs.NE/recent), [cs.AI](https://export.arxiv.org/rss/cs.AI/recent)
 * [KDnuggets](http://www.kdnuggets.com/feed) and an unofficial [filtered](https://zapier.com/engine/rss/517634/kdnuggets/) version
 * [InfoWorld AI](http://www.infoworld.com/category/artificial-intelligence/index.rss)
+* [Towards Data Science: ML](https://towardsdatascience.com/feed/tagged/machine-learning)
 * [Distill.pub](http://distill.pub/rss.xml)
 ### Labs
 * [DeepMind](https://deepmind.com/blog/feed/basic/)
