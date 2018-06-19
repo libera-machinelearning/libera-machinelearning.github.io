@@ -1,6 +1,6 @@
 # Introductory articles
 
-These are introductory papers to machine learning, some of which are written for a specific technical audience, e.g. physicists, engineers, etc.. They are nevetheless generally applicable.
+These are introductory papers to machine learning, some of which are written for a specific technical audience, e.g. physicists, engineers, etc. They are nevetheless generally applicable.
 
 <!--Search terms: (introduction|guide|overview|tutorial) "(machine|deep) learning" -->
 <!--Free papers only-->
