@@ -48,4 +48,4 @@ Refer to the [full list](https://www.coursera.org/browse/data-science/machine-le
 * [Nielsen -- Neural Networks and Deep Learning](http://neuralnetworksanddeeplearning.com/index.html) -- online book, recommended for beginners.
 
 ## Papers
-Refer to the list of scholarly [introductory papers](Resources/ArticlesIntroductory.md) to machine learning.
+Refer to the list of scholarly [introductory papers](ArticlesIntroductory.md) to machine learning.
