@@ -74,7 +74,8 @@ Free books on deep learning are listed [here](https://www.kdnuggets.com/2018/04/
 
 ## Papers
 * arXiv: [stat.ML](https://arxiv.org/list/stat.ML/recent), [cs.LG](https://arxiv.org/list/cs.LG/recent), [cs.NE](https://arxiv.org/list/cs.NE/recent), [cs.AI](https://arxiv.org/list/cs.AI/recent)
-* [Arxiv Sanity Preserver](http://arxiv-sanity.com/)
+* [Arxiv Sanity Preserver](http://arxiv-sanity.com/) -- arXiv papers list browser
+* [Arxiv Vanity](https://www.arxiv-vanity.com/) -- format arXiv PDF as web page
 * [Semantic Scholar](https://www.semanticscholar.org/)
 
 ## Feeds
