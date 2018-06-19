@@ -36,7 +36,8 @@
 
 ## Books
 * [Neural Networks and Deep Learning](http://neuralnetworksanddeeplearning.com/) by Nielsen -- excellent resource for beginners.
-* http://www.deeplearningbook.org/ -- The deep-learning Bible; Dec 2016, Goodfellow, Bengio, Courville (pdf [here](https://github.com/HFTrader/DeepLearningBook))
+* [Deep Learning (2016)](http://www.deeplearningbook.org/) Goodfellow, Bengio, Courville (pdf [here](https://github.com/HFTrader/DeepLearningBook))
+* [An Introduction to Statistical Learning (2013)](http://www-bcf.usc.edu/~gareth/ISL/) (unofficial python notebooks: [1](https://github.com/JWarmenhoven/ISLR-python), [2](https://github.com/emredjan/ISL-python))
 * [The Elements of Statistical Learning (2009)](https://statweb.stanford.edu/~tibs/ElemStatLearn/)
 * [David MacKay: Information Theory, Pattern Recognition and Neural Networks (2005)](http://www.inference.phy.cam.ac.uk/itprnn/book.html)
 * [Algorithms for Reinforcement Learning](https://sites.ualberta.ca/~szepesva/papers/RLAlgsInMDPs.pdf) by [Csaba Szepesvári](https://sites.ualberta.ca/~szepesva/RLBook.html)
