@@ -36,6 +36,8 @@
 * [Illinois CS 598 LAZ: Cutting-Edge Trends in Deep Learning and Recognition (2017)](http://slazebni.cs.illinois.edu/spring17/) ([videos](https://recordings.engineering.illinois.edu:8443/ess/portal/section/20bbecdb-2f7c-4725-84d1-03d28f5a08f5))
 
 ## Books
+<!--Reverse sorted by year-->
+* [Mathematics for Machine Learning (2018)](https://mml-book.github.io/)
 * [Foundations of Data Science (2018)](https://www.cs.cornell.edu/jeh/book.pdf) -- mathematical summary of topics
 * [Neural Networks and Deep Learning](http://neuralnetworksanddeeplearning.com/) by Nielsen -- excellent resource for beginners
 * [Deep Learning (2016)](http://www.deeplearningbook.org/) Goodfellow, Bengio, Courville (pdf [here](https://github.com/HFTrader/DeepLearningBook))
