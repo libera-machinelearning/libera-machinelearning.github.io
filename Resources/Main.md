@@ -25,6 +25,7 @@
 * [HTM School](https://www.youtube.com/channel/UC8-ttzWLgXZOGuhUyrPlUuA) Hierarchial Temporal Memory.  Numenta is attempting to model based on the biology of the brain. This set of 12 videos takes us through their work. Super videos!
 * [3B1B](https://www.youtube.com/watch?v=aircAruvnKk&list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi) 100% recommended for beginners!
 * [Siraj Raval](https://www.youtube.com/channel/UCWN3xxRkmTPmbKwht9FuE5A/playlists)'s YouTube channel, ML's #1 entertainment channel!
+* [Aurelin Geron on Hinton's Capsule Networks](https://www.youtube.com/watch?v=pPN8d0E3900)
 
 ## Courses
 * [Every single Machine Learning course on the internet, ranked by your reviews (2017)](https://medium.freecodecamp.com/every-single-machine-learning-course-on-the-internet-ranked-by-your-reviews-3c4a7b8026c0)
@@ -58,6 +59,7 @@ Free books on deep learning are listed [here](https://www.kdnuggets.com/2018/04/
 
 ## Communities
 * This!
+* And ##AGI (Artificial General Intelligence) on Freenode
 * https://www.reddit.com/r/MachineLearning/
 
 ## Blogs
