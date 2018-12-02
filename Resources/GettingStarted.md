@@ -1,8 +1,8 @@
 # Getting started
-Proficiency in [Python 3](https://www.python.org/) is strongly recommended for practicing modern machine learning. While Python is used heavily for machine learning including deep learning, [R](https://www.r-project.org/) is popular among data scientists and statisticians. [Julia](https://julialang.org/) is also of interest. For Python, a best practice is to use a separate virtual environment using [`virtualenv`](https://pypi.python.org/pypi/virtualenv/) or [`pipenv`](https://pypi.python.org/pypi/pipenv/) for each project except when deploying to a container. After mastering Python, here are some basic starter resources for applied machine learning:
+Proficiency in [Python 3](https://www.python.org/) is strongly recommended for practicing modern machine learning. While Python is used heavily for machine learning including deep learning, [R](https://www.r-project.org/) is popular among data scientists and statisticians. For Python, a best practice is to use a separate virtual environment using [`virtualenv`](https://pypi.python.org/pypi/virtualenv/) or [`conda`](https://www.anaconda.com/) for each project. After mastering Python, here are some basic starter resources for applied machine learning:
 
 ## Preparation
-Although not a technical topic, daily exercise, excellent nutrition and sufficient sleep are a must; they greatly assist with learning. Before getting started with a curriculum, it helps to learn how to learn:
+Although not a technical topic, daily exercise, excellent nutrition and sufficient sleep are a must; they greatly assist with learning. Before getting started with a curriculum, it is essential to learn how to learn:
 * [Learning How to Learn: Powerful mental tools to help you master tough subjects](https://www.coursera.org/learn/learning-how-to-learn)
 * [Mindshift: Break Through Obstacles to Learning and Discover Your Hidden Potential](https://www.coursera.org/learn/mindshift)
 
@@ -48,5 +48,7 @@ Refer to the [full list](https://www.coursera.org/browse/data-science/machine-le
 * [An Introduction to Statistical Learning (2013)](http://www-bcf.usc.edu/~gareth/ISL/) (unofficial python notebooks: [1](https://github.com/JWarmenhoven/ISLR-python), [2](https://github.com/emredjan/ISL-python))
 * [Nielsen -- Neural Networks and Deep Learning](http://neuralnetworksanddeeplearning.com/index.html) -- online book, recommended for beginners.
 
+<!-- Not maintained
 ### Papers
 Refer to the list of scholarly [introductory papers](ArticlesIntroductory.md) to machine learning.
+-->
