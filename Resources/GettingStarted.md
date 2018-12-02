@@ -35,6 +35,10 @@ Data science:
 
 Refer to the [full list](https://www.coursera.org/browse/data-science/machine-learning?languages=en) of Coursera machine learning specializations and courses.
 
+## Vocation
+Getting trained in cloud offerings is of interest with regard to corporate employment.
+* [AWS Machine Learning](https://aws.amazon.com/training/learning-paths/machine-learning/)
+
 ## Miscellaneous
 ### Videos
 * [DeepLearning.TV YouTube playlist](https://www.youtube.com/playlist?list=PLjJh1vlSEYgvZ3ze_4pxKHNh1g5PId36-) -- 17 ~5-min vids, good starter -- introduces the main ideas at a non-technical level.
