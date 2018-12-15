@@ -93,6 +93,7 @@ Free books on deep learning are listed [here](https://www.kdnuggets.com/2018/04/
 * [Towards Data Science: ML](https://towardsdatascience.com/feed/tagged/machine-learning)
 
 ### Labs
+* [BAIR](https://bair.berkeley.edu/blog/feed.xml)
 * [DeepMind](https://deepmind.com/blog/feed/basic/)
 * [Facebook Blog](https://research.fb.com/feed/)
 * [Google Research Blog](https://feeds.feedburner.com/blogspot/gJZg)
