@@ -13,6 +13,7 @@
 - [Papers](#papers)
 - [Feeds](#feeds)
   * [Labs](#labs)
+- [Notebooks](#notebooks)
 - [Paths](#paths)
 - [Misc](#misc)
 
@@ -105,6 +106,14 @@ Free books on deep learning are listed [here](https://www.kdnuggets.com/2018/04/
 * [Nvidia (unofficial)](https://zapier.com/engine/rss/2758480/nvidia-ml/)
 * [OpenAI](https://blog.openai.com/rss/)
 
+## Notebooks
+These allow execution of notebooks:
+* [Google CoLaboratory](https://colab.research.google.com/notebooks/welcome.ipynb#recent=true) (CPU, GPU)
+  * [Seedbank](https://research.google.com/seedbank/)
+* [Kaggle Kernels](https://www.kaggle.com/kernels) (CPU, GPU)
+* [Binder](https://mybinder.org/) (CPU)
+* [Azure Notebooks](http://notebooks.azure.com/) (CPU)
+
 ## Paths
 * [Learning path for software engineers](https://github.com/ZuzooVn/machine-learning-for-software-engineers/blob/master/README.md)
 
@@ -115,4 +124,3 @@ http://motyar.info/webscrapemaster/api/?url=https://research.fb.com/publications
 
 ## Misc
 * [π's scattered links](http://pipad.org/wiki/index.php/Machine_Learning)
-* [Google CoLaboratory](https://colab.research.google.com/notebooks/welcome.ipynb#recent=true) -- Online IPython Notebook (with GPU access)
