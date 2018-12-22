@@ -5,8 +5,8 @@ You can connect via [Riot](https://riot.im/app/#/room/#freenode_##machinelearnin
 
 ## Pages
 * __Resources__
-  * [Getting started](Resources/GettingStarted.md) - some individual resources for beginners
-    * [Introductory articles](Resources/ArticlesIntroductory.md) - introductory scholarly articles
+  * [Beginner](Resources/Beginner.md) - some individual resources for beginners
+    <!--* [Introductory articles](Resources/ArticlesIntroductory.md) - introductory scholarly articles-->
   * [Main](Resources/Main.md) - important diverse meta resources
 * __Misc__
   * [Counterintuitive articles](Resources/ArticlesCounterintuitive.md) -- some counterintuitive results
