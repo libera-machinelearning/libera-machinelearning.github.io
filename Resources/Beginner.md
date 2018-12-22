@@ -1,4 +1,4 @@
-# Beginner resources
+# Resources for beginners
 
 ## Contents
 <!-- TOC can be generated manually using https://ecotrust-canada.github.io/markdown-toc/ -->
