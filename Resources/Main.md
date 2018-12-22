@@ -53,11 +53,11 @@
 Free books on deep learning are listed [here](https://www.kdnuggets.com/2018/04/top-free-books-deep-learning.html), although none of them are too recent.
 
 ## QA
-* https://stackexchange.com/search (all Stack Exchange sites)
-* https://stackoverflow.com/
-* https://stats.stackexchange.com/
-* https://datascience.stackexchange.com/
-* https://ai.stackexchange.com
+* [Stack Exchange search](https://stackexchange.com/search) (all Stack Exchange sites)
+* [Stack Overflow](https://stackoverflow.com/)
+* [Cross Validated](https://stats.stackexchange.com/)
+* [Data Science](https://datascience.stackexchange.com/)
+* [Artificial Intelligence](https://ai.stackexchange.com)
 
 ## Communities
 * This!
