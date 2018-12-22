@@ -1,5 +1,5 @@
 # ##machinelearning on Freenode IRC
-This is the community website for the `##machinelearning`, `##ml-deploy`, and `##ml-ot` IRC channels on [Freenode](https://freenode.net/). Users are welcome to submit improvements to the website as a [pull request](https://github.com/freenode-machinelearning/freenode-machinelearning.github.io/pulls).
+This is the community website for the `##machinelearning`, `##ml-deploy`, and `##ml-ot` IRC channels on [Freenode](https://freenode.net/). Users are welcome to submit improvements to the website as an [issue](https://github.com/freenode-machinelearning/freenode-machinelearning.github.io/issues) or a [pull request](https://github.com/freenode-machinelearning/freenode-machinelearning.github.io/pulls).
 
 You can connect via [Riot](https://riot.im/app/#/room/#freenode_##machinelearning:matrix.org), [IRCCloud](https://www.irccloud.com/irc/freenode/channel/%23%23machinelearning), [WebChat](https://webchat.freenode.net/?channels=%23%23machinelearning), or your favorite IRC client. <!--Using a Matrix client is not encouraged due to numerous technical problems with the Matrix-Freenode bridge.-->
 
