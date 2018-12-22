@@ -27,7 +27,6 @@
 * http://videolectures.net/Top/Computer_Science/Machine_Learning/
 * [HTM School](https://www.youtube.com/channel/UC8-ttzWLgXZOGuhUyrPlUuA) Hierarchial Temporal Memory.  Numenta is attempting to model based on the biology of the brai
 * [3B1B](https://www.youtube.com/watch?v=aircAruvnKk&list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi) 100% recommended for beginners
-
 * [Aurelin Geron on Hinton's Capsule Networks](https://www.youtube.com/watch?v=pPN8d0E3900)
 
 ## Courses
@@ -62,8 +61,8 @@ Free books on deep learning are listed [here](https://www.kdnuggets.com/2018/04/
 
 ## Communities
 * This!
-* And ##AGI (Artificial General Intelligence) on Freenode
-* https://www.reddit.com/r/MachineLearning/
+* ##AGI (Artificial General Intelligence) on Freenode
+* [r/MachineLearning](https://www.reddit.com/r/MachineLearning/)
 
 ## Blogs
 * [Keras](https://blog.keras.io/)
