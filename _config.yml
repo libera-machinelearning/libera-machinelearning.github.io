@@ -1,3 +1,6 @@
 plugins:
   - jekyll-readme-index
+readme_index:
+  enabled:          true
+  remove_originals: true
 theme: jekyll-theme-minimal
