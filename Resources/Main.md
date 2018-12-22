@@ -1,15 +1,19 @@
-**Contents**:
+# Main resources
+
+## Contents
 <!-- TOC can be generated manually using https://ecotrust-canada.github.io/markdown-toc/ -->
 - [Software](#software)
 - [Videos](#videos)
 - [Courses](#courses)
 - [Books](#books)
-- [Q&A](#qa)
+- [Q&A](#q-a)
 - [Communities](#communities)
 - [Blogs](#blogs)
 - [Competitions](#competitions)
 - [Papers](#papers)
 - [Feeds](#feeds)
+  * [Labs](#labs)
+- [Paths](#paths)
 - [Misc](#misc)
 
 
