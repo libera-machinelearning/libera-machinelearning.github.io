@@ -1,7 +1,18 @@
-# Getting started
-Proficiency in [Python 3](https://www.python.org/) is strongly recommended for practicing modern machine learning. While Python is used heavily for machine learning including deep learning, [R](https://www.r-project.org/) is popular among data scientists and statisticians. For Python, a best practice is to use a separate virtual environment using [`virtualenv`](https://pypi.python.org/pypi/virtualenv/) or [`conda`](https://www.anaconda.com/) for each project. After mastering Python, here are some basic starter resources for applied machine learning:
+# Beginner resources
+
+## Contents
+<!-- TOC can be generated manually using https://ecotrust-canada.github.io/markdown-toc/ -->
+- [Preparation](#preparation)
+- [Orientation](#orientation)
+- [Education](#education)
+- [Vocation](#vocation)
+- [Miscellaneous](#miscellaneous)
+  * [Videos](#videos)
+  * [Books](#books)
 
 ## Preparation
+Proficiency in [Python 3](https://www.python.org/) is strongly recommended for practicing modern machine learning. While Python is used heavily for machine learning including deep learning, [R](https://www.r-project.org/) is popular among data scientists and statisticians. For Python, a best practice is to use a separate virtual environment using [`virtualenv`](https://pypi.python.org/pypi/virtualenv/) or [`conda`](https://www.anaconda.com/) for each project. After mastering Python, here are some basic starter resources for applied machine learning:
+
 Although not a technical topic, daily exercise, excellent nutrition and sufficient sleep are a must; they greatly assist with learning. Before getting started with a curriculum, it is essential to learn how to learn:
 * [Learning How to Learn: Powerful mental tools to help you master tough subjects](https://www.coursera.org/learn/learning-how-to-learn)
 * [Mindshift: Break Through Obstacles to Learning and Discover Your Hidden Potential](https://www.coursera.org/learn/mindshift)
