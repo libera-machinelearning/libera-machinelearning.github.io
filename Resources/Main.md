@@ -6,7 +6,7 @@
 - [Videos](#videos)
 - [Courses](#courses)
 - [Books](#books)
-- [Q&A](#q-a)
+- [QA](#qa)
 - [Communities](#communities)
 - [Blogs](#blogs)
 - [Competitions](#competitions)
@@ -16,13 +16,12 @@
 - [Paths](#paths)
 - [Misc](#misc)
 
-
 ## Software
-* http://mloss.org/software/
-* https://github.com/josephmisiti/awesome-machine-learning
-* http://deeplearning.net/software_links/
-* http://jmlr.org/mloss/
-* https://paperswithcode.com/
+* [Awesome Machine Learning](https://github.com/josephmisiti/awesome-machine-learning)
+* [JMLR software](http://jmlr.org/mloss/)
+* [mloss](http://mloss.org/software/)
+* [Nvidia containers]https://ngc.nvidia.com/catalog/containers]
+* [Papers with Code](https://paperswithcode.com/)
 
 ## Videos
 * http://videolectures.net/Top/Computer_Science/Machine_Learning/
@@ -54,7 +53,7 @@
 
 Free books on deep learning are listed [here](https://www.kdnuggets.com/2018/04/top-free-books-deep-learning.html), although none of them are too recent.
 
-## Q&A
+## QA
 * https://stackexchange.com/search (all Stack Exchange sites)
 * https://stackoverflow.com/
 * https://stats.stackexchange.com/
