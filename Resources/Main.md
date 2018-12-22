@@ -18,9 +18,9 @@
 
 ## Software
 * [Awesome Machine Learning](https://github.com/josephmisiti/awesome-machine-learning)
-* [JMLR software](http://jmlr.org/mloss/)
+* [JMLR](http://jmlr.org/mloss/)
 * [mloss](http://mloss.org/software/)
-* [Nvidia containers]https://ngc.nvidia.com/catalog/containers]
+* [Nvidia containers](https://ngc.nvidia.com/catalog/containers)
 * [Papers with Code](https://paperswithcode.com/)
 
 ## Videos
