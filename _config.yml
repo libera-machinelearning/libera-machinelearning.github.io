@@ -3,4 +3,4 @@ plugins:
 readme_index:
   enabled:          true
   remove_originals: true
-theme: jekyll-theme-midnight
+theme: jekyll-theme-cayman
