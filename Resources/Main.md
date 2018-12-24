@@ -95,6 +95,7 @@ Free books on deep learning are listed [here](https://www.kdnuggets.com/2018/04/
 * Papers with Code (unofficial):
   * Latest: [papers](https://fetchrss.com/rss/5b61c2918a93f854228b4567513641609.xml) and [code](https://fetchrss.com/rss/5b61c2918a93f854228b4567752343504.xml)
   * Trending: [papers](https://fetchrss.com/rss/5b61c2918a93f854228b45675c1937588a93f8385a8b4567.xml) and [code](https://fetchrss.com/rss/5b61c2918a93f854228b45675c1939298a93f85b6c8b4567.xml)
+* [Machine Learning Mastery](https://machinelearningmastery.com/feed/)
 * [PyImageSearch](http://feeds.feedburner.com/Pyimagesearch)
 * [Towards Data Science: ML](https://towardsdatascience.com/feed/tagged/machine-learning)
 
