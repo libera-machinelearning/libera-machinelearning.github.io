@@ -44,7 +44,7 @@ Data science:
 * [Executive Data Science](https://www.coursera.org/specializations/executive-data-science)
 * [Data Science at Scale](https://www.coursera.org/specializations/data-science)
 
-Refer to the [full list](https://www.coursera.org/browse/data-science/machine-learning?languages=en) of Coursera machine learning specializations and courses.
+Refer to the [full list](https://www.coursera.org/browse/data-science/machine-learning?languages=en) of Coursera machine learning specializations and courses. Note that although it's not free to enroll in a Coursera specialization, enrolling in each of the constituent courses is free.
 
 ## Vocation
 Getting trained in cloud offerings is of interest with regard to corporate employment.
