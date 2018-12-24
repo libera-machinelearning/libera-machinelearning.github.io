@@ -23,6 +23,7 @@
 * [mloss](http://mloss.org/software/)
 * [Nvidia containers](https://ngc.nvidia.com/catalog/containers)
 * [Papers with Code](https://paperswithcode.com/) (*see also [Feeds](#feeds)*)
+* [Repositories](https://j.mp/ml-repos)
 
 ## Videos
 * [Video Lectures](http://videolectures.net/Top/Computer_Science/Machine_Learning/)
