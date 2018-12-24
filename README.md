@@ -4,8 +4,9 @@ This is the community website for the `##machinelearning`, `##ml-deploy`, and `#
 Refer to the respective channel topic for basic information about the channel. You can connect via [Riot](https://riot.im/app/#/room/#freenode_##machinelearning:matrix.org), [IRCCloud](https://www.irccloud.com/irc/freenode/channel/%23%23machinelearning), [WebChat](https://webchat.freenode.net/?channels=%23%23machinelearning), or your favorite IRC client. <!--Using a Matrix client is not encouraged due to numerous technical problems with the Matrix-Freenode bridge.-->
 
 ## Pages
-* [Resources for beginners](Resources/Beginner.md)
-* [Resources for everyone](Resources/Main.md)
+* [Educational resources for beginners](Resources/Beginner.md)
+* [Educational resources for everyone](Resources/Main.md)
+* [List of software repositories](https://j.mp/ml-repos)
 * [Some counterintuitive articles](Resources/ArticlesCounterintuitive.md)
 <!--* [Introductory articles](Resources/ArticlesIntroductory.md) - introductory scholarly articles-->
 <!-- * [Articles](Resources/Articles.md) - select educational articles including reviews -->
