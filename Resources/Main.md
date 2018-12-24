@@ -67,7 +67,6 @@ Free books on deep learning are listed [here](https://www.kdnuggets.com/2018/04/
 
 ## Blogs
 * [Keras](https://blog.keras.io/)
-* [GitXiv](http://www.gitxiv.com/)
 * [Colah](http://colah.github.io/) -- e.g. "Neural Networks, Manifolds, and Topology"
 * [Eric Jang](http://blog.evjang.com/) -- great for Variational Methods & VAEs.
 * [Tom Breloff](http://www.breloff.com/blog/) -- ML in Julia
