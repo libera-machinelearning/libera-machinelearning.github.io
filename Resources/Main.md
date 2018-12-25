@@ -7,7 +7,6 @@
 - [Courses](#courses)
 - [Books](#books)
 - [QA](#qa)
-- [Communities](#communities)
 - [Blogs](#blogs)
 - [Competitions](#competitions)
 - [Papers](#papers)
