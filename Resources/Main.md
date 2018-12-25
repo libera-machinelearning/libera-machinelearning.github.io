@@ -4,6 +4,7 @@
 <!-- TOC can be generated manually using https://ecotrust-canada.github.io/markdown-toc/ -->
 - [Blogs](#blogs)
 - [Books](#books)
+- [Communities](#communities)
 - [Competitions](#competitions)
 - [Courses](#courses)
 - [Feeds](#feeds)
@@ -39,6 +40,12 @@
 * [Sutton: Reinforcement Learning](http://incompleteideas.net/sutton/book/the-book.html)
 
 Free books on deep learning are listed [here](https://www.kdnuggets.com/2018/04/top-free-books-deep-learning.html), although none of them are too recent.
+
+## Communities
+* This!
+* ##AGI (Artificial General Intelligence) on Freenode
+* [r/MLQuestions](https://www.reddit.com/r/MLQuestions/)
+* [r/learnmachinelearning](https://www.reddit.com/r/learnmachinelearning/)
 
 ## Competitions
 * [KDnuggets: Competitions](http://www.kdnuggets.com/competitions/)
