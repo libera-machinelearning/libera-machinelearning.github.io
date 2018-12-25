@@ -5,7 +5,6 @@
 - [Blogs](#blogs)
 - [Books](#books)
 - [Communities](#communities)
-- [Competitions](#competitions)
 - [Courses](#courses)
 - [Feeds](#feeds)
   * [Labs](#labs)
@@ -47,9 +46,6 @@ Free books on deep learning are listed [here](https://www.kdnuggets.com/2018/04/
 * [r/MLQuestions](https://www.reddit.com/r/MLQuestions/)
 * [r/learnmachinelearning](https://www.reddit.com/r/learnmachinelearning/)
 
-## Competitions
-* [KDnuggets: Competitions](http://www.kdnuggets.com/competitions/)
-
 ## Courses
 * [Every single Machine Learning course on the internet, ranked by your reviews (2017)](https://medium.freecodecamp.com/every-single-machine-learning-course-on-the-internet-ranked-by-your-reviews-3c4a7b8026c0)
 * [Dive into Deep Learning with 12 free online courses (2017)](https://medium.freecodecamp.com/dive-into-deep-learning-with-these-23-online-courses-bf247d289cc0)
@@ -85,8 +81,9 @@ http://motyar.info/webscrapemaster/api/?url=https://research.fb.com/publications
 * [OpenAI](https://blog.openai.com/rss/)
 
 ## Misc
-* [π's scattered links](http://pipad.org/wiki/index.php/Machine_Learning)
+* [KDnuggets: Competitions](http://www.kdnuggets.com/competitions/)
 * [Learning path for software engineers](https://github.com/ZuzooVn/machine-learning-for-software-engineers/blob/master/README.md)
+* [π's scattered links](http://pipad.org/wiki/index.php/Machine_Learning)
 
 ## Notebooks
 These allow execution of notebooks:
