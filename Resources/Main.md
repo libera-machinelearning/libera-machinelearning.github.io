@@ -16,15 +16,14 @@
 - [Videos](#videos)
 
 ## Blogs
-* [Keras](https://blog.keras.io/)
 * [Colah](http://colah.github.io/) -- e.g. "Neural Networks, Manifolds, and Topology"
 * [Eric Jang](http://blog.evjang.com/) -- great for Variational Methods & VAEs.
-* [Tom Breloff](http://www.breloff.com/blog/) -- ML in Julia
-* [Karpathy](http://karpathy.github.io/) -- e.g. Pong from Pixels
+* [Tom Breloff](http://www.breloff.com/blog/)
 * [inFERENCe](http://www.inference.vc)
-* [The Morning Paper](https://blog.acolyer.org/) -- a new CS/ML paper every morning
+* [The Morning Paper](https://blog.acolyer.org/) -- a new CS/ML paper each morning
 * [Deep Ideas](http://www.deepideas.net)
-* [Distill.pub](https://distill.pub/)
+
+Also see [Feeds](#feeds).
 
 ## Books
 <!--Reverse sorted by year-->
@@ -105,7 +104,7 @@ These allow execution of notebooks:
 * [JMLR](http://jmlr.org/mloss/)
 * [mloss](http://mloss.org/software/)
 * [Nvidia containers](https://ngc.nvidia.com/catalog/containers)
-* [Papers with Code](https://paperswithcode.com/) (*see also [Feeds](#feeds)*)
+* [Papers with Code](https://paperswithcode.com/) (*also see [Feeds](#feeds)*)
 * [Repositories](https://j.mp/ml-repos)
 
 ## QA
