@@ -2,42 +2,29 @@
 
 ## Contents
 <!-- TOC can be generated manually using https://ecotrust-canada.github.io/markdown-toc/ -->
-- [Software](#software)
-- [Videos](#videos)
-- [Courses](#courses)
-- [Books](#books)
-- [QA](#qa)
 - [Blogs](#blogs)
+- [Books](#books)
 - [Competitions](#competitions)
-- [Papers](#papers)
+- [Courses](#courses)
 - [Feeds](#feeds)
   * [Labs](#labs)
-- [Notebooks](#notebooks)
-- [Paths](#paths)
 - [Misc](#misc)
+- [Notebooks](#notebooks)
+- [Papers](#papers)
+- [Software](#software)
+- [QA](#qa)
+- [Videos](#videos)
 
-## Software
-* [Awesome Machine Learning](https://github.com/josephmisiti/awesome-machine-learning)
-* [JMLR](http://jmlr.org/mloss/)
-* [mloss](http://mloss.org/software/)
-* [Nvidia containers](https://ngc.nvidia.com/catalog/containers)
-* [Papers with Code](https://paperswithcode.com/) (*see also [Feeds](#feeds)*)
-* [Repositories](https://j.mp/ml-repos)
-
-## Videos
-* [Video Lectures](http://videolectures.net/Top/Computer_Science/Machine_Learning/)
-* [HTM School](https://www.youtube.com/channel/UC8-ttzWLgXZOGuhUyrPlUuA) Hierarchial Temporal Memory.  Numenta is attempting to model based on the biology of the brain
-* [3B1B](https://www.youtube.com/watch?v=aircAruvnKk&list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi) 100% recommended for beginners
-* [Aurelin Geron on Hinton's Capsule Networks](https://www.youtube.com/watch?v=pPN8d0E3900)
-
-## Courses
-* [Every single Machine Learning course on the internet, ranked by your reviews (2017)](https://medium.freecodecamp.com/every-single-machine-learning-course-on-the-internet-ranked-by-your-reviews-3c4a7b8026c0)
-* [Dive into Deep Learning with 12 free online courses (2017)](https://medium.freecodecamp.com/dive-into-deep-learning-with-these-23-online-courses-bf247d289cc0)
-* [Fast.AI: Practical Deep Learning For Coders](http://course.fast.ai/)
-* [Karpathy's CS231n Stanford course on Convolutional Neural Networks for Visual Recognition](http://cs231n.stanford.edu/)
-* [David Silver's UCL course on Reinforcement Learning](http://www0.cs.ucl.ac.uk/staff/d.silver/web/Teaching.html) ([YouTube playlist](https://www.youtube.com/playlist?list=PLMZdRRhAoLnKFxZlmFoFp0uHVvN2PSE9T))
-* [Berkeley CS 294: Deep Reinforcement Learning](http://rll.berkeley.edu/deeprlcourse/) ([YouTube playlist](https://www.youtube.com/playlist?list=PLkFD6_40KJIwTmSbCv9OVJB3YaO4sFwkX))
-* [Illinois CS 598 LAZ: Cutting-Edge Trends in Deep Learning and Recognition (2017)](http://slazebni.cs.illinois.edu/spring17/) ([videos](https://recordings.engineering.illinois.edu:8443/ess/portal/section/20bbecdb-2f7c-4725-84d1-03d28f5a08f5))
+## Blogs
+* [Keras](https://blog.keras.io/)
+* [Colah](http://colah.github.io/) -- e.g. "Neural Networks, Manifolds, and Topology"
+* [Eric Jang](http://blog.evjang.com/) -- great for Variational Methods & VAEs.
+* [Tom Breloff](http://www.breloff.com/blog/) -- ML in Julia
+* [Karpathy](http://karpathy.github.io/) -- e.g. Pong from Pixels
+* [inFERENCe](http://www.inference.vc)
+* [The Morning Paper](https://blog.acolyer.org/) -- a new CS/ML paper every morning
+* [Deep Ideas](http://www.deepideas.net)
+* [Distill.pub](https://distill.pub/)
 
 ## Books
 <!--Reverse sorted by year-->
@@ -53,33 +40,17 @@
 
 Free books on deep learning are listed [here](https://www.kdnuggets.com/2018/04/top-free-books-deep-learning.html), although none of them are too recent.
 
-## QA
-* [Stack Exchange search](https://stackexchange.com/search) (all Stack Exchange sites)
-* [Stack Overflow](https://stackoverflow.com/)
-* [Cross Validated](https://stats.stackexchange.com/)
-* [Data Science](https://datascience.stackexchange.com/)
-* [Artificial Intelligence](https://ai.stackexchange.com)
-
-## Blogs
-* [Keras](https://blog.keras.io/)
-* [Colah](http://colah.github.io/) -- e.g. "Neural Networks, Manifolds, and Topology"
-* [Eric Jang](http://blog.evjang.com/) -- great for Variational Methods & VAEs.
-* [Tom Breloff](http://www.breloff.com/blog/) -- ML in Julia
-* [Karpathy](http://karpathy.github.io/) -- e.g. Pong from Pixels
-* [inFERENCe](http://www.inference.vc)
-* [The Morning Paper](https://blog.acolyer.org/) -- a new CS/ML paper every morning
-* [Deep Ideas](http://www.deepideas.net)
-* [Distill.pub](https://distill.pub/)
-
 ## Competitions
 * [KDnuggets: Competitions](http://www.kdnuggets.com/competitions/)
 
-## Papers
-* arXiv: [stat.ML](https://arxiv.org/list/stat.ML/recent), [cs.LG](https://arxiv.org/list/cs.LG/recent), [cs.NE](https://arxiv.org/list/cs.NE/recent), [cs.AI](https://arxiv.org/list/cs.AI/recent)
-* [Arxiv Sanity Preserver](http://arxiv-sanity.com/) -- arXiv papers list browser
-* [Arxiv Vanity](https://www.arxiv-vanity.com/) -- format arXiv PDF as web page
-* [Papers with Code](https://paperswithcode.com/)
-* [Semantic Scholar](https://www.semanticscholar.org/)
+## Courses
+* [Every single Machine Learning course on the internet, ranked by your reviews (2017)](https://medium.freecodecamp.com/every-single-machine-learning-course-on-the-internet-ranked-by-your-reviews-3c4a7b8026c0)
+* [Dive into Deep Learning with 12 free online courses (2017)](https://medium.freecodecamp.com/dive-into-deep-learning-with-these-23-online-courses-bf247d289cc0)
+* [Fast.AI: Practical Deep Learning For Coders](http://course.fast.ai/)
+* [Karpathy's CS231n Stanford course on Convolutional Neural Networks for Visual Recognition](http://cs231n.stanford.edu/)
+* [David Silver's UCL course on Reinforcement Learning](http://www0.cs.ucl.ac.uk/staff/d.silver/web/Teaching.html) ([YouTube playlist](https://www.youtube.com/playlist?list=PLMZdRRhAoLnKFxZlmFoFp0uHVvN2PSE9T))
+* [Berkeley CS 294: Deep Reinforcement Learning](http://rll.berkeley.edu/deeprlcourse/) ([YouTube playlist](https://www.youtube.com/playlist?list=PLkFD6_40KJIwTmSbCv9OVJB3YaO4sFwkX))
+* [Illinois CS 598 LAZ: Cutting-Edge Trends in Deep Learning and Recognition (2017)](http://slazebni.cs.illinois.edu/spring17/) ([videos](https://recordings.engineering.illinois.edu:8443/ess/portal/section/20bbecdb-2f7c-4725-84d1-03d28f5a08f5))
 
 ## Feeds
 * arXiv: [stat.ML](https://export.arxiv.org/rss/stat.ML/recent), [cs.LG](https://export.arxiv.org/rss/cs.LG/recent), [cs.NE](https://export.arxiv.org/rss/cs.NE/recent), [cs.AI](https://export.arxiv.org/rss/cs.AI/recent)
@@ -93,6 +64,11 @@ Free books on deep learning are listed [here](https://www.kdnuggets.com/2018/04/
 * [PyImageSearch](http://feeds.feedburner.com/Pyimagesearch)
 * [Towards Data Science: ML](https://towardsdatascience.com/feed/tagged/machine-learning)
 
+<!--
+Resource for creating feed from FAIR pubs:
+http://motyar.info/webscrapemaster/api/?url=https://research.fb.com/publications/?cat=13&xpath=//*[@id=%22page%22]/div[5]/section/div/div[1]/a[1]
+-->
+
 ### Labs
 * [BAIR](https://bair.berkeley.edu/blog/feed.xml)
 * [DeepMind](https://deepmind.com/blog/feed/basic/)
@@ -100,6 +76,10 @@ Free books on deep learning are listed [here](https://www.kdnuggets.com/2018/04/
 * [Google Research Blog](https://feeds.feedburner.com/blogspot/gJZg)
 * [Nvidia (unofficial)](https://zapier.com/engine/rss/2758480/nvidia-ml/)
 * [OpenAI](https://blog.openai.com/rss/)
+
+## Misc
+* [π's scattered links](http://pipad.org/wiki/index.php/Machine_Learning)
+* [Learning path for software engineers](https://github.com/ZuzooVn/machine-learning-for-software-engineers/blob/master/README.md)
 
 ## Notebooks
 These allow execution of notebooks:
@@ -109,13 +89,30 @@ These allow execution of notebooks:
 * [Binder](https://mybinder.org/) (CPU)
 * [Azure Notebooks](http://notebooks.azure.com/) (CPU)
 
-## Paths
-* [Learning path for software engineers](https://github.com/ZuzooVn/machine-learning-for-software-engineers/blob/master/README.md)
+## Papers
+* arXiv: [stat.ML](https://arxiv.org/list/stat.ML/recent), [cs.LG](https://arxiv.org/list/cs.LG/recent), [cs.NE](https://arxiv.org/list/cs.NE/recent), [cs.AI](https://arxiv.org/list/cs.AI/recent)
+* [Arxiv Sanity Preserver](http://arxiv-sanity.com/) -- arXiv papers list browser
+* [Arxiv Vanity](https://www.arxiv-vanity.com/) -- format arXiv PDF as web page
+* [Papers with Code](https://paperswithcode.com/)
+* [Semantic Scholar](https://www.semanticscholar.org/)
 
-<!--
-Resource for creating feed from FAIR pubs:
-http://motyar.info/webscrapemaster/api/?url=https://research.fb.com/publications/?cat=13&xpath=//*[@id=%22page%22]/div[5]/section/div/div[1]/a[1]
--->
+## Software
+* [Awesome Machine Learning](https://github.com/josephmisiti/awesome-machine-learning)
+* [JMLR](http://jmlr.org/mloss/)
+* [mloss](http://mloss.org/software/)
+* [Nvidia containers](https://ngc.nvidia.com/catalog/containers)
+* [Papers with Code](https://paperswithcode.com/) (*see also [Feeds](#feeds)*)
+* [Repositories](https://j.mp/ml-repos)
 
-## Misc
-* [π's scattered links](http://pipad.org/wiki/index.php/Machine_Learning)
+## QA
+* [Stack Exchange search](https://stackexchange.com/search) (all Stack Exchange sites)
+* [Stack Overflow](https://stackoverflow.com/)
+* [Cross Validated](https://stats.stackexchange.com/)
+* [Data Science](https://datascience.stackexchange.com/)
+* [Artificial Intelligence](https://ai.stackexchange.com)
+
+## Videos
+* [Video Lectures](http://videolectures.net/Top/Computer_Science/Machine_Learning/)
+* [HTM School](https://www.youtube.com/channel/UC8-ttzWLgXZOGuhUyrPlUuA) Hierarchial Temporal Memory.  Numenta is attempting to model based on the biology of the brain
+* [3B1B](https://www.youtube.com/watch?v=aircAruvnKk&list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi) 100% recommended for beginners
+* [Aurelin Geron on Hinton's Capsule Networks](https://www.youtube.com/watch?v=pPN8d0E3900)
