@@ -61,11 +61,6 @@ Free books on deep learning are listed [here](https://www.kdnuggets.com/2018/04/
 * [Data Science](https://datascience.stackexchange.com/)
 * [Artificial Intelligence](https://ai.stackexchange.com)
 
-## Communities
-* This!
-* ##AGI (Artificial General Intelligence) on Freenode
-* [r/MachineLearning](https://www.reddit.com/r/MachineLearning/)
-
 ## Blogs
 * [Keras](https://blog.keras.io/)
 * [Colah](http://colah.github.io/) -- e.g. "Neural Networks, Manifolds, and Topology"
