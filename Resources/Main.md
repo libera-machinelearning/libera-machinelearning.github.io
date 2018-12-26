@@ -43,7 +43,6 @@ Free books on deep learning are listed [here](https://www.kdnuggets.com/2018/04/
 * This!
 * ##AGI (Artificial General Intelligence) on Freenode
 * [r/MLQuestions](https://www.reddit.com/r/MLQuestions/)
-* [r/learnmachinelearning](https://www.reddit.com/r/learnmachinelearning/)
 
 ## Courses
 * [Every single Machine Learning course on the internet, ranked by your reviews (2017)](https://medium.freecodecamp.com/every-single-machine-learning-course-on-the-internet-ranked-by-your-reviews-3c4a7b8026c0)
