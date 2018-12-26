@@ -96,6 +96,7 @@ These allow execution of notebooks:
 
 ## Papers
 * arXiv: [stat.ML](https://arxiv.org/list/stat.ML/recent), [cs.LG](https://arxiv.org/list/cs.LG/recent), [cs.NE](https://arxiv.org/list/cs.NE/recent), [cs.AI](https://arxiv.org/list/cs.AI/recent)
+* [Arxiv Analytics](http://arxitics.com/) -- alternative portal
 * [Arxiv Sanity Preserver](http://arxiv-sanity.com/) -- arXiv papers list browser
 * [Arxiv Vanity](https://www.arxiv-vanity.com/) -- format arXiv PDF as web page
 * [Papers with Code](https://paperswithcode.com/)
