@@ -6,8 +6,8 @@ Refer to the respective channel topic for basic information about the channel. Y
 ## Pages
 * [Resources for beginners](Resources/Beginner.md)
 * [Resources for everyone](Resources/Main.md)
+* [Review articles](Resources/ArticlesReview.md)
 * [Some counterintuitive articles](Resources/ArticlesCounterintuitive.md)
-<!--* [Introductory articles](Resources/ArticlesIntroductory.md) - introductory scholarly articles-->
 <!-- * [Articles](Resources/Articles.md) - select educational articles including reviews -->
 
 <!-- Backups of channel Topic:
