@@ -114,7 +114,7 @@ These allow execution of notebooks:
 * [Repositories](https://j.mp/ml-repos)
 
 ## QA
-* [Stack Exchange search](https://stackexchange.com/search) (all Stack Exchange sites)
+* [Stack Exchange search](https://stackexchange.com/search) (search all Stack Exchange sites)
 * [Stack Overflow](https://stackoverflow.com/)
 * [Cross Validated](https://stats.stackexchange.com/)
 * [Data Science](https://datascience.stackexchange.com/)
