@@ -1,7 +1,9 @@
 # Review articles
 
-This is a mostly auto-generated list of review articles on machine learning and artificial intelligence that are on [arXiv](https://arxiv.org/). Although some of them were written for a specific technical audience or application, the techniques described are nonetheless generally relevant. The list is sorted reverse chronologically. It was generated on 2018-12-31. It includes articles mainly from the arXiv categories [cs.AI](https://arxiv.org/list/cs.AI/recent), [cs.CL](https://arxiv.org/list/cs.CL/recent), [cs.CV](https://arxiv.org/list/cs.CV/recent), [cs.IR](https://arxiv.org/list/cs.IR/recent), [cs.LG](https://arxiv.org/list/cs.LG/recent), [cs.NE](https://arxiv.org/list/cs.NE/recent), [eess.IV](https://arxiv.org/list/eess.IV/recent), and [stat.ML](https://arxiv.org/list/stat.ML/recent). A rememberable short link to this page is [https://j.mp/ml-reviews](https://j.mp/ml-reviews).
+This is a mostly auto-generated list of review articles on machine learning and artificial intelligence that are on [arXiv](https://arxiv.org/). Although some of them were written for a specific technical audience or application, the techniques described are nonetheless generally relevant. The list is sorted reverse chronologically. It was generated on 2019-01-01. It includes articles mainly from the arXiv categories [cs.AI](https://arxiv.org/list/cs.AI/recent), [cs.CL](https://arxiv.org/list/cs.CL/recent), [cs.CV](https://arxiv.org/list/cs.CV/recent), [cs.IR](https://arxiv.org/list/cs.IR/recent), [cs.LG](https://arxiv.org/list/cs.LG/recent), [cs.NE](https://arxiv.org/list/cs.NE/recent), [eess.IV](https://arxiv.org/list/eess.IV/recent), and [stat.ML](https://arxiv.org/list/stat.ML/recent). A rememberable short link to this page is [https://j.mp/ml-reviews](https://j.mp/ml-reviews). The source code for generating this file is [here](https://github.com/impredicative/arxiv-ml-reviews).
 
+* [An introduction to domain adaptation and transfer learning (2018)](https://arxiv.org/abs/1812.11806) ([cs.LG](https://arxiv.org/list/cs.LG/recent))
+* [Deep Reinforcement Learning for Multi-Agent Systems: A Review of Challenges, Solutions and Applications (2018)](https://arxiv.org/abs/1812.11794) ([cs.LG](https://arxiv.org/list/cs.LG/recent))
 * [Knowledge Representation Learning: A Quantitative Review (2018)](https://arxiv.org/abs/1812.10901) ([cs.CL](https://arxiv.org/list/cs.CL/recent))
 * [Adversarial Attack and Defense on Graph Data: A Survey (2018)](https://arxiv.org/abs/1812.10528) ([cs.CR](https://arxiv.org/list/cs.CR/recent))
 * [A Review on The Use of Deep Learning in Android Malware Detection (2018)](https://arxiv.org/abs/1812.10360) ([cs.CR](https://arxiv.org/list/cs.CR/recent))
@@ -26,7 +28,6 @@ This is a mostly auto-generated list of review articles on machine learning and 
 * [Finding the needle in high-dimensional haystack: A tutorial on canonical correlation analysis (2018)](https://arxiv.org/abs/1812.02598) ([stat.ML](https://arxiv.org/list/stat.ML/recent))
 * [Handcrafted and Deep Trackers: A Review of Recent Object Tracking Approaches (2018)](https://arxiv.org/abs/1812.07368) ([cs.CV](https://arxiv.org/list/cs.CV/recent))
 * [A Technical Survey on Statistical Modelling and Design Methods for Crowdsourcing Quality Control (2018)](https://arxiv.org/abs/1812.02736) ([cs.HC](https://arxiv.org/list/cs.HC/recent))
-* [Unsupervised learning and data clustering for the construction of Galaxy Catalogs in the Dark Energy Survey (2018)](https://arxiv.org/abs/1812.02183) ([astro-ph.IM](https://arxiv.org/list/astro-ph.IM/recent))
 * [Cross-spectral Periocular Recognition: A Survey (2018)](https://arxiv.org/abs/1812.01465) ([cs.CV](https://arxiv.org/list/cs.CV/recent))
 * [Feature Extraction for Temporal Signal Recognition: An Overview (2018)](https://arxiv.org/abs/1812.01780) ([eess.AS](https://arxiv.org/list/eess.AS/recent))
 * [Distilling Information from a Flood: A Possibility for the Use of Meta-Analysis and Systematic Review in Machine Learning Research (2018)](https://arxiv.org/abs/1812.01074) ([cs.DL](https://arxiv.org/list/cs.DL/recent))
@@ -440,7 +441,7 @@ This is a mostly auto-generated list of review articles on machine learning and 
 * [Automated text summarisation and evidence-based medicine: A survey of two domains (2017)](https://arxiv.org/abs/1706.08162) ([cs.CL](https://arxiv.org/list/cs.CL/recent))
 * [A Contemporary Overview of Probabilistic Latent Variable Models (2017)](https://arxiv.org/abs/1706.08137) ([stat.ML](https://arxiv.org/list/stat.ML/recent))
 * [Recent Advance in Content-based Image Retrieval: A Literature Survey (2017)](https://arxiv.org/abs/1706.06064) ([cs.MM](https://arxiv.org/list/cs.MM/recent))
-* [Place recognition: An Overview of Vision Perspective (2017)](https://arxiv.org/abs/1707.03470) ([cs.CV](https://arxiv.org/list/cs.CV/recent))
+* [Place recognition: An Overview of Vision Perspective (2017-2018)](https://arxiv.org/abs/1707.03470) ([cs.CV](https://arxiv.org/list/cs.CV/recent))
 * [An Overview of Multi-Task Learning in Deep Neural Networks (2017)](https://arxiv.org/abs/1706.05098) ([cs.LG](https://arxiv.org/list/cs.LG/recent))
 * [A Survey Of Cross-lingual Word Embedding Models (2017)](https://arxiv.org/abs/1706.04902) ([cs.CL](https://arxiv.org/list/cs.CL/recent))
 * [A survey of dimensionality reduction techniques based on random projection (2017-2018)](https://arxiv.org/abs/1706.04371) ([cs.LG](https://arxiv.org/list/cs.LG/recent))
