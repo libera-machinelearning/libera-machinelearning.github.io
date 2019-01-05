@@ -3,6 +3,10 @@
 The following is a list of some papers showing counterintuitive results in machine learning, reverse sorted by year.
 <!-- Free papers only-->
 
+* [Elimination of All Bad Local Minima in Deep Learning (2019)](https://arxiv.org/abs/1901.00279)
+
+* [Adding One Neuron Can Eliminate All Bad Local Minima (2018)](https://arxiv.org/abs/1805.08671)
+
 * [Learning with Random Learning Rates (2018)](https://arxiv.org/abs/1810.01322)
 
 * [The Lottery Ticket Hypothesis: Finding Sparse, Trainable Neural Networks (2018)](https://arxiv.org/abs/1803.03635)
