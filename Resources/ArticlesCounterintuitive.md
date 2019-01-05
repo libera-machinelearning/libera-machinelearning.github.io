@@ -3,6 +3,10 @@
 The following is a list of some papers showing counterintuitive results in machine learning, reverse sorted by year.
 <!-- Free papers only-->
 
+* [Learning with Random Learning Rates (2018)](https://arxiv.org/abs/1810.01322)
+
+* [The Lottery Ticket Hypothesis: Finding Sparse, Trainable Neural Networks (2018)](https://arxiv.org/abs/1803.03635)
+
 * [Intriguing Properties of Randomly Weighted Networks: Generalizing While Learning Next to Nothing (2018)](https://arxiv.org/abs/1802.00844)
   * The interpretation of the result is questionable.
 
