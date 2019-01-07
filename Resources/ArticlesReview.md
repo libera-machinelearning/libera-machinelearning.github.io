@@ -21,7 +21,6 @@ This is a mostly auto-generated list of review articles on machine learning and 
 * [Graph Neural Networks: A Review of Methods and Applications (2018-2019)](https://arxiv.org/abs/1812.08434) ([cs.LG](https://arxiv.org/list/cs.LG/recent))
 * [A Survey of Hierarchy Identification in Social Networks (2018)](https://arxiv.org/abs/1812.08425) ([cs.CL](https://arxiv.org/list/cs.CL/recent))
 * [Safety and Trustworthiness of Deep Neural Networks: A Survey (2018)](https://arxiv.org/abs/1812.08342) ([cs.LG](https://arxiv.org/list/cs.LG/recent))
-* [The Random Forest Classifier in WEKA: Discussion and New Developments for Imbalanced Data (2018-2019)](https://arxiv.org/abs/1812.08102) ([cs.CV](https://arxiv.org/list/cs.CV/recent))
 * [A Review of Meta-Reinforcement Learning for Deep Neural Networks Architecture Search (2018)](https://arxiv.org/abs/1812.07995) ([cs.LG](https://arxiv.org/list/cs.LG/recent))
 * [A Tour of Unsupervised Deep Learning for Medical Image Analysis (2018)](https://arxiv.org/abs/1812.07715) ([eess.IV](https://arxiv.org/list/eess.IV/recent))
 * [Handcrafted and Deep Trackers: A Review of Recent Object Tracking Approaches (2018)](https://arxiv.org/abs/1812.07368) ([cs.CV](https://arxiv.org/list/cs.CV/recent))
