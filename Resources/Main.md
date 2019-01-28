@@ -61,6 +61,7 @@ Free books on deep learning are listed [here](https://www.kdnuggets.com/2018/04/
   * Secondary: [cs.CL](https://export.arxiv.org/rss/cs.CL/recent), [cs.CV](https://export.arxiv.org/rss/cs.CV/recent), [cs.IR](https://export.arxiv.org/rss/cs.IR/recent), [eess.IV](https://export.arxiv.org/rss/eess.IV/recent)
 * [Distill.pub](http://distill.pub/rss.xml)
 * [InfoWorld AI](http://www.infoworld.com/category/artificial-intelligence/index.rss)
+* [JMLR MLOSS (unofficial)](https://us-east1-ml-feeds.cloudfunctions.net/jmlr-mloss)
 * [KDnuggets](http://www.kdnuggets.com/feed) and an unofficial [filtered](https://us-east1-ml-feeds.cloudfunctions.net/kdnuggets) version
 * Papers with Code (unofficial):
   * Latest: [papers](https://fetchrss.com/rss/5b61c2918a93f854228b4567513641609.xml) and [code](https://fetchrss.com/rss/5b61c2918a93f854228b4567752343504.xml)
@@ -107,7 +108,7 @@ These allow execution of notebooks:
 
 ## Software
 * [Awesome Machine Learning](https://github.com/josephmisiti/awesome-machine-learning)
-* [JMLR](http://jmlr.org/mloss/)
+* [JMLR](http://jmlr.org/mloss/) (*also see [Feeds](#feeds)*)
 * [mloss](http://mloss.org/software/)
 * [Nvidia containers](https://ngc.nvidia.com/catalog/containers)
 * [Papers with Code](https://paperswithcode.com/) (*also see [Feeds](#feeds)*)
