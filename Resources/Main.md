@@ -79,9 +79,9 @@ http://motyar.info/webscrapemaster/api/?url=https://research.fb.com/publications
 * [BAIR](https://bair.berkeley.edu/blog/feed.xml)
 * [DeepMind](https://deepmind.com/blog/feed/basic/)
 * [Facebook Blog](https://research.fb.com/feed/)
-* [Google Research Blog](https://feeds.feedburner.com/blogspot/gJZg)
-* [Nvidia (unofficial)](https://zapier.com/engine/rss/2758480/nvidia-ml/)
+* [Google Research](https://feeds.feedburner.com/blogspot/gJZg)
 * [OpenAI](https://blog.openai.com/rss/)
+* [RiseLab (unofficial)](https://us-east1-ml-feeds.cloudfunctions.net/riselab)
 
 ## Misc
 * [KDnuggets: Competitions](http://www.kdnuggets.com/competitions/)
