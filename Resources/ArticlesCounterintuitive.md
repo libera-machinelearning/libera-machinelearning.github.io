@@ -3,7 +3,7 @@
 The following is a list of some papers showing counterintuitive results in machine learning, reverse sorted by year.
 <!-- Free papers only-->
 
-* [No Training Required: Exploring Random Encoders for Sentence Classification](https://arxiv.org/abs/1901.10444)
+* [No Training Required: Exploring Random Encoders for Sentence Classification (2019)](https://arxiv.org/abs/1901.10444)
 
 * [Elimination of All Bad Local Minima in Deep Learning (2019)](https://arxiv.org/abs/1901.00279)
 
