@@ -18,6 +18,7 @@
 ## Blogs
 * [Colah](http://colah.github.io/) -- e.g. "Neural Networks, Manifolds, and Topology"
 * [Eric Jang](http://blog.evjang.com/) -- great for Variational Methods & VAEs.
+* [Facebook AI](https://ai.facebook.com/blog)
 * [Tom Breloff](http://www.breloff.com/blog/)
 * [inFERENCe](http://www.inference.vc)
 * [The Morning Paper](https://blog.acolyer.org/) -- a new CS/ML paper each morning
