@@ -86,6 +86,7 @@ http://motyar.info/webscrapemaster/api/?url=https://research.fb.com/publications
 * Facebook:
   * [Blog](https://research.fb.com/feed/)
   * [Code](https://code.facebook.com/posts/rss/)
+    * [ML/AI subset](https://code.fb.com/category/ml-applications,ai-research/feed)
 * [Google Research](https://feeds.feedburner.com/blogspot/gJZg)
 * [OpenAI](https://blog.openai.com/rss/)
 * [RiseLab (unofficial)](https://us-east1-ml-feeds.cloudfunctions.net/riselab)
