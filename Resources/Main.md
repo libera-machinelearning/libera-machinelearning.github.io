@@ -111,7 +111,8 @@ These allow execution of notebooks:
 * [Semantic Scholar](https://www.semanticscholar.org/)
 
 ## Podcasts
-* [Artificial Intelligence Podcast](https://lexfridman.com/ai/) (by Lex Fridman)
+* [Lex Fridman: Artificial Intelligence](https://lexfridman.com/ai/)
+* [Super Data Science podcast](https://www.superdatascience.com/podcast/)
 
 ## Software
 * [Awesome Machine Learning](https://github.com/josephmisiti/awesome-machine-learning)
