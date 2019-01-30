@@ -84,7 +84,7 @@ http://motyar.info/webscrapemaster/api/?url=https://research.fb.com/publications
 * [DeepMind](https://deepmind.com/blog/feed/basic/)
 * Facebook:
   * [Blog](https://research.fb.com/feed/)
-  * [Code](https://code.facebook.com/posts/rss/) (and [ML/AI subset](https://code.fb.com/category/ml-applications,ai-research/feed))
+  * [Code](https://code.facebook.com/posts/rss/) and [ML/AI subset](https://code.fb.com/category/ml-applications,ai-research/feed)
 * [Google Research](https://feeds.feedburner.com/blogspot/gJZg)
 * [OpenAI](https://blog.openai.com/rss/)
 * [RiseLab (unofficial)](https://us-east1-ml-feeds.cloudfunctions.net/riselab)
@@ -113,7 +113,7 @@ These allow execution of notebooks:
 * [Semantic Scholar](https://www.semanticscholar.org/)
 
 ### Labs
-* [Facebook Research](https://research.fb.com/publications/) (and [ML/AI subset](https://research.fb.com/publications/?cat=4%2C13%2C3%2C8))
+* [Facebook Research](https://research.fb.com/publications/) and [ML/AI subset](https://research.fb.com/publications/?cat=4%2C13%2C3%2C8)
 
 ## Podcasts
 * [DataCam's DataFramed](https://www.datacamp.com/community/podcast)
