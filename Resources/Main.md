@@ -83,7 +83,9 @@ http://motyar.info/webscrapemaster/api/?url=https://research.fb.com/publications
 ### Labs
 * [BAIR](https://bair.berkeley.edu/blog/feed.xml)
 * [DeepMind](https://deepmind.com/blog/feed/basic/)
-* [Facebook Blog](https://research.fb.com/feed/)
+* Facebook:
+  * [Blog](https://research.fb.com/feed/)
+  * [Code](https://code.facebook.com/posts/rss/)
 * [Google Research](https://feeds.feedburner.com/blogspot/gJZg)
 * [OpenAI](https://blog.openai.com/rss/)
 * [RiseLab (unofficial)](https://us-east1-ml-feeds.cloudfunctions.net/riselab)
