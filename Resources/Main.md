@@ -114,6 +114,7 @@ These allow execution of notebooks:
 ## Podcasts
 * [Data Skeptic](https://dataskeptic.libsyn.com/)
 * [Lex Fridman: AI](https://lexfridman.com/ai/)
+* [Linear Digressions](https://lineardigressions.com/)
 * [Nvidia AI](https://blogs.nvidia.com/ai-podcast/)
 * [Super Data Science](https://www.superdatascience.com/podcast/)
 * [Talking Machines](http://www.thetalkingmachines.com/episodes)
