@@ -54,6 +54,7 @@ Free books on deep learning are listed [here](https://www.kdnuggets.com/2018/04/
 * [Berkeley CS 294: Deep Reinforcement Learning](http://rll.berkeley.edu/deeprlcourse/) ([YouTube playlist](https://www.youtube.com/playlist?list=PLkFD6_40KJIwTmSbCv9OVJB3YaO4sFwkX))
 * [Illinois CS 598 LAZ: Cutting-Edge Trends in Deep Learning and Recognition (2017)](http://slazebni.cs.illinois.edu/spring17/) ([videos](https://recordings.engineering.illinois.edu:8443/ess/portal/section/20bbecdb-2f7c-4725-84d1-03d28f5a08f5))
 * [MIT 6.S099: Artificial General Intelligence](https://agi.mit.edu/)
+* [MIT: Deep Learning](https://deeplearning.mit.edu/)
 
 ## Feeds
 [Feedly](http://feedly.com/) is a great feed reader for following these and more feeds:
