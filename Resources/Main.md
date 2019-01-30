@@ -59,6 +59,7 @@ Free books on deep learning are listed [here](https://www.kdnuggets.com/2018/04/
 * arXiv:
   * Primary: [stat.ML](https://export.arxiv.org/rss/stat.ML/recent), [cs.LG](https://export.arxiv.org/rss/cs.LG/recent), [cs.NE](https://export.arxiv.org/rss/cs.NE/recent), [cs.AI](https://export.arxiv.org/rss/cs.AI/recent)
   * Secondary: [cs.CL](https://export.arxiv.org/rss/cs.CL/recent), [cs.CV](https://export.arxiv.org/rss/cs.CV/recent), [cs.IR](https://export.arxiv.org/rss/cs.IR/recent), [eess.IV](https://export.arxiv.org/rss/eess.IV/recent)
+* [arXiv ML/AI reviews (unofficial)](https://us-east1-ml-feeds.cloudfunctions.net/arxiv-ml-reviews)
 * [Distill.pub](http://distill.pub/rss.xml)
 * [InfoWorld AI](http://www.infoworld.com/category/artificial-intelligence/index.rss)
 * [JMLR MLOSS (unofficial)](https://us-east1-ml-feeds.cloudfunctions.net/jmlr-mloss)
