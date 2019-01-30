@@ -113,7 +113,8 @@ These allow execution of notebooks:
 
 ## Podcasts
 * [Lex Fridman: Artificial Intelligence](https://lexfridman.com/ai/)
-* [Super Data Science podcast](https://www.superdatascience.com/podcast/)
+* [Nvidia AI](https://blogs.nvidia.com/ai-podcast/)
+* [Super Data Science](https://www.superdatascience.com/podcast/)
 
 ## Software
 * [Awesome Machine Learning](https://github.com/josephmisiti/awesome-machine-learning)
