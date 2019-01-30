@@ -112,6 +112,7 @@ These allow execution of notebooks:
 * [Semantic Scholar](https://www.semanticscholar.org/)
 
 ## Podcasts
+* [Data Skeptic](https://dataskeptic.libsyn.com/)
 * [Lex Fridman: AI](https://lexfridman.com/ai/)
 * [Nvidia AI](https://blogs.nvidia.com/ai-podcast/)
 * [Super Data Science](https://www.superdatascience.com/podcast/)
