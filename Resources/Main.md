@@ -11,6 +11,7 @@
 - [Misc](#misc)
 - [Notebooks](#notebooks)
 - [Papers](#papers)
+- [Podcasts](#podcasts)
 - [Software](#software)
 - [QA](#qa)
 - [Videos](#videos)
