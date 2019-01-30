@@ -112,12 +112,13 @@ These allow execution of notebooks:
 * [Semantic Scholar](https://www.semanticscholar.org/)
 
 ## Podcasts
+* [DataCam's DataFramed](https://www.datacamp.com/community/podcast)
 * [Data Skeptic](https://dataskeptic.libsyn.com/)
 * [Lex Fridman: AI](https://lexfridman.com/ai/)
 * [Linear Digressions](https://lineardigressions.com/)
 * [Nvidia AI](https://blogs.nvidia.com/ai-podcast/)
 * [Super Data Science](https://www.superdatascience.com/podcast/)
-* [Talking Machines](http://www.thetalkingmachines.com/episodes)
+* [Talking Machines](https://www.thetalkingmachines.com/episodes)
 * [TWiML&AI](https://twimlai.com/shows/)
 
 ## Software
