@@ -127,6 +127,7 @@ These allow execution of notebooks:
 
 ## Software
 * [Awesome Machine Learning](https://github.com/josephmisiti/awesome-machine-learning)
+* [Facebook Open Source: AI](https://opensource.facebook.com/#artificial-intelligence)
 * [JMLR](http://jmlr.org/mloss/) (*also see [Feeds](#feeds)*)
 * [mloss](http://mloss.org/software/)
 * [Nvidia containers](https://ngc.nvidia.com/catalog/containers)
