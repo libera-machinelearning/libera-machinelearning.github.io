@@ -88,7 +88,7 @@ http://motyar.info/webscrapemaster/api/?url=https://research.fb.com/publications
   * [Research Blog](https://research.fb.com/feed/)
 * [Google Research](https://feeds.feedburner.com/blogspot/gJZg)
 * [OpenAI](https://blog.openai.com/rss/)
-* [RiseLab (unofficial)](https://us-east1-ml-feeds.cloudfunctions.net/riselab)
+* [RiseLab](https://rise.cs.berkeley.edu/Projects/blog/feed/)
 
 ## Misc
 * [KDnuggets: Competitions](http://www.kdnuggets.com/competitions/)
