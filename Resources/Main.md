@@ -116,6 +116,7 @@ These allow execution of notebooks:
 * [Lex Fridman: AI](https://lexfridman.com/ai/)
 * [Nvidia AI](https://blogs.nvidia.com/ai-podcast/)
 * [Super Data Science](https://www.superdatascience.com/podcast/)
+* [Talking Machines](http://www.thetalkingmachines.com/episodes)
 * [TWiML&AI](https://twimlai.com/shows/)
 
 ## Software
