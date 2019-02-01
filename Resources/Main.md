@@ -85,6 +85,7 @@ http://motyar.info/webscrapemaster/api/?url=https://research.fb.com/publications
 * [DeepMind](https://deepmind.com/blog/feed/basic/)
 * Facebook:
   * [Code](https://code.facebook.com/posts/rss/) and [ML/AI subset](https://code.fb.com/category/ml-applications,ai-research/feed)
+  * [Research: ML/AI (unofficial)](https://github.com/ml-feeds/fb-research-ml-feed)
   * [Research Blog](https://research.fb.com/feed/)
 * [Google Research](https://feeds.feedburner.com/blogspot/gJZg)
 * [OpenAI](https://blog.openai.com/rss/)
