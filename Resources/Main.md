@@ -132,6 +132,7 @@ These allow execution of notebooks:
 * [Facebook Open Source: AI](https://opensource.facebook.com/#artificial-intelligence)
 * [JMLR](http://jmlr.org/mloss/) (*also see [Feeds](#feeds)*)
 * [mloss](http://mloss.org/software/)
+* [ModelDepot](https://modeldepot.io/)
 * [Nvidia containers](https://ngc.nvidia.com/catalog/containers)
 * [Papers with Code](https://paperswithcode.com/) (*also see [Feeds](#feeds)*)
 * [Repositories](https://j.mp/ml-repos)
