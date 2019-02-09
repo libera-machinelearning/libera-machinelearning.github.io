@@ -64,6 +64,7 @@ Use of canned datasets for machine learning is applicable for use by students an
 The following general resources are for datasets that not necessarily specific to machine learning:
 * [Academic Torrents](http://academictorrents.com/): distributed system for sharing enormous datasets
 * [AWS Open Data](https://registry.opendata.aws/)
+* [Google Dataset Search](https://toolbox.google.com/datasetsearch)
 
 ## Feeds
 [Feedly](http://feedly.com/) is a great feed reader for following these and more feeds:
