@@ -9,6 +9,7 @@
 - [Datasets](#datasets)
 - [Feeds](#feeds)
 - [Misc](#misc)
+- [News](#news)
 - [Notebooks](#notebooks)
 - [Papers](#papers)
 - [Podcasts](#podcasts)
@@ -102,7 +103,9 @@ http://motyar.info/webscrapemaster/api/?url=https://research.fb.com/publications
 ## Misc
 * [KDnuggets: Competitions](http://www.kdnuggets.com/competitions/)
 * [Learning path for software engineers](https://github.com/ZuzooVn/machine-learning-for-software-engineers/blob/master/README.md)
-* [π's scattered links](http://pipad.org/wiki/index.php/Machine_Learning)
+
+## News
+* [AITopics](https://aitopics.org)
 
 ## Notebooks
 These allow execution of notebooks:
