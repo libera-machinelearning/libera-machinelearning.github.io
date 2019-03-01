@@ -22,9 +22,10 @@ Although not a technical topic, daily exercise, excellent nutrition and sufficie
 * [fast.ai's Practical Deep Learning For Coders](http://course.fast.ai/)
 
 ## Education
-It is beneficial to gain demonstrable education in machine learning and to develop a corresponding portfolio of projects. To this end, the following Coursera specializations should be of strong interest:
+It is beneficial to gain demonstrable education in machine learning and to develop a corresponding portfolio of projects. To this end, the following Coursera resources should be of strong interest:
 
 Prerequisites:
+* [AI for Everyone](https://www.coursera.org/learn/ai-for-everyone)
 * [Mathematics for Machine Learning](https://www.coursera.org/specializations/mathematics-machine-learning)
 
 Main:
