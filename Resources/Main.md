@@ -75,16 +75,12 @@ The following general resources are for datasets that not necessarily specific t
 * [InfoWorld AI](http://www.infoworld.com/category/artificial-intelligence/index.rss)
 * [JMLR MLOSS (unofficial)](https://us-east1-ml-feeds.cloudfunctions.net/jmlr-mloss)
 * [KDnuggets](http://www.kdnuggets.com/feed) and an unofficial [filtered](https://us-east1-ml-feeds.cloudfunctions.net/kdnuggets) version
+* [Nvidia developer](https://devblogs.nvidia.com/category/artificial-intelligence/rss)
 * [Nvidia Research: ML/AI (unofficial)](https://us-east1-ml-feeds.cloudfunctions.net/nvidia-research-ml)
 * Papers with Code (unofficial): [trending](https://us-east1-ml-feeds.cloudfunctions.net/pwc/trending), [latest](https://us-east1-ml-feeds.cloudfunctions.net/pwc/latest), [greatest](https://us-east1-ml-feeds.cloudfunctions.net/pwc/greatest)
 * [Machine Learning Mastery](https://machinelearningmastery.com/feed/)
 * [PyImageSearch](http://feeds.feedburner.com/Pyimagesearch)
 * [Towards Data Science: ML](https://towardsdatascience.com/feed/tagged/machine-learning)
-
-<!--
-Resource for creating feed from FAIR pubs:
-http://motyar.info/webscrapemaster/api/?url=https://research.fb.com/publications/?cat=13&xpath=//*[@id=%22page%22]/div[5]/section/div/div[1]/a[1]
--->
 
 ### Labs
 * [BAIR](https://bair.berkeley.edu/blog/feed.xml)
