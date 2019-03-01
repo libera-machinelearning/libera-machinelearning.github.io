@@ -4,7 +4,6 @@
 <!-- TOC can be generated manually using https://ecotrust-canada.github.io/markdown-toc/ -->
 - [Blogs](#blogs)
 - [Books](#books)
-- [Communities](#communities)
 - [Courses](#courses)
 - [Datasets](#datasets)
 - [Feeds](#feeds)
@@ -42,11 +41,6 @@ Also see [Feeds](#feeds).
 * [Sutton: Reinforcement Learning](http://incompleteideas.net/sutton/book/the-book.html)
 
 Free books on deep learning are listed [here](https://www.kdnuggets.com/2018/04/top-free-books-deep-learning.html), although none of them are too recent.
-
-## Communities
-* This!
-* ##AGI (Artificial General Intelligence) on Freenode
-* [r/MLQuestions](https://www.reddit.com/r/MLQuestions/)
 
 ## Courses
 * [Every single Machine Learning course on the internet, ranked by your reviews (2017)](https://medium.freecodecamp.com/every-single-machine-learning-course-on-the-internet-ranked-by-your-reviews-3c4a7b8026c0)
@@ -151,11 +145,15 @@ These allow execution of notebooks:
 * [Repositories](https://j.mp/ml-repos)
 
 ## QA
+Stack Exchange:
 * [Stack Exchange search](https://stackexchange.com/search) (search all Stack Exchange sites)
 * [Stack Overflow](https://stackoverflow.com/)
 * [Cross Validated](https://stats.stackexchange.com/)
 * [Data Science](https://datascience.stackexchange.com/)
 * [Artificial Intelligence](https://ai.stackexchange.com)
+
+Reddit:
+* [r/MLQuestions](https://www.reddit.com/r/MLQuestions/)
 
 ## Videos
 * [Video Lectures](http://videolectures.net/Top/Computer_Science/Machine_Learning/)
