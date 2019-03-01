@@ -21,6 +21,7 @@
 * [Eric Jang](http://blog.evjang.com/) -- great for Variational Methods & VAEs.
 * [Fast.ai](https://www.fast.ai/topics/)
 * [Facebook AI](https://ai.facebook.com/blog)
+* [Nvidia developer](https://devblogs.nvidia.com/category/artificial-intelligence/)
 * [Tom Breloff](http://www.breloff.com/blog/)
 * [inFERENCe](http://www.inference.vc)
 * [The Morning Paper](https://blog.acolyer.org/) -- a new CS/ML paper each morning
