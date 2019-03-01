@@ -36,6 +36,7 @@ Main:
 
 Advanced:
 * [Advanced Machine Learning](https://www.coursera.org/specializations/aml)
+* [Machine Learning and Reinforcement Learning in Finance](https://www.coursera.org/specializations/machine-learning-reinforcement-finance)
 * [Probabilistic Graphical Models](https://www.coursera.org/specializations/probabilistic-graphical-models)
 
 Data science:
