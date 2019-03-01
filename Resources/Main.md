@@ -75,6 +75,7 @@ The following general resources are for datasets that not necessarily specific t
   * Secondary: [cs.CL](https://export.arxiv.org/rss/cs.CL/recent), [cs.CV](https://export.arxiv.org/rss/cs.CV/recent), [cs.IR](https://export.arxiv.org/rss/cs.IR/recent), [eess.IV](https://export.arxiv.org/rss/eess.IV/recent)
 * [arXiv ML/AI reviews (unofficial)](https://us-east1-ml-feeds.cloudfunctions.net/arxiv-ml-reviews)
 * [Distill.pub](http://distill.pub/rss.xml)
+* [Fast.ai](https://www.fast.ai/atom.xml)
 * [InfoWorld AI](http://www.infoworld.com/category/artificial-intelligence/index.rss)
 * [JMLR MLOSS (unofficial)](https://us-east1-ml-feeds.cloudfunctions.net/jmlr-mloss)
 * [KDnuggets](http://www.kdnuggets.com/feed) and an unofficial [filtered](https://us-east1-ml-feeds.cloudfunctions.net/kdnuggets) version
