@@ -34,6 +34,7 @@ Also see [Feeds](#feeds).
 * [Foundations of Data Science (2018)](https://www.cs.cornell.edu/jeh/book.pdf) -- mathematical summary of topics
 * [Neural Networks and Deep Learning](http://neuralnetworksanddeeplearning.com/) by Nielsen -- excellent resource for beginners
 * [Deep Learning (2016)](http://www.deeplearningbook.org/) Goodfellow, Bengio, Courville (pdf [here](https://github.com/HFTrader/DeepLearningBook))
+* [Fast.ai](https://www.fast.ai/topics/)
 * [An Introduction to Statistical Learning (2013)](http://www-bcf.usc.edu/~gareth/ISL/) (unofficial python notebooks: [1](https://github.com/JWarmenhoven/ISLR-python), [2](https://github.com/emredjan/ISL-python))
 * [The Elements of Statistical Learning (2009)](https://statweb.stanford.edu/~tibs/ElemStatLearn/)
 * [David MacKay: Information Theory, Pattern Recognition and Neural Networks (2005)](http://www.inference.phy.cam.ac.uk/itprnn/book.html)
