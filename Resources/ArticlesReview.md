@@ -4,7 +4,6 @@ This is a mostly auto-generated list of review articles on machine learning and 
 * [A Review of Stochastic Block Models and Extensions for Graph Clustering (2019)](https://arxiv.org/abs/1903.00114) ([stat.ML](https://arxiv.org/list/stat.ML/recent))
 * [Neural network models and deep learning - a primer for biologists (2019)](https://arxiv.org/abs/1902.04704) ([q-bio.NC](https://arxiv.org/list/q-bio.NC/recent))
 * [How Generative Adversarial Networks and Their Variants Work: An Overview (2017-2019)](https://arxiv.org/abs/1711.05914) ([cs.LG](https://arxiv.org/list/cs.LG/recent))
-* [Citation Needed: A Taxonomy and Algorithmic Assessment of Wikipedia's Verifiability (2019)](https://arxiv.org/abs/1902.11116) ([cs.CY](https://arxiv.org/list/cs.CY/recent))
 * [Deep learning in bioinformatics: introduction, application, and perspective in big data era (2019)](https://arxiv.org/abs/1903.00342) ([q-bio.QM](https://arxiv.org/list/q-bio.QM/recent))
 * [Modeling Language Variation and Universals: A Survey on Typological Linguistics for Natural Language Processing (2018-2019)](https://arxiv.org/abs/1807.00914) ([cs.CL](https://arxiv.org/list/cs.CL/recent))
 * [Architecting Dependable Learning-enabled Autonomous Systems: A Survey (2019)](https://arxiv.org/abs/1902.10590) ([cs.SE](https://arxiv.org/list/cs.SE/recent))
