@@ -69,6 +69,7 @@ The following general resources are for datasets that not necessarily specific t
 * arXiv:
   * Primary: [stat.ML](https://export.arxiv.org/rss/stat.ML/recent), [cs.LG](https://export.arxiv.org/rss/cs.LG/recent), [cs.NE](https://export.arxiv.org/rss/cs.NE/recent), [cs.AI](https://export.arxiv.org/rss/cs.AI/recent)
   * Secondary: [cs.CL](https://export.arxiv.org/rss/cs.CL/recent), [cs.CV](https://export.arxiv.org/rss/cs.CV/recent), [cs.IR](https://export.arxiv.org/rss/cs.IR/recent), [eess.IV](https://export.arxiv.org/rss/eess.IV/recent)
+* [arXiV ML/AI daily meta updates (unofficial)](https://us-east1-ml-feeds.cloudfunctions.net/arxiv-daily-ml)
 * [arXiv ML/AI reviews (unofficial)](https://us-east1-ml-feeds.cloudfunctions.net/arxiv-ml-reviews)
 * [Distill.pub](http://distill.pub/rss.xml)
 * [Fast.ai](https://www.fast.ai/atom.xml)
