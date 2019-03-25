@@ -89,7 +89,6 @@ The following general resources are for datasets that not necessarily specific t
 * Facebook:
   * [Code](https://code.facebook.com/posts/rss/) and [ML/AI subset](https://code.fb.com/category/ml-applications,ai-research/feed)
   * [Research: ML/AI (unofficial)](https://us-east1-ml-feeds.cloudfunctions.net/fb-research-ml)
-  * [Research Blog](https://research.fb.com/feed/)
 * [Google Research](https://feeds.feedburner.com/blogspot/gJZg)
 * [OpenAI](https://blog.openai.com/rss/)
 * [RiseLab](https://rise.cs.berkeley.edu/Projects/blog/feed/)
