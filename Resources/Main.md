@@ -80,7 +80,9 @@ The following general resources are for datasets that not necessarily specific t
 * [Nvidia Research: ML/AI (unofficial)](https://us-east1-ml-feeds.cloudfunctions.net/nvidia-research-ml)
 * Papers with Code (unofficial): [trending](https://us-east1-ml-feeds.cloudfunctions.net/pwc/trending), [latest](https://us-east1-ml-feeds.cloudfunctions.net/pwc/latest), [greatest](https://us-east1-ml-feeds.cloudfunctions.net/pwc/greatest)
 * [Machine Learning Mastery](https://machinelearningmastery.com/feed/)
+* [Science Daily: AI](https://www.sciencedaily.com/rss/computers_math/artificial_intelligence.xml)
 * [PyImageSearch](http://feeds.feedburner.com/Pyimagesearch)
+* [TechXplore: ML/AI](https://techxplore.com/rss-feed/machine-learning-ai-news/)
 * [Towards Data Science: ML](https://towardsdatascience.com/feed/tagged/machine-learning)
 
 ### Labs
