@@ -7,6 +7,8 @@ The following is a list of some papers showing counterintuitive results in machi
 
 * [Elimination of All Bad Local Minima in Deep Learning (2019)](https://arxiv.org/abs/1901.00279)
 
+* [Reconciling modern machine learning and the bias-variance trade-off (2018)](https://arxiv.org/abs/1812.11118)
+
 * [Adding One Neuron Can Eliminate All Bad Local Minima (2018)](https://arxiv.org/abs/1805.08671)
 
 * [Learning with Random Learning Rates (2018)](https://arxiv.org/abs/1810.01322)
