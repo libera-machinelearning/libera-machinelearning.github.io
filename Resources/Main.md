@@ -161,7 +161,8 @@ Reddit:
 ### YouTube channels
 * [3B1B](https://www.youtube.com/channel/UCYO_jab_esuFRV4b17AJtAw)
 * [DeepMind](https://www.youtube.com/channel/UCP7jMXSY2xbc3KCAE0MHQ-A)
-* [Lex Fridman](https://www.youtube.com/user/lexfridman)
+* [Lex Fridman](https://www.youtube.com/channel/UCSHZKyawb77ixDdsGog4iWA)
 * [OpenAI](https://www.youtube.com/channel/UCXZCJLdBC09xxGZ6gcdrc6A)
 * [Siraj Raval](https://www.youtube.com/channel/UCWN3xxRkmTPmbKwht9FuE5A)
 * [TwiML&AI](https://www.youtube.com/channel/UC7kjWIK1H8tfmFlzZO-wHMw)
+* [Two Minute Papers](https://www.youtube.com/channel/UCbfYPyITQ-7l4upoX8nvctg)
