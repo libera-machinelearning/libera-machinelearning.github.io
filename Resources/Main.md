@@ -104,9 +104,9 @@ The following general resources are for datasets that not necessarily specific t
 
 ## Notebooks
 These allow execution of notebooks:
-* [Google CoLaboratory](https://colab.research.google.com/notebooks/welcome.ipynb#recent=true) (CPU, GPU)
+* [Google CoLaboratory](https://colab.research.google.com/notebooks/welcome.ipynb#recent=true) (CPU, shared GPU, shared TPU)
   * [Seedbank](https://research.google.com/seedbank/)
-* [Kaggle Kernels](https://www.kaggle.com/kernels) (CPU, GPU)
+* [Kaggle Kernels](https://www.kaggle.com/kernels) (CPU, shared GPU)
 * [Binder](https://mybinder.org/) (CPU)
 * [Azure Notebooks](http://notebooks.azure.com/) (CPU)
 
