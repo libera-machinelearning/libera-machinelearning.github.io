@@ -3,7 +3,6 @@ This is a mostly auto-generated list of review articles on machine learning and 
 * [A Short Survey on Sense-Annotated Corpora for Diverse Languages and Resources (2018-2019)](https://arxiv.org/abs/1802.04744) ([cs.CL](https://arxiv.org/list/cs.CL/recent))
 * [An Attentive Survey of Attention Models (2019)](https://arxiv.org/abs/1904.02874) ([cs.LG](https://arxiv.org/list/cs.LG/recent))
 * [A Systematic Literature Review about the impact of Artificial Intelligence on Autonomous Vehicle Safety (2019)](https://arxiv.org/abs/1904.02697) ([cs.CY](https://arxiv.org/list/cs.CY/recent))
-* [BERT Post-Training for Review Reading Comprehension and Aspect-based Sentiment Analysis (2019)](https://arxiv.org/abs/1904.02232) ([cs.CL](https://arxiv.org/list/cs.CL/recent))
 * [Towards Computational Models and Applications of Insect Visual Systems for Motion Perception: A Review (2019)](https://arxiv.org/abs/1904.02048) ([cs.CV](https://arxiv.org/list/cs.CV/recent))
 * [A Survey of the Recent Architectures of Deep Convolutional Neural Networks (2019)](https://arxiv.org/abs/1901.06032) ([cs.CV](https://arxiv.org/list/cs.CV/recent))
 * [A frame semantic overview of NLP-based information extraction for cancer-related EHR notes (2019)](https://arxiv.org/abs/1904.01655) ([q-bio.QM](https://arxiv.org/list/q-bio.QM/recent))
