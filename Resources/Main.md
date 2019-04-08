@@ -155,11 +155,13 @@ Reddit:
 * [r/MLQuestions](https://www.reddit.com/r/MLQuestions/)
 
 ## Videos
-* [Video Lectures](http://videolectures.net/Top/Computer_Science/Machine_Learning/)
-* [3B1B](https://www.youtube.com/watch?v=aircAruvnKk&list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi) 100% recommended for beginners
-* [Lex Fridman](https://www.youtube.com/user/lexfridman) -- MIT AI
-* [Siraj Raval](https://www.youtube.com/channel/UCWN3xxRkmTPmbKwht9FuE5A) -- AI education
 * NeurIPS: [2018](https://nips.cc/Conferences/2018/Videos), [2017](https://nips.cc/Conferences/2017/Videos), [2016](https://nips.cc/Conferences/2016/Videos), [2015](https://nips.cc/Conferences/2015/Videos), [2014](https://nips.cc/Conferences/2014/Videos), [2013](https://nips.cc/Conferences/2013/Videos), [2012](https://nips.cc/Conferences/2012/Videos), [2011](https://nips.cc/Conferences/2011/Videos)
+* [Video Lectures](http://videolectures.net/Top/Computer_Science/Machine_Learning/)
+
+### YouTube channels
+* [3B1B](https://www.youtube.com/channel/UCYO_jab_esuFRV4b17AJtAw)
+* [DeepMind](https://www.youtube.com/channel/UCP7jMXSY2xbc3KCAE0MHQ-A)
+* [Lex Fridman](https://www.youtube.com/user/lexfridman)
+* [OpenAI](https://www.youtube.com/channel/UCXZCJLdBC09xxGZ6gcdrc6A)
+* [Siraj Raval](https://www.youtube.com/channel/UCWN3xxRkmTPmbKwht9FuE5A)
 * [TwiML&AI](https://www.youtube.com/channel/UC7kjWIK1H8tfmFlzZO-wHMw)
-* [HTM School](https://www.youtube.com/channel/UC8-ttzWLgXZOGuhUyrPlUuA) Hierarchial Temporal Memory.  Numenta is attempting to model based on the biology of the brain
-* [Aurelin Geron on Hinton's Capsule Networks](https://www.youtube.com/watch?v=pPN8d0E3900)
