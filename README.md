@@ -20,5 +20,5 @@ Machine Learning | No small talk. Offtopic chat only in ##ml-ot | Software: http
 
 ## Administrative
 The channel has two bots:
-* [Feed[bot]](https://github.com/impredicative/irc-rss-feed-bot) posts page titles of URLs. ([*config*](https://github.com/impredicative/frenode-bots/blob/master/irc-rss-feed-bot/config.yaml))
-* [Title[bot]](https://github.com/impredicative/irc-url-title-bot) posts on-topic RSS feeds. ([*config*](https://github.com/impredicative/frenode-bots/blob/master/irc-url-title-bot/config.yaml))
+* [Feed[bot]](https://github.com/impredicative/irc-rss-feed-bot) posts page titles of URLs. ([*config*](https://github.com/impredicative/freenode-bots/blob/master/irc-rss-feed-bot/config.yaml))
+* [Title[bot]](https://github.com/impredicative/irc-url-title-bot) posts on-topic RSS feeds. ([*config*](https://github.com/impredicative/freenode-bots/blob/master/irc-url-title-bot/config.yaml))
