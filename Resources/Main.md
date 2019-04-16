@@ -94,7 +94,7 @@ The following general resources are for datasets that not necessarily specific t
 * [Google Research](https://feeds.feedburner.com/blogspot/gJZg)
 * [OpenAI](https://blog.openai.com/rss/)
 * [RiseLab](https://rise.cs.berkeley.edu/Projects/blog/feed/)
-* [Uber: AI](https://eng.uber.com/category/articles/ai/)
+* [Uber: AI](https://eng.uber.com/category/articles/ai/feed)
 
 ## Misc
 * [KDnuggets: Competitions](http://www.kdnuggets.com/competitions/)
