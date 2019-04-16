@@ -94,6 +94,7 @@ The following general resources are for datasets that not necessarily specific t
 * [Google Research](https://feeds.feedburner.com/blogspot/gJZg)
 * [OpenAI](https://blog.openai.com/rss/)
 * [RiseLab](https://rise.cs.berkeley.edu/Projects/blog/feed/)
+* [Uber: AI](https://eng.uber.com/category/articles/ai/)
 
 ## Misc
 * [KDnuggets: Competitions](http://www.kdnuggets.com/competitions/)
@@ -122,6 +123,7 @@ These allow execution of notebooks:
 
 ### Labs
 * [Facebook Research](https://research.fb.com/publications/) and [ML/AI subset](https://research.fb.com/publications/?cat=4%2C13%2C3%2C8)
+* [UCB RLL](http://rll.berkeley.edu/research.html)
 
 ## Podcasts
 * [DataCam's DataFramed](https://www.datacamp.com/community/podcast)
