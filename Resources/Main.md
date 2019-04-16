@@ -57,13 +57,13 @@ Free books on deep learning are listed [here](https://www.kdnuggets.com/2018/04/
 ## Datasets
 Use of canned datasets for machine learning is applicable for use by students and academic researchers. Prior to transfer learning, it was also relevant for model pretraining by practitioners.
 * [Kaggle Datasets](https://www.kaggle.com/datasets)
+* Papers with Code: [corpus](https://paperswithcode.com/search?q=corpus), [dataset](https://paperswithcode.com/search?q=dataset)
+* [UCI](https://archive.ics.uci.edu/)
 
 The following general resources are for datasets that not necessarily specific to machine learning:
 * [Academic Torrents](http://academictorrents.com/): distributed system for sharing enormous datasets
 * [AWS Open Data](https://registry.opendata.aws/)
 * [Google Dataset Search](https://toolbox.google.com/datasetsearch)
-* Papers with Code: [corpus](https://paperswithcode.com/search?q=corpus), [dataset](https://paperswithcode.com/search?q=dataset)
-* [UCI](https://archive.ics.uci.edu/)
 
 ## Feeds
 [Feedly](http://feedly.com/) is a great feed reader for following these and more feeds:
