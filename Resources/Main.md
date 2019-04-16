@@ -62,6 +62,8 @@ The following general resources are for datasets that not necessarily specific t
 * [Academic Torrents](http://academictorrents.com/): distributed system for sharing enormous datasets
 * [AWS Open Data](https://registry.opendata.aws/)
 * [Google Dataset Search](https://toolbox.google.com/datasetsearch)
+* Papers with Code: [corpus](https://paperswithcode.com/search?q=corpus), [dataset](https://paperswithcode.com/search?q=dataset)
+* [UCI](https://archive.ics.uci.edu/)
 
 ## Feeds
 [Feedly](http://feedly.com/) is a great feed reader for following these and more feeds:
