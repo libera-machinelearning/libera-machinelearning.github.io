@@ -4,7 +4,6 @@ This is a mostly auto-generated list of review articles on machine learning and 
 * [Theoretical Foundations of Defeasible Description Logics (2019)](https://arxiv.org/abs/1904.07559) ([cs.AI](https://arxiv.org/list/cs.AI/recent))
 * [Object Detection with Deep Learning: A Review (2018-2019)](https://arxiv.org/abs/1807.05511) ([cs.CV](https://arxiv.org/list/cs.CV/recent))
 * [A Deep Journey into Super-resolution: A survey (2019)](https://arxiv.org/abs/1904.07523) ([cs.CV](https://arxiv.org/list/cs.CV/recent))
-* [Something's Brewing! Early Prediction of Controversy-causing Posts from Discussion Features (2019)](https://arxiv.org/abs/1904.07372) ([cs.CL](https://arxiv.org/list/cs.CL/recent))
 * [Introduction to Multi-Armed Bandits (2019)](https://arxiv.org/abs/1904.07272) ([cs.LG](https://arxiv.org/list/cs.LG/recent))
 * [Tutorial: Safe and Reliable Machine Learning (2019)](https://arxiv.org/abs/1904.07204) ([cs.LG](https://arxiv.org/list/cs.LG/recent))
 * [A Discussion on Solving Partial Differential Equations using Neural Networks (2019)](https://arxiv.org/abs/1904.07200) ([cs.LG](https://arxiv.org/list/cs.LG/recent))
