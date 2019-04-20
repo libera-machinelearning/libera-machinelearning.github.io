@@ -78,6 +78,7 @@ The following general resources are for datasets that not necessarily specific t
 * [InfoWorld AI](http://www.infoworld.com/category/artificial-intelligence/index.rss)
 * [JMLR MLOSS (unofficial)](https://us-east1-ml-feeds.cloudfunctions.net/jmlr-mloss)
 * [KDnuggets](http://www.kdnuggets.com/feed) and an unofficial [filtered](https://us-east1-ml-feeds.cloudfunctions.net/kdnuggets) version
+* [Medium: ML](https://medium.com/feed/topic/machine-learning)
 * [Nvidia developer: AI](https://devblogs.nvidia.com/category/artificial-intelligence/rss)
 * [Nvidia Research: ML/AI (unofficial)](https://us-east1-ml-feeds.cloudfunctions.net/nvidia-research-ml)
 * Papers with Code (unofficial): [trending](https://us-east1-ml-feeds.cloudfunctions.net/pwc/trending), [latest](https://us-east1-ml-feeds.cloudfunctions.net/pwc/latest), [greatest](https://us-east1-ml-feeds.cloudfunctions.net/pwc/greatest)
