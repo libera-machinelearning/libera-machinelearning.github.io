@@ -33,6 +33,7 @@ Main:
 * [Data Mining](https://www.coursera.org/specializations/data-mining)
 * [Deep Learning](https://www.coursera.org/specializations/deep-learning)
 * [Machine Learning with TensorFlow on GCP](https://www.coursera.org/specializations/machine-learning-tensorflow-gcp)
+* [TensorFlow by deeplearning.ai](https://www.coursera.org/collections/tensorflow-deeplearning-ai)
 
 Advanced:
 * [Advanced Machine Learning](https://www.coursera.org/specializations/aml)
