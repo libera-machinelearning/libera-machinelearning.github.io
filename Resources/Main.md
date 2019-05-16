@@ -41,6 +41,7 @@ Also see [Feeds](#feeds).
 * [David MacKay: Information Theory, Pattern Recognition and Neural Networks (2005)](http://www.inference.phy.cam.ac.uk/itprnn/book.html)
 * [Algorithms for Reinforcement Learning](https://sites.ualberta.ca/~szepesva/papers/RLAlgsInMDPs.pdf) by [Csaba Szepesvári](https://sites.ualberta.ca/~szepesva/RLBook.html)
 * [Sutton: Reinforcement Learning](http://incompleteideas.net/sutton/book/the-book.html)
+* [Geron: Hands-On Machine Learning with Scikit-Learn and TensorFlow](https://www.amazon.com/Hands-Machine-Learning-Scikit-Learn-TensorFlow/dp/1491962291) -- #1 selling ML book on Amazon 2017, [GitHub repo with Notebooks for each chapter](https://github.com/ageron/handson-ml), [2nd Edition with TF2 in beta](https://github.com/ageron/handson-ml2)
 
 Free books on deep learning are listed [here](https://www.kdnuggets.com/2018/04/top-free-books-deep-learning.html), although none of them are too recent.
 
@@ -114,6 +115,7 @@ These allow execution of notebooks:
 * [Kaggle Kernels](https://www.kaggle.com/kernels) (CPU, shared GPU)
 * [Binder](https://mybinder.org/) (CPU)
 * [Azure Notebooks](http://notebooks.azure.com/) (CPU)
+* [Aurelien Geron](https://github.com/ageron/handson-ml2) (notebooks to accompany his bestselling book, using TF2)
 
 ## Papers
 * arXiv:
@@ -165,10 +167,11 @@ Reddit:
 * [Video Lectures](http://videolectures.net/Top/Computer_Science/Machine_Learning/)
 
 ### YouTube channels
-* [3B1B](https://www.youtube.com/channel/UCYO_jab_esuFRV4b17AJtAw)
+* [3B1B](https://www.youtube.com/channel/UCYO_jab_esuFRV4b17AJtAw) has [one beautiful intro-ML video](https://www.youtube.com/watch?v=aircAruvnKk)
 * [DeepMind](https://www.youtube.com/channel/UCP7jMXSY2xbc3KCAE0MHQ-A)
 * [Lex Fridman](https://www.youtube.com/channel/UCSHZKyawb77ixDdsGog4iWA)
 * [OpenAI](https://www.youtube.com/channel/UCXZCJLdBC09xxGZ6gcdrc6A)
 * [Siraj Raval](https://www.youtube.com/channel/UCWN3xxRkmTPmbKwht9FuE5A)
 * [TwiML&AI](https://www.youtube.com/channel/UC7kjWIK1H8tfmFlzZO-wHMw)
 * [Two Minute Papers](https://www.youtube.com/channel/UCbfYPyITQ-7l4upoX8nvctg)
+* [Aurelien Geron](https://www.youtube.com/channel/UCCvGd1WBMpFQ_vtC89VF2qA) -- Capsule Networks!
