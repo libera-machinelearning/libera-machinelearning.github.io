@@ -7,7 +7,6 @@ This is a mostly auto-generated list of review articles on machine learning and 
 * [Deep Learning for MIR Tutorial (2020)](https://arxiv.org/abs/2001.05266) │ [pdf](https://arxiv.org/pdf/2001.05266) │ [cs.IR](https://arxiv.org/list/cs.IR/recent)
 * [Emotion Recognition Using Wearables: A Systematic Literature Review Work in progress (2019-2020)](https://arxiv.org/abs/1912.10528) │ [pdf](https://arxiv.org/pdf/1912.10528) │ [cs.HC](https://arxiv.org/list/cs.HC/recent)
 * [Moving Objects Detection with a Moving Camera: A Comprehensive Review (2020)](https://arxiv.org/abs/2001.05238) │ [pdf](https://arxiv.org/pdf/2001.05238) │ [cs.CV](https://arxiv.org/list/cs.CV/recent)
-* [Teddy: A System for Interactive Review Analysis (2020)](https://arxiv.org/abs/2001.05171) │ [pdf](https://arxiv.org/pdf/2001.05171) │ [cs.HC](https://arxiv.org/list/cs.HC/recent)
 * [Knowledge Representations in Technical Systems -- A Taxonomy (2020)](https://arxiv.org/abs/2001.04835) │ [pdf](https://arxiv.org/pdf/2001.04835) │ [cs.AI](https://arxiv.org/list/cs.AI/recent)
 * [Fairness in Learning-Based Sequential Decision Algorithms: A Survey (2020)](https://arxiv.org/abs/2001.04861) │ [pdf](https://arxiv.org/pdf/2001.04861) │ [cs.AI](https://arxiv.org/list/cs.AI/recent)
 * [Deep Audio-Visual Learning: A Survey (2020)](https://arxiv.org/abs/2001.04758) │ [pdf](https://arxiv.org/pdf/2001.04758) │ [cs.CV](https://arxiv.org/list/cs.CV/recent)
