@@ -1,7 +1,7 @@
 # ##machinelearning on Freenode IRC
 <img align="right" width="170" height="170" src="logo.png"> This is the community website for the `##machinelearning`, `##ml-deploy`, `##ml-news`, `##pydata`, `##AGI`, and `##ml-ot`  IRC channels on [Freenode](https://freenode.net/). Users are welcome to submit improvements to the website as an [issue](https://github.com/freenode-machinelearning/freenode-machinelearning.github.io/issues) or a [pull request](https://github.com/freenode-machinelearning/freenode-machinelearning.github.io/pulls).
 
-Refer to the respective channel topic for basic information about the channel. You can connect via your favorite IRC client, [LunarBNC](https://lunarbnc.net), [IRCCloud](https://www.irccloud.com/irc/freenode/channel/%23%23machinelearning), [WebChat](https://webchat.freenode.net/?channels=%23%23machinelearning), etc.
+Refer to the respective channel topic for basic information about the channel. You can connect via your favorite IRC client, [LunarBNC](https://lunarbnc.net), [IRCCloud](https://www.irccloud.com/irc/freenode/channel/%23%23machinelearning), or [WebChat](https://webchat.freenode.net/?channels=%23%23machinelearning), etc.
 
 ## Resources
 * [Resources for beginners](Resources/Beginner.md)
