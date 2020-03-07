@@ -6,7 +6,6 @@ This is a mostly auto-generated list of review articles on machine learning and 
 * [Graph Neural Networks Meet Neural-Symbolic Computing: A Survey and Perspective (2020)](https://arxiv.org/abs/2003.00330) │ [pdf](https://arxiv.org/pdf/2003.00330) │ [cs.AI](https://arxiv.org/list/cs.AI/recent)
 * [Natural Language Processing Advancements By Deep Learning: A Survey (2020)](https://arxiv.org/abs/2003.01200) │ [pdf](https://arxiv.org/pdf/2003.01200) │ [cs.CL](https://arxiv.org/list/cs.CL/recent)
 * [Threats to Federated Learning: A Survey (2020)](https://arxiv.org/abs/2003.02133) │ [pdf](https://arxiv.org/pdf/2003.02133) │ [cs.CR](https://arxiv.org/list/cs.CR/recent)
-* [Rethinking Temporal Object Detection from Robotic Perspectives (2019-2020)](https://arxiv.org/abs/1912.10406) │ [pdf](https://arxiv.org/pdf/1912.10406) │ [cs.CV](https://arxiv.org/list/cs.CV/recent)
 * [Features for Ground Texture Based Localization -- A Survey (2020)](https://arxiv.org/abs/2002.11948) │ [pdf](https://arxiv.org/pdf/2002.11948) │ [cs.CV](https://arxiv.org/list/cs.CV/recent)
 * [Video Description: A Survey of Methods, Datasets and Evaluation Metrics (2018-2020)](https://arxiv.org/abs/1806.00186) │ [pdf](https://arxiv.org/pdf/1806.00186) │ [cs.CV](https://arxiv.org/list/cs.CV/recent)
 * [Development of Clinical Concept Extraction Applications: A Methodology Review (2019-2020)](https://arxiv.org/abs/1910.11377) │ [pdf](https://arxiv.org/pdf/1910.11377) │ [cs.IR](https://arxiv.org/list/cs.IR/recent)
