@@ -12,5 +12,5 @@ Refer to the respective channel topic for basic information about the channel. Y
 
 ## Administrative
 The channel has two bots:
-* [Feed[bot]](https://github.com/impredicative/irc-rss-feed-bot) posts on-topic feeds. ([*config*](https://github.com/impredicative/freenode-bots/blob/master/irc-rss-feed-bot/config.yaml))
-* [Title[bot]](https://github.com/impredicative/irc-url-title-bot) posts page titles of URLs. ([*config*](https://github.com/impredicative/freenode-bots/blob/master/irc-url-title-bot/config.yaml))
+* [Feed[bot]](https://github.com/impredicative/irc-rss-feed-bot) posts on-topic feeds. ([*config*](https://github.com/impredicative/irc-bots/blob/master/freenode/feed-bot/config.yaml))
+* [Title[bot]](https://github.com/impredicative/irc-url-title-bot) posts page titles of URLs. ([*config*](https://github.com/impredicative/irc-bots/blob/master/freenode/title-bot/config.yaml))
