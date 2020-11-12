@@ -149,7 +149,6 @@ These allow execution of notebooks:
 * [ModelDepot](https://modeldepot.io/)
 * [Nvidia containers](https://ngc.nvidia.com/catalog/containers)
 * [Papers with Code](https://paperswithcode.com/) (*also see [Feeds](#feeds)*)
-* [Repositories](https://j.mp/ml-repos)
 
 ## QA
 Stack Exchange:
