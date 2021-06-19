@@ -1,5 +1,5 @@
 # ##machinelearning on Libera IRC
-<img align="right" width="170" height="170" src="logo.png"> This is the community website for the `##machinelearning`, `#RL`, `#ml-deploy`, `#ml-news`, `##data`, `#pydata-news`, `##AGI`, and `#ml-ot`  IRC channels on [Libera.Chat](https://libera.chat/). Users are welcome to submit improvements to the website as an issue or a pull request.
+<img align="right" width="170" height="170" src="logo.png"> This is the community website for the `##machinelearning`, `#RL`, `#ml-deploy`, `#ml-news`, `##data`, `#pydata-news`, `#AGI`, and `#ml-ot`  IRC channels on [Libera.Chat](https://libera.chat/). Users are welcome to submit improvements to the website as an issue or a pull request.
 
 Refer to the respective channel topic for basic information about the channel. You can connect via your favorite IRC client, [LunarBNC](https://lunarbnc.net), [IRCCloud](https://www.irccloud.com/irc/libera.chat/channel/%23%23machinelearning), or [WebChat](https://web.libera.chat/?channels=%23%23machinelearning), etc.
 
